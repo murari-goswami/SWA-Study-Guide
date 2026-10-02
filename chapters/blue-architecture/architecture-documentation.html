@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Architecture in Agile Environment - BLUE - Architecture - SWA preparation study guide.">
-<title>Architecture in Agile Environment · SWA Study Guide</title>
+<meta name="description" content="Architecture Documentation - BLUE - Architecture - SWA preparation study guide.">
+<title>Architecture Documentation · SWA Study Guide</title>
 <link rel="stylesheet" href="../../assets/styles.css">
 </head>
 <body data-base="../../" data-sidebar="closed">
@@ -30,12 +30,12 @@
         <ul class="nav-list">
           <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
           <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
-          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation" aria-current="page">Architecture Documentation</a></li>
           <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
           <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
           <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
           <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
-          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment" aria-current="page">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
           <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
           <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
         </ul>
@@ -111,139 +111,99 @@
     <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
       <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
       <div class="topic-meta">
-        <span>943 words · about 5 min read</span>
-        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/architecture-in-agile-environment" aria-pressed="false">
+        <span>934 words · about 5 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/architecture-documentation" aria-pressed="false">
           <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
         </button>
       </div>
     </div>
     <article class="prose fade-in" style="--i:1">
-<h1 id="architecture-in-agile-environment">🔵 Architecture in Agile Environment</h1>
-<h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
-<p>The core of agile architecture is to build a system that is clean, simple, flexible, and able to evolve continuously. Unlike the classic approach, the main goal is to enable fast changes and rapid deployment, so the system must stay deployable and verifiable at any time during a sprint.</p>
-<p>We do not achieve this with complex designs, but by keeping strict priorities: simplicity before generality, hard-coded solutions over excessive configuration, and working code over premature optimization. Architecture is not made by a single person at a desk - the team that builds the system also designs it.</p>
-<p>A key skill of an agile architect is to defer decisions until there is enough knowledge to make them safely, while avoiding &quot;dead-ends&quot; that block future adaptability. The team must also watch for &quot;architecture smells&quot; such as too much abstraction, futuristic architecture that solves non-existing problems, or &quot;paper architecture&quot; that looks great in UML diagrams but has no link to real code.</p>
-<h3 id="classical-x-agile-architect"><a class="heading-anchor" href="#classical-x-agile-architect" aria-label="Link to this section">#</a>Classical x Agile architect</h3>
+<h1 id="architecture-documentation">🔵 Architecture Documentation</h1>
+<h3 id="what-we-document-definition-of-architecture"><a class="heading-anchor" href="#what-we-document-definition-of-architecture" aria-label="Link to this section">#</a>What we document — definition of Architecture</h3>
+<p>There is no single universal definition, but they all revolve around similar concepts:</p>
 <ul>
-<li>Classical - architecture is done upfront, detailed, binding, ivory-style, waterfall.</li>
-<li>Agile - architecture is created as a shared team effort, iteratively, while keeping the vision.</li>
+<li><strong>ANSI/IEEE (1471-2000):</strong> Architecture is the fundamental organization of a system embodied in its components, their relationships to each other and to the environment, and the principles governing its design and evolution.</li>
+<li><strong>Grady Booch (2006):</strong> Architecture represents significant decisions about the design that shape a system, where &quot;significant&quot; is measured by the cost of change.</li>
+<li><strong>Ralph Johnson:</strong> Architecture is simply &quot;about the important stuff&quot; (&quot;Architecture is about the important stuff... whatever that is&quot;).</li>
+<li><strong>Shosh&#39;s view:</strong> Every system has architecture (good or bad, documented or not) and it can exist (e.g., as plans) even before the actual implementation. Wolfgang adds that it is everything that helps discuss significant requirements and qualities.</li>
 </ul>
-<h3 id="dod-definition-of-done"><a class="heading-anchor" href="#dod-definition-of-done" aria-label="Link to this section">#</a>DoD - definition of done</h3>
-<p>Distinguish developer &quot;Done&quot; from real Done (tested, documented, passes CI/CD, integration tests ok).</p>
-<h3 id="dod-bloating-countermeasures"><a class="heading-anchor" href="#dod-bloating-countermeasures" aria-label="Link to this section">#</a>DoD bloating - countermeasures</h3>
+<h3 id="why-we-document"><a class="heading-anchor" href="#why-we-document" aria-label="Link to this section">#</a>Why we document</h3>
+<p>Documentation is first and foremost <strong>communication</strong>. It must clearly answer: <em>Why</em> we are documenting (Purpose), <em>Who</em> cares about it (Stakeholder), and <em>What information</em> they need (Content).</p>
+<h3 id="how-we-document-architectural-views"><a class="heading-anchor" href="#how-we-document-architectural-views" aria-label="Link to this section">#</a>How we document — Architectural Views</h3>
+<p>Architecture cannot be described with a single diagram. Different stakeholders need different views.</p>
+<h4 id="the-4-1-n-views-concept"><a class="heading-anchor" href="#the-4-1-n-views-concept" aria-label="Link to this section">#</a>The 4+1+n Views concept</h4>
 <ul>
-<li>Automate.</li>
-<li>Use a checklist that references external procedures.</li>
-<li>Split it (different for Story, Sprint, Release).</li>
-<li>Keep it lean and prune it.</li>
+<li><strong>Use Case View:</strong> The focal point for end users.</li>
+<li><strong>Logical View:</strong> A description of functionality for the end user.</li>
+<li><strong>Process View:</strong> Addresses runtime and dynamic infrastructure (performance, scalability, startup scenarios) for system integrators.</li>
+<li><strong>Implementation/Development View:</strong> Addresses code and software management for developers.</li>
+<li><strong>Physical/Deployment View:</strong> Topology, delivery, installation, and communication for systems engineering.</li>
+<li><em>Additional views:</em> Context, Data, Variability, Migration.</li>
 </ul>
-<h3 id="architectural-runway-lead-time"><a class="heading-anchor" href="#architectural-runway-lead-time" aria-label="Link to this section">#</a>Architectural Runway (Lead time)</h3>
+<h4 id="c4-model-modern-alternative-to-4-1-views"><a class="heading-anchor" href="#c4-model-modern-alternative-to-4-1-views" aria-label="Link to this section">#</a>C4 Model (Modern alternative to 4+1 Views)</h4>
+<p>In practice, the C4 model is widely used today:</p>
 <ul>
-<li>Architecture as a background task, leading development by 1-2 sprints. In a sprint, we implement what was designed or explored in the previous sprint.</li>
+<li>Context — a view of the overall system (<strong>management, business, non-technical stakeholders</strong>)</li>
+<li>Containers — large functional blocks, e.g., database, web client, technologies used (<strong>architects, DevOps, developers</strong>)</li>
+<li>Components — inside a single container, what it is made of and how it interacts (<strong>developer</strong>)</li>
+<li>Code — detail of a single component, e.g., a UML class diagram (<strong>developer</strong>).
+This is already a very detailed level, it becomes outdated quickly, is hard to keep up-to-date, and is only appropriate for key algorithms.</li>
 </ul>
-<h3 id="spikes-research-tasks"><a class="heading-anchor" href="#spikes-research-tasks" aria-label="Link to this section">#</a>Spikes (Research tasks)</h3>
+<h3 id="rules-and-best-practices"><a class="heading-anchor" href="#rules-and-best-practices" aria-label="Link to this section">#</a>Rules and Best Practices</h3>
 <ul>
-<li>A research task where the goal is not delivery, but learning. Used for &quot;deep probes&quot;.</li>
+<li>Process documentation with the same attention to quality as code (versioning, change management, refactoring) and always write from the reader&#39;s perspective.</li>
+<li>Avoid repetition and ambiguity (start writing a glossary).</li>
+<li>Every document must have one definitive owner (responsible) and the documentation overview should not exceed 50 pages to remain readable.</li>
+<li>Keep documentation current, &quot;but not too current&quot; (&quot;Keep the documentation current but not too current&quot;) and review it regularly to ensure consistency.</li>
+<li>Use established templates, e.g., from the organization or the popular <strong>arc42</strong>. The advantage of templates is structure; the disadvantage can be the risk that they are either incomplete (Incomplete) or overloaded with information (Too Much). <em>Rule:</em> Do not delete any part of a template (&quot;Do not delete any part in templates&quot;).</li>
 </ul>
-<h3 id="enablers-vs-user-stories"><a class="heading-anchor" href="#enablers-vs-user-stories" aria-label="Link to this section">#</a>Enablers vs. User Stories</h3>
+<h3 id="tools-and-modelling"><a class="heading-anchor" href="#tools-and-modelling" aria-label="Link to this section">#</a>Tools and Modelling</h3>
+<p>We distinguish between two approaches to creating documentation:</p>
 <ul>
-<li>An enabler is work that enables future development (laying foundations). In practice it extends the &quot;Runway&quot; = creates lead time. This work should be separated, not hidden inside normal user stories. Otherwise it is managed like standard tasks. Enablers can result in NFRs.</li>
-</ul>
-<h3 id="enablers-types"><a class="heading-anchor" href="#enablers-types" aria-label="Link to this section">#</a>Enablers - types</h3>
-<ul>
-<li>Exploration - explores and gains knowledge.</li>
-<li>Architectural - implementation of architectural stories (e.g., a new core skeleton).</li>
-<li>Infrastructure - bring up the pipeline.</li>
-<li>Compliance - formalities, audit preparation.</li>
-</ul>
-<h3 id="definition-of-done-dod-for-architecture"><a class="heading-anchor" href="#definition-of-done-dod-for-architecture" aria-label="Link to this section">#</a>Definition of Done (DoD) for Architecture</h3>
-<p>A decision is:</p>
-<ul>
-<li>done</li>
-<li>documented (ADR)</li>
-<li>communicated (the team understands)</li>
-<li>validated as feasible (PoC is OK)</li>
-</ul>
-<h3 id="nfr-in-agile-overview"><a class="heading-anchor" href="#nfr-in-agile-overview" aria-label="Link to this section">#</a>NFR in Agile - overview</h3>
-<ul>
-<li>Split into categories - Story-like, Constraining, Cross-cutting.</li>
-</ul>
-<h3 id="nfr-story-like-example-redundancy-switches"><a class="heading-anchor" href="#nfr-story-like-example-redundancy-switches" aria-label="Link to this section">#</a>NFR - Story-like (example: redundancy switches)</h3>
-<ul>
-<li>Describe as a user story and deliver within a sprint as a standard task.</li>
-</ul>
-<h3 id="nfr-constraining-example-search-speed"><a class="heading-anchor" href="#nfr-constraining-example-search-speed" aria-label="Link to this section">#</a>NFR - Constraining (example: search speed)</h3>
-<ul>
-<li>Include in acceptance criteria of the given user story - search works and is fast.</li>
-</ul>
-<h3 id="nfr-cross-cutting"><a class="heading-anchor" href="#nfr-cross-cutting" aria-label="Link to this section">#</a>NFR - Cross-cutting</h3>
-<ul>
-<li>In architecture with lead time, do a spike, validate the principle, create a pattern/example, and include it in DoD at the right level.</li>
-</ul>
-<h3 id="architecture-work-in-backlog"><a class="heading-anchor" href="#architecture-work-in-backlog" aria-label="Link to this section">#</a>Architecture work in backlog</h3>
-<ul>
-<li>Done by the team, provides value, needs resources - allocated like normal backlog work, groomed (breakdown, thinking, estimates).</li>
-</ul>
-<h3 id="architecture-owner"><a class="heading-anchor" href="#architecture-owner" aria-label="Link to this section">#</a>Architecture owner</h3>
-<ul>
-<li>Normally done by the agile team, but the outside world needs one contact. So the team has one representative (architecture owner) - represents, coaches. The team still does and decides architecture. It is a part-time role - a normal team member who codes, but spends part of the time communicating.</li>
-</ul>
-<h3 id="two-system-metaphor"><a class="heading-anchor" href="#two-system-metaphor" aria-label="Link to this section">#</a>Two system metaphor</h3>
-<ul>
-<li>System1 = the technical solution itself.</li>
-<li>System2 = organization, company, processes, bureaucracy, constraints (big impact, see Conway&#39;s law).</li>
-</ul>
-<p>The architect must keep the value stream in shape, i.e., care for both systems. Fearless Journey - a board game, helps identify obstacles in System2.</p>
-<h3 id="decide-at-last-reasonable-moment"><a class="heading-anchor" href="#decide-at-last-reasonable-moment" aria-label="Link to this section">#</a>Decide at last reasonable moment</h3>
-<ul>
-<li>Too early = BDUF and a wrong decision can be locked in; too late = the team is blocked. The architect tracks it, but decides when they have the most knowledge while not blocking the team.</li>
-</ul>
-<h3 id="tiger-teams-conquer-and-divide"><a class="heading-anchor" href="#tiger-teams-conquer-and-divide" aria-label="Link to this section">#</a>Tiger Teams - conquer and divide</h3>
-<ul>
-<li>The most experienced developers and architects do the exploration, prepare the path, practices, and test technologies (conquer). Then instead of handing over via presentations/wiki, they split up and work inside the teams to make it real.</li>
-</ul>
-<h3 id="travellers"><a class="heading-anchor" href="#travellers" aria-label="Link to this section">#</a>Travellers</h3>
-<ul>
-<li>Nomads who rotate between teams per sprint, spread know-how. During their stay they are full team members, doing coaching, pair programming, whiteboard workshops, learning lessons.</li>
-</ul>
-<h3 id="design-sad-system-architecture-documentation-workshops"><a class="heading-anchor" href="#design-sad-system-architecture-documentation-workshops" aria-label="Link to this section">#</a>Design / SAD (System Architecture Documentation) workshops</h3>
-<ul>
-<li>Design - every sprint in each team, at the whiteboard, light UML, not for documentation.</li>
-<li>SAD - mainly at the end of the tiger phase, document the solution and help spread it; later it can be updated.</li>
-</ul>
-<h3 id="component-owners"><a class="heading-anchor" href="#component-owners" aria-label="Link to this section">#</a>Component owners</h3>
-<ul>
-<li>Shared code - everyone can contribute, but there is a designated architecture guarantor. Does not block commits (no bottleneck), does not slow development, but improves the solution with the author afterwards to keep the component healthy.</li>
-</ul>
-<h2 id="real-world-example-crr-no-big-up-front-design"><a class="heading-anchor" href="#real-world-example-crr-no-big-up-front-design" aria-label="Link to this section">#</a>Real-world example – CRR - No Big up front design</h2>
-<p>This case study shows how easy it is to slip into &quot;architecture smells&quot; and Big Design Up Front (BDUF).</p>
-<ul>
-<li><p><strong>Context:</strong> In the Flex targt arch CRR - we agree to have feature parity and make first no up front design but a happy path based flow. </p>
-</li>
-<li><p><strong>Problem (The Smell):</strong> </p>
-<ul>
-<li>Rather than focussin on big upfront design on CRR, with many unknown and validation. WEe agree to do incremental design iteration and validation and proceed with the agile way.</li>
+<li><strong>Drawing Tools:</strong> Gliffy, Visio, Draw.io, or text-based PlantUML.<ul>
+<li><em>Advantages:</em> They are lightweight and provide a great degree of freedom.</li>
+<li><em>Disadvantages:</em> Lack consistency checking and do not support working with large interconnected models.</li>
 </ul>
 </li>
-<li><p><strong>Agile Retrospective and Lessons Learned:</strong></p>
-<ul>
-<li>The principle of <strong>Simplicity before generality</strong> was violated: Instead of an upfront &quot;bulletproof&quot; solution, a simple baseline (happy path) should have been built first. But we make sure the happy paths are good in quality as well.</li>
-<li>We violated <strong>Decide at the last reasonable moment</strong>:<ul>
-<li>Use of ACL wherever required.</li>
+<li><strong>Modelling Tools:</strong> MagicDraw, Enterprise Architect.<ul>
+<li><em>Advantages:</em> They offer Cross-Model Consistency and form a knowledge base, e.g., even for code generation.</li>
+<li><em>Disadvantages:</em> Less freedom and a much steeper learning curve.</li>
 </ul>
 </li>
 </ul>
-</li>
+<h3 id="architect-s-role-and-responsibilities-swa"><a class="heading-anchor" href="#architect-s-role-and-responsibilities-swa" aria-label="Link to this section">#</a>Architect&#39;s role and responsibilities (SWA)</h3>
+<p>A software architect in the context of documentation must:</p>
+<ul>
+<li>Define which views (views) are needed.</li>
+<li>Keep these views mutually consistent.</li>
+<li>Document decisions taken (e.g., via ADRs).</li>
+<li>Regularly review the documentation and verify that it is current.</li>
+</ul>
+<h2 id="real-world-example-the-missing-e2e-flexibility-runtime-latency-budget-diagram"><a class="heading-anchor" href="#real-world-example-the-missing-e2e-flexibility-runtime-latency-budget-diagram" aria-label="Link to this section">#</a>Real-world example: The missing E2E flexibility runtime &amp; latency budget diagram</h2>
+<h3 id="situation"><a class="heading-anchor" href="#situation" aria-label="Link to this section">#</a>Situation</h3>
+<p>In Flexibility Operation Planning, no view described the <strong>end-to-end runtime path</strong> of a flexibility request — from forecast/measurement ingestion, through prediction and prevention, to the dispatched flexibility — and <strong>no latency budget</strong> was assigned to the hops along that path. Each team documented its own service, so every component looked fine in isolation. What was missing was the <strong>Process View</strong> (runtime and dynamics) in 4+1 terms: the one view that makes cross-service timing behaviour visible. The consequence was a classic documentation gap — the problem was real and measurable in production, but nobody could <em>point</em> at it.</p>
+<h3 id="my-actions-applying-the-theory"><a class="heading-anchor" href="#my-actions-applying-the-theory" aria-label="Link to this section">#</a>My actions (Applying the theory)</h3>
+<ul>
+<li>Created the missing <strong>E2E runtime view</strong>: all participating services on one path, every hop annotated with its measured time and the <strong>budget</strong> it is allowed to consume, so the total could be compared against the business deadline.</li>
+<li>Deliberately chose the <strong>right level of the pyramid</strong> — subsystem/service, not code. One page, readable by a non-technical reader.</li>
+<li>Used it as a <strong>communication instrument towards the Product Manager and stakeholders</strong>: the diagram showed that the budget was exceeded <em>structurally</em>, not because one service was slow — so no local optimisation could fix it.</li>
+<li>On that basis, the need for a larger <strong>architecture refactoring</strong> was accepted and prioritised into the backlog, instead of being argued as a developer opinion.</li>
+</ul>
+<h3 id="evaluation-and-lessons-learned"><a class="heading-anchor" href="#evaluation-and-lessons-learned" aria-label="Link to this section">#</a>Evaluation and lessons learned</h3>
+<ul>
+<li><strong>A missing view hides a real defect.</strong> Every service being individually &quot;within spec&quot; while the end-to-end flow misses its deadline is exactly what the Process View exists to reveal.</li>
+<li><strong>A latency budget turns a quality requirement into a documented, checkable contract</strong> per hop — and makes the offending hop undeniable.</li>
+<li><strong>Documentation is communication:</strong> the diagram did not fix anything technically; it created the shared understanding that unlocked the budget and the decision. That is the point of documenting — picking the view the <em>stakeholder</em> needs, not the one the architect finds interesting.</li>
 </ul>
 
     </article>
 <nav class="pager" aria-label="Topic navigation">
-      <a class="pager__prev" href="../../chapters/blue-architecture/domain-driven-design.html"><span class="pager__label">← Previous</span><span>Domain-Driven Design (DDD)</span></a>
-      <a class="pager__next" href="../../chapters/blue-architecture/architecture-refactoring.html"><span class="pager__label">Next →</span><span>Architecture refactoring (re-engineering, re-writing)</span></a>
+      <a class="pager__prev" href="../../chapters/blue-architecture/adr-architecture-decision-records.html"><span class="pager__label">← Previous</span><span>Architecture Decision Records (ADR)</span></a>
+      <a class="pager__next" href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html"><span class="pager__label">Next →</span><span>Systematic Architecture Design</span></a>
     </nav>
   </main>
   <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
-    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#classical-x-agile-architect">Classical x Agile architect</a></li><li class="lvl-3"><a href="#dod-definition-of-done">DoD - definition of done</a></li><li class="lvl-3"><a href="#dod-bloating-countermeasures">DoD bloating - countermeasures</a></li><li class="lvl-3"><a href="#architectural-runway-lead-time">Architectural Runway (Lead time)</a></li><li class="lvl-3"><a href="#spikes-research-tasks">Spikes (Research tasks)</a></li><li class="lvl-3"><a href="#enablers-vs-user-stories">Enablers vs. User Stories</a></li><li class="lvl-3"><a href="#enablers-types">Enablers - types</a></li><li class="lvl-3"><a href="#definition-of-done-dod-for-architecture">Definition of Done (DoD) for Architecture</a></li><li class="lvl-3"><a href="#nfr-in-agile-overview">NFR in Agile - overview</a></li><li class="lvl-3"><a href="#nfr-story-like-example-redundancy-switches">NFR - Story-like (example: redundancy switches)</a></li><li class="lvl-3"><a href="#nfr-constraining-example-search-speed">NFR - Constraining (example: search speed)</a></li><li class="lvl-3"><a href="#nfr-cross-cutting">NFR - Cross-cutting</a></li><li class="lvl-3"><a href="#architecture-work-in-backlog">Architecture work in backlog</a></li><li class="lvl-3"><a href="#architecture-owner">Architecture owner</a></li><li class="lvl-3"><a href="#two-system-metaphor">Two system metaphor</a></li><li class="lvl-3"><a href="#decide-at-last-reasonable-moment">Decide at last reasonable moment</a></li><li class="lvl-3"><a href="#tiger-teams-conquer-and-divide">Tiger Teams - conquer and divide</a></li><li class="lvl-3"><a href="#travellers">Travellers</a></li><li class="lvl-3"><a href="#design-sad-system-architecture-documentation-workshops">Design / SAD (System Architecture Documentation) workshops</a></li><li class="lvl-3"><a href="#component-owners">Component owners</a></li><li class="lvl-2"><a href="#real-world-example-crr-no-big-up-front-design">Real-world example – CRR - No Big up front design</a></li></ul></aside>
+    <ul><li class="lvl-3"><a href="#what-we-document-definition-of-architecture">What we document — definition of Architecture</a></li><li class="lvl-3"><a href="#why-we-document">Why we document</a></li><li class="lvl-3"><a href="#how-we-document-architectural-views">How we document — Architectural Views</a></li><li class="lvl-4"><a href="#the-4-1-n-views-concept">The 4+1+n Views concept</a></li><li class="lvl-4"><a href="#c4-model-modern-alternative-to-4-1-views">C4 Model (Modern alternative to 4+1 Views)</a></li><li class="lvl-3"><a href="#rules-and-best-practices">Rules and Best Practices</a></li><li class="lvl-3"><a href="#tools-and-modelling">Tools and Modelling</a></li><li class="lvl-3"><a href="#architect-s-role-and-responsibilities-swa">Architect s role and responsibilities (SWA)</a></li><li class="lvl-2"><a href="#real-world-example-the-missing-e2e-flexibility-runtime-latency-budget-diagram">Real-world example: The missing E2E flexibility runtime latency budget diagram</a></li><li class="lvl-3"><a href="#situation">Situation</a></li><li class="lvl-3"><a href="#my-actions-applying-the-theory">My actions (Applying the theory)</a></li><li class="lvl-3"><a href="#evaluation-and-lessons-learned">Evaluation and lessons learned</a></li></ul></aside>
 </div>
 
 <div class="palette" role="dialog" aria-modal="true" aria-label="Search">
