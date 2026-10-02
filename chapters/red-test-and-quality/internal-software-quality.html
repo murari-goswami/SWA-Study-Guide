@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Internal Software Quality - RED - Test and Quality - SWA preparation study guide.">
+<title>Internal Software Quality · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality" aria-current="page">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,784 words · about 19 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/internal-software-quality" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="internal-software-quality">Internal Software Quality</h1>
+<p> <strong>Internal Software Quality (Internal Software Quality)</strong> represents a fundamental pillar for building maintainable, testable, and safe software systems. In the context of software architecture and test architecture, it is an uncompromising discipline: the external quality of a system (its behavior and reliability for users) cannot be sustained over the long term without a high level of internal quality.</p>
+<h2 id="item"><a class="heading-anchor" href="#item" aria-label="Link to this section">#</a><img src="../../assets/images/red-test-and-quality/internal_quality_process.png" alt="Internal quality process">
+<img src="../../assets/images/red-test-and-quality/internal_quality_cqmm.png" alt="Internal CQMM"></h2>
+<h3 id="brief-topic-summary"><a class="heading-anchor" href="#brief-topic-summary" aria-label="Link to this section">#</a>Brief Topic Summary</h3>
+<p><strong>Internal software quality (Internal Software Quality)</strong> expresses the structural and static properties of source code and architecture that are not directly visible to the end user but fundamentally determine the maintainability, analyzability, modifiability, reusability, and testability of a system. </p>
+<p>The fundamental principle is that <strong>quality cannot be &quot;tested into&quot; software at the end (Quality cannot be tested in)</strong>. Design and development are responsible for quality throughout the entire life cycle. <strong>Code Quality Management (CQM)</strong> encompasses the methods, processes, and tools (static code analysis, complexity metrics, coding rules, and peer review) that ensure internal quality is maintained. CQM connects process quality with the quality of the final product across the <strong>quality management chain (Quality Management Chain)</strong> at <strong>three levels of abstraction (architecture, macro, and micro levels)</strong>. </p>
+<p>In domains with stringent safety and reliability requirements (embedded systems, automotive development under ISO 26262 / Automotive SPICE, industrial automation), internal quality management is an explicit process requirement associated with eliminating run-time errors and ensuring traceability.</p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<h4 id="concept-1-internal-vs-external-quality-internal-vs-external-quality"><a class="heading-anchor" href="#concept-1-internal-vs-external-quality-internal-vs-external-quality" aria-label="Link to this section">#</a>Concept 1: Internal vs. External Quality (Internal vs. External Quality)</h4>
+<ul>
+<li><strong>Definition</strong>: According to ISO 9126 / ISO 25010, <strong>internal quality</strong> measures the static properties of software (code, architecture, structure) from a developer&#39;s perspective without having to run the system. <strong>External quality</strong> measures the dynamic behavior of a computer system while it is running, from a user&#39;s perspective (functionality, reliability, performance).</li>
+<li><strong>Significance in architecture</strong>: Internal quality is the &quot;hidden root&quot; (invisible root) of external behavior. The architect manages internal properties (decoupling, modularity, layering) to ensure that the system does not succumb to &quot;software aging&quot; (software aging) and increasing technical debt.</li>
+<li><strong>Significance in testing</strong>: High internal quality directly determines <strong>testability (testability)</strong>. It enables easy component isolation and efficient writing of unit and integration tests without the need for complex mocking of unpredictable dependencies.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Neglecting internal quality in favor of rapid functionality delivery (&quot;the code works in the demo, so it is done&quot;). A dysfunctional internal structure means that every change introduces secondary regression defects.</li>
+<li><strong>Example from embedded/safety practice</strong>: In a braking system control unit (ECU), external quality consists of braking distance and response time. Internal quality consists of error-free memory allocation, the absence of stack overflows, and compliance with MISRA C rules in C/C++ code.</li>
+</ul>
+<hr>
+<h4 id="concept-2-code-quality-management-cqm"><a class="heading-anchor" href="#concept-2-code-quality-management-cqm" aria-label="Link to this section">#</a>Concept 2: Code Quality Management (CQM)</h4>
+<ul>
+<li><strong>Definition</strong>: CQM is a set of systematic activities, tools, and methods that continuously measure, evaluate, and ensure the fitness and quality of a software system&#39;s source code against defined project and architectural objectives.</li>
+<li><strong>Significance in architecture</strong>: The software architect acts as the <strong>protector of software system quality (protector of software quality)</strong>. The architect defines CQM rules, selects static analysis tools, and oversees architectural conformance.</li>
+<li><strong>Significance in testing</strong>: CQM represents the earliest form of static testing (Shift-Left). It enables errors in logic, allocation, or memory to be detected before dynamic tests are run, significantly reducing the cost of correcting errors.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Understanding CQM merely as an &quot;annoying code formatting check&quot; in the IDE, with no connection to architectural metrics (complexity, cyclic dependencies), or leaving it without clear ownership within the team.</li>
+<li><strong>Example from embedded/safety practice</strong>: Deploying static analyzers (for example, PC-Lint, QAC, SonarQube) in the CI/CD pipeline with zero tolerance for undefined behavior in C/C++.</li>
+</ul>
+<hr>
+<h4 id="concept-3-quality-management-chain-quality-management-chain"><a class="heading-anchor" href="#concept-3-quality-management-chain-quality-management-chain" aria-label="Link to this section">#</a>Concept 3: Quality Management Chain (Quality Management Chain)</h4>
+<ul>
+<li><strong>Definition</strong>: The holistic connection of the individual links of quality across the development cycle: <strong>Process quality (Process Quality)</strong> \(\rightarrow\) <strong>Internal quality of code and architecture (Internal Quality)</strong> \(\rightarrow\) <strong>External system quality during testing (External Quality)</strong> \(\rightarrow\) <strong>Quality in use (Quality in Use)</strong>.</li>
+<li><strong>Significance in architecture</strong>: Shows that a weakness in an early link of the chain (for example, a poorly defined peer-review process or unclear module boundaries) inexorably propagates defects into the final product.</li>
+<li><strong>Significance in testing</strong>: Testing verifies external quality, but failures of internal quality cause a massive increase in testing cycle costs (structural errors are discovered only during integration or validation instead of in unit tests).</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Assuming that an excellent testing team will rescue a product damaged by poor processes and chaotic architecture (&quot;testing will fix quality&quot;).</li>
+<li><strong>Example from embedded/safety practice</strong>: Development according to Automotive SPICE (SWE.1 through SWE.6). If the architecture of a software component fails (SWE.2), unit verification (SWE.4) cannot guarantee the correct decomposition of system safety requirements (ISO 26262).</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/quality_management_chain.png" alt="Quality Management Chain"></p>
+<pre><code>* CMMI = Capability Maturity Model Integration
+Assessment and integration (Effectuate process improvement; Develop behaviors that decrease risks in service, product, and software development)
+
+* Process quality definition
+Process quality refers to the degree to which an acceptable process, including measurements and criteria for quality, has been implemented and adhered to in order to produce the artifacts.
+
+* Internal quality is about the design of the software.
+This is purely the interest of development. If Internal quality starts falling the system will be less amenable to change in the future. Hence the need for refactoring, clear coding, relentless testing, and the like. You need to be very careful about letting internal quality slip. Ward has a wonderful DebtAnalogy that discusses it.
+
+* Internal Quality is everything the software does not do. It&#39;s the implementation, which the customer never directly sees, and often does not want to spend time or money on. Ironically enough, it&#39;s often what determines whether projects succeed or not.
+
+* External Quality:
+It&#39;s most obvious measure is the Functional Tests, and some measure of the bugs that are still loose when the product is released. In the FourVariables the quality variable is external quality.
+
+* Quality-in-use:
+Quality in use is the degree to which a product or system can be used by specific users to meet their needs to achieve specific goals with effectiveness, efficiency, freedom from risk and satisfaction in specific contexts of use.
+Its metrics are only available when the final product is used in real conditions.
+
+Ideally, the internal quality determines the external quality and external quality determines quality in use.
+</code></pre>
+<hr>
+<h4 id="concept-4-levels-of-abstraction-of-internal-quality-micro-macro-architecture-levels"><a class="heading-anchor" href="#concept-4-levels-of-abstraction-of-internal-quality-micro-macro-architecture-levels" aria-label="Link to this section">#</a>Concept 4: Levels of Abstraction of Internal Quality (Micro, Macro, Architecture levels)</h4>
+<ul>
+<li><strong>Definition</strong>: A structured breakdown of internal code quality into three layers:<ol>
+<li><strong>Micro level (Micro level)</strong>: The level of individual lines of code – naming conventions, layout, variable locality, and the absence of risky constructs.</li>
+<li><strong>Macro level (Macro level)</strong>: The level of class and module design – cohesion, interfaces, design patterns, and object-oriented principles (SOLID).</li>
+<li><strong>Architecture level (Architecture level)</strong>: The level of the overall system – layering (layers), components, dependency isolation, API stability, and the absence of cyclic dependencies between modules.</li>
+</ol>
+</li>
+<li><strong>Significance in architecture</strong>: The architect must manage quality at all three levels, with the macro and architecture levels requiring direct manual intervention and rule setting, because simple linters alone cannot cover them fully.</li>
+<li><strong>Significance in testing</strong>: The micro level addresses unit testability (unit testing), the macro level determines module integration testability, and the architecture level determines system and acceptance testability.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Focusing exclusively on the micro level (the linter is green) while the architecture suffers from &quot;spaghetti dependencies&quot; between components (architecture erosion).</li>
+<li><strong>Example from embedded/safety practice</strong>: <ul>
+<li><em>Micro</em>: Ensuring safe allocation without dynamic malloc in C.</li>
+<li><em>Macro</em>: Using the Driver/HAL design pattern to abstract away the hardware.</li>
+<li><em>Architecture</em>: Strictly separating the Application Layer from the Data Abstraction Layer (DAL) and the Vehicle Data Dictionary interface.</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/internal_quality_abstraction.png" alt="Internal quality abstraction levels">
+<img src="../../assets/images/red-test-and-quality/internal_quality_micro.png" alt="Internal quality micro">
+<img src="../../assets/images/red-test-and-quality/internal_quality_macro.png" alt="Internal quality macro">
+<img src="../../assets/images/red-test-and-quality/internal_quality_arch.png" alt="Internal quality architecture"></p>
+<p><img src="../../assets/images/red-test-and-quality/internal_quality_clean_code.png" alt="Internal quality clean sheet"></p>
+<h2 id="internal-quality-clean-sheet-pdf"><a class="heading-anchor" href="#internal-quality-clean-sheet-pdf" aria-label="Link to this section">#</a><a href="../../assets/files/red-test-and-quality/Clean-Code-Prinzipien-Umsetzung.pdf" data-attachment="1">Internal quality clean sheet (PDF)</a></h2>
+<h4 id="concept-5-internal-quality-process-internal-quality-process-defect-gap-analysis"><a class="heading-anchor" href="#concept-5-internal-quality-process-internal-quality-process-defect-gap-analysis" aria-label="Link to this section">#</a>Concept 5: Internal Quality Process (Internal Quality Process &amp; Defect Gap Analysis)</h4>
+<ul>
+<li><strong>Definition</strong>: A formalized internal quality verification process involving static code checks, technical peer reviews/inspections, and an auto-quality matrix (Auto-quality test matrix / Defect gap analysis). The matrix records the phase gap between the introduction of an error and its actual detection.</li>
+<li><strong>Significance in architecture</strong>: Enables architectural feedback. If design errors are not discovered until system integration or validation, the internal quality process has failed and requires adjustment.</li>
+<li><strong>Significance in testing</strong>: Provides metrics for measuring the effectiveness of test levels and the static verification process.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Tracking only the absolute number of errors found without analyzing the phase in which an error was introduced and where it should properly have been detected (Phase Containment Efficiency).</li>
+<li><strong>Example from embedded/safety practice</strong>: Using the <em>Auto quality test matrix</em> in Valeo/Siemens projects. Detecting specification or design errors during unit tests triggers a Change Request and an update to review checklists.</li>
+</ul>
+<hr>
+<h3 id="3-common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#3-common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>3. Common Mistakes and Anti-Patterns</h3>
+<pre><code>                                  +------------------------------------+
+                                  |   INSUFFICIENT INTERNAL QUALITY    |
+                                  +-----------------+------------------+
+                                                    |
+         +------------------------------------------+------------------------------------------+
+         |                                          |                                          |
+         v                                          v                                          v
++------------------+                       +------------------+                       +------------------+
+| ARCHITECTURAL    |                       |  TESTING and     |                       | COMMUNICATION and|
+|   ANTI-PATTERNS  |                       |  PROCESS ERRORS  |                       |  PROCESS ERRORS  |
++------------------+                       +------------------+                       +------------------+
+| • Big Ball of Mud|                       | • Post-hoc test. |                       | • CQM as &quot;police&quot;
+| • God Object     |                       | • Linter-driven  |                       | • Unassertive    |
+| • Tight Coupling |                       | • Ignoring       |                       |   architect      |
++------------------+                       |   Phase Gap      |                       +------------------+
+                                           +------------------+
+</code></pre>
+<h4 id="1-architectural-mistakes"><a class="heading-anchor" href="#1-architectural-mistakes" aria-label="Link to this section">#</a>1. Architectural Mistakes</h4>
+<ul>
+<li><strong>Big Ball of Mud &amp; Cyclic Dependencies (Architecture Level)</strong>:<ul>
+<li><em>Problem</em>: Components lack clearly defined boundaries and depend on one another cyclically.</li>
+<li><em>Manifestation</em>: It is impossible to test a single component in isolation; every code change has an unpredictable effect on the entire system (high ripple-effect complexity).</li>
+<li><em>Prevention</em>: Introduce layered architecture, interfaces (interfaces), and strict dependency checks using architectural tools (for example, Axivion, Sotograph, Structure101).</li>
+</ul>
+</li>
+<li><strong>God Class / Big Component (Macro Level)</strong>:<ul>
+<li><em>Problem</em>: A class or module accumulates too many responsibilities (an SRP violation).</li>
+<li><em>Manifestation</em>: Extremely high cyclomatic complexity (McCabe metric &gt; 20), confusing code, and an inability to achieve full coverage through code-level tests.</li>
+<li><em>Prevention</em>: Refactor into smaller classes combined through composition and set metric limits in CQM.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-requirements-and-specification-mistakes"><a class="heading-anchor" href="#2-requirements-and-specification-mistakes" aria-label="Link to this section">#</a>2. Requirements and Specification Mistakes</h4>
+<ul>
+<li><strong>Absence of non-functional quality requirements (Ignorance of quality attributes)</strong>:<ul>
+<li><em>Problem</em>: Requirements focus only on functionality (&quot;what it should do&quot;) but ignore internal properties (&quot;how it should be designed&quot;).</li>
+<li><em>Manifestation</em>: Fragile code is created that cannot be scaled or maintained.</li>
+<li><em>Prevention</em>: Define explicit quality requirements (ISO 9126 / ISO 25010) in the architectural specification.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-test-strategy-and-automation-mistakes"><a class="heading-anchor" href="#3-test-strategy-and-automation-mistakes" aria-label="Link to this section">#</a>3. Test Strategy and Automation Mistakes</h4>
+<ul>
+<li><strong>&quot;Testing-in Quality&quot; Anti-pattern (Post-hoc testing)</strong>:<ul>
+<li><em>Problem</em>: Testing is understood as a phase at the end of development that is supposed to &quot;ensure quality&quot;.</li>
+<li><em>Manifestation</em>: Critical architectural flaws are discovered just before release; correction costs are extreme.</li>
+<li><em>Prevention</em>: A Shift-Left strategy, incorporating a static verification process, inspections, and TDD from the very beginning.</li>
+</ul>
+</li>
+<li><strong>Blind &quot;Linter-Driven Quality&quot; (Micro-only focus)</strong>:<ul>
+<li><em>Problem</em>: The team focuses only on ensuring that the static checker reports no warnings at the micro level (spaces, variable names), while ignoring the macro and architecture levels.</li>
+<li><em>Manifestation</em>: The code is &quot;neatly formatted&quot; but architecturally completely dysfunctional and untestable.</li>
+<li><em>Prevention</em>: Combine automated static tools with architect-led manual peer reviews and architectural analysis.</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-mistakes-in-interpreting-testability-and-in-communication"><a class="heading-anchor" href="#4-mistakes-in-interpreting-testability-and-in-communication" aria-label="Link to this section">#</a>4. Mistakes in Interpreting Testability and in Communication</h4>
+<ul>
+<li><strong>Lack of CQM ownership and a poor culture</strong>:<ul>
+<li><em>Problem</em>: Developers see CQM as an inspection &quot;obstacle&quot; or &quot;policing&quot; by architects.</li>
+<li><em>Manifestation</em>: Circumventing static analysis rules (ignoring warnings, suppression through empty catch blocks).</li>
+<li><em>Prevention</em>: Build a quality culture (code quality culture), involve the team in creating rule sets (rule sets), and integrate checks directly into the IDE.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="4-examination-questions"><a class="heading-anchor" href="#4-examination-questions" aria-label="Link to this section">#</a>4. Examination Questions</h3>
+<h4 id="1-basic-level-questions"><a class="heading-anchor" href="#1-basic-level-questions" aria-label="Link to this section">#</a>1. Basic-Level Questions</h4>
+<ul>
+<li><strong>Q1: What is the fundamental difference between internal and external software quality, and which standards define these concepts?</strong><ul>
+<li><em>What a good answer must include</em>: Precise definitions according to ISO 9126 / ISO 25010. Internal quality = static properties of code/architecture accessible without execution (white-box). External quality = the dynamic behavior of a running system from the user&#39;s perspective (black-box). An explanation of the causal relationship (internal quality is the root of external quality).</li>
+</ul>
+</li>
+<li><strong>Q2: What is Code Quality Management (CQM), and what are its main pillars?</strong><ul>
+<li><em>What a good answer must include</em>: CQM is a process and set of tools for ensuring the fitness of source code. Pillars: static analysis, adherence to coding guidelines, measurement of metrics (McCabe, coupling), peer reviews / inspections, and a quality culture within the team.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-intermediate-questions"><a class="heading-anchor" href="#2-intermediate-questions" aria-label="Link to this section">#</a>2. Intermediate Questions</h4>
+<ul>
+<li><strong>Q3: Explain the 3 levels of abstraction of internal quality (Micro, Macro, Architecture), and give examples of tools and techniques for each level.</strong><ul>
+<li><em>What a good answer must include</em>: The division into Micro (lines of code, linters such as PC-Lint, QAC, IDE plugins), Macro (class design, SOLID, complexity metrics, manual reviews), and Architecture (components, layering, absence of cycles, architectural analyzers such as Axivion, Sotograph, Structure101).</li>
+</ul>
+</li>
+<li><strong>Q4: How is internal software quality related to its testability (Testability)?</strong><ul>
+<li><em>What a good answer must include</em>: Testability is a key internal characteristic (ISO 9126 Maintainability sub-characteristic). Low internal quality (high coupling, absence of interfaces) prevents unit isolation during unit testing and forces the team to write expensive end-to-end tests.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-advanced-questions-and-questions-about-practical-experience"><a class="heading-anchor" href="#3-advanced-questions-and-questions-about-practical-experience" aria-label="Link to this section">#</a>3. Advanced Questions and Questions About Practical Experience</h4>
+<ul>
+<li><strong>Q5: Describe how the Auto-quality test matrix (Auto-quality test matrix / Defect Gap Analysis) works and why it matters in verification and validation processes.</strong><ul>
+<li><em>What a good answer must include</em>: An explanation of tracking the gap between the phase in which an error is introduced (for example, specification, design) and the phase in which it is detected (unit, integration, validation test). Experience with evaluation: if design errors escape into integration, review checklists and architectural checks need to be adjusted.</li>
+</ul>
+</li>
+<li><strong>Q6: How would you, as a Software Architect, establish CQM in a safety-critical embedded system project (for example, under ISO 26262)?</strong><ul>
+<li><em>What a good answer must include</em>: Selection of standards (MISRA C/C++), configuration of static analysis in CI/CD (PC-Lint/QAC) with no tolerance for blocking warnings, elimination of runtime errors, definition of memory allocation rules, and links between requirements and tests (traceability from the architecture to the test executed on the target).</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-questions-about-trade-off-decisions"><a class="heading-anchor" href="#4-questions-about-trade-off-decisions" aria-label="Link to this section">#</a>4. Questions About Trade-Off Decisions</h4>
+<ul>
+<li><strong>Q7: How do you balance investment in improving internal quality (refactoring, static analysis, inspections) against Time-to-Market pressure and project costs?</strong><ul>
+<li><em>What a good answer must include</em>: The trade-off being examined: excessive compromises in internal quality lead to an astronomical increase in maintenance and regression testing costs (technical debt); conversely, &quot;over-engineering&quot; can jeopardize the business opportunity window. The solution: risk-based quality management (Risk-Based Quality Management), focusing CQM on critical components (safety/core logic), and automating static checks in the CI/CD pipeline.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5-model-examination-answer"><a class="heading-anchor" href="#5-model-examination-answer" aria-label="Link to this section">#</a>5. Model Examination Answer</h3>
+<blockquote>
+<p>The topic of <strong>Internal Software Quality and Code Quality Management</strong> represents the very core of sustainable software architecture. </p>
+<p>To define internal quality, I would start from ISO 9126 or ISO 25010. Whereas external quality describes a system&#39;s dynamic behavior through the user&#39;s eyes – whether the system works, is fast, and is safe – <strong>internal quality expresses the static and structural properties of source code and architecture</strong>. It is the part of quality hidden from the user, but for us as architects it is a fundamental prerequisite for maintainability, modifiability, and testability. Peter Zimmerer of Siemens puts it this way: <em>Quality cannot be tested into a system at the end</em>.</p>
+<p>The importance of internal quality for <strong>software architecture</strong> lies in the fact that the architecture is directly reflected in the code. If we do not manage internal quality, architectural erosion occurs – cyclic dependencies arise, and areas of clean design become a confusing monolith. Internal quality has a fundamental impact on <strong>testing</strong>: it directly determines testability. Code with high internal quality uses interfaces, has low coupling and high cohesion, and thus enables developers and testers to write fast, isolated unit and integration tests.</p>
+<p>To manage internal quality effectively, we divide code into <strong>three levels of abstraction</strong>:</p>
+<ol>
+<li>At the <strong>Micro level</strong>, we address the cleanliness of individual lines of code – conventions, dangerous constructs, and exception handling. Here, we make extensive use of automated linters and static checkers such as PC-Lint or QAC, integrated directly into developers&#39; IDEs.</li>
+<li>At the <strong>Macro level</strong>, we assess class and module design – compliance with SOLID principles and complexity. Here, tools are no longer sufficient, and architect-led technical peer reviews and inspections come into play.</li>
+<li>At the <strong>Architecture level</strong>, we monitor layering, component boundaries, and the absence of cycles between packages, using advanced tools such as Sotograph or Axivion.</li>
+</ol>
+<p>A real <strong>practical example</strong>: In automotive control unit development (under ISO 26262 and Automotive SPICE), we establish the internal quality process by requiring source code to pass strict static analysis for compliance with MISRA C rules and zero runtime errors. At the same time, we use the so-called <em>Auto-quality test matrix</em>. If we discover an error during validation on a test bench, we determine where it originated. If it originated in the architecture but was not detected until the system level, this means the internal verification chain has failed, and we immediately update architectural review checklists.</p>
+<p>The main <strong>trade-off decision</strong> we must make as architects is balancing the rigor of checks against delivery speed. The aim is not to paralyze the development team with a hundred thousand linter warnings. The architect must configure CQM pragmatically based on risks (Risk-Based Testing / Quality Management) – imposing strict restrictions and zero tolerance for critical safety and domain modules, while choosing a more relaxed approach for supporting parts.</p>
+<p>In conclusion: The software architect must act as the <em>protector of internal quality</em>. Without systematic internal quality management at the micro, macro, and architecture levels, every software system will sooner or later collapse under the weight of its own technical debt.”</p>
+</blockquote>
+<hr>
+<h3 id="6-short-version-for-quick-review-cheat-sheet"><a class="heading-anchor" href="#6-short-version-for-quick-review-cheat-sheet" aria-label="Link to this section">#</a>6. Short Version for Quick Review (Cheat Sheet)</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 Main Points:</h4>
+<ol>
+<li><strong>Quality cannot be tested in</strong>: Quality is created by development and architecture; testing only verifies it.</li>
+<li><strong>Internal \(\rightarrow\) External Quality</strong>: Internal quality (code/architecture) is the cause of external quality (system reliability/behavior).</li>
+<li><strong>CQM is a key role of the architect</strong>: The architect defines coding rules, metrics, and static analysis tools.</li>
+<li><strong>3 levels of internal quality</strong>: Micro (lines), Macro (classes/relationships), Architecture (components/layers).</li>
+<li><strong>Defect Gap Analysis</strong>: Tracking the phase gap between the introduction and detection of an error increases the effectiveness of internal processes.</li>
+</ol>
+<h4 id="5-key-terms"><a class="heading-anchor" href="#5-key-terms" aria-label="Link to this section">#</a>5 Key Terms:</h4>
+<ol>
+<li><strong>Internal Quality</strong>: Static properties of code and architecture (ISO 9126).</li>
+<li><strong>Code Quality Management (CQM)</strong>: Processes and tools ensuring code fitness.</li>
+<li><strong>Quality Management Chain</strong>: The chain: Process \(\rightarrow\) Internal quality \(\rightarrow\) External quality \(\rightarrow\) Quality in use.</li>
+<li><strong>Static Code Analysis</strong>: Verification of code without executing it (linters, MISRA C, PC-Lint).</li>
+<li><strong>Testability (Testability)</strong>: An internal code characteristic enabling effective isolation and testing.</li>
+</ol>
+<h4 id="5-typical-examination-questions"><a class="heading-anchor" href="#5-typical-examination-questions" aria-label="Link to this section">#</a>5 Typical Examination Questions:</h4>
+<ol>
+<li><em>What is the difference between internal and external software quality?</em></li>
+<li><em>What are the 3 levels of abstraction of internal quality, and which tools are used at each?</em></li>
+<li><em>How do architecture and internal quality affect software testability?</em></li>
+<li><em>What is the Auto-quality test matrix (Defect Gap Matrix), and what is it used for?</em></li>
+<li><em>How can strict enforcement of CQM be balanced with development speed (time-to-market)?</em></li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 Most Common Mistakes:</h4>
+<ol>
+<li>Understanding testing as a phase that &quot;puts&quot; quality into software (Testing-in quality).</li>
+<li>Focusing only on the micro level (linter) while ignoring architectural cycles and erosion.</li>
+<li>Failing to measure gaps between defect introduction and detection (Phase Containment Failure).</li>
+</ol>
+<h4 id="1-concise-model-sentence-for-the-examination"><a class="heading-anchor" href="#1-concise-model-sentence-for-the-examination" aria-label="Link to this section">#</a>1 Concise Model Sentence for the Examination:</h4>
+<blockquote>
+<p><em>&quot;Internal software quality represents the static and architectural properties of code that, although not directly visible to users, determine the testability and maintainability of a system, while the architect&#39;s role is to manage CQM across the micro, macro, and architecture levels.&quot;</em></p>
+</blockquote>
+<hr>
+<h3 id="7-learning-outcome-connection-to-lopo"><a class="heading-anchor" href="#7-learning-outcome-connection-to-lopo" aria-label="Link to this section">#</a>7. Learning Outcome (Connection to <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1">LOPO</a>)</h3>
+<p>In accordance with the <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and practice outcomes (LOPO)</strong></a> document, this material fulfills the following learning and practice objectives:</p>
+<ul>
+<li><strong>Discussing the importance of internal quality and the relationships in the overall &quot;Quality Management Chain&quot;</strong>: The material precisely defines the connection between process quality (CMMI/ASPICE), internal code quality, the external quality of dynamic behavior, and the final benefit to users.</li>
+<li><strong>Categorizing the levels of abstraction of internal quality as &quot;architecture&quot;, &quot;macro&quot;, and &quot;micro&quot;</strong>: The material identifies specific problems at each level (for example, cyclic dependencies at the architecture level vs. high cyclomatic complexity at the macro level vs. coding guideline violations at the micro level) and assigns appropriate preventive and verification measures to them.</li>
+<li><strong>Discussing the concept of internal quality for error detection and testability</strong>: The material explains how early static checks (Shift-Left) and architectural decoupling directly increase testability and reduce the overall cost of defect detection.</li>
+</ul>
+<hr>
+<h3 id="8-summary-in-one-table"><a class="heading-anchor" href="#8-summary-in-one-table" aria-label="Link to this section">#</a>8. Summary in One Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Matters</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Internal vs. External Quality</strong></td>
+<td>Distinguishing static code properties (internal) from dynamic behavior (external) according to ISO 9126.</td>
+<td>Internal quality prevents architectural aging and technical debt.</td>
+<td>Internal quality directly determines testability and test modularity.</td>
+<td><em>How are the internal properties of code related to the external reliability of a system?</em></td>
+</tr>
+<tr>
+<td><strong>Code Quality Management (CQM)</strong></td>
+<td>A set of processes, rules, and tools (linters, metrics, reviews) for code fitness.</td>
+<td>The architect is responsible for CQM, defines rules, and oversees architectural conformance.</td>
+<td>CQM is the earliest form of static testing; it eliminates errors before dynamic tests are run.</td>
+<td><em>Which CQM metrics and tools would you deploy in the CI/CD pipeline?</em></td>
+</tr>
+<tr>
+<td><strong>Quality Management Chain</strong></td>
+<td>The sequence: Process \(\rightarrow\) Internal quality \(\rightarrow\) External quality \(\rightarrow\) Quality in use.</td>
+<td>Shows the impact of architectural decisions on the overall quality chain.</td>
+<td>Explains why testing cannot replace quality missing from design and development.</td>
+<td><em>Explain why quality cannot be &quot;tested into&quot; a system at the end.</em></td>
+</tr>
+<tr>
+<td><strong>Levels of abstraction (Micro, Macro, Arch)</strong></td>
+<td>Dividing internal quality into micro (lines), macro (classes/relationships), and architecture (components/layers).</td>
+<td>Each level requires different architectural management (automated linters vs. manual reviews vs. architectural analyzers).</td>
+<td>Micro affects unit tests, Macro affects module integration tests, Architecture affects system tests.</td>
+<td><em>Which internal quality problems can you detect automatically, and which require manual review?</em></td>
+</tr>
+<tr>
+<td><strong>Internal Quality Process &amp; Gap Analysis</strong></td>
+<td>Static verification, inspections, and the Auto-quality test matrix (identifying the gap between error introduction and detection).</td>
+<td>Provides feedback for the architecture – design errors caught in tests change review processes.</td>
+<td>Provides metrics for the effectiveness of individual test levels (Phase Containment Efficiency).</td>
+<td><em>How does the Auto-quality test matrix work, and how can you use it to improve the development process?</em></td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/design-for-testability.html"><span class="pager__label">← Previous</span><span>Design for Testability</span></a>
+      <a class="pager__next" href="../../chapters/yellow-social-skills/4c-learning-concept.html"><span class="pager__label">Next →</span><span>4C Learning Concept (Accelerated Learning)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-2"><a href="#item"></a></li><li class="lvl-3"><a href="#brief-topic-summary">Brief Topic Summary</a></li><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-4"><a href="#concept-1-internal-vs-external-quality-internal-vs-external-quality">Concept 1: Internal vs. External Quality (Internal vs. External Quality)</a></li><li class="lvl-4"><a href="#concept-2-code-quality-management-cqm">Concept 2: Code Quality Management (CQM)</a></li><li class="lvl-4"><a href="#concept-3-quality-management-chain-quality-management-chain">Concept 3: Quality Management Chain (Quality Management Chain)</a></li><li class="lvl-4"><a href="#concept-4-levels-of-abstraction-of-internal-quality-micro-macro-architecture-levels">Concept 4: Levels of Abstraction of Internal Quality (Micro, Macro, Architecture levels)</a></li><li class="lvl-2"><a href="#internal-quality-clean-sheet-pdf">Internal quality clean sheet (PDF)</a></li><li class="lvl-4"><a href="#concept-5-internal-quality-process-internal-quality-process-defect-gap-analysis">Concept 5: Internal Quality Process (Internal Quality Process Defect Gap Analysis)</a></li><li class="lvl-3"><a href="#3-common-mistakes-and-anti-patterns">3. Common Mistakes and Anti-Patterns</a></li><li class="lvl-4"><a href="#1-architectural-mistakes">1. Architectural Mistakes</a></li><li class="lvl-4"><a href="#2-requirements-and-specification-mistakes">2. Requirements and Specification Mistakes</a></li><li class="lvl-4"><a href="#3-test-strategy-and-automation-mistakes">3. Test Strategy and Automation Mistakes</a></li><li class="lvl-4"><a href="#4-mistakes-in-interpreting-testability-and-in-communication">4. Mistakes in Interpreting Testability and in Communication</a></li><li class="lvl-3"><a href="#4-examination-questions">4. Examination Questions</a></li><li class="lvl-4"><a href="#1-basic-level-questions">1. Basic-Level Questions</a></li><li class="lvl-4"><a href="#2-intermediate-questions">2. Intermediate Questions</a></li><li class="lvl-4"><a href="#3-advanced-questions-and-questions-about-practical-experience">3. Advanced Questions and Questions About Practical Experience</a></li><li class="lvl-4"><a href="#4-questions-about-trade-off-decisions">4. Questions About Trade-Off Decisions</a></li><li class="lvl-3"><a href="#5-model-examination-answer">5. Model Examination Answer</a></li><li class="lvl-3"><a href="#6-short-version-for-quick-review-cheat-sheet">6. Short Version for Quick Review (Cheat Sheet)</a></li><li class="lvl-4"><a href="#5-main-points">5 Main Points:</a></li><li class="lvl-4"><a href="#5-key-terms">5 Key Terms:</a></li><li class="lvl-4"><a href="#5-typical-examination-questions">5 Typical Examination Questions:</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 Most Common Mistakes:</a></li><li class="lvl-4"><a href="#1-concise-model-sentence-for-the-examination">1 Concise Model Sentence for the Examination:</a></li><li class="lvl-3"><a href="#7-learning-outcome-connection-to-lopo">7. Learning Outcome (Connection to LOPO )</a></li><li class="lvl-3"><a href="#8-summary-in-one-table">8. Summary in One Table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

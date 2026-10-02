@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Test Design Tactics - RED - Test and Quality - SWA preparation study guide.">
+<title>Test Design Tactics · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics" aria-current="page">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,374 words · about 17 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/test-design-tactics" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="test-design-tactics">Test Design Tactics</h1>
+<p><strong>Test design tactics (Test Design Tactics – TDT)</strong> represent the systematic and methodological level of test engineering that translates a high-level test strategy (for example, risk-based testing – Risk-Based Testing) into specific, measurable, and repeatable procedures for creating test cases.</p>
+<p>From the perspective of software architecture and quality, a fundamental principle applies: <strong>automating poorly designed or ineffective tests is a waste of time and resources</strong>. The test design process itself serves as one of the most effective forms of defect prevention (verification of the specification and architecture before the code is even executed). TDT define ways of reducing the system&#39;s infinite input and state space to a finite, optimal set of test scenarios that provide maximum defect coverage at minimum cost.</p>
+<p><img src="../../assets/images/red-test-and-quality/tdt_multiple.png" alt="TDT selection"></p>
+<h2 id="item"><a class="heading-anchor" href="#item" aria-label="Link to this section">#</a><img src="../../assets/images/red-test-and-quality/test_design_activities.png" alt="Test Development activities"></h2>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<h4 id="1-test-design-tactics-tdt-test-design-tactics"><a class="heading-anchor" href="#1-test-design-tactics-tdt-test-design-tactics" aria-label="Link to this section">#</a>1. Test Design Tactics (TDT) / Test Design Tactics</h4>
+<ul>
+<li><strong>Definition:</strong> Systematic methods, techniques, and rules used to derive input data, initial states, step sequences, and expected results for test cases from the test basis (requirements, architecture, models, code). <em>(Also described in the ISO/IEC/IEEE 29119-4 standard).</em></li>
+<li><strong>Significance in architecture:</strong> The architecture must provide a clear, unambiguous, and formalized model of system behavior (for example, state diagrams, interfaces) that serves as input for TDT. TDT validate the architecture for completeness and consistency.</li>
+<li><strong>Significance in testing:</strong> Ensure objectivity, repeatability, traceability (traceability), and test sustainability, and eliminate reliance on intuition alone.</li>
+<li><strong>Typical mistake / misunderstanding:</strong> Confusing test design tactics (TDT) with test strategy (an approach at the project/organizational level) or with test execution (test execution).</li>
+<li><strong>Examination discussion:</strong> How do TDT connect risk assessment (RBT) with specific coverage at the unit (Unit) and integration (Integration) levels?</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/use_case_method.png" alt="Use case testing"></p>
+<h4 id="2-test-effectiveness-testing-effectiveness"><a class="heading-anchor" href="#2-test-effectiveness-testing-effectiveness" aria-label="Link to this section">#</a>2. Test Effectiveness (Testing Effectiveness)</h4>
+<ul>
+<li><strong>Definition:</strong> A measure of the ability of testing activities and techniques to detect existing defects in a system and confirm that the software meets specified requirements and exhibits correct behavior. It usually expresses the ratio of defects found to the total number of defects present in the product (for example, Defect Detection Percentage / Defect Removal Efficiency).</li>
+<li><strong>Significance in architecture:</strong> Shows how well the test strategy and the selected test levels (unit, component, integration) uncover architectural risks, interface violations, and unintended interactions between subsystems. High effectiveness is directly dependent on the testability of the architecture itself (separation of responsibilities, component decoupling).</li>
+<li><strong>Significance in testing:</strong> Represents a key success metric for the entire testing process – it answers the question <em>&quot;Are we doing the right tests?&quot;</em>. Unlike a mere code coverage percentage, it measures the actual ability of tests to prevent critical defects from escaping into the production environment.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Confusing <em>effectiveness</em> (effectiveness – doing the right things / detecting defects) with <em>efficiency/economy</em> (efficiency – doing things with minimal consumption of time and resources), or measuring effectiveness purely by the number of test cases executed, regardless of whether they can actually find relevant defects.</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/test_effectiveness.png" alt="Test effectiveness"></p>
+<h4 id="3-equivalence-partitioning-equivalence-partitioning-ep-td3"><a class="heading-anchor" href="#3-equivalence-partitioning-equivalence-partitioning-ep-td3" aria-label="Link to this section">#</a>3. Equivalence Partitioning (Equivalence Partitioning – EP / TD3)</h4>
+<ul>
+<li><strong>Definition:</strong> A black-box technique (black-box) that divides the input and output domains into equivalence classes (valid and invalid) that the system is assumed to treat in the same way.</li>
+<li><strong>Significance in architecture:</strong> Defines domain boundaries and data types in architectural interfaces (APIs, data structures).</li>
+<li><strong>Significance in testing:</strong> Dramatically reduces the number of test cases by selecting a representative from each class instead of testing exhaustively.</li>
+<li><strong>Typical misinterpretation:</strong> Overlooking invalid classes (invalid equivalence classes) or incorrectly assuming equivalent behavior for data that are processed non-uniformly.</li>
+<li><strong>Example (Safety/Embedded):</strong> In an automotive electronic control unit (ECU), the measurement range of a rotational speed sensor is specified as  RPM. Valid class: \(0 \le n \le 8000\). Invalid classes: \(n &lt; 0\) (undervoltage/sensor fault) and \(n &gt; 8000\) (over-speed). Designated TD3 in the ISO 26262 standard.</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/equivalence_method.png" alt="Equivalence Partitioning"></p>
+<h4 id="3-boundary-value-analysis-boundary-value-analysis-bva-td4"><a class="heading-anchor" href="#3-boundary-value-analysis-boundary-value-analysis-bva-td4" aria-label="Link to this section">#</a>3. Boundary Value Analysis (Boundary Value Analysis – BVA / TD4)</h4>
+<ul>
+<li><strong>Definition:</strong> An extension of equivalence partitioning focused on the boundaries between classes. Values directly on the boundary and in its immediate vicinity are tested (\(B\), \(B - \Delta\), \(B + \Delta\)).</li>
+<li><strong>Significance in architecture:</strong> Determines the resilience of architectural components to stack overflows, data type ranges (for example, uint8 vs. uint16), and time limits. <em>(General addition)</em></li>
+<li><strong>Significance in testing:</strong> Reveals the most common developer defects of the &quot;off-by-one&quot; type (errors in the \(&lt;\), \(\le\), \(&gt;\), \(\ge\) operators).</li>
+<li><strong>Typical mistake:</strong> Testing only the valid side of the boundary and omitting the immediately adjacent invalid value (\(B + \Delta\)).</li>
+<li><strong>Example (Safety/Embedded):</strong> In ISO 26262 (TD4), for a temperature limit \(= 105.0^\circ\text{C}\) with a step of \(\Delta = 0.1^\circ\text{C}\), the values \(104.9^\circ\text{C}\), \(105.0^\circ\text{C}\), and \(105.1^\circ\text{C}\) are tested.</li>
+</ul>
+<h4 id="4-decision-tables-decision-table-testing"><a class="heading-anchor" href="#4-decision-tables-decision-table-testing" aria-label="Link to this section">#</a>4. Decision Tables (Decision Table Testing)</h4>
+<ul>
+<li><strong>Definition:</strong> A technique for capturing complex combinatorial logic and industrial/business rules, where different combinations of input conditions lead to different actions.</li>
+<li><strong>Significance in architecture:</strong> Helps the architect uncover missing, incomplete, or contradictory requirements in the system logic before development begins.</li>
+<li><strong>Significance in testing:</strong> Guarantees complete coverage of all combinatorial branches and allows infeasible or redundant rule columns to be collapsed (reduced).</li>
+<li><strong>Typical mistake:</strong> Omitting invalid combinations or undefined action states.</li>
+</ul>
+<h4 id="5-state-transition-testing-state-transition-testing"><a class="heading-anchor" href="#5-state-transition-testing-state-transition-testing" aria-label="Link to this section">#</a>5. State Transition Testing (State Transition Testing)</h4>
+<ul>
+<li><strong>Definition:</strong> A test design technique based on a state machine (Finite State Machine – FSM), testing states, transitions, events, and system responses.</li>
+<li><strong>Significance in architecture:</strong> Directly verifies the system&#39;s dynamic architecture and the life cycle of components (for example, Init, Ready, Running, Fault, Emergency Stop).</li>
+<li><strong>Significance in testing:</strong> Measures state coverage (0-switch / All States), transition coverage (1-switch / All Transitions), and invalid transitions.</li>
+<li><strong>Typical mistake:</strong> Testing only the &quot;happy path&quot; (happy path) and ignoring invalid events in a given state (for example, a start request in the Fault state).</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/state_based_method.png" alt="State based testing"></p>
+<h4 id="6-structural-tactic-white-box-coverage-c0-c1-c2-c3-mc-dc"><a class="heading-anchor" href="#6-structural-tactic-white-box-coverage-c0-c1-c2-c3-mc-dc" aria-label="Link to this section">#</a>6. Structural Tactic (White-box Coverage: C0, C1, C2/C3, MC/DC)</h4>
+<ul>
+<li><strong>Definition:</strong> Designing tests based on the internal structure of the code in order to achieve a defined level of control flow coverage (statements – C0, branches – C1, conditions – C2/C3, modified condition/decision coverage – MC/DC).</li>
+<li><strong>Significance in architecture:</strong> Requires low module complexity (cyclomatic complexity) and high modularity to make all code branches reachable.</li>
+<li><strong>Significance in testing:</strong> Ensures that no dead code (dead code) or untested logical paths remain in the code. In safety-critical systems (ASIL D), for example, MC/DC is strictly required by the standard.</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/control_flow_method.png" alt="Control flow testing"></p>
+<p><img src="../../assets/images/red-test-and-quality/black_white_grey.png" alt="Black White Grey box testing"></p>
+<h4 id="7-experience-based-and-defect-based-tactics-error-guessing-td5-defect-taxonomies"><a class="heading-anchor" href="#7-experience-based-and-defect-based-tactics-error-guessing-td5-defect-taxonomies" aria-label="Link to this section">#</a>7. Experience-Based and Defect-Based Tactics (Error Guessing / TD5, Defect Taxonomies)</h4>
+<ul>
+<li><strong>Definition:</strong> Reactive and supplementary test derivation techniques based on the tester&#39;s/architect&#39;s previous experience, knowledge of typical defect patterns, and safety analyses (FMEA/FTA).</li>
+<li><strong>Significance in architecture:</strong> The architect uses a register of historical failures to adjust architectural tactics (for example, redundant mechanisms, defensive programming).</li>
+<li><strong>Significance in testing:</strong> Supplements systematic specification-based techniques and reveals unanticipated boundary conditions and undocumented behavior.</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/tdt_overview.png" alt="TDT overview">
+<img src="../../assets/images/red-test-and-quality/tdt_cathegories.png" alt="TDT categories">
+<img src="../../assets/images/red-test-and-quality/tdt_vs_why_testing.png" alt="TDT vs Why testing"></p>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-Patterns</h3>
+<h4 id="1-mistakes-in-architecture-insufficient-controllability-and-observability-low-controllability-observability"><a class="heading-anchor" href="#1-mistakes-in-architecture-insufficient-controllability-and-observability-low-controllability-observability" aria-label="Link to this section">#</a>1. Mistakes in Architecture: Insufficient Controllability and Observability (Low Controllability &amp; Observability)</h4>
+<ul>
+<li><strong>Why it is a problem:</strong> If the architecture does not provide control points (Control Points – for example, interfaces for fault injection) and observation points (Observation Points – for example, internal state logging, measurement interfaces), advanced TDT (such as BVA on internal variables or Fault Injection) cannot be applied at all.</li>
+<li><strong>How it manifests itself:</strong> Tests require complex state manipulation (database hacks, memory manipulation), and they are unstable (flaky) and slow.</li>
+<li><strong>How to prevent it:</strong> Apply <strong>Design for Testability (DFT)</strong> from the very beginning of architectural design (Dependency Injection, testing interfaces, BIST – Built-in self-test).</li>
+</ul>
+<h4 id="2-mistakes-in-requirements-incomplete-specifications-of-boundaries-and-transitions"><a class="heading-anchor" href="#2-mistakes-in-requirements-incomplete-specifications-of-boundaries-and-transitions" aria-label="Link to this section">#</a>2. Mistakes in Requirements: Incomplete Specifications of Boundaries and Transitions</h4>
+<ul>
+<li><strong>Why it is a problem:</strong> TDT require a precise test basis (Test Basis). If the requirements do not state exact limits, step sizes, or actions for invalid inputs, test design breaks down into guessing the expected result (Test Oracle).</li>
+<li><strong>How it manifests itself:</strong> Disagreements between developers and testers, untested behavior in invalid states, and integration delays.</li>
+<li><strong>How to prevent it:</strong> Use TDT (for example, creating decision tables and FSMs) as a methodology for verifying requirements before coding.</li>
+</ul>
+<h4 id="3-mistakes-in-test-strategy-blind-automation-of-bad-tests"><a class="heading-anchor" href="#3-mistakes-in-test-strategy-blind-automation-of-bad-tests" aria-label="Link to this section">#</a>3. Mistakes in Test Strategy: Blind Automation of Bad Tests</h4>
+<ul>
+<li><strong>Why it is a problem:</strong> The team invests considerable effort in automating scripts that were designed ad-hoc without using systematic test design tactics.</li>
+<li><strong>How it manifests itself:</strong> A high code coverage percentage (for example, C0) but a very low ability to detect actual defects (low effectiveness), and high script maintenance costs.</li>
+<li><strong>How to prevent it:</strong> Clearly separate the <em>test design</em> phase (when deciding <em>what and how</em> to test using TDT) from the <em>automation and execution</em> phase.</li>
+</ul>
+<h4 id="4-mistakes-in-automation-the-data-driven-testing-ddt-anti-pattern-without-a-clear-purpose"><a class="heading-anchor" href="#4-mistakes-in-automation-the-data-driven-testing-ddt-anti-pattern-without-a-clear-purpose" aria-label="Link to this section">#</a>4. Mistakes in Automation: The Data-Driven Testing (DDT) Anti-Pattern without a Clear Purpose</h4>
+<ul>
+<li><strong>Why it is a problem:</strong> Using Data-Driven Testing as an excuse for executing hundreds of input data combinations at the system test level without prior equivalence analysis.</li>
+<li><strong>How it manifests itself:</strong> Huge, unwieldy data tables, redundant testing of the same logic, extremely long test execution times, and an inability to determine which hypothesis a given row actually verifies.</li>
+<li><strong>How to prevent it:</strong> Apply equivalence classes and BVA at the unit/component test level; retain only orthogonal and representative samples in DDT.</li>
+</ul>
+<h4 id="5-mistakes-in-interpreting-testability-testing-only-at-the-end-lack-of-shift-left"><a class="heading-anchor" href="#5-mistakes-in-interpreting-testability-testing-only-at-the-end-lack-of-shift-left" aria-label="Link to this section">#</a>5. Mistakes in Interpreting Testability: &quot;Testing Only at the End&quot; (Lack of Shift-Left)</h4>
+<ul>
+<li><strong>Why it is a problem:</strong> Testability is understood merely as the testers&#39; obligation to create scripts after development is complete.</li>
+<li><strong>How it manifests itself:</strong> Late discovery of architectural defects, when correcting them is orders of magnitude more expensive.</li>
+<li><strong>How to prevent it:</strong> Apply the <em>Shift-Left</em> approach and TDD/BDD – test design serves as the specification of the architectural design.</li>
+</ul>
+<h4 id="6-mistakes-in-communication-separate-development-and-testing"><a class="heading-anchor" href="#6-mistakes-in-communication-separate-development-and-testing" aria-label="Link to this section">#</a>6. Mistakes in Communication: Separate Development and Testing</h4>
+<ul>
+<li><strong>Why it is a problem:</strong> Architects and developers do not know how to use the language of testing tactics (EP, BVA, C1, MC/DC), while testers do not understand the internal architecture.</li>
+<li><strong>How it manifests itself:</strong> Testers test the system as a completely opaque black box even where knowledge of the architecture (a Grey-box approach) would significantly speed up tests and make them more effective.</li>
+<li><strong>How to prevent it:</strong> Establish a community of practice (Community of Practice), and use tactic overview models (for example, <em>Test Design Methods on One Page</em>) as a common communication framework.</li>
+</ul>
+<hr>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<h4 id="1-basic-questions"><a class="heading-anchor" href="#1-basic-questions" aria-label="Link to this section">#</a>1. Basic Questions</h4>
+<ul>
+<li><p><strong>Question:</strong> <em>What is the fundamental difference between equivalence partitioning (EP) and boundary value analysis (BVA)?</em></p>
+<ul>
+<li><strong>What the answer should include:</strong> An explanation that EP divides the domain into classes with the same assumed behavior and selects one representative, whereas BVA focuses on critical points at the edges of these classes and selects values directly on the boundary and in its immediate vicinity (\(B\), \(B\pm\Delta\)).</li>
+</ul>
+</li>
+<li><p><strong>Question:</strong> <em>Why is it insufficient to rely solely on statement coverage (C0 / Statement Coverage) when designing tests?</em></p>
+<ul>
+<li><strong>What the answer should include:</strong> C0 verifies only that the code has been executed, but ignores hidden branches (for example, missing <code>else</code> branches), compound conditions, and invalid state transitions. C1, C2, or MC/DC provide a significantly stronger guarantee.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-intermediate-questions"><a class="heading-anchor" href="#2-intermediate-questions" aria-label="Link to this section">#</a>2. Intermediate Questions</h4>
+<ul>
+<li><p><strong>Question:</strong> <em>How does an analytical risk-based test strategy (Risk-Based Testing) relate to the choice of test design tactics (TDT)?</em></p>
+<ul>
+<li><strong>What the answer should include:</strong> The level of risk (probability \(\times\) impact) determines the intensity and depth of testing tactics. Basic EP is sufficient for low risk; for high risk or critical modules (for example, according to ASIL in ISO 26262), it is necessary to combine EP, BVA, decision tables, and strict white-box coverage (C1 / MC/DC).</li>
+</ul>
+</li>
+<li><p><strong>Question:</strong> <em>How does a decision table (Decision Table) help an architect review the specification?</em></p>
+<ul>
+<li><strong>What the answer should include:</strong> Constructing a decision table reveals undefined combinations of conditions (gaps in specification), contradictory rules, and duplicates. It therefore verifies complex logic before the first line of code is written.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-advanced-questions"><a class="heading-anchor" href="#3-advanced-questions" aria-label="Link to this section">#</a>3. Advanced Questions</h4>
+<ul>
+<li><p><strong>Question:</strong> <em>Which architectural properties (Design Tactics) directly enable the application of advanced Test Design Tactics at the integration and component levels?</em></p>
+<ul>
+<li><strong>What the answer should include:</strong> Architectural tactics for testability: high observability (Observability – state interfaces, logging, metrics), high controllability (Controllability – Dependency Injection, stimulation interfaces), and loose coupling (Loose Coupling). Without them, components cannot be isolated, nor can precise BVA or Fault Injection be performed.</li>
+</ul>
+</li>
+<li><p><strong>Question:</strong> <em>Explain the difference in the use of state testing (State Transition Testing) with 0-switch vs. 1-switch coverage.</em></p>
+<ul>
+<li><strong>What the answer should include:</strong> 0-switch guarantees visiting every valid transition between two states (\(S_i \to S_j\)). 1-switch covers sequences of two consecutive transitions (\(S_i \to S_j \to S_k\)), which is necessary to reveal defects in state memory or incorrect resource cleanup. <em>(Supplemented with context from Advanced Test Analyst).</em></li>
+</ul>
+</li>
+</ul>
+<h4 id="4-questions-about-practical-experience"><a class="heading-anchor" href="#4-questions-about-practical-experience" aria-label="Link to this section">#</a>4. Questions about Practical Experience</h4>
+<ul>
+<li><strong>Question:</strong> <em>How should you proceed in a project where requirements are incomplete or change rapidly, and formalized test design (spec-based TDT) fails?</em><ul>
+<li><strong>What the answer should include:</strong> Combine a lighter specification with exploratory testing (Exploratory Testing) and experience-based tactics (Error Guessing / Defect Taxonomies). Use rapid feedback loops (TDD/BDD) and maintain living test templates.</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-questions-about-trade-off-decisions"><a class="heading-anchor" href="#5-questions-about-trade-off-decisions" aria-label="Link to this section">#</a>5. Questions about Trade-Off Decisions</h4>
+<ul>
+<li><strong>Question:</strong> <em>How can the conflicting requirement for 100% test coverage be reconciled with a limited budget and project schedule?</em><ul>
+<li><strong>What the answer should include:</strong> An argument that exhaustive testing is impossible. The solution is risk prioritization (RBT) and choosing breadth (breadth) over excessive depth (depth) in lower-risk areas. Using EP and Pairwise testing to reduce the combinatorial explosion while maintaining a high defect detection rate.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<blockquote>
+<p>The topic of <strong>test design tactics (Test Design Tactics – TDT)</strong> represents the very core of effective and efficient test engineering. If I were to define TDT from a software architect&#39;s perspective, they are a systematic set of methods and procedures that transform the intent of a test strategy – for example, risk-driven testing – into a specific, measurable, and repeatable set of test cases.</p>
+<p>Why is this topic critically important for architecture? In practice, we often encounter the idea that quality is ensured by writing code and subsequently covering it with automated scripts. However, this is an anti-pattern. As Boris Beizer aptly noted, <em>the very act of designing tests is one of the most effective tools for defect prevention</em>. Where systematic test design is unavailable, we risk automating bad or redundant tests, which represents an enormous waste of time and money.</p>
+<p>In classifying tactics, we primarily use black-box (specification-based) and white-box (structure-based) methods. For black-box methods, the fundamental building block is <strong>equivalence partitioning (Equivalence Partitioning)</strong>. We divide the input and state space into classes with the same assumed behavior and select one representative from each. We immediately supplement this technique with <strong>boundary value analysis (Boundary Value Analysis)</strong> because we know that developers make the most mistakes precisely at condition boundaries – we therefore test the boundary \(B\) itself and its immediate vicinity \(B \pm \Delta\). For complex rule logic, we use <strong>decision tables</strong>, and for the system&#39;s dynamic behavior, <strong>state transition testing (FSM)</strong>.</p>
+<p>The relationship with architecture is bidirectional. For us to be able to use these tactics, the architecture must apply <strong>Design for Testability (DFT)</strong>. This means that the architecture must ensure two key properties: <em>controllability (Controllability)</em> – the ability to set the required component state and inject inputs – and <em>observability (Observability)</em> – the ability to capture internal state and outputs. Without Dependency Injection or suitable testing interfaces, test design becomes a nightmare.</p>
+<p>Let us consider a practical example from embedded or safety-related software, such as controlling a car&#39;s brake assist system (ASIL D). When specifying the pedal input, we use a range from \(0\) to \(100,%\). Using equivalence classes, we define the valid class \(\) and invalid classes below \(0,%\) (broken wire) and above \(100,%\) (short circuit). Using boundary value analysis, we determine the test points: \(-0.1,%\), \(0.0,%\), \(0.1,%\), \(99.9,%\), \(100.0,%\), and \(100.1,%\). From an architectural perspective, we must test the module in isolation, which requires mocking the CAN bus and simulating the analog-to-digital converter (ADC). At the code level, the standard then requires achieving 100% MC/DC coverage.</p>
+<p>The main trade-off we must address as architects is the balance between <strong>breadth and depth (breadth vs. depth)</strong>. We cannot test everything exhaustively. Therefore, based on risk analysis (Risk-Based Testing), we apply strict combinatorial tactics and MC/DC to critical safety modules, while for less critical components, basic equivalence classes or experience-based testing (Error Guessing / Exploratory Testing) are sufficient.</p>
+<p>In conclusion: Test design tactics are not merely part of a tester&#39;s job. They are architectural tools for validating requirements, simplifying internal design, and guaranteeing the required software quality.&quot;**</p>
+</blockquote>
+<hr>
+<h3 id="11-short-version-for-quick-revision-cheat-sheet"><a class="heading-anchor" href="#11-short-version-for-quick-revision-cheat-sheet" aria-label="Link to this section">#</a>11. Short Version for Quick Revision (Cheat Sheet)</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 Main Points</h4>
+<ol>
+<li>Test design is defect prevention – it verifies requirements and architecture before coding.</li>
+<li>Automating ineffective tests is wasteful – TDT ensure optimal coverage with a minimal set of tests.</li>
+<li>The basis of black-box testing – Equivalence classes (EP) reduce the space; Boundary values (BVA) catch defects at the edges.</li>
+<li>An architectural prerequisite – Testability requires highly controllable and observable components (Design for Testability).</li>
+<li>Risk-driven – The choice and intensity of tactics depend on risk assessment (RBT) and normative requirements (for example, ISO 26262 / ASIL).</li>
+</ol>
+<h4 id="5-key-concepts"><a class="heading-anchor" href="#5-key-concepts" aria-label="Link to this section">#</a>5 Key Concepts</h4>
+<ol>
+<li><strong>Equivalence Partitioning (EP / TD3)</strong> – Dividing inputs/outputs into representative valid and invalid classes.</li>
+<li><strong>Boundary Value Analysis (BVA / TD4)</strong> – Testing class boundaries (\(B\), \(B\pm\Delta\)) to catch off-by-one errors.</li>
+<li><strong>Decision Table Testing</strong> – A matrix of conditions and actions for testing complex combinatorial logic.</li>
+<li><strong>State Transition Testing</strong> – Testing state machines (states, transitions, events, 0/1-switch).</li>
+<li><strong>MC/DC (Modified Condition/Decision Coverage)</strong> – Strict structural coverage of code conditions required in critical systems.</li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 Most Common Mistakes</h4>
+<ol>
+<li><strong>Blind automation</strong> of poorly thought-out ad-hoc scenarios without applying systematic TDT.</li>
+<li><strong>Ignoring invalid equivalence classes</strong> and boundary values on the invalid side.</li>
+<li><strong>Assuming that testability is only a testing concern after development</strong> (neglecting Design for Testability upfront).</li>
+</ol>
+<h4 id="1-concise-model-sentence-for-the-examination"><a class="heading-anchor" href="#1-concise-model-sentence-for-the-examination" aria-label="Link to this section">#</a>1 Concise Model Sentence for the Examination</h4>
+<blockquote>
+<p><em>&quot;Test design tactics transform a risk-driven strategy into a mathematically and logically justified set of test cases, and their successful application directly requires architectural design for testability.&quot;</em></p>
+</blockquote>
+<hr>
+<h3 id="learning-outcome-relationship-to-lopo"><a class="heading-anchor" href="#learning-outcome-relationship-to-lopo" aria-label="Link to this section">#</a>Learning outcome (Relationship to <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1">LOPO</a>)</h3>
+<p>According to the approved <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and Practice Outcomes (LOPO)</strong></a> framework, the output and knowledge in the area of TDT must reflect the following objectives:</p>
+<ul>
+<li><strong>Systematic Test Design (Workshop 2):</strong> Ensuring the systematic application of various test design techniques (EP, BVA, Decision Tables, FSM) to achieve effective and purposeful coverage.</li>
+<li><strong>Design for Testability (Workshop 1):</strong> The ability of architects to implement the quality of &quot;testability&quot; at multiple architectural levels so that both integration and non-resonant/non-functional requirements (NFR) can be validated.</li>
+<li><strong>Internal Quality (Workshop 2):</strong> Introducing and monitoring the internal quality of code and design to detect defects early and prevent the accumulation of technical debt.</li>
+<li><strong>Testing Pyramid / Test Trophy:</strong> The ability to justify the allocation of testing effort and the choice of tactics across test levels (Unit, Integration, System/Validation).</li>
+</ul>
+<hr>
+<h3 id="summary-in-a-single-table"><a class="heading-anchor" href="#summary-in-a-single-table" aria-label="Link to this section">#</a>Summary in a Single Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What is important</th>
+<th>Relationship to architecture</th>
+<th>Relationship to testing</th>
+<th>Typical examination question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Equivalence classes (EP / TD3)</strong></td>
+<td>Divide the space into valid and invalid classes with the same behavior.</td>
+<td>Defines type ranges and data domains for interfaces and APIs.</td>
+<td>Reduces an infinite input space to representative samples.</td>
+<td><em>How can invalid classes be identified for compound data types?</em></td>
+</tr>
+<tr>
+<td><strong>Boundary values (BVA / TD4)</strong></td>
+<td>Test points \(B\) and \(B \pm \Delta\) at the edges of equivalence classes.</td>
+<td>Reveals overflow risks and boundary state transitions in components.</td>
+<td>Detects the most common &quot;off-by-one&quot; programming errors.</td>
+<td><em>Why is BVA more effective than selecting values randomly from a class?</em></td>
+</tr>
+<tr>
+<td><strong>Decision tables</strong></td>
+<td>Cover all valid and invalid combinations of input conditions and actions.</td>
+<td>Reveals incomplete, contradictory, and missing requirements in the logic.</td>
+<td>Provides a deterministic matrix for statement coverage of combinations.</td>
+<td><em>How can a decision table be collapsed (reduced) without losing coverage?</em></td>
+</tr>
+<tr>
+<td><strong>State testing (FSM)</strong></td>
+<td>Cover states, transitions (0-switch), and transition sequences (1-switch).</td>
+<td>Verifies the dynamic architecture and component life cycle.</td>
+<td>Determines whether transitions are correct and invalid events are handled within states.</td>
+<td><em>What is the difference between 0-switch and 1-switch coverage of a state machine?</em></td>
+</tr>
+<tr>
+<td><strong>White-box coverage (C0/C1/MC-DC)</strong></td>
+<td>Achieving a defined level of code coverage according to system criticality.</td>
+<td>Requires low cyclomatic complexity and modular code design.</td>
+<td>Measures the structural completeness of tests and reveals impossible/dead branches.</td>
+<td><em>Why does ISO 26262 require MC/DC coverage for ASIL D, and why is C1 insufficient?</em></td>
+</tr>
+<tr>
+<td><strong>Design for Testability (DFT)</strong></td>
+<td>System design focused on controllability and observability.</td>
+<td>Architectural bottleneck: DI, testing interfaces, BIST, degree of coupling.</td>
+<td>Ensures fast, stable, isolatable, and reliable execution of TDT.</td>
+<td><em>Which architectural tactics improve observability of the internal state?</em></td>
+</tr>
+</tbody></table></div>
+<hr>
+<p><img src="../../assets/images/red-test-and-quality/test_design_methods.png" alt="Test Design Methods"></p>
+<p><a href="../../assets/files/red-test-and-quality/TestDesignMethods.pdf" data-attachment="1">Test Design Methods</a></p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/systematic-test-design.html"><span class="pager__label">← Previous</span><span>Systematic Test Design</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/test-driven-development.html"><span class="pager__label">Next →</span><span>Test-Driven Development (TDD)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-2"><a href="#item"></a></li><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-4"><a href="#1-test-design-tactics-tdt-test-design-tactics">1. Test Design Tactics (TDT) / Test Design Tactics</a></li><li class="lvl-4"><a href="#2-test-effectiveness-testing-effectiveness">2. Test Effectiveness (Testing Effectiveness)</a></li><li class="lvl-4"><a href="#3-equivalence-partitioning-equivalence-partitioning-ep-td3">3. Equivalence Partitioning (Equivalence Partitioning – EP / TD3)</a></li><li class="lvl-4"><a href="#3-boundary-value-analysis-boundary-value-analysis-bva-td4">3. Boundary Value Analysis (Boundary Value Analysis – BVA / TD4)</a></li><li class="lvl-4"><a href="#4-decision-tables-decision-table-testing">4. Decision Tables (Decision Table Testing)</a></li><li class="lvl-4"><a href="#5-state-transition-testing-state-transition-testing">5. State Transition Testing (State Transition Testing)</a></li><li class="lvl-4"><a href="#6-structural-tactic-white-box-coverage-c0-c1-c2-c3-mc-dc">6. Structural Tactic (White-box Coverage: C0, C1, C2/C3, MC/DC)</a></li><li class="lvl-4"><a href="#7-experience-based-and-defect-based-tactics-error-guessing-td5-defect-taxonomies">7. Experience-Based and Defect-Based Tactics (Error Guessing / TD5, Defect Taxonomies)</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-Patterns</a></li><li class="lvl-4"><a href="#1-mistakes-in-architecture-insufficient-controllability-and-observability-low-controllability-observability">1. Mistakes in Architecture: Insufficient Controllability and Observability (Low Controllability Observability)</a></li><li class="lvl-4"><a href="#2-mistakes-in-requirements-incomplete-specifications-of-boundaries-and-transitions">2. Mistakes in Requirements: Incomplete Specifications of Boundaries and Transitions</a></li><li class="lvl-4"><a href="#3-mistakes-in-test-strategy-blind-automation-of-bad-tests">3. Mistakes in Test Strategy: Blind Automation of Bad Tests</a></li><li class="lvl-4"><a href="#4-mistakes-in-automation-the-data-driven-testing-ddt-anti-pattern-without-a-clear-purpose">4. Mistakes in Automation: The Data-Driven Testing (DDT) Anti-Pattern without a Clear Purpose</a></li><li class="lvl-4"><a href="#5-mistakes-in-interpreting-testability-testing-only-at-the-end-lack-of-shift-left">5. Mistakes in Interpreting Testability: Testing Only at the End (Lack of Shift-Left)</a></li><li class="lvl-4"><a href="#6-mistakes-in-communication-separate-development-and-testing">6. Mistakes in Communication: Separate Development and Testing</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-4"><a href="#1-basic-questions">1. Basic Questions</a></li><li class="lvl-4"><a href="#2-intermediate-questions">2. Intermediate Questions</a></li><li class="lvl-4"><a href="#3-advanced-questions">3. Advanced Questions</a></li><li class="lvl-4"><a href="#4-questions-about-practical-experience">4. Questions about Practical Experience</a></li><li class="lvl-4"><a href="#5-questions-about-trade-off-decisions">5. Questions about Trade-Off Decisions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#11-short-version-for-quick-revision-cheat-sheet">11. Short Version for Quick Revision (Cheat Sheet)</a></li><li class="lvl-4"><a href="#5-main-points">5 Main Points</a></li><li class="lvl-4"><a href="#5-key-concepts">5 Key Concepts</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 Most Common Mistakes</a></li><li class="lvl-4"><a href="#1-concise-model-sentence-for-the-examination">1 Concise Model Sentence for the Examination</a></li><li class="lvl-3"><a href="#learning-outcome-relationship-to-lopo">Learning outcome (Relationship to LOPO )</a></li><li class="lvl-3"><a href="#summary-in-a-single-table">Summary in a Single Table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

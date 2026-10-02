@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Risk Based Testing - RED - Test and Quality - SWA preparation study guide.">
+<title>Risk Based Testing · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing" aria-current="page">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,369 words · about 17 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/risk-based-testing" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="risk-based-testing">Risk Based Testing</h1>
+<p>Risk-Based Testing (RBT) is a systematic testing strategy and technique that optimizes testing effort and resource allocation based on the assessment of product and project risks. Because exhaustive software testing is not possible with limited resources and time, RBT helps identify areas where failure is most likely and where a failure would have the most severe consequences. For software architecture, this means the ability to make informed decisions about which components or architectural decisions warrant the greatest investment of effort in quality assurance and reliability verification. Testing thus moves from a reactive phase to a strategic one focused on business and technical value.</p>
+<h2 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h2>
+<ul>
+<li><p><strong>Risk (Risk)</strong></p>
+<ul>
+<li><strong>Definition</strong>: A factor that can lead to future negative consequences; it is usually expressed as the product of the likelihood of occurrence (Likelihood / Probability) and its impact (Impact / Severity).</li>
+<li><strong>Significance in architecture</strong>: Helps identify vulnerable aspects of the design, critical components, and system bottlenecks.</li>
+<li><strong>Significance in testing</strong>: Defines where testing capacity should be focused, because risk determines both the priority and depth of testing.</li>
+<li><strong>Typical mistake</strong>: Confusing an issue with a risk – an issue has already occurred, whereas a risk is a future uncertainty.</li>
+</ul>
+</li>
+<li><p><strong>Product Risk (Product Risk / Quality Risk)</strong></p>
+<ul>
+<li><strong>Definition</strong>: A risk directly associated with the test object, indicating the possibility that the system will fail to meet legitimate user needs, fail to comply with specifications, or fail in operation (for example, a calculation error, system crash, or vulnerability).</li>
+<li><strong>Significance in architecture</strong>: Reflects the functional and non-functional characteristics of the product (for example, scalability, security) that the architecture must address.</li>
+<li><strong>Significance in testing</strong>: Product risks can be directly reduced (mitigated) through testing. Finding a defect or, conversely, demonstrating correct functionality reduces uncertainty.</li>
+<li><strong>Typical mistake</strong>: Ignoring non-functional risks in favor of functional risks during the early design stages.</li>
+</ul>
+</li>
+<li><p><strong>Project Risk (Project Risk / Planning Risk)</strong></p>
+<ul>
+<li><strong>Definition</strong>: A risk concerning the management and control of the project itself that may limit the ability to achieve its objectives (for example, a lack of qualified personnel, missed deadlines, third-party problems, or environment outages).</li>
+<li><strong>Significance in architecture</strong>: Limits how complex or innovative the architectural approaches a team can afford to implement may be, given its time and budget.</li>
+<li><strong>Significance in testing</strong>: It cannot be &quot;tested away&quot;. It must be managed through preventive or contingency plans (for example, deploying cloud infrastructure when test hardware fails).</li>
+<li><strong>Typical mistake</strong>: Expecting that simply intensifying test execution will resolve project delays or a lack of skills within the team.</li>
+</ul>
+</li>
+<li><p><strong>Risk Priority Number (RPN) / Degree of Risk Exposure</strong></p>
+<ul>
+<li><strong>Definition</strong>: A quantitative or qualitative value determining the seriousness of a risk, often calculated as the product of Probability, Impact, and sometimes Detectability or Test Effectiveness.</li>
+<li><strong>Significance in architecture</strong>: Defines a clear metric (for example, 1–125 or Low/High) that provides an objective basis for component prioritization decisions.</li>
+<li><strong>Significance in testing</strong>: Allows test scenarios to be ordered so that those with the highest RPN values (the most serious) are executed first.</li>
+<li><strong>Typical mistake</strong>: Relying on seemingly precise numbers (quantitative data) in environments where no valid historical data is available, instead of using more effective qualitative scales.</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/rbt_assessment_1.png" alt="Risk assessment 1">
+<img src="../../assets/images/red-test-and-quality/rbt_assessment_2.png" alt="Risk assessment 2"></p>
+<h2 id="types-of-risks-and-assessment-methods"><a class="heading-anchor" href="#types-of-risks-and-assessment-methods" aria-label="Link to this section">#</a>Types of Risks and Assessment Methods</h2>
+<p>In addition to the basic division into <strong>product (quality) risks and project risks</strong>, other classifications are also recognized:</p>
+<ul>
+<li><strong>Business risks</strong>: Effects on profit, customer satisfaction, or competitive advantage.</li>
+<li><strong>Technical risks</strong>: Associated with structure, complex code, architectural shortcomings, or the introduction of new technologies.</li>
+<li><strong>Compliance risks</strong>: Consequences of failing to comply with legal and regulatory requirements.</li>
+<li>Depending on the direction in which a situation develops, risks are also divided into <strong>negative risks</strong> (threats of failure or loss) and <strong>positive risks</strong> (opportunities for further product development).</li>
+</ul>
+<h2 id="risk-assessment-methods-risk-assessment-methods"><a class="heading-anchor" href="#risk-assessment-methods-risk-assessment-methods" aria-label="Link to this section">#</a>Risk Assessment Methods (Risk Assessment Methods)</h2>
+<p>Risk assessment depends on the formality, size, and criticality of the system (for example, safety-critical vs. ordinary e-commerce). The sources identify two main categories:</p>
+<ol>
+<li><strong>Lightweight methods (Lightweight)</strong>:
+They use simplified qualitative models (usually assessing only 2 axes: Probability and Impact) and are easy to apply across teams. These include:<ul>
+<li><strong>PRAM (Pragmatic Risk Analysis and Management)</strong>: Based on expert consensus and does not necessarily require fully formalized requirements documentation. Allows risks to be reduced, avoided, or accepted.</li>
+<li><strong>PRisMa (Product Risk Management)</strong>: Focuses on easy identification of risks during the development cycle, with support for risk transfer or prevention strategies.</li>
+<li><strong>SST (Systematic Software Testing)</strong>: A systematic model for defining testing objectives; however, it relies directly on requirements specifications and cannot be applied effectively without them.</li>
+</ul>
+</li>
+</ol>
+<p><img src="../../assets/images/red-test-and-quality/risk_categorization.png" alt="Risk categorization"></p>
+<ol start="2">
+<li><strong>Comprehensive methods (Heavy-weight)</strong>:
+Used primarily for mission-critical or safety-critical systems (for example, the ISO 61508 and DO-178B standards), they require in-depth analysis and detailed documentation.<ul>
+<li><strong>FMEA (Failure Mode and Effect Analysis)</strong>: Analyzes possible failure modes. For each module, the following questions are assessed: What could fail? Why? What would the consequence be? Risk is determined on the basis of severity, occurrence, and detectability.</li>
+<li><strong>FTA (Fault Tree Analysis)</strong>: A top-down root cause analysis (Root Cause Analysis). Starting from an identified failure, a &quot;fault tree&quot; diagram is structured down to the originating defects or errors in both hardware and software.</li>
+<li><strong>QFD (Quality Function Deployment)</strong>: Focuses on correctly understanding user requirements and minimizes the risk of a mismatch between the final solution and customer expectations.</li>
+<li><strong>Cost of Exposure</strong>: Quantitative determination of the relationship between the percentage probability of failure, the expected financial loss from such a failure in production, and the financial costs of testing and correction.</li>
+</ul>
+</li>
+</ol>
+<h2 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-Patterns</h2>
+<ul>
+<li><p><strong>Performing risk analysis only at the end of the development cycle (SDLC)</strong></p>
+<ul>
+<li><em>Problem and manifestation</em>: RBT is designed to identify risks from the early design stages. Delayed analysis prevents the testing team from preparing an appropriate strategy and influencing the architecture, resulting in increased technical debt.</li>
+<li><em>Prevention</em>: Introduce risk analysis as soon as the initial requirements have been fixed, and update it continuously (for example, at the start of each sprint in agile methodologies).</li>
+</ul>
+</li>
+<li><p><strong>Assessing risk through a single expert (an isolated perspective)</strong></p>
+<ul>
+<li><em>Problem and manifestation</em>: A tester or architect has only their own subjective perspective. In most cases, the business impact (Impact) is assessed incorrectly, although a product owner would be better placed to determine it. The risk catalog then fails to serve its purpose.</li>
+<li><em>Prevention</em>: Involve a broader group of so-called cross-functional stakeholders – both technical and business representatives.</li>
+</ul>
+</li>
+<li><p><strong>&quot;Freezing&quot; the risk register (Absence of continuous management)</strong></p>
+<ul>
+<li><em>Problem and manifestation</em>: A risk register is created at the start of the project but is not subsequently updated. The team tests according to outdated metrics even when the actual architecture or functionality has changed.</li>
+<li><em>Prevention</em>: Make risk review and reassessment a standard part of meetings (for example, before each release or during sprint retrospectives).</li>
+</ul>
+</li>
+<li><p><strong>An inappropriate distribution (Clumping / Skewing) of risk ratings</strong></p>
+<ul>
+<li><em>Problem and manifestation</em>: Teams tend to rate everything as &quot;high risk&quot; or use poorly calibrated scales, so that, for example, 80% of risks end up in the High category. Prioritization becomes unusable.</li>
+<li><em>Prevention</em>: Analyze the values using a histogram, introduce specific guidelines (rules) for the individual scale levels, and strive for a more optimal Gaussian distribution of risks.</li>
+</ul>
+</li>
+</ul>
+<h2 id="risk-based-testing-strategy-steps"><a class="heading-anchor" href="#risk-based-testing-strategy-steps" aria-label="Link to this section">#</a>Risk-based testing strategy – Steps</h2>
+<p>RBT is normally introduced through logically connected, successive steps that determine the testing approach. This particular model includes 5 phases, which also incorporate outputs from stakeholder workshops:</p>
+<p><img src="../../assets/images/red-test-and-quality/risk_based_testing.png" alt="Risk based testing steps"></p>
+<h3 id="risk-identification"><a class="heading-anchor" href="#risk-identification" aria-label="Link to this section">#</a>Risk identification</h3>
+<ul>
+<li><strong>Collect and group potential product risks from different inputs</strong>: This is the initial collection of risk items. These threats to product quality may come from expert interviews, previous errors recorded in logs, security alerts, and ambiguities in architectural designs and requirements. Possible failure modes (Failure modes) are thereby analyzed. The risks are then sorted into categories.</li>
+</ul>
+<h3 id="risk-analysis"><a class="heading-anchor" href="#risk-analysis" aria-label="Link to this section">#</a>Risk analysis</h3>
+<ul>
+<li><strong>Assign probability and consequence values</strong>: Once the risk catalog has been compiled, a stakeholder workshop is typically organized. Each risk is assigned a value for its probability of occurrence (Probability / Likelihood) and the severity of its business and operational consequences (Consequence / Damage / Impact).</li>
+<li><strong>Calculate exposure</strong>: Combining probability and impact produces the overall degree of exposure to risk, known as <em>Risk exposure</em>. This turns the experts&#39; initially subjective concerns into a structure that can be ranked on an objective basis.</li>
+</ul>
+<h3 id="risk-response"><a class="heading-anchor" href="#risk-response" aria-label="Link to this section">#</a>Risk response</h3>
+<ul>
+<li><strong>Assign test effectiveness, Calculate test priority number</strong>: Here, the confidence of testers and engineers in their ability to detect a particular risk through testing is assessed. The <em>Test priority number (RPN / Test priority number)</em> is calculated on the basis of exposure (Exposure) and the effectiveness of the test itself.</li>
+<li><strong>Formulate test objective, assign test techniques</strong>: Each risk must have a clearly defined testing objective (for example, validation or demonstration of compliance) and an appropriate testing technique (black-box testing for data flows, static analysis for critical code, and so on). Higher risk corresponds to a more rigorous testing technique.</li>
+<li><strong>Identify dependencies and prerequisites (skills, tools, environment)</strong>: Identify constraints such as required tester training, missing hardware, licensing requirements for the test environment, or dependencies on external systems.</li>
+</ul>
+<h3 id="review-decision"><a class="heading-anchor" href="#review-decision" aria-label="Link to this section">#</a>Review &amp; Decision</h3>
+<ul>
+<li><strong>Define test scope to be addressed, Agreement on scope and costs</strong>: Another stakeholder meeting follows to assess which risks will actually be tested and which will simply be accepted or possibly deferred because of high costs (Trade-off). The outcome is agreement on the final coverage scope and acceptance of the costs associated with that scope.</li>
+</ul>
+<h3 id="test-planning-test-allocation"><a class="heading-anchor" href="#test-planning-test-allocation" aria-label="Link to this section">#</a>Test planning &amp; Test allocation</h3>
+<ul>
+<li><strong>Test level definition, test allocation, test responsible</strong>: The final step is to translate the strategy itself into task plans. The phase of the life cycle in which each test will take place is determined (for example, Unit test, Integration test, System test). Individual items are allocated to testing personnel (responsibility and resources). The plan also defines entry and exit criteria.</li>
+</ul>
+<h2 id="3-amigos"><a class="heading-anchor" href="#3-amigos" aria-label="Link to this section">#</a>“3 Amigos”</h2>
+<p>In the context of agile development and risk based testing, the <strong>3 Amigos</strong> represent three key roles (perspectives) that must work closely together to ensure product quality and the correct focus of tests.</p>
+<ul>
+<li><p><strong>Business / Product Owner (PO):</strong> Defines <strong>“What”</strong> is being built. Brings the perspective of user stories (user stories), acceptance criteria, and business value.</p>
+</li>
+<li><p><strong>Development / Development:</strong> Defines <strong>“How”</strong> it is being built. Focuses on architecture, technical risks, code, and dependencies.</p>
+</li>
+<li><p><strong>Testing / QA:</strong> Defines the <strong>“Prove It” (Prove It)</strong> approach. Designs test scenarios, coverage levels, and automation.</p>
+</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/three_amigos.png" alt="3 Amigos"></p>
+<h3 id="what-do-they-do-in-the-context-of-risk-based-testing"><a class="heading-anchor" href="#what-do-they-do-in-the-context-of-risk-based-testing" aria-label="Link to this section">#</a>What Do They Do in the Context of Risk-Based Testing?</h3>
+<p>These three partners meet in so-called <strong>3 Amigos sessions</strong> before sprint planning (sprint planning). Within the RBT approach, their main task is to bring different perspectives to risk assessment:</p>
+<p><strong>Joint risk assessment:</strong> Risk is not estimated “from behind a desk” by the tester alone. The 3 Amigos jointly assess factors such as the probability of failure $P(f)$, the impact/cost of a fault $C(f)$, and the difficulty of detection $D(f)$. The developer knows where the code is complex (high probability of error), the PO knows where an error would upset the client (high impact), and QA knows where errors are hard to find.</p>
+<p><strong>Determining test levels:</strong> Based on the resulting risk score, they jointly decide which test levels (Unit, Integration, E2E) to apply to the particular user story. For critical functions, they intensify testing; for trivial ones (such as a background color change), they choose only a minimal test.</p>
+<p><strong>Aligning acceptance criteria:</strong> They discuss the details before a single line of code is written, eliminating misunderstandings in the requirements.</p>
+<hr>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<p><strong>Basic Questions</strong></p>
+<ul>
+<li><em>Question</em>: What is the primary difference between project risk and product risk in the context of RBT?</li>
+<li><em>Note</em>: A good answer explains that product risk (for example, an application crash) can be mitigated by performing the test itself (finding the defect), whereas project risk (a shortage of personnel) threatens the ability to perform tests at all and is managed more through managerial contingency plans.</li>
+</ul>
+<p><strong>Intermediate Questions</strong></p>
+<ul>
+<li><em>Question</em>: Which parameters usually make up the risk priority number (RPN) assessment, and how is it obtained?</li>
+<li><em>Note</em>: The answer must identify at least the following factors: Probability (Likelihood) and Impact (Impact/Severity), and possibly Detectability. It must mention that, in practice, these values are usually multiplied using qualitative scales (for example, 1–5) assessed by a cross-functional stakeholder team.</li>
+</ul>
+<p><strong>Advanced Questions</strong></p>
+<ul>
+<li><em>Question</em>: What are the differences between requirements-based testing (Requirements-Based Testing) and risk-based testing (Risk-Based Testing)?</li>
+<li><em>Note</em>: The candidate should explain that Requirements-Based Testing seeks to verify every individual requirement regardless of its criticality (strict coverage). RBT, by contrast, focuses on the areas where an error would hurt the most and where it is most likely to occur. RBT deliberately biases coverage, which is more effective with limited resources.</li>
+</ul>
+<p><strong>Questions About Practical Experience</strong></p>
+<ul>
+<li><em>Question</em>: You are testing a critical system and the release date is approaching, but you discover that technical problems will prevent you from executing the entire test suite. How will you use RBT to recover the situation?</li>
+<li><em>Note</em>: The answer should mention ordering tests by risk from the catalog (known as Drop tests in reverse risk order / Depth-first sequencing). As a recovery action, only tests in the highest-risk quadrants are performed, and management is informed of the &quot;residual risk&quot; of untested sections so that it can decide whether to accept those risks.</li>
+</ul>
+<p><strong>Questions About Trade-Off Decisions</strong></p>
+<ul>
+<li><em>Question</em>: Describe the trade-off between &quot;Depth-first&quot; and &quot;Breadth-first&quot; test execution strategies from the RBT perspective.</li>
+<li><em>Note</em>: The candidate should know the advantages of both. &quot;Depth-first&quot; immediately tests the most demanding items in depth, maximizing early detection of severe errors, but relies on the risk assessment being correct. &quot;Breadth-first&quot; tests in layers so that every function (even a low-risk one) receives at least basic coverage, while also providing early feedback across the system for recalibration; however, it is less aggressive in targeting deep-seated errors.</li>
+</ul>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<p><em>(Length: 4–6 minutes of spoken delivery)</em></p>
+<p>“Risk-Based Testing (RBT) is a strategic testing process whose central idea is uncertainty management. We start from the fact that, given the size of the codebase, the number of parameters, and project schedules, so-called exhaustive testing is a myth. RBT addresses this problem by prioritizing testing effort where the risk of failure is greatest and where such a failure would have the most severe consequences. It typically defines risk as the product of the probability of a problem occurring (Likelihood) and its impact (Impact).</p>
+<p>For a software architect, RBT is a critical tool. It enables architectural solutions to be aligned with business expectations. When building complex distributed systems, architectural risk mapping helps identify which integration links or microservices represent the most vulnerable point of failure (Single Point of Failure). The architect can then initiate earlier involvement of the testing team and prepare a design that emphasizes testability (Design for Testability) in the most critical areas. For testing itself, the benefit is clear: it provides explicit guidance for allocating time and choosing techniques. Instead of applying complex pairwise design or classification trees to a trivial button-color-changing function, the tester saves capacity for testing the payment gateway.</p>
+<p>As a practical example, imagine the development of an e-commerce platform. The payment gateway function, which integrates third-party services, carries a high level of risk because the code is complex (Probability) and the potential financial damage is enormous (Impact). By contrast, updating the page containing the user&#39;s profile photograph has a negligible impact. RBT ensures that the payment gateway is continuously subjected to automated, penetration, and integration testing, perhaps even using the FMEA technique, whereas the photo update is tested only with a basic acceptance scenario. </p>
+<p>A common trade-off decision within RBT is testing depth versus breadth in limited time. In an agile sprint, we can choose a &#39;Depth-first&#39; traversal – an aggressive focus on key items with the highest priority (for example, new API modules). The problem with this approach arises if the experts underestimated something during the initial risk analysis; the tests will not reveal the resulting &#39;blind spot&#39;. We therefore often use &#39;Breadth-first&#39; coverage – a broad basic test sample across the application combined with in-depth testing of critical areas. </p>
+<p>In conclusion, RBT moves testing from an attempt to achieve meaningless 100% code coverage toward effective assessment of economic and technical impact. It provides transparent data on &#39;residual risk&#39; (Residual Risk) to all of management and significantly increases confidence in deciding whether to release a system into production.”</p>
+<h3 id="11-short-version-for-quick-review-cheat-sheet"><a class="heading-anchor" href="#11-short-version-for-quick-review-cheat-sheet" aria-label="Link to this section">#</a>11. Short Version for Quick Review (Cheat Sheet)</h3>
+<p><strong>5 Main Points</strong></p>
+<ol>
+<li>Not everything can be tested; RBT targets effort at risky areas.</li>
+<li>Risk has the following components: Probability (Likelihood) and Impact (Impact).</li>
+<li>Tests are designed, executed, and prioritized primarily according to risk exposure.</li>
+<li>RBT reduces losses and delivers results in the form of “residual risk” (Residual Risk) for release decisions.</li>
+<li>Risk analysis must be developed by a cross-functional team of experts (stakeholders), not by an individual working in isolation.</li>
+</ol>
+<p><strong>5 Key Terms</strong></p>
+<ol>
+<li><strong>Quality (Product) Risk</strong>: The risk that the product will fail to meet requirements or expectations.</li>
+<li><strong>Project Risk</strong>: A risk affecting schedules, budget, or the delivery of testing itself.</li>
+<li><strong>Risk Priority Number (RPN)</strong>: A quantitative/qualitative indicator of the urgency of a risk.</li>
+<li><strong>FMEA / PRAM</strong>: Specific formalized vs. lightweight methodologies for risk analysis.</li>
+<li><strong>Mitigation vs. Contingency</strong>: Prevention through error detection vs. preparing a fallback plan to minimize damage.</li>
+</ol>
+<p><strong>5 Typical Examination Questions</strong></p>
+<ol>
+<li>What is Risk-Based Testing, and what is it used for?</li>
+<li>Which factors influence the calculation of Probability and Impact?</li>
+<li>How would you develop an RBT strategy – what are its steps?</li>
+<li>What is the difference between project risk and product risk in software?</li>
+<li>Why is it necessary to involve experts from both business and development in the assessment?</li>
+</ol>
+<p><strong>3 Most Common Mistakes</strong></p>
+<ol>
+<li>Leaving risk identification until the phase immediately before testing starts (insufficient Shift-Left).</li>
+<li>Relying on subjective quantitative assessments (pseudo-precise percentages) instead of effective qualitative scales.</li>
+<li>Creating a risk register that the project never revisits after the kick-off phase.</li>
+</ol>
+<p><strong>1 Concise Model Sentence to Use in the Examination</strong>
+“When resources are scarce, Risk-Based Testing allows us to focus not on <em>whether</em> something will fail, but on <em>how much it would hurt if it failed</em>, thereby achieving an optimal reduction of residual risk before market deployment.”</p>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning outcome</h3>
+<p>This material fully covers the outcomes defined by the <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and practice outcomes (LOPO)</strong></a> document:</p>
+<ul>
+<li><em>Discuss product risks and how to mitigate them with tests; Prioritize them with a risk based testing strategy.</em> (The topic is covered in the &quot;Types of Risks&quot; and &quot;Prioritization&quot; sections, the explanation of RPN, and the RBT procedures).</li>
+<li><em>Apply risk based testing for architecture risks.</em> (Incorporated into the architectural significance in the definitions and recommended for mitigating risks associated with architectural decisions, for example, in complex systems / distributed microservices, the choice of integration approaches, and so on).</li>
+</ul>
+<h3 id="summary-in-one-table"><a class="heading-anchor" href="#summary-in-one-table" aria-label="Link to this section">#</a>Summary in One Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Matters</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definition of risk</strong></td>
+<td>Likelihood × Impact. Categorization into product and project risks.</td>
+<td>Defines the technical complexity and structural vulnerabilities of the system.</td>
+<td>Identifies the areas where the greatest testing effort should be directed (Priority).</td>
+<td>What does the abbreviation RPN stand for, and which components does it typically comprise?</td>
+</tr>
+<tr>
+<td><strong>Methods and models</strong></td>
+<td>FMEA, PRAM, QFD, FTA. Formalized vs. Lightweight approaches.</td>
+<td>Help architects assess Single Points of Failure and interface complexity.</td>
+<td>Determine testing approaches (Boundary Value vs. Pairwise vs. Exploratory testing).</td>
+<td>When would you favor deploying the formal FMEA method over lightweight methods (PRAM)?</td>
+</tr>
+<tr>
+<td><strong>Preparing an RBT strategy</strong></td>
+<td>Risk identification, Risk analysis, Risk response, Review &amp; Decision, Test allocation.</td>
+<td>Enables architectural design and iteration planning to be aligned with the most critical areas (Shift-left).</td>
+<td>Establishes a clear plan (Scope, Cost, Test levels) for test execution itself.</td>
+<td>Describe the phases of the RBT process from risk collection through to test execution.</td>
+</tr>
+<tr>
+<td><strong>Common mistakes</strong></td>
+<td>An abandoned document, isolated assessment without a team, and attempts to test even low-risk operations to 100%.</td>
+<td>Delays early prevention of design errors and slows down all of Release Management.</td>
+<td>Exhausts capacity on unnecessary peripheral functions at the expense of core logic.</td>
+<td>Why is it a fatal mistake for a test architect to perform risk analysis alone from behind a desk?</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/behavior-driven-development.html"><span class="pager__label">← Previous</span><span>behavior driven development</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/nfr-testing.html"><span class="pager__label">Next →</span><span>Testing Non-Functional Requirements (NFR Testing)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-2"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-2"><a href="#types-of-risks-and-assessment-methods">Types of Risks and Assessment Methods</a></li><li class="lvl-2"><a href="#risk-assessment-methods-risk-assessment-methods">Risk Assessment Methods (Risk Assessment Methods)</a></li><li class="lvl-2"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-Patterns</a></li><li class="lvl-2"><a href="#risk-based-testing-strategy-steps">Risk-based testing strategy – Steps</a></li><li class="lvl-3"><a href="#risk-identification">Risk identification</a></li><li class="lvl-3"><a href="#risk-analysis">Risk analysis</a></li><li class="lvl-3"><a href="#risk-response">Risk response</a></li><li class="lvl-3"><a href="#review-decision">Review Decision</a></li><li class="lvl-3"><a href="#test-planning-test-allocation">Test planning Test allocation</a></li><li class="lvl-2"><a href="#3-amigos">“3 Amigos”</a></li><li class="lvl-3"><a href="#what-do-they-do-in-the-context-of-risk-based-testing">What Do They Do in the Context of Risk-Based Testing?</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#11-short-version-for-quick-review-cheat-sheet">11. Short Version for Quick Review (Cheat Sheet)</a></li><li class="lvl-3"><a href="#learning-outcome">Learning outcome</a></li><li class="lvl-3"><a href="#summary-in-one-table">Summary in One Table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

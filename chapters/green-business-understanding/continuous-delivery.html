@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Continuous Delivery and the DORA Model - GREEN - Business Understanding - SWA preparation study guide.">
+<title>Continuous Delivery and the DORA Model · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding" open>
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery" aria-current="page">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>GREEN - Business Understanding</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#4CAF50;--i:0">
+      <a class="chapter-chip" href="../../index.html#green-business-understanding"><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business</a>
+      <div class="topic-meta">
+        <span>2,665 words · about 13 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="green-business-understanding/continuous-delivery" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="continuous-delivery-and-the-dora-model">🟢 Continuous Delivery and the DORA Model</h1>
+<h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
+<p>Continuous Delivery (CD) is a discipline in which software is continuously kept in a state suitable for deployment to production, so that releasing a new version becomes a routine, low-risk activity that can be performed on demand. Continuous Delivery is also one of the few approaches for which there is a <strong>statistically proven relationship</strong> between its adoption and improvements in an organization&#39;s business results. This conclusion is based on extensive research conducted over multiple years, described in the book <em>Accelerate</em> (Forsgren, Humble, Kim), and on the subsequent <strong>DORA model</strong> (DevOps Research and Assessment).</p>
+<p>For an architect, this topic is important because the ability to deliver frequently and safely is largely a <strong>property of the architecture</strong> (the ability to deploy independently, testability, deployment units), not merely a property of CI/CD tools. For testing, this topic is essential because fast and reliable delivery is not possible without an automated testing safety net that provides confidence in every change.</p>
+<h3 id="the-causal-chain-of-the-dora-model"><a class="heading-anchor" href="#the-causal-chain-of-the-dora-model" aria-label="Link to this section">#</a>The Causal Chain of the DORA Model</h3>
+<p>The DORA model is not just a set of metrics; it defines a clear <strong>causal relationship</strong> (research-based causal model):</p>
+<p><strong>Capabilities (Capabilities) → Software delivery performance (Delivery performance) → Outcomes (Results)</strong></p>
+<p>This is read as follows: building specific technical, process, and cultural capabilities improves measurable delivery performance, which is then reflected in both organizational results and people&#39;s satisfaction. The arrows represent a proven statistical relationship, not mere correlation.</p>
+<pre class="mermaid">graph LR
+    C[Capabilities&lt;br/&gt;technical, process, cultural] --&gt; P[Delivery performance&lt;br/&gt;4 key metrics]
+    P --&gt; O[Outcomes&lt;br/&gt;company performance + well-being]
+</pre>
+<h3 id="1-software-delivery-performance-4-key-metrics"><a class="heading-anchor" href="#1-software-delivery-performance-4-key-metrics" aria-label="Link to this section">#</a>1. Software Delivery Performance (4 Key Metrics)</h3>
+<p>Delivery performance is measured purely through data using four metrics that cover two seemingly opposing axes – <strong>Speed / Throughput</strong> and <strong>Stability / Stability</strong>. A fundamental research finding is that top-performing teams <strong>do not make a trade-off</strong> between speed and stability – they excel at both simultaneously (speed and stability reinforce each other; they are not opposites).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Axis</th>
+<th>What It Measures</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Deployment frequency</strong></td>
+<td>Speed</td>
+<td>How often the organization deploys code to production</td>
+</tr>
+<tr>
+<td><strong>Change lead time</strong></td>
+<td>Speed</td>
+<td>The time from a code commit to its deployment in production</td>
+</tr>
+<tr>
+<td><strong>Change fail percentage</strong></td>
+<td>Stability</td>
+<td>The proportion of deployments that cause an outage or require a rollback or hotfix</td>
+</tr>
+<tr>
+<td><strong>Failed deployment recovery time (MTTR)</strong></td>
+<td>Stability</td>
+<td>The time needed to restore the service after a failed deployment</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p>Additional note: More recent editions of the DORA research add <strong>reliability</strong> (operational reliability / meeting agreed operational objectives) as a fifth dimension. However, the four basic metrics remain the core of the model.</p>
+</blockquote>
+<h3 id="2-capabilities-what-needs-to-be-improved"><a class="heading-anchor" href="#2-capabilities-what-needs-to-be-improved" aria-label="Link to this section">#</a>2. Capabilities (What Needs to Be Improved)</h3>
+<p>To improve the metrics, teams must build technical, process, and cultural capabilities. The most frequently mentioned accelerators include:</p>
+<ul>
+<li><strong>Continuous Integration &amp; Trunk-based development (technical capability):</strong> Developers integrate code into the main branch (trunk/main) daily and avoid long-lived feature branches. A broken build has the highest priority and is fixed immediately (ideally within minutes). This ensures rapid feedback and small changes that are easy to verify.</li>
+<li><strong>Loosely coupled architecture &amp; teams (architectural capability):</strong> The architecture allows teams to make extensive changes and deploy independently, without lengthy coordination with other teams. This “testability and deployability without dependencies” is the strongest architectural predictor of performance – it minimizes waiting and orchestrated releases.</li>
+<li><strong>Generative culture according to Westrum (cultural capability):</strong> Unlike a <strong>pathological</strong> (power-oriented) or <strong>bureaucratic</strong> (rule-oriented) culture, this is a <strong>performance-oriented (generative)</strong> culture. It is safe to share bad news; failure is not punished but treated as an opportunity to improve the system. Responsibility and risks are shared.</li>
+</ul>
+<h3 id="3-outcomes-impact-on-both-the-company-and-people"><a class="heading-anchor" href="#3-outcomes-impact-on-both-the-company-and-people" aria-label="Link to this section">#</a>3. Outcomes (Impact on Both the Company and People)</h3>
+<p>Properly implemented CD delivers results on two levels:</p>
+<ul>
+<li><strong>Organizational performance:</strong> Commercial and non-commercial success – greater profitability, market share, operational efficiency, and better achievement of corporate and mission objectives.</li>
+<li><strong>Well-being (people&#39;s satisfaction):</strong> Productivity and job satisfaction increase, burnout (<strong>burnout</strong>) decreases significantly, unplanned work and firefighting (<strong>rework</strong>) are reduced, and fear of deployment (<strong>deployment pain</strong>) disappears.</li>
+</ul>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Definition</th>
+<th>Significance for Architecture</th>
+<th>Significance for Testing</th>
+<th>Typical Misconception</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Continuous Delivery</strong></td>
+<td>A practice in which software is always in a state suitable for deployment.</td>
+<td>Requires deployable, loosely coupled units.</td>
+<td>Impossible without an automated testing pyramid.</td>
+<td>Confused with Continuous Deployment.</td>
+</tr>
+<tr>
+<td><strong>Continuous Deployment</strong></td>
+<td>Automatic deployment of every successful change all the way to production without a manual step.</td>
+<td>Requires even greater confidence in the pipeline.</td>
+<td>Full test automation + monitoring are necessary.</td>
+<td>Considered a synonym for CD.</td>
+</tr>
+<tr>
+<td><strong>Continuous Integration (CI)</strong></td>
+<td>Frequent (daily) merging of changes into a shared branch with an automatic build and tests.</td>
+<td>Leads to small units that can be integrated.</td>
+<td>Rapid feedback from automated tests.</td>
+<td>Reduced to merely “we have a build server.”</td>
+</tr>
+<tr>
+<td><strong>Trunk-based development</strong></td>
+<td>Working on the main branch, with short-lived feature branches or none at all.</td>
+<td>Reduces integration debt and merge risk.</td>
+<td>Feature toggles + good tests are necessary.</td>
+<td>Confused with “no code review.”</td>
+</tr>
+<tr>
+<td><strong>DORA metrics</strong></td>
+<td>4 delivery performance metrics (frequency, lead time, change fail %, MTTR).</td>
+<td>Measure the consequences of architectural decisions.</td>
+<td>Change fail % and MTTR measure test effectiveness.</td>
+<td>Viewed as a target, not an indicator.</td>
+</tr>
+<tr>
+<td><strong>Westrum: generative culture</strong></td>
+<td>A performance-oriented culture in which it is safe to report errors.</td>
+<td>Enables shared ownership of the architecture.</td>
+<td>Encourages open reporting of defects and risks.</td>
+<td>Confused with “safety without accountability.”</td>
+</tr>
+<tr>
+<td><strong>Deployment pipeline</strong></td>
+<td>The automated path of a change from a commit through tests to production.</td>
+<td>Reflects the system&#39;s deployment and integration boundaries.</td>
+<td>Orchestrates the individual levels of testing.</td>
+<td>Understood only as a tool, not as a process.</td>
+</tr>
+</tbody></table></div>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-patterns</h3>
+<ul>
+<li><p><strong>Confusing Continuous Delivery and Continuous Deployment.</strong></p>
+<ul>
+<li><em>Why it is a problem:</em> It leads to misunderstandings about the degree of automation and risk. CD guarantees readiness for deployment; Continuous Deployment deploys automatically without manual approval.</li>
+<li><em>How it manifests:</em> The team claims to be “doing CD,” but in fact deploys manually once a quarter.</li>
+<li><em>Prevention:</em> Consistently distinguish the two concepts and explicitly identify where the manual decision gate is.</li>
+</ul>
+</li>
+<li><p><strong>Optimizing only one axis (speed OR stability).</strong></p>
+<ul>
+<li><em>Why it is a problem:</em> It contradicts the key DORA finding – these axes are not in opposition. Pressure on deployment frequency alone, without a testing safety net, increases change fail %.</li>
+<li><em>How it manifests:</em> A growing number of hotfixes, long MTTR, a “Friday deployment freeze.”</li>
+<li><em>Prevention:</em> Track all four metrics together as a balanced system.</li>
+</ul>
+</li>
+<li><p><strong>CD built on a tightly coupled (tightly coupled) architecture.</strong></p>
+<ul>
+<li><em>Why it is a problem:</em> Independent deployment is impossible; every release requires orchestration across many teams.</li>
+<li><em>How it manifests:</em> A “release train,” long merge phases, coordination meetings before deployment.</li>
+<li><em>Prevention:</em> An architecture with clear boundaries and independent deployability/testability of components.</li>
+</ul>
+</li>
+<li><p><strong>Metrics as a target (Goodhart&#39;s Law).</strong></p>
+<ul>
+<li><em>Why it is a problem:</em> When a metric becomes a target, it ceases to be a good metric – teams start “deploying empty commits.”</li>
+<li><em>How it manifests:</em> Metrics increase, but customer value does not.</li>
+<li><em>Prevention:</em> Use metrics as an indicator of system health, not as an individual KPI.</li>
+</ul>
+</li>
+<li><p><strong>CD without test automation (a missing safety net).</strong></p>
+<ul>
+<li><em>Why it is a problem:</em> Fast deployment without tests only delivers defects to production faster.</li>
+<li><em>How it manifests:</em> High change fail %, manual regression testing as an impediment.</li>
+<li><em>Prevention:</em> A healthy testing pyramid (more fast unit tests, fewer slow E2E tests) integrated into the pipeline.</li>
+</ul>
+</li>
+<li><p><strong>Focusing on tools instead of culture.</strong></p>
+<ul>
+<li><em>Why it is a problem:</em> Buying CI/CD tools will not change a pathological culture in which mistakes are punished.</li>
+<li><em>How it manifests:</em> People hide problems, low psychological safety, rework.</li>
+<li><em>Prevention:</em> Deliberately build a generative culture (blameless postmortem, shared responsibility).</li>
+</ul>
+</li>
+</ul>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<p><strong>Basic Level</strong></p>
+<ul>
+<li>What is Continuous Delivery, and how does it differ from Continuous Deployment? → <em>The answer should include the definition of an “always deployable state” and the difference between a manual and an automatic gate to production.</em></li>
+<li>Name the four DORA metrics and assign them to the speed/stability axes. → <em>Frequency + lead time = speed; change fail % + MTTR = stability.</em></li>
+</ul>
+<p><strong>Intermediate Level</strong></p>
+<ul>
+<li>Explain the causal chain Capabilities → Performance → Outcomes. → <em>Emphasize that this is a proven relationship from the Accelerate research, not a correlation.</em></li>
+<li>Why are speed and stability not mutually exclusive? → <em>Small changes, rapid feedback, and automation improve both at once.</em></li>
+</ul>
+<p><strong>Advanced Level</strong></p>
+<ul>
+<li>How does architecture affect the ability to practice CD? → <em>Loosely coupled / independent deployability and testability are the strongest predictor; mention deployment boundaries.</em></li>
+<li>What is the role of Westrum&#39;s culture model in CD? → <em>A generative culture enables blameless handling of errors, which improves the system through feedback.</em></li>
+</ul>
+<p><strong>Questions about Practical Experience</strong></p>
+<ul>
+<li>How did you measure or improve one of the DORA metrics in your project? → <em>Specific measures: trunk-based development, feature toggles, speeding up the pipeline, reducing batch size.</em></li>
+</ul>
+<p><strong>Decision / Trade-off Questions</strong></p>
+<ul>
+<li>When should full Continuous Deployment not be introduced? → <em>Regulated/safety domains where a manual gate, certification, or an audit is required; CD yes, automatic deployment no.</em></li>
+<li>How can delivery speed and the cost of test automation be balanced? → <em>A risk-based approach, a testing pyramid, investment where risk and change fail % are highest.</em></li>
+</ul>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<p>“Continuous Delivery is a discipline in which software is continuously kept in a state suitable for deployment to production, so that releasing a new version is a routine, low-risk activity performed on demand. It is important to distinguish it from Continuous Deployment, where every successful change is deployed to production automatically without a manual gate.</p>
+<p>The importance of this topic is supported by research – the book <em>Accelerate</em> and the DORA model have demonstrated a statistical relationship between adopting CD and improving organizational results. DORA describes a causal chain: building abilities (capabilities) improves delivery performance (performance), which is reflected in company results and people&#39;s satisfaction (outcomes).</p>
+<p>Delivery performance is measured using four metrics along two axes: speed (deployment frequency, change lead time) and stability (change fail percentage and recovery time MTTR). The key finding is that top-performing teams do not make a trade-off between speed and stability – they achieve both simultaneously because small, frequently integrated changes are easier to test and fix.</p>
+<p>From an architectural perspective, the most important capability is a loosely coupled architecture that allows teams to deploy independently. Without it, every release requires orchestration and speed decreases. From a testing perspective, CD is impossible without an automated testing safety net – a healthy testing pyramid – because that is precisely what provides confidence in every change; change fail % and MTTR directly reflect the quality of this safety net. Culture also plays a role: according to Westrum, a generative culture is needed, in which it is safe to report errors.</p>
+<p>A practical example is the introduction of trunk-based development with feature toggles and a faster pipeline: smaller batches of changes reduced change fail % and shortened lead time at the same time. However, trade-offs must be considered – in regulated or safety domains, we typically retain a manual approval gate, so we practice Continuous Delivery, but not fully automatic deployment; and we manage investment in test automation according to risk.</p>
+<p>In summary: Continuous Delivery is a demonstrably effective approach to improving organizational results; it is based on a loosely coupled architecture, strong test automation, and a generative culture, and is measured using four balanced DORA metrics.”</p>
+<h3 id="short-version-for-quick-review"><a class="heading-anchor" href="#short-version-for-quick-review" aria-label="Link to this section">#</a>Short Version for Quick Review</h3>
+<p><strong>5 Main Points</strong></p>
+<ol>
+<li>CD = software is always in a state suitable for deployment; ≠ Continuous Deployment (automatic deployment).</li>
+<li>DORA chain: Capabilities → Performance → Outcomes (a proven relationship, not correlation).</li>
+<li>4 metrics = 2 axes: speed (frequency, lead time) + stability (change fail %, MTTR).</li>
+<li>Speed and stability are not mutually exclusive – top-performing teams have both.</li>
+<li>Key accelerators: trunk-based/CI, loosely coupled architecture, generative culture.</li>
+</ol>
+<p><strong>5 Key Concepts</strong>
+Continuous Delivery · DORA metrics · Trunk-based development · Loosely coupled architecture · Westrum generative culture.</p>
+<p><strong>5 Typical Questions</strong>
+CD vs. Continuous Deployment? · Name the 4 DORA metrics. · Why are speed and stability not mutually exclusive? · How does architecture affect CD? · When should fully automatic deployment not be introduced?</p>
+<p><strong>3 Most Common Mistakes</strong>
+Confusing CD and Continuous Deployment · optimizing only one axis · CD without test automation.</p>
+<p><strong>1 Model Sentence</strong>
+“Continuous Delivery keeps software always deployable and is demonstrably associated with better company results – it is based on a loosely coupled architecture, strong test automation, and a generative culture, and is measured using four balanced DORA metrics.”</p>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning Outcome</h3>
+<p>After mastering the topic, the student is able to: define Continuous Delivery and distinguish it from Continuous Deployment and Continuous Integration; explain the causal chain of the DORA model and interpret the four key metrics along two axes; justify why speed and stability are not in opposition; describe the architectural prerequisites for CD (a loosely coupled, independently deployable and testable architecture) and the role of test automation as a safety net; and discuss the trade-offs of introducing CD in both ordinary and regulated (safety) environments.</p>
+<h3 id="summary-table"><a class="heading-anchor" href="#summary-table" aria-label="Link to this section">#</a>Summary Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Is Important</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Definition of CD</td>
+<td>Always deployable state; ≠ Continuous Deployment</td>
+<td>Requires deployable units</td>
+<td>Test automation is necessary</td>
+<td>CD vs. Continuous Deployment?</td>
+</tr>
+<tr>
+<td>DORA chain</td>
+<td>Capabilities → Performance → Outcomes</td>
+<td>Capabilities are partly architectural</td>
+<td>The testing safety net is a capability</td>
+<td>Explain the DORA causal model.</td>
+</tr>
+<tr>
+<td>4 metrics</td>
+<td>Speed + stability are not mutually exclusive</td>
+<td>Independent deployment increases frequency</td>
+<td>Change fail % / MTTR measure test quality</td>
+<td>Name and classify the 4 metrics.</td>
+</tr>
+<tr>
+<td>Capabilities</td>
+<td>Trunk-based, loosely coupled, culture</td>
+<td>Loose coupling = key predictor</td>
+<td>CI provides rapid feedback</td>
+<td>Which capabilities accelerate CD?</td>
+</tr>
+<tr>
+<td>Culture (Westrum)</td>
+<td>Generative, blameless environment</td>
+<td>Shared ownership of the architecture</td>
+<td>Open reporting of defects</td>
+<td>What is the role of culture in CD?</td>
+</tr>
+<tr>
+<td>Trade-offs</td>
+<td>Regulated domains versus full automation</td>
+<td>Deployment boundaries and gates</td>
+<td>Risk-based test scope</td>
+<td>When should auto-deploy not be introduced?</td>
+</tr>
+</tbody></table></div>
+<h2 id="practical-example-continuous-delivery-in-embedded-development"><a class="heading-anchor" href="#practical-example-continuous-delivery-in-embedded-development" aria-label="Link to this section">#</a>Practical Example: Continuous Delivery in Embedded Development</h2>
+<p><strong>Presentation:</strong> In an embedded project, we attempted to come as close as possible to the principles of Continuous Delivery, but encountered physical limitations arising from our dependence on the target hardware. The following analysis shows which capabilities according to the DORA model we managed to achieve and where the limitations remain.</p>
+<p><strong>Our setup (deployment pipeline).</strong> We apply strong automation already at the feature branch level (unit tests and virtual functional tests). Merging (merge) into the integration branch through a Pull Request is conditional on a nightly run on a Hardware-in-the-Loop (HIL) test rig. A release to the main branch (main) runs on demand – it automatically generates tags, packages artifacts, compiles documentation, and runs static analysis with coverage reports.</p>
+<p><strong>Applying the theory – comparison with the DORA model:</strong></p>
+<ul>
+<li><p><strong>Continuous Integration &amp; deployment automation (achieved):</strong> We fulfill this capability well. The release pipeline generates a complete package without manual intervention, and failing tests at a lower level immediately block the merge – the principle that “a broken build has the highest priority” therefore works.</p>
+</li>
+<li><p><strong>Change lead time (bottleneck):</strong> We encounter the physical limits of the hardware. Rapid feedback (fast feedback loop) is delayed because a full HIL test runs only at night due to capacity constraints – waiting for the morning result conflicts with the ideal of CI, where feedback and correction are measured in minutes. Lead time is further extended dramatically by a subsequent external system test, which prevents a straightforward deployment directly to production.</p>
+</li>
+<li><p><strong>Change fail percentage (strength):</strong> Thanks to a strict Quality Gate (a merge is not accepted until it passes the HIL test), we maintain very high stability and minimize the proportion of defective releases.</p>
+</li>
+</ul>
+<p><strong>Conclusion:</strong> In embedded development, we have built the maximum achievable level of Continuous Integration. Two systemic limitations hold us back from moving to pure Continuous Delivery (measured according to the DORA metrics): the physical latency of testing on real hardware and the dependency on a manual/external system test before production. This is a clear illustration that key metrics (particularly lead time) in the embedded domain are constrained more by the architecture of the testing environment than by the maturity of CI/CD tools.</p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html"><span class="pager__label">← Previous</span><span>Business Understanding: Technical Debt &amp; Long Term Costs</span></a>
+      <a class="pager__next" href="../../chapters/green-business-understanding/component-feature-teams.html"><span class="pager__label">Next →</span><span>Component Teams vs. Feature Teams</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#the-causal-chain-of-the-dora-model">The Causal Chain of the DORA Model</a></li><li class="lvl-3"><a href="#1-software-delivery-performance-4-key-metrics">1. Software Delivery Performance (4 Key Metrics)</a></li><li class="lvl-3"><a href="#2-capabilities-what-needs-to-be-improved">2. Capabilities (What Needs to Be Improved)</a></li><li class="lvl-3"><a href="#3-outcomes-impact-on-both-the-company-and-people">3. Outcomes (Impact on Both the Company and People)</a></li><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-patterns</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#short-version-for-quick-review">Short Version for Quick Review</a></li><li class="lvl-3"><a href="#learning-outcome">Learning Outcome</a></li><li class="lvl-3"><a href="#summary-table">Summary Table</a></li><li class="lvl-2"><a href="#practical-example-continuous-delivery-in-embedded-development">Practical Example: Continuous Delivery in Embedded Development</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/mermaid.min.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

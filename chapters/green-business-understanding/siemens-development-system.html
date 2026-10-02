@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Siemens Development System (SDS) - GREEN - Business Understanding - SWA preparation study guide.">
+<title>Siemens Development System (SDS) · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding" open>
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system" aria-current="page">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>GREEN - Business Understanding</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#4CAF50;--i:0">
+      <a class="chapter-chip" href="../../index.html#green-business-understanding"><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business</a>
+      <div class="topic-meta">
+        <span>3,770 words · about 19 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="green-business-understanding/siemens-development-system" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="siemens-development-system-sds">🟢 Siemens Development System (SDS)</h1>
+<h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
+<p><strong>Siemens Development System (SDS)</strong> is a corporate framework for change toward a <strong>lean/agile way of working and thinking</strong> across Siemens. According to the definition in the source wiki, it is a <em>“frame for change towards a lean/agile way of work and mindset at Siemens&quot;</em> – in other words, neither a single methodology nor a mandatory process, but an overarching system that integrates proven <strong>principles</strong> and <strong>methods</strong> and supports them with a <strong>modern approach to leading people (leadership mindset)</strong>.</p>
+<p>The goal of SDS is to help Siemens become an <strong>organization that learns (learning organization)</strong> that is fast, flexible, and capable of succeeding in an uncertain environment (digitalization, artificial intelligence, disruptive business models). SDS is also a <strong>Community of Practice</strong> – a community of more than 50 experts across all business units (Business Units) and locations.</p>
+<p>For <strong>architecture</strong>, the topic matters because several SDS principles (for example, “Build Quality in from the beginning&quot;, “Establish pull and flow&quot;, “Set-Up a value stream oriented agile organization&quot;) directly shape architectural decisions – independently deployable units, testability, technical debt management, and value flow. For <strong>testing</strong>, the principle <em>Build Quality in from the beginning</em> is particularly important; it is essentially a formulation of <strong>shift-left testing</strong>, defect prevention, and testability as a design property.</p>
+<blockquote>
+<p>[!NOTE]
+All substantive facts in this paper come from the internal SDS Confluence wiki pages (export). The <strong>Common Mistakes</strong>, <strong>Examination Questions</strong>, and <strong>Model Answer</strong> sections are a didactic synthesis beyond the source and are marked accordingly.</p>
+</blockquote>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Definition</th>
+<th>Significance in Architecture</th>
+<th>Significance in Testing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>SDS</strong></td>
+<td>A framework for moving to a lean/agile way of working and thinking at Siemens; integrates principles + methods + leadership mindset</td>
+<td>Influences the system structure (value streams, independent teams)</td>
+<td>Establishes a culture of early and continuous quality checks</td>
+</tr>
+<tr>
+<td><strong>Lean/Agile mindset</strong></td>
+<td>A way of thinking based on eliminating waste, value flow, experimentation, and learning</td>
+<td>Determines the preference for small, verifiable increments</td>
+<td>Favors short feedback loops (fast feedback)</td>
+</tr>
+<tr>
+<td><strong>Learning organization</strong></td>
+<td>An organization that systematically creates, shares, and uses knowledge</td>
+<td>Architecture must enable rapid experiments and evolution</td>
+<td>Tests are a learning tool, not just a checking tool</td>
+</tr>
+<tr>
+<td><strong>Value stream</strong></td>
+<td>An end-to-end flow of activities that creates value for the customer</td>
+<td>Organization around the value stream, not functional silos</td>
+<td>Testing is planned according to the flow, not the layers</td>
+</tr>
+<tr>
+<td><strong>Principle</strong></td>
+<td>An enduring guiding rule (why and what)</td>
+<td>Guides architectural decisions</td>
+<td>Guides the quality strategy</td>
+</tr>
+<tr>
+<td><strong>Method</strong></td>
+<td>A specific tool/practice that implements principles (how)</td>
+<td>For example, MVP determines incremental delivery</td>
+<td>For example, Retrospective improves the testing process</td>
+</tr>
+<tr>
+<td><strong>Community of Practice</strong></td>
+<td>A community of experts sharing and developing knowledge (50+ in SDS)</td>
+<td>Spreads good architectural practices</td>
+<td>Spreads good testing practices</td>
+</tr>
+</tbody></table></div>
+<p><strong>Key distinction for the examination:</strong> <em>principles</em> say <strong>WHY and WHAT</strong> (they are stable); <em>methods</em> say <strong>HOW</strong> (they can be replaced according to context). A typical mistake is to confuse them or introduce methods without understanding the principles.</p>
+<hr>
+<h3 id="the-core-idea-of-sds-why-it-was-created"><a class="heading-anchor" href="#the-core-idea-of-sds-why-it-was-created" aria-label="Link to this section">#</a>The Core Idea of SDS (Why It Was Created)</h3>
+<p>According to the source, SDS is driven by “game-changing&quot; technologies – digitalization, data collection and analysis, artificial intelligence and machine learning, additive manufacturing, and disruptive business models. These trends bring opportunities as well as challenges (fast-moving competitors, nonlinear market developments). The response is <strong>rapid learning</strong> and <strong>excellence throughout the entire value stream</strong>, achieved by applying lean and agile principles.</p>
+<p>SDS builds on the tradition of <strong>lean manufacturing</strong> at Siemens – specifically, the <em>Siemens Performance System @ Production and Logistics (SPS@PL)</em>, which, according to the source, has been delivering a positive business impact in Siemens manufacturing for many years. SDS extends this philosophy from manufacturing to <strong>development and all other functions</strong>.</p>
+<ul>
+<li><strong>Vision:</strong> <em>Siemens – a learning and agile organization.</em></li>
+<li><strong>Mission:</strong> shape a culture of experimentation, learning, and collaboration in trust; inspire and enable people to adopt the SDS mindset through principles and methods; support greater adaptability at Siemens; further develop SDS by sharing knowledge.</li>
+<li><strong>Motto:</strong> <em>shape. inspire. adapt.</em></li>
+</ul>
+<p><img src="../../assets/images/green-business-understanding/sds-overview.png" alt="SDS overview: framework, principles, methods, and leadership mindset"></p>
+<hr>
+<h3 id="8-sds-principles"><a class="heading-anchor" href="#8-sds-principles" aria-label="Link to this section">#</a>8 SDS Principles</h3>
+<p>The principles form the <strong>foundation of a modern development culture</strong>. Historically, they originate in the <strong>Toyota Production System</strong> (Focus on Customer Value, Set-Up value stream, Establish Pull and Flow, Improve Continuously), were extended with software-oriented principles from <strong>IBM and SAP</strong> (Deliver fast and continuously, Build Quality from the Beginning), and later supplemented with <strong>Go and See</strong> and <strong>Empower and Respect People</strong>.</p>
+<p><img src="../../assets/images/green-business-understanding/sds-principles.jpg" alt="SDS principles – 8 principles around #SDS"></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Principle</th>
+<th>Core (According to the Source)</th>
+<th>Connection to Architecture</th>
+<th>Connection to Testing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>Focus on customer value and eliminate waste</strong></td>
+<td>Close collaboration with stakeholders, understanding needs, eliminating non-value-adding activities</td>
+<td>Do not build unnecessary components (YAGNI); value-driven architecture</td>
+<td>Do not test everything indiscriminately, but according to risk and value (risk-based)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Establish pull and flow</strong></td>
+<td>Transparency, limiting the amount of parallel work (WIP), supporting flow, the “pull&quot; principle</td>
+<td>Independently deployable units, minimizing dependencies that block flow</td>
+<td>Tests within the flow (continuous testing), not a large batch phase at the end</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Deliver fast and continuously to create knowledge</strong></td>
+<td>Small, regular increments for rapid feedback; learning from mistakes</td>
+<td>Architecture that enables frequent and safe deployment</td>
+<td>An automated testing safety net as a prerequisite for frequent delivery</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Go and see</strong></td>
+<td>Go to where things happen, “go, observe and see&quot; instead of “come and report&quot;; the leader listens and helps</td>
+<td>Decisions based on actual system behavior, not reports</td>
+<td>Observing actual operations (production data, observability)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Build Quality in from the beginning</strong></td>
+<td>Prevention and the earliest possible detection of problems, immediate resolution</td>
+<td>Testability and quality attributes (NFR) from the start of design</td>
+<td><strong>Shift-left</strong>, defect prevention, TDD, definition of done</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Empower and respect people</strong></td>
+<td>Self-organizing teams with ownership of their work; decisions where the competence lies; mutual trust</td>
+<td>Decision-making authority with the team that owns the component (Conway)</td>
+<td>The team also owns the quality and tests of its component</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Set-Up a value stream oriented agile organization</strong></td>
+<td>Organizational agility, end-to-end value streams for success in a changing environment</td>
+<td>The system structure follows the value stream, not functional silos</td>
+<td>A test strategy designed across the value stream (end-to-end)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Improve continuously</strong></td>
+<td>Regular improvement of the way of working; collecting feedback; verifying changes through experiments</td>
+<td>Evolutionary architecture, technical debt management</td>
+<td>Continuous improvement of the testing process (metrics, retrospectives)</td>
+</tr>
+</tbody></table></div>
+<h4 id="detail-build-quality-in-from-the-beginning-key-for-testing"><a class="heading-anchor" href="#detail-build-quality-in-from-the-beginning-key-for-testing" aria-label="Link to this section">#</a>Detail: Build Quality in from the beginning (Key for Testing)</h4>
+<p>This principle is the most important from a testing perspective and is worth elaborating on in the examination. The source supports it with several concepts:</p>
+<ul>
+<li><strong>Poka-Yoke (mistake-proofing):</strong> a Japanese concept of mistake prevention – find and fix problems as close to their source as possible, because the cost of fixing a defect increases as it flows through the process.</li>
+<li><strong>Exponential growth in the cost of fixing defects:</strong> <em>“The cost of error fixing increases exponentially along the product lifecycle.&quot;</em> Therefore, the primary purpose of the development process is to find and fix a defect as early as possible.</li>
+<li><strong>Prevention vs. early elimination of defects:</strong> a distinction is made between <em>defect prevention</em> (not introducing a defect in the first place, including incorrectly defined requirements) and <em>early defect elimination</em> (if a defect occurs, finding and fixing it as early as possible).</li>
+<li><strong>Provocative statement from the source:</strong> <em>“If you routinely find defects during verification, your process is defective.&quot;</em> – If you routinely find defects only during verification, the process itself is defective (quality should be built in, not sought through a test at the end).</li>
+<li><strong>It is not “first time right&quot;:</strong> in an innovative or uncertain environment, it is legitimate to experiment and provide prototypes/MVPs to validate ideas.</li>
+<li><strong>Specific practices according to the source:</strong> professional requirements engineering with clear acceptance criteria, coverage of quality attributes (NFR) from the beginning, a clear definition of done / Done-Done principle, <strong>Test Driven Development and testing as early as possible</strong>, immediately stopping and fixing the root cause when an error is found, professional architecture.</li>
+</ul>
+<blockquote>
+<p>This is a clear bridge between SDS and classical testing theory: the principle effectively formulates <strong>shift-left</strong>, <strong>defect prevention</strong>, <strong>testability by design</strong>, and <strong>NFR from the beginning</strong>.</p>
+</blockquote>
+<hr>
+<h3 id="16-sds-methods-briefly"><a class="heading-anchor" href="#16-sds-methods-briefly" aria-label="Link to this section">#</a>16 SDS Methods (Briefly)</h3>
+<p>Methods are <strong>tools through which the principles are implemented</strong>. A set of 16 primarily promoted methods was selected for SDS; there is also an “extended set&quot; (for example, 5S, ASA, BDD). Each organization should <strong>assess for itself which methods are useful in its environment</strong> – the methods are not universally mandatory.</p>
+<p><img src="../../assets/images/green-business-understanding/sds-methods.png" alt="SDS methods – 16 methods around #SDS"></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Methods (According to the Source)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Strategy and alignment</td>
+<td>Hoshin Kanri, OKR, Flight Levels, Scaling Frameworks</td>
+</tr>
+<tr>
+<td>Iterative development</td>
+<td>Scrum, Kanban, Timeboxing, Ranked Backlog</td>
+</tr>
+<tr>
+<td>Feedback and learning</td>
+<td>Daily Meetings, Retrospective, Structured problem solving</td>
+</tr>
+<tr>
+<td>Value and customer</td>
+<td>Design Thinking, MVP/MMP, Co-Creation, Value Stream Management</td>
+</tr>
+<tr>
+<td>Transparency and Go&amp;See</td>
+<td>Visual Management, Gemba walk</td>
+</tr>
+<tr>
+<td>Team organization</td>
+<td>Self-organizing / cross-functional teams</td>
+</tr>
+</tbody></table></div>
+<p><strong>For the examination, it is sufficient to be able to:</strong> group the methods, give 3–4 examples, and above all emphasize that <strong>a method without a principle is cargo cult</strong> – for example, introducing a “Daily Meeting&quot; as a reporting status meeting does not fulfill either the <em>Empower and respect people</em> or the <em>Go and see</em> principle.</p>
+<hr>
+<h3 id="sds-connections-to-architecture-and-testing-synthesis"><a class="heading-anchor" href="#sds-connections-to-architecture-and-testing-synthesis" aria-label="Link to this section">#</a>SDS Connections to Architecture and Testing (Synthesis)</h3>
+<p><strong>Architecture.</strong> SDS is not an architectural framework, but several principles have a direct architectural impact:</p>
+<ul>
+<li><em>Establish pull and flow</em> + <em>Deliver fast</em> → pressure for <strong>independently deployable units</strong> and low coupling (otherwise frequent delivery is not possible).</li>
+<li><em>Set-Up a value stream oriented agile organization</em> → <strong>Conway&#39;s law</strong>: the system structure will reflect the organizational structure, which is why the organization is structured around the value stream.</li>
+<li><em>Build Quality in</em> → <strong>testability and NFR as a design property</strong>, technical debt management.</li>
+<li><em>Empower and respect people</em> → decision-making authority with the team that owns the component.</li>
+</ul>
+<p><strong>Testing.</strong> SDS shifts quality “to the left&quot; and makes it a shared team responsibility:</p>
+<ul>
+<li>fast and continuous delivery is not possible without an <strong>automated testing safety net</strong>;</li>
+<li><em>Build Quality in</em> = <strong>defect prevention</strong> and <strong>shift-left</strong> instead of testing only at the end;</li>
+<li><em>Improve continuously</em> + <em>Retrospective</em> = <strong>continuous improvement of the testing process</strong>;</li>
+<li><em>Go and see</em> = using <strong>observability and production data</strong> as feedback on actual quality.</li>
+</ul>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns-synthesis"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns-synthesis" aria-label="Link to this section">#</a>Common Mistakes and Anti-patterns (Synthesis)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Mistake / Anti-pattern</th>
+<th>Why It Is a Problem</th>
+<th>How It Manifests</th>
+<th>How to Prevent It</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Methods without principles (cargo cult agile)</strong></td>
+<td>Rituals are copied without understanding their purpose</td>
+<td>“We do Scrum&quot;, but decisions remain centralized</td>
+<td>First the principle (why), then the method (how)</td>
+</tr>
+<tr>
+<td><strong>Go &amp; See as inspection</strong></td>
+<td>The principle should provide support, not supervision</td>
+<td>The leader goes to “inspect&quot; instead of listening and removing obstacles</td>
+<td>“Go, observe and see&quot; – ask about obstacles, offer help</td>
+</tr>
+<tr>
+<td><strong>Quality sought through a test at the end</strong></td>
+<td>Violates <em>Build Quality in</em>; costs grow exponentially</td>
+<td>A large testing phase before release, many late defects</td>
+<td>Shift-left, TDD, clear DoD, NFR from the beginning</td>
+</tr>
+<tr>
+<td><strong>Overload from parallel work (high WIP)</strong></td>
+<td>Violates <em>Establish pull and flow</em></td>
+<td>Everything in progress, nothing finished, long lead times</td>
+<td>Limit WIP, a pull system, visualization of flow</td>
+</tr>
+<tr>
+<td><strong>Confusing output with value</strong></td>
+<td>Violates <em>Focus on customer value</em></td>
+<td>The number of features is measured, not the impact on the customer</td>
+<td>Be guided by customer value, eliminate waste</td>
+</tr>
+<tr>
+<td><strong>SDS as a mandatory uniform process</strong></td>
+<td>Denies the context-dependent nature of methods</td>
+<td>Forced introduction of methods where they do not make sense</td>
+<td>Each team assesses the suitability of methods in its environment</td>
+</tr>
+<tr>
+<td><strong>Incorrect communication of principles</strong></td>
+<td>The architect/tester/developer interpret the principles differently</td>
+<td>Disagreements about “what done means&quot;</td>
+<td>Shared understanding, Done-Done principle, acceptance criteria</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="examination-questions-synthesis"><a class="heading-anchor" href="#examination-questions-synthesis" aria-label="Link to this section">#</a>Examination Questions (Synthesis)</h3>
+<p><strong>Basic Level</strong></p>
+<ul>
+<li>What is SDS, and what is its purpose? → <em>A framework for moving to a lean/agile way of working; integrates principles, methods, and leadership mindset; goal = learning organization.</em></li>
+<li>What is the difference between a principle and a method? → <em>Principle = why/what (stable), method = how (context-dependent, replaceable).</em></li>
+<li>Name at least 4 SDS principles. → <em>Focus on customer value, Build quality in, Establish pull and flow, Improve continuously…</em></li>
+</ul>
+<p><strong>Intermediate Level</strong></p>
+<ul>
+<li>How does the “Build Quality in from the beginning&quot; principle relate to testing? → <em>Shift-left, defect prevention vs. early elimination, Poka-Yoke, exponential cost growth, TDD, NFR from the beginning.</em></li>
+<li>Why does SDS distinguish between principles and methods? → <em>To avoid introducing rituals without understanding (cargo cult); methods are selected according to context.</em></li>
+<li>How does “Set-Up a value stream oriented agile organization&quot; relate to Conway&#39;s law? → <em>The system structure reflects the organizational structure, which is why the organization is structured around the value stream.</em></li>
+</ul>
+<p><strong>Advanced Level</strong></p>
+<ul>
+<li>How would SDS principles influence an architectural decision about dividing a system into components? → <em>Independent deployability (flow/deliver fast), team ownership of the component (empower), testability (build quality in).</em></li>
+<li>What does the statement “If you routinely find defects during verification, your process is defective&quot; mean? → <em>Quality should be built in, not sought afterward; routine findings signal a defective process, not good testing.</em></li>
+</ul>
+<p><strong>Questions About Practical Experience</strong></p>
+<ul>
+<li>Describe a situation in which a method was introduced without a principle. What did it cause?</li>
+<li>How did you support the “Improve continuously&quot; principle in your team? (retrospectives, experiments, metrics)</li>
+</ul>
+<p><strong>Trade-off Questions</strong></p>
+<ul>
+<li>When is it legitimate NOT to follow “first time right&quot;? → <em>In an innovative/uncertain environment – experiments and MVPs for validation; a trade-off between learning speed and perfection.</em></li>
+<li>What is the trade-off between fast delivery and stability/quality? → <em>SDS states that they are not mutually exclusive – build quality in and automation enable both speed and stability; a compromise is a sign of a weak process.</em></li>
+</ul>
+<hr>
+<h3 id="model-answer-4-6-minutes"><a class="heading-anchor" href="#model-answer-4-6-minutes" aria-label="Link to this section">#</a>Model Answer (4–6 Minutes)</h3>
+<p><em>(a continuous answer suitable for an oral examination)</em></p>
+<p>“<strong>Siemens Development System, SDS for short, is a corporate framework for moving to a lean and agile way of working and thinking across Siemens.</strong> It is neither a single methodology nor a mandatory process – it is an overarching system that integrates proven <em>principles</em> and <em>methods</em> and supports them with a modern approach to leading people. The goal is for Siemens to become a learning organization: fast, flexible, and capable of succeeding in an environment of digitalization, artificial intelligence, and disruptive business models. SDS is also a community of practice with more than fifty experts across business units and builds on the tradition of lean manufacturing, specifically the SPS@PL system, extending it from manufacturing to development and all functions.</p>
+<p><strong>The distinction between principles and methods is key.</strong> Principles say <em>why</em> and <em>what</em> and are stable; methods say <em>how</em> and can be replaced according to context. SDS has eight principles that form the foundation of a modern development culture – for example, <em>Focus on customer value and eliminate waste</em>, <em>Establish pull and flow</em>, <em>Deliver fast and continuously to create knowledge</em>, <em>Go and see</em>, <em>Build Quality in from the beginning</em>, <em>Empower and respect people</em>, <em>Set-Up a value stream oriented agile organization</em>, and <em>Improve continuously</em>. Historically, they originate in the Toyota Production System, were extended with software principles from IBM and SAP, and were supplemented later. There are sixteen methods – from Scrum and Kanban through OKR and Hoshin Kanri to Design Thinking and MVP – and each organization should assess for itself which are useful in its environment.</p>
+<p><strong>For architecture</strong>, what matters is that several principles directly shape the design: pressure for frequent and safe deliveries leads to independently deployable units, value stream orientation relates to Conway&#39;s law, and the <em>Build Quality in</em> principle means testability and quality attributes as a design property.</p>
+<p><strong>For testing</strong>, the most important principle is precisely <em>Build Quality in from the beginning</em>. It is effectively a formulation of shift-left testing: quality should be built in, not sought through a test at the end. The source supports this with the Japanese Poka-Yoke concept and the observation that the cost of fixing a defect grows exponentially during the life cycle. It also includes a provocative statement: <em>if you routinely find defects only during verification, the process itself is defective</em>. In practice, this means defect prevention, Test Driven Development, a clear definition of done, and coverage of non-functional requirements from the beginning.</p>
+<p><strong>Example:</strong> a typical anti-pattern is to introduce a Daily Meeting as a reporting status meeting for a manager. This is a method without a principle – it violates both <em>Empower and respect people</em> and <em>Go and see</em>, because a tool for the team becomes a tool for inspection.</p>
+<p><strong>Trade-off:</strong> SDS does not always require “first time right&quot;. In an innovative and uncertain environment, it is legitimate to experiment and validate ideas through MVPs. And importantly, speed and stability are not mutually exclusive in SDS – building quality in and automation are precisely what enable delivery that is both fast and reliable.</p>
+<p><strong>In summary:</strong> SDS is a framework for Siemens&#39; lean/agile transformation, built on eight principles and sixteen methods. From the architect&#39;s and tester&#39;s perspective, the most valuable idea is that quality and testability are designed in from the beginning, and that methods must be selected with an understanding of the principles, not by copying rituals.**&quot;</p>
+<hr>
+<h3 id="quick-revision-cheat-sheet"><a class="heading-anchor" href="#quick-revision-cheat-sheet" aria-label="Link to this section">#</a>Quick Revision (Cheat Sheet)</h3>
+<p><strong>5 Main Points</strong></p>
+<ol>
+<li>SDS = a framework for moving to a lean/agile way of working and thinking at Siemens (goal: learning organization).</li>
+<li>It is built on <strong>principles (why/what)</strong> and <strong>methods (how)</strong> + modern leadership.</li>
+<li><strong>8 principles</strong> (Toyota → IBM/SAP → additions), <strong>16 methods</strong>.</li>
+<li>The most testable principle: <strong>Build Quality in from the beginning</strong> = shift-left + defect prevention.</li>
+<li>Methods are selected according to context; a method without a principle = cargo cult.</li>
+</ol>
+<p><strong>5 Key Concepts:</strong> learning organization, value stream, principles vs. methods, Poka-Yoke, Community of Practice.</p>
+<p><strong>5 Typical Questions:</strong> What is SDS? • Principle vs. method? • Build Quality in and testing? • Connection to Conway&#39;s law? • When should “first time right&quot; not apply?</p>
+<p><strong>3 Most Common Mistakes:</strong> methods without principles (cargo cult); quality sought through a test at the end; Go &amp; See as inspection instead of support.</p>
+<p><strong>Examination Sentence:</strong> <em>“SDS is a framework for Siemens&#39; lean/agile transformation, built on eight principles and sixteen methods, whose core is to build quality and testability in from the beginning and select methods with an understanding of the principles.&quot;</em></p>
+<hr>
+<h3 id="learning-outcome-synthesis"><a class="heading-anchor" href="#learning-outcome-synthesis" aria-label="Link to this section">#</a>Learning Outcome (Synthesis)</h3>
+<p>After mastering the topic, the candidate should be able to: define SDS and its purpose; distinguish principles from methods and explain why this matters; name the 8 principles and associate them with both architectural and testing impacts; justify the <em>Build Quality in</em> principle as a form of shift-left testing; identify the “method without a principle&quot; anti-pattern; and formulate a trade-off between delivery speed, experimentation (MVP), and quality.</p>
+<hr>
+<h3 id="summary-table"><a class="heading-anchor" href="#summary-table" aria-label="Link to this section">#</a>Summary Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Matters</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Essence of SDS</strong></td>
+<td>A framework for a lean/agile way of working and thinking; learning organization</td>
+<td>Influences the structure around the value stream</td>
+<td>Establishes a culture of early quality checks</td>
+<td>What is SDS, and what is its purpose?</td>
+</tr>
+<tr>
+<td><strong>Principles vs. methods</strong></td>
+<td>Principle = why/what (stable), method = how (context-dependent)</td>
+<td>Principles guide architectural decisions</td>
+<td>Principles guide the quality strategy</td>
+<td>What is the difference, and why does it matter?</td>
+</tr>
+<tr>
+<td><strong>8 principles</strong></td>
+<td>Toyota → IBM/SAP → additions; the foundation of the culture</td>
+<td>Flow, value stream, testability</td>
+<td>Defect prevention, continuous improvement</td>
+<td>Name and explain the principles</td>
+</tr>
+<tr>
+<td><strong>Build Quality in</strong></td>
+<td>Prevention + early detection; Poka-Yoke; exponential cost growth</td>
+<td>Testability and NFR from the start of design</td>
+<td>Shift-left, TDD, DoD</td>
+<td>How does it relate to testing?</td>
+</tr>
+<tr>
+<td><strong>16 methods</strong></td>
+<td>Tools that implement principles; select according to context</td>
+<td>For example, MVP → incremental delivery</td>
+<td>For example, Retrospective → test improvement</td>
+<td>Give methods and their groups</td>
+</tr>
+<tr>
+<td><strong>Anti-patterns</strong></td>
+<td>Cargo cult, quality at the end, Go&amp;See as inspection</td>
+<td>High WIP blocks flow</td>
+<td>Late defects, expensive fixes</td>
+<td>Describe a method without a principle</td>
+</tr>
+</tbody></table></div>
+<h2 id="practical-example-unifying-a-firmware-update-component"><a class="heading-anchor" href="#practical-example-unifying-a-firmware-update-component" aria-label="Link to this section">#</a>Practical Example: Unifying a Firmware Update Component</h2>
+<p><strong>To Remember: Separate → Verify → Hand Over. HIL Remains.</strong></p>
+<p><strong>Situation and problem:</strong> The task was to unify a component for firmware updates and digital signature verification across different frameworks. Decisive verification traditionally took place only during integration tests on hardware (HIL and measurements). </p>
+<p>The developer could try things out on a prototype but could not verify all target contexts locally.</p>
+<p><strong>Architectural solution:</strong></p>
+<ol>
+<li><strong>Separate</strong> the universal core from the adaptation layers for the individual environments.</li>
+<li><strong>Verify</strong> the actual core using unit and virtual functional tests, including complex positive and negative scenarios. Dependencies on the adaptation are replaced with mocks in these tests. Real-world scenarios are incorporated into virtual tests where their essential conditions can be faithfully modeled.</li>
+<li><strong>Hand over</strong> the core to internal customers on the basis of successful tests without HW. Customers are responsible for the specific adaptations; verification of the target integration is a separate step.</li>
+</ol>
+<p><strong>Application of SDS principles:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>How It Was Reflected in the Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Build Quality in from the beginning</strong></td>
+<td>Testability was established through the division of the component itself. Core quality is verified during development, not only during integration.</td>
+</tr>
+<tr>
+<td><strong>Establish pull and flow</strong></td>
+<td>Handover of the core does not have to wait for verification of all hardware integrations. This supports <strong>flow</strong>, but does not automatically constitute the introduction of a pull system.</td>
+</tr>
+<tr>
+<td><strong>Deliver fast and continuously to create knowledge</strong></td>
+<td>Virtual tests enable earlier feedback and handover of the verified core. Handing over a component is not the same as deploying a product into operation.</td>
+</tr>
+<tr>
+<td><strong>Improve continuously</strong></td>
+<td>Transferring suitable real-world scenarios into virtual regression testing makes it possible to catch similar problems earlier during subsequent changes.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Trade-off and limits of the evidence:</strong> Independent verification of the core comes at the cost of maintaining interfaces, adaptations, and mocks. A test double can misrepresent reality, which is why HIL and measurements remain necessary for verifying the actual hardware, timing, and integration. A mock returning “invalid signature” verifies the core&#39;s response, <strong>not the correctness of the actual signature verification</strong>, which needs its own tests.</p>
+<p><strong>Short Examination Answer:</strong></p>
+<blockquote>
+<p>“When unifying a component for firmware updates and signature verification, we needed to support different frameworks. The original approach relied on integration tests on hardware, but the developer could not verify all contexts locally. We therefore separated the universal core from the adaptations and verified the core through unit and virtual functional tests with mocked dependencies. After successful tests, we handed it over to internal customers responsible for the adaptations. This supported Build Quality in and flow: testability was part of the design, and handover of the core did not depend on verification of all target environments. The trade-off is maintenance of the test doubles and their limited fidelity. We did not replace HIL; we separated verification of the core from verification of the specific integration.”</p>
+</blockquote>
+<p><strong>How to demonstrate the benefit:</strong> For example, through the time to relevant feedback and the number of core defects found only during integration. These are proposed metrics, not measured results from this example.</p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html"><span class="pager__label">← Previous</span><span>Role of the SWA and Quality Attributes</span></a>
+      <a class="pager__next" href="../../chapters/green-business-understanding/cynefin-model-framework.html"><span class="pager__label">Next →</span><span>Business Understanding: Cynefin Framework (Model)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-3"><a href="#the-core-idea-of-sds-why-it-was-created">The Core Idea of SDS (Why It Was Created)</a></li><li class="lvl-3"><a href="#8-sds-principles">8 SDS Principles</a></li><li class="lvl-4"><a href="#detail-build-quality-in-from-the-beginning-key-for-testing">Detail: Build Quality in from the beginning (Key for Testing)</a></li><li class="lvl-3"><a href="#16-sds-methods-briefly">16 SDS Methods (Briefly)</a></li><li class="lvl-3"><a href="#sds-connections-to-architecture-and-testing-synthesis">SDS Connections to Architecture and Testing (Synthesis)</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns-synthesis">Common Mistakes and Anti-patterns (Synthesis)</a></li><li class="lvl-3"><a href="#examination-questions-synthesis">Examination Questions (Synthesis)</a></li><li class="lvl-3"><a href="#model-answer-4-6-minutes">Model Answer (4–6 Minutes)</a></li><li class="lvl-3"><a href="#quick-revision-cheat-sheet">Quick Revision (Cheat Sheet)</a></li><li class="lvl-3"><a href="#learning-outcome-synthesis">Learning Outcome (Synthesis)</a></li><li class="lvl-3"><a href="#summary-table">Summary Table</a></li><li class="lvl-2"><a href="#practical-example-unifying-a-firmware-update-component">Practical Example: Unifying a Firmware Update Component</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

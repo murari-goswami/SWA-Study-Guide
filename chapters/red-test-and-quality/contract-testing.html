@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contract Testing (contract testing) - RED - Test and Quality - SWA preparation study guide.">
+<title>Contract Testing (contract testing) · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing" aria-current="page">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>2,814 words · about 14 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/contract-testing" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="contract-testing-contract-testing">Contract Testing (contract testing)</h1>
+<p><strong>Contract Testing (contract testing)</strong> is a modern and highly effective approach to verifying integration interfaces (APIs) between independently evolving software components, most commonly in microservices architecture. Traditionally, integration was verified either by writing brittle end-to-end (E2E) tests, which are extremely slow and demanding to maintain, or by isolated mocking (stubbing) of third parties, which carries the risk that the behavior of the real service will diverge from the mock over time (known as <em>mock drift</em>). </p>
+<p>Contract testing resolves this dilemma by formalizing communication between the <strong>consumer (Consumer)</strong> and the <strong>provider (Provider)</strong> of an interface into an executable and automatically verifiable <strong>contract</strong>. This approach makes it possible to shift integration testing to the left (<em>Shift-Left</em>), accelerate the CI/CD cycle, and give developers absolute certainty that a change in one module will not cause a crash in downstream systems.</p>
+<p><img src="../../assets/images/red-test-and-quality/contract_testing.png" alt="Contract Testing"></p>
+<p><img src="../../assets/images/red-test-and-quality/contract_testing_general.png" alt="Contract Testing General Overview"></p>
+<hr>
+<h3 id="2-definitions-and-basic-concepts"><a class="heading-anchor" href="#2-definitions-and-basic-concepts" aria-label="Link to this section">#</a>2. Definitions and basic concepts</h3>
+<ul>
+<li><h4 id="contract-contract"><a class="heading-anchor" href="#contract-contract" aria-label="Link to this section">#</a>Contract (Contract)</h4>
+<ul>
+<li><strong>Definition:</strong> A formal, machine-readable agreement between the Consumer and the Provider that precisely specifies the expected structure of requests (request) and the corresponding guaranteed responses (response), including data types, formats, and status codes.</li>
+<li><strong>Significance in architecture:</strong> Serves as an explicit boundary for separating (decoupling) subsystems. It allows the architect to define the interface as a stable point of reference that teams can rely on regardless of internal implementation changes.</li>
+<li><strong>Significance in testing:</strong> Represents a single source of truth (test basis) from which mocks for consumer tests and test scripts for provider validation are generated.</li>
+<li><strong>Typical mistake / misconception:</strong> Treating the contract as a static text document (e.g., a PDF in Confluence) instead of an executable artifact.</li>
+</ul>
+</li>
+<li><h4 id="contract-testing-contract-testing-2"><a class="heading-anchor" href="#contract-testing-contract-testing-2" aria-label="Link to this section">#</a>Contract Testing (Contract testing)</h4>
+<ul>
+<li><strong>Definition:</strong> An integration testing method in which both the consumer-side implementation and the provider-side implementation are independently verified to ensure that they strictly conform to the defined contract.</li>
+<li><strong>Significance in architecture:</strong> Enables the safe and independent deployment (independent deployability) of services without requiring coordinated deployment of the entire system.</li>
+<li><strong>Significance in testing:</strong> Reduces dependence on expensive and unstable E2E tests by moving integration verification to the level of fast integration tests (usually running in a matter of milliseconds).</li>
+<li><strong>Typical mistake / misconception:</strong> Attempting to test complex internal business logic (e.g., price calculations) through contracts. A contract should verify only message formats and interface compatibility, not the correctness of internal algorithms.</li>
+</ul>
+</li>
+<li><h4 id="consumer-driven-contract-cdc-testing"><a class="heading-anchor" href="#consumer-driven-contract-cdc-testing" aria-label="Link to this section">#</a>Consumer-Driven Contract (CDC) Testing</h4>
+<ul>
+<li><strong>Definition:</strong> A specific agile pattern of contract testing in which it is the consumer (Consumer) who defines its data requirements in the form of automated tests. These requirements are then aggregated, and the provider (Provider) continuously runs them against its implementation.</li>
+<li><strong>Significance in architecture:</strong> Prevents unnecessary interface development &quot;for future use&quot; (gold-plating). Supports the YAGNI (You Aren&#39;t Gonna Need It) and KISS principles – the provider implements exactly what its clients actually require.</li>
+<li><strong>Significance in testing:</strong> Provides immediate feedback to the API developer. If they change the name of a field used by one of the clients, the CDC test in their build pipeline fails and prevents the deployment of incompatible code.</li>
+<li><strong>Typical mistake / misconception:</strong> Attempting to enforce CDC for publicly published third-party APIs (e.g., Darksky API or Google Maps API). A public provider cannot and will not run tests for thousands of external consumers.</li>
+</ul>
+</li>
+<li><h4 id="pact-json-contract-file"><a class="heading-anchor" href="#pact-json-contract-file" aria-label="Link to this section">#</a>Pact (JSON contract file)</h4>
+<ul>
+<li><strong>Definition:</strong> Currently the most widely used open-source framework for CDC testing, which records consumer interactions in a special JSON file (known as a &quot;pact file&quot;).</li>
+<li><strong>Significance in architecture:</strong> Standardizes the contract format and enables cross-language integration (e.g., a Java backend and a JavaScript frontend communicating through a single shared file).</li>
+<li><strong>Significance in testing:</strong> During consumer tests, Pact automatically starts a mock server on a local port that conforms to the defined contract. On the provider side, Pact then replays these interactions (replay) directly against controllers (e.g., through MockMVC in Spring).</li>
+<li><strong>Typical mistake / misconception:</strong> Manually distributing pact files instead of using a dedicated central registry (Pact Broker) that automatically manages versions and links verification results.</li>
+</ul>
+</li>
+<li><h4 id="fake-contract-validation-google-style"><a class="heading-anchor" href="#fake-contract-validation-google-style" aria-label="Link to this section">#</a>Fake Contract Validation (Google style)</h4>
+<ul>
+<li><strong>Definition:</strong> A contract testing strategy used in monorepos, where reusable fake implementations (Fakes) are used instead of CDC tools. These &quot;fakes&quot; are themselves covered by a set of contract tests run against both the real production service and the fake.</li>
+<li><strong>Significance in architecture:</strong> Google relies heavily on the unified Protocol Buffers data format and a monorepo, eliminating the need for CDC tools such as Pact. The architecture is protected by the API owners themselves providing and maintaining high-fidelity &quot;fakes&quot;.</li>
+<li><strong>Significance in testing:</strong> Developers of downstream services do not need to mock at all. They use a ready-made, tested Fake whose behavior is guaranteed to match the production service completely.</li>
+<li><strong>Typical mistake / misconception:</strong> Using a fake without its own tests. An unmaintained fake will inevitably start diverging from reality as soon as the production code changes.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#3-common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>3. Common mistakes and anti-patterns</h3>
+<p>In practice, critical mistakes are made when implementing contract testing that can undermine the entire test strategy:</p>
+<ul>
+<li><h4 id="mistakes-in-architecture-and-test-strategy"><a class="heading-anchor" href="#mistakes-in-architecture-and-test-strategy" aria-label="Link to this section">#</a>Mistakes in architecture and test strategy:</h4>
+<ol>
+<li><strong>Over-Mocking (excessive mocking of internal classes):</strong> Developers mock internal interfaces within a single component instead of testing through the public API. If an internal class changes (e.g., during refactoring), hundreds of mocks fail even though the system behaves correctly externally. <ul>
+<li><em>How to prevent it:</em> Test primarily through public API contracts. Enforce the use of real dependencies wherever possible, or use proven fakes. One useful tool is, for example, the <code>@DoNotMock</code> annotation.</li>
+</ul>
+</li>
+<li><strong>Cyclic dependencies between components:</strong> If cyclic relationships exist between microservices, building isolated contract tests is extremely difficult because the consumer and provider overlap with each other.<ul>
+<li><em>How to prevent it:</em> Apply the dependency inversion principle (Dependency Inversion) and design a clean layered architecture with a clear direction of data flows.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><h4 id="mistakes-in-requirements-and-communication"><a class="heading-anchor" href="#mistakes-in-requirements-and-communication" aria-label="Link to this section">#</a>Mistakes in requirements and communication:</h4>
+<ol>
+<li><strong>Moving business logic into contracts (Asserting Business Logic):</strong> Attempts to verify complex calculation algorithms through CDC tests. The contract swells with hundreds of test cases representing business states.<ul>
+<li><em>How to prevent it:</em> Limit contract tests exclusively to compatibility (e.g., &quot;if I send a valid ID, I receive JSON with fields X, Y, Z of the specified type&quot;). Leave complex calculations to the provider&#39;s unit tests.</li>
+</ul>
+</li>
+<li><strong>Insufficient collaboration between teams (Missing &quot;3 Amigos&quot; context):</strong> The consumer team generates incomplete or nonsensical contracts without consulting the provider team and &quot;throws them over the fence&quot;.<ul>
+<li><em>How to prevent it:</em> Introduce &quot;3 Amigos&quot; meetings (Business, Dev, QA) before the sprint begins. Jointly define and agree on API contracts and how they will be verified.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="4-exam-questions"><a class="heading-anchor" href="#4-exam-questions" aria-label="Link to this section">#</a>4. Exam questions</h3>
+<p>This section contains questions that an examiner may ask, with guidance on what a correct answer should include:</p>
+<h4 id="a-basic-level"><a class="heading-anchor" href="#a-basic-level" aria-label="Link to this section">#</a>A. Basic level</h4>
+<ul>
+<li><strong>Question:</strong> <em>What is the difference between a traditional integration test using WireMock and a contract test using Pact?</em><ul>
+<li><strong>What the answer must include:</strong> WireMock tests only how our client (Consumer) can process predefined (canned) responses. However, if the provider&#39;s real API changes, WireMock tests still pass and do not detect the error (drift). Pact, in contrast, generates a contract file that is subsequently executed and verified directly at the provider, which completely prevents drift.</li>
+</ul>
+</li>
+</ul>
+<h4 id="b-intermediate-level"><a class="heading-anchor" href="#b-intermediate-level" aria-label="Link to this section">#</a>B. Intermediate level</h4>
+<ul>
+<li><strong>Question:</strong> <em>Describe the CDC testing life cycle. How does the contract get from the consumer to the provider, and how is it verified?</em><ul>
+<li><strong>What the answer must include:</strong> 1. The Consumer writes a test for its client class using Pact mocks. 2. A successful test run generates a JSON pact file. 3. This file is published to a central registry (Pact Broker). 4. The provider&#39;s CI/CD pipeline downloads this file. 5. A provider test is executed that sends HTTP requests from the contract to a running instance of the provider&#39;s service and compares the responses with the expected schema.</li>
+</ul>
+</li>
+</ul>
+<h4 id="c-advanced-level"><a class="heading-anchor" href="#c-advanced-level" aria-label="Link to this section">#</a>C. Advanced level</h4>
+<ul>
+<li><strong>Question:</strong> <em>Why do large technology companies (e.g., Google) often not use CDC tools such as Pact, and how do they address this in monorepos?</em><ul>
+<li><strong>What the answer must include:</strong> Google relies on a monorepo and the unified Protocol Buffers serialization format. Interface changes are detected by static analysis and compilation when code is submitted (pre-submit). Instead of CDC, fakes are used that are provided by the API author and covered by their own contract tests, run concurrently against both the fake and the real implementation.</li>
+</ul>
+</li>
+</ul>
+<h4 id="d-questions-about-practical-experience"><a class="heading-anchor" href="#d-questions-about-practical-experience" aria-label="Link to this section">#</a>D. Questions about practical experience</h4>
+<ul>
+<li><strong>Question:</strong> <em>How do you handle state management (state management) on the provider side when running contract tests? What if the contract requires a user with ID 42 to exist in the database?</em><ul>
+<li><strong>What the answer must include:</strong> Pact offers the concept of &quot;Provider States&quot;. In the contract, the consumer defines a state, e.g., &quot;given user 42 exists&quot;. On the provider side, a method must be implemented and annotated, for example, with <code>@State(&quot;user 42 exists&quot;)</code>, which populates the database with the appropriate test data before the test itself runs, ideally using an in-memory DB or Testcontainers.</li>
+</ul>
+</li>
+</ul>
+<h4 id="e-questions-about-trade-off-decisions"><a class="heading-anchor" href="#e-questions-about-trade-off-decisions" aria-label="Link to this section">#</a>E. Questions about trade-off decisions</h4>
+<ul>
+<li><strong>Question:</strong> <em>Our team has limited capacity. Should we write a complete set of E2E tests through the UI or invest in Contract tests? What are the trade-offs?</em><ul>
+<li><strong>What the answer must include:</strong> Although E2E tests provide the highest business confidence (they test the real system from the user&#39;s perspective), they are extremely slow, expensive, and brittle. Contract tests are orders of magnitude faster and more stable, and they pinpoint errors precisely (low MTTR – Mean Time To Repair). Recommended trade-off: keep E2E only for critical business scenarios (happy path) and move all structural compatibility to the contract level (in accordance with the Testing pyramid / trophy).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5-model-exam-answer-4-6-minutes"><a class="heading-anchor" href="#5-model-exam-answer-4-6-minutes" aria-label="Link to this section">#</a>5. Model exam answer (4–6 minutes)</h3>
+<p><em>(The following text is prepared as a continuous speech for an oral examination. It is recommended to speak in a structured manner, with confidence, and to refer to architectural principles.)</em></p>
+<p>&quot;Dear examination committee, the topic of <strong>Contract Testing</strong>, or contract testing, represents a key pillar of modern quality engineering, especially in the context of distributed systems and microservices. </p>
+<p>When we build a system composed of many independent services, the greatest risk is that a change made by one team to its interface will silently break downstream services. Historically, we addressed this problem either through extensive use of <strong>End-to-End tests</strong> or through <strong>local mocking</strong>. However, both approaches have fundamental disadvantages. E2E tests are slow and expensive, require complex test environments, and often exhibit instability (flakiness). Although local mocking is fast, it suffers from a lack of feedback – if the provider changes its interface, our local mock in the consumer tests still passes, and the error only manifests in production.</p>
+<p><strong>Contract testing</strong> elegantly resolves this dilemma. It acts as a lightweight yet exceptionally strong integration layer. Its principle is to formally describe the interaction at system boundaries in the form of an executable contract – most commonly in JSON format using the <strong>Pact</strong> framework. </p>
+<p>If we choose the most common variant – <strong>Consumer-Driven Contract Testing</strong> – development starts with the consumer. The consumer writes a test that clearly defines: <em>&#39;If I send a GET request to <code>/weather?city=Prague</code>, I expect a 200 response with a precise JSON schema&#39;</em>. Executing this test generates what is known as a <em>pact file</em>. This file is then sent to a central registry (Pact Broker). On the other side, the provider team downloads this contract and runs it directly against its running service as part of its CI/CD pipeline. If the provider were, for example, to rename a field from <code>temperature</code> to <code>temp</code>, the test would immediately fail, the build would be blocked, and the error would never be released.</p>
+<p>Allow me to give a concrete <strong>practical example</strong> that illustrates the implementation well. Imagine a microservice that integrates an external weather forecast through a REST API. If we wrote a purely integration test using WireMock, we would test only our ability to parse substituted data. However, if we use <strong>Pact</strong>, we generate a contract that we hand over to the team managing the weather service. They validate this contract as part of their integration verification. In embedded or automotive environments, contracts are similarly used at the hardware-software interface (HSI) level to verify signal and bus compatibility.</p>
+<p>As a test architect, however, I must also consider the <strong>trade-offs, or architectural compromises</strong>, of this approach. </p>
+<ol>
+<li><strong>Organizational overhead:</strong> CDC requires close collaboration between teams. If teams do not communicate and merely &#39;throw&#39; contracts to each other without agreement, the process will fail.</li>
+<li><strong>State Management:</strong> Contract verification on the provider side requires preparing data states (e.g., &#39;a user with ID 10 exists&#39;). This can be technically demanding in complex systems.</li>
+<li><strong>Limits of applicability:</strong> CDC is not a silver bullet. For public third-party APIs (where we have no influence over the provider), we must still use a combination of WireMock and occasional E2E tests as &#39;Plan B&#39;. In addition, in monorepos with strict static analysis and shared types (e.g., Protocol Buffers at Google), CDC is often redundant, and relying on tested &#39;Fakes&#39; is more effective.</li>
+</ol>
+<p><strong>To summarize:</strong> Contract testing allows us to achieve the ideal of the modern <strong>Testing trophy (Testing Trophy)</strong> – that is, to move the center of gravity of testing into a fast and reliable integration layer. It increases system testability by providing a clear contractual framework. From a software architecture perspective, this is an investment that pays for itself many times over in the form of stable software that can be deployed safely.&quot;</p>
+<hr>
+<h3 id="6-short-version-for-quick-revision-pocket-cheat-sheet"><a class="heading-anchor" href="#6-short-version-for-quick-revision-pocket-cheat-sheet" aria-label="Link to this section">#</a>6. Short version for quick revision (Pocket cheat sheet)</h3>
+<ul>
+<li><p><strong>5 main points:</strong></p>
+<ol>
+<li>Verifies interface (API) compatibility between services without requiring the entire system to run.</li>
+<li>Prevents the integration of incompatible code by catching errors in the CI pipeline.</li>
+<li>Eliminates the problem of &quot;mock drift&quot; (when a mock does not match reality).</li>
+<li>Is much faster and more stable than E2E UI testing.</li>
+<li>Supports independent deployment of services to production.</li>
+</ol>
+</li>
+<li><p><strong>5 key concepts:</strong></p>
+<ul>
+<li><strong>Contract:</strong> A machine-readable specification of API interactions.</li>
+<li><strong>Consumer:</strong> A service that consumes an API and defines its needs.</li>
+<li><strong>Provider:</strong> A service that provides an API and verifies compliance with the contract.</li>
+<li><strong>Pact File:</strong> A JSON representation of the contract generated by the consumer test.</li>
+<li><strong>Fake (Google style):</strong> A tested, faithful substitute for a service, shared in a monorepo.</li>
+</ul>
+</li>
+<li><p><strong>5 typical exam questions:</strong></p>
+<ol>
+<li>How do contract tests fit into the concept of the testing pyramid / trophy?</li>
+<li>What is &quot;mock drift&quot;, and how does contract testing prevent it?</li>
+<li>How does CDC (Consumer-Driven Contracts) simplify API design?</li>
+<li>What is the difference between Contract Testing and functional testing?</li>
+<li>When is it appropriate to use WireMock, and when should Pact be used instead?</li>
+</ol>
+</li>
+<li><p><strong>3 most common mistakes:</strong></p>
+<ol>
+<li>Testing complex business logic through contracts instead of unit tests.</li>
+<li>Creating contracts without direct consultation and communication between teams.</li>
+<li>Neglecting automated contract distribution (absence of Pact Broker).</li>
+</ol>
+</li>
+<li><p><strong>1 model sentence for the exam:</strong></p>
+<blockquote>
+<p><em>&quot;Contract testing allows us to replace brittle and slow E2E tests with fast, isolated integration tests that guarantee interface compatibility without requiring the entire infrastructure to run.&quot;</em></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="7-learning-outcome-link-to-lopo"><a class="heading-anchor" href="#7-learning-outcome-link-to-lopo" aria-label="Link to this section">#</a>7. Learning Outcome (Link to LOPO)</h3>
+<p>This question directly fulfills the objectives defined in <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>LOPO</strong></a>:</p>
+<ol>
+<li><strong>Testing Pyramid / Test Trophy:</strong> Contract testing precisely represents the transition from the traditional <strong>Testing Pyramid</strong> (where unit tests dominate) to the modern <strong>Testing Trophy</strong> (where the focus is on integration tests). Contracts make it possible to integrate services cheaply, quickly, and in isolation.</li>
+<li><strong>Testability (Testability):</strong> Introducing explicit contracts radically increases the system&#39;s observability (observability) and controllability (controllability). The architecture becomes more testable because interfaces are clearly defined and can be isolated.</li>
+<li><strong>Test User Stories:</strong> Contracts help define acceptance criteria for user stories at the integration level. During &quot;3 Amigos&quot; meetings, developers and QA precisely define API contracts as part of the &quot;Definition of Ready&quot; for the given story.</li>
+</ol>
+<hr>
+<h3 id="8-summary-in-one-table"><a class="heading-anchor" href="#8-summary-in-one-table" aria-label="Link to this section">#</a>8. Summary in one table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th align="left">Area</th>
+<th align="left">What is important</th>
+<th align="left">Relationship to architecture</th>
+<th align="left">Relationship to testing</th>
+<th align="left">Typical exam question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Contract Definition</strong></td>
+<td align="left">An executable JSON file representing an API agreement.</td>
+<td align="left">Decoupling services, stable interfaces.</td>
+<td align="left">Serves as the test basis for generating mocks.</td>
+<td align="left"><em>How do we formalize an API agreement in Pact?</em></td>
+</tr>
+<tr>
+<td align="left"><strong>Consumer-Driven (CDC)</strong></td>
+<td align="left">The consumer defines and sends its requirements to the provider.</td>
+<td align="left">Prevents gold-plating, supports YAGNI.</td>
+<td align="left">Fast feedback in CI when compatibility is broken.</td>
+<td align="left"><em>Why is CDC considered an agile approach to integration testing?</em></td>
+</tr>
+<tr>
+<td align="left"><strong>Pact Framework</strong></td>
+<td align="left">Automatic mock generation and provider verification.</td>
+<td align="left">Enables cross-language service integration.</td>
+<td align="left">Replaces manually written WireMock stubs with automated tests.</td>
+<td align="left"><em>Describe the role of Pact Broker in the CI/CD pipeline.</em></td>
+</tr>
+<tr>
+<td align="left"><strong>Fakes (Google Style)</strong></td>
+<td align="left">The API author maintains and tests a faithful Fake for downstream teams.</td>
+<td align="left">Suitable for monorepos and unified formats (Protobuf).</td>
+<td align="left">Developers test against real, tested fakes without mocking.</td>
+<td align="left"><em>Why does Google prefer tested Fakes over CDC tools?</em></td>
+</tr>
+<tr>
+<td align="left"><strong>State Management</strong></td>
+<td align="left">Preparing data states on the provider side.</td>
+<td align="left">Requires a test API or state-setup endpoints.</td>
+<td align="left">Enables testing of different scenarios (e.g., an empty cart vs. a full one).</td>
+<td align="left"><em>How do you handle dependence on database state when running provider tests?</em></td>
+</tr>
+</tbody></table></div>
+<p><img src="../../assets/images/red-test-and-quality/contract_vs_integration.png" alt="Contract vs Integration"></p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/integration-testing.html"><span class="pager__label">← Previous</span><span>Integration testing (Integration Testing)</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/systematic-test-design.html"><span class="pager__label">Next →</span><span>Systematic Test Design</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#2-definitions-and-basic-concepts">2. Definitions and basic concepts</a></li><li class="lvl-4"><a href="#contract-contract">Contract (Contract)</a></li><li class="lvl-4"><a href="#contract-testing-contract-testing-2">Contract Testing (Contract testing)</a></li><li class="lvl-4"><a href="#consumer-driven-contract-cdc-testing">Consumer-Driven Contract (CDC) Testing</a></li><li class="lvl-4"><a href="#pact-json-contract-file">Pact (JSON contract file)</a></li><li class="lvl-4"><a href="#fake-contract-validation-google-style">Fake Contract Validation (Google style)</a></li><li class="lvl-3"><a href="#3-common-mistakes-and-anti-patterns">3. Common mistakes and anti-patterns</a></li><li class="lvl-4"><a href="#mistakes-in-architecture-and-test-strategy">Mistakes in architecture and test strategy:</a></li><li class="lvl-4"><a href="#mistakes-in-requirements-and-communication">Mistakes in requirements and communication:</a></li><li class="lvl-3"><a href="#4-exam-questions">4. Exam questions</a></li><li class="lvl-4"><a href="#a-basic-level">A. Basic level</a></li><li class="lvl-4"><a href="#b-intermediate-level">B. Intermediate level</a></li><li class="lvl-4"><a href="#c-advanced-level">C. Advanced level</a></li><li class="lvl-4"><a href="#d-questions-about-practical-experience">D. Questions about practical experience</a></li><li class="lvl-4"><a href="#e-questions-about-trade-off-decisions">E. Questions about trade-off decisions</a></li><li class="lvl-3"><a href="#5-model-exam-answer-4-6-minutes">5. Model exam answer (4–6 minutes)</a></li><li class="lvl-3"><a href="#6-short-version-for-quick-revision-pocket-cheat-sheet">6. Short version for quick revision (Pocket cheat sheet)</a></li><li class="lvl-3"><a href="#7-learning-outcome-link-to-lopo">7. Learning Outcome (Link to LOPO)</a></li><li class="lvl-3"><a href="#8-summary-in-one-table">8. Summary in one table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

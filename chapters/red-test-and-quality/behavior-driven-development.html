@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="behavior driven development - RED - Test and Quality - SWA preparation study guide.">
+<title>behavior driven development · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development" aria-current="page">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>2,848 words · about 14 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/behavior-driven-development" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h3 id="behavior-driven-development-bdd"><a class="heading-anchor" href="#behavior-driven-development-bdd" aria-label="Link to this section">#</a>Behavior Driven Development (BDD)</h3>
+<p>Behavior Driven Development (BDD) is a software development methodology and engineering approach that builds on the principles of <strong>Test-Driven Development (TDD)</strong> and <strong>Domain-Driven Design (DDD)</strong>. The main objective of BDD is to bridge the communication gap between the business side (domain experts, product owners, business analysts) and the technical team (developers, test architects, and testers). </p>
+<p>BDD replaces vague natural-language specifications with structured conversations about <strong>concrete examples of system behavior</strong>. These examples are written in a domain-oriented format (most commonly <strong>Gherkin</strong>) and serve simultaneously as ambiguous acceptance criteria, drivers of architecture development in an <strong>Outside-In</strong> direction, and executable automated tests. The result of BDD is not just a set of regression tests, but above all <strong>living documentation (Living Documentation)</strong> that reflects the actual behavior of the system and reduces the costs of long-term software maintenance.</p>
+<p><img src="../../assets/images/red-test-and-quality/bdd_overview.png" alt="BDD Overview"></p>
+<p><img src="../../assets/images/red-test-and-quality/bdd_tdd_testing.png" alt="BDD TDD"></p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and basic concepts</h3>
+<h4 id="1-behavior-driven-development-bdd"><a class="heading-anchor" href="#1-behavior-driven-development-bdd" aria-label="Link to this section">#</a>1. Behavior Driven Development (BDD)</h4>
+<ul>
+<li><strong>What it means:</strong> Behavior-driven development. A process and technical discipline in which requirements are defined through examples of system behavior from the user&#39;s or domain&#39;s perspective in a shared language (Ubiquitous Language).</li>
+<li><strong>Why it is important:</strong> Prevents the creation of functionality that does not deliver business value (eliminates waste) and prevents misunderstandings in requirements before the first line of code is written.</li>
+<li><strong>Significance in architecture:</strong> Enforces architecture designed in an <strong>Outside-In</strong> direction. The architecture must be divided into layers (e.g., Service Layer, API adapters) so that behavior can be isolated from infrastructure (UI, DB).</li>
+<li><strong>Significance in testing:</strong> Unifies acceptance testing with development. Acceptance criteria directly become executable tests at both the highest and lower levels.</li>
+<li><strong>Typical mistake or misconception:</strong> Reducing BDD to an automation tool alone (e.g., “we use Cucumber, so we are doing BDD”) without changing the team&#39;s communication culture.</li>
+</ul>
+<h4 id="2-gherkin-format-and-feature-files"><a class="heading-anchor" href="#2-gherkin-format-and-feature-files" aria-label="Link to this section">#</a>2. Gherkin format and Feature Files</h4>
+<ul>
+<li><strong>What it means:</strong> A structured natural-language format based on the keywords <code>Given</code> (context/preconditions), <code>When</code> (action/event), <code>Then</code> (expected result), and the conjunctions <code>And</code> / <code>But</code>. Requirements are stored in text files with the <code>.feature</code> extension.</li>
+<li><strong>Why it is important:</strong> Provides a human-readable but machine-processable format for specifying requirements.</li>
+<li><strong>Significance in architecture:</strong> Defines the domain contract of a component&#39;s or the entire system&#39;s interface without coupling it to technical implementation details.</li>
+<li><strong>Significance in testing:</strong> Enables a direct link (binding) between natural-language sentences and automated test code (Step Definitions) using regular expressions.</li>
+<li><strong>Typical mistake or misconception:</strong> Writing scenarios in an <strong>imperative style</strong> (a detailed description of clicking in the UI and filling in forms) instead of a <strong>declarative style</strong> (a description of business intent and behavior).</li>
+</ul>
+<h4 id="3-executable-specification-executable-specifications"><a class="heading-anchor" href="#3-executable-specification-executable-specifications" aria-label="Link to this section">#</a>3. Executable specification (Executable Specifications)</h4>
+<ul>
+<li><strong>What it means:</strong> Acceptance criteria and tests written in a format that automation frameworks (Cucumber, SpecFlow, JBehave) can execute directly against the application and verify their validity.</li>
+<li><strong>Why it is important:</strong> Provides a single source of truth (Single Source of Truth) – specifications and tests are the same artifact; when a requirement changes, the specification is updated and immediately fails in CI.</li>
+<li><strong>Significance in architecture:</strong> Requires a high degree of <strong>testability (Design for Testability)</strong> – the system must provide interfaces (API, a service layer, fakes/stubs) on which specifications can be executed reliably and quickly.</li>
+<li><strong>Significance in testing:</strong> Provides an objective criterion for completing development (Definition of Done) and eliminates outdated manual test case documentation.</li>
+<li><strong>Typical mistake or misconception:</strong> Tight coupling of the specification to the internal database structure or specific user interface elements, which leads to brittle tests.</li>
+</ul>
+<h4 id="4-living-documentation-living-documentation"><a class="heading-anchor" href="#4-living-documentation-living-documentation" aria-label="Link to this section">#</a>4. Living documentation (Living Documentation)</h4>
+<ul>
+<li><strong>What it means:</strong> Automatically generated overviews and reports from the results of executing acceptance specifications on a CI/CD server, presented in the language of the business.</li>
+<li><strong>Why it is important:</strong> Unlike static documents in Word/Confluence, it never becomes outdated because it reflects the actual state of the production code.</li>
+<li><strong>Significance in architecture:</strong> Provides architects and managers with a real-time overview of domain feature coverage (Feature Coverage) and the implementation status of system modules.</li>
+<li><strong>Significance in testing:</strong> Replaces lengthy manual regression testing and frees up QA engineers&#39; capacity for exploratory testing and risk analysis.</li>
+<li><strong>Typical mistake or misconception:</strong> The belief that living documentation fully replaces all architectural and technical documentation (e.g., SDS, deployment diagrams, or NFR documentation).</li>
+</ul>
+<h4 id="5-outside-in-development-top-down-bdd"><a class="heading-anchor" href="#5-outside-in-development-top-down-bdd" aria-label="Link to this section">#</a>5. Outside-In Development (Top-Down BDD)</h4>
+<ul>
+<li><strong>What it means:</strong> A development approach that starts by defining an acceptance test at the system&#39;s external boundary and works inward by designing internal components and unit tests.</li>
+<li><strong>Why it is important:</strong> Ensures that developers write only the code necessary to satisfy the acceptance criterion (the YAGNI principle).</li>
+<li><strong>Significance in architecture:</strong> Supports modular architecture and interface-driven design (Interface-Driven Design), in which dependencies are replaced with test doubles (Stubs/Mocks).</li>
+<li><strong>Significance in testing:</strong> Connects high-level acceptance tests with low-level unit tests (Low-level BDD / RSpec / Spock) into a single continuous chain.</li>
+<li><strong>Typical mistake or misconception:</strong> Developing isolated components &quot;from the bottom up&quot; (Bottom-Up) without verifying how they fit into the system&#39;s external behavior.</li>
+</ul>
+<p><em>YAGNI = “You Aren&#39;t Gonna Need It” (You are not going to need it). Code should be written only when it is actually and demonstrably necessary for the application to run.</em></p>
+<blockquote>
+<p><strong>Example from embedded and safety-related software:</strong><br>In industrial and automotive systems (e.g., according to ISO 26262 standards or established Valeo V&amp;V guidelines), BDD can be applied at the HSI (Hardware-Software Interface) level.<br><em>Example scenario:</em><br><code>Given</code> the vehicle is moving at a speed greater than 50 km/h and the brake assist system is in READY mode,<br><code>When</code> the radar detects an obstacle at a distance of less than 10 m,<br><code>Then</code> the ABS braking channel must send a signal to increase pressure to 100 bar within 50 ms.<br>This scenario serves as a reliable acceptance specification at both the model (MBD) and real target levels, ensuring full traceability (Traceability) from the requirement through the test specification to the validation results.</p>
+</blockquote>
+<p><img src="../../assets/images/red-test-and-quality/bdd_tdd_testing2.jpg" alt="BDD TDD"></p>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common mistakes and anti-patterns</h3>
+<pre><code>                       [ BDD Anti-patterns ]
+                                 │
+   ┌─────────────────────────────┼─────────────────────────────┐
+   ▼                             ▼                             ▼
+Architecture                Requirements &amp; Communication        Automation &amp; Tests
+• Brittle coupling to UI/DB     • Siloed handoffs (Silos)     • Imperative scenarios
+• Absence of test adapters    • Missing &quot;Three Amigos&quot;     • Ignoring Low-level BDD
+• Bypassing the Service Layer   • Tools &gt; Conversations       • Duplicate regression
+</code></pre>
+<ol>
+<li><p><strong>Architecture mistakes (Strong coupling to infrastructure):</strong></p>
+<ul>
+<li><em>Problem:</em> Scenarios execute tests directly through the GUI or access the database directly without using isolation layers.</li>
+<li><em>Manifestation:</em> A change to a UI button or a breaking change to the DB schema causes dozens of scenarios to fail collectively (high test brittleness).</li>
+<li><em>Remedy:</em> Architecturally separate scenarios using test adapters (UI Adapter, API Adapter, Domain Layer Adapter) and use patterns such as Page Object or the Driver Pattern.</li>
+</ul>
+</li>
+<li><p><strong>Requirements and communication mistakes (BDD in a silo / Absence of &quot;Three Amigos&quot;):</strong></p>
+<ul>
+<li><em>Problem:</em> A business analyst writes <code>.feature</code> files alone and hands them over to developers and QA without discussion.</li>
+<li><em>Manifestation:</em> Scenarios lack technical feasibility, contain hidden assumptions, and do not reflect the actual architecture.</li>
+<li><em>Remedy:</em> Introduce mandatory &quot;Three Amigos&quot; conversations (Analyst + Developer + Tester) before development begins on each User Story to clarify examples.</li>
+</ul>
+</li>
+<li><p><strong>Automation mistakes (Imperative vs. Declarative scenarios):</strong></p>
+<ul>
+<li><em>Problem:</em> A scenario describes steps in detail (&quot;Click button X&quot;, &quot;Enter Y into field Z&quot;, &quot;Open the dialog&quot;).</li>
+<li><em>Manifestation:</em> The scenario is long, difficult for the business domain to follow, and extremely demanding to maintain.</li>
+<li><em>Remedy:</em> Transition to a declarative style (&quot;When the user makes a payment&quot;), in which technical steps are hidden in the automation layer (Step Definitions).</li>
+</ul>
+</li>
+<li><p><strong>Test strategy mistakes (Ignoring Low-level BDD):</strong></p>
+<ul>
+<li><em>Problem:</em> Using BDD exclusively for high-level acceptance E2E tests and abandoning BDD principles at the unit and integration test levels.</li>
+<li><em>Manifestation:</em> A slow-running test pyramid, a long feedback cycle in CI, and high maintenance costs.</li>
+<li><em>Remedy:</em> Apply BDD syntax and structure in unit tests as well (using BDD frameworks such as Spock, RSpec, NSpec, or fluent assertion libraries).</li>
+</ul>
+</li>
+<li><p><strong>Mistakes in interpreting testability and duplicate testing:</strong></p>
+<ul>
+<li><em>Problem:</em> Testers do not trust automated BDD scenarios and manually repeat the same scenarios after they pass.</li>
+<li><em>Manifestation:</em> Unnecessary waste of QA capacity, extending the release cycle (Release Cycle).</li>
+<li><em>Remedy:</em> Involve testers in creating and reviewing automated acceptance criteria and shift manual capacity toward exploratory testing.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="exam-questions"><a class="heading-anchor" href="#exam-questions" aria-label="Link to this section">#</a>Exam questions</h3>
+<h4 id="level-1-basic-questions"><a class="heading-anchor" href="#level-1-basic-questions" aria-label="Link to this section">#</a>Level 1: Basic questions</h4>
+<ol>
+<li><strong>What is BDD, and what is its main difference from traditional TDD?</strong><ul>
+<li><em>What a good answer should include:</em> BDD builds on TDD but shifts the focus from testing code to specifying behavior in natural language. It introduces a shared language (Gherkin), supports Outside-In development, and emphasizes collaboration across the entire team (Three Amigos).</li>
+</ul>
+</li>
+<li><strong>Explain the structure of the Gherkin format and the meaning of the Given-When-Then keywords.</strong><ul>
+<li><em>What a good answer should include:</em> <code>Given</code> sets the initial state/context, <code>When</code> describes the action or event being tested, and <code>Then</code> verifies the expected results. The conjunctions <code>And</code>/<code>But</code> extend the preceding steps.</li>
+</ul>
+</li>
+</ol>
+<h4 id="level-2-intermediate-questions"><a class="heading-anchor" href="#level-2-intermediate-questions" aria-label="Link to this section">#</a>Level 2: Intermediate questions</h4>
+<ol start="3">
+<li><strong>What is the difference between imperative and declarative BDD scenario writing, and what impact does it have on test architecture?</strong><ul>
+<li><em>What a good answer should include:</em> The imperative style describes &quot;HOW&quot; an action is performed (UI steps, technical manipulation), while the declarative style describes &quot;WHAT&quot; the system does from a business perspective. The declarative style isolates the scenario from changes in the UI/infrastructure, improving maintainability and readability.</li>
+</ul>
+</li>
+<li><strong>What does the term “Living documentation” (Living Documentation) mean, and what are its main advantages and limitations?</strong><ul>
+<li><em>What a good answer should include:</em> Documentation is produced by executing executable specs in CI. Its advantage is that it is always current and accurate. Its limitation is that it does not replace architectural concepts, NFR descriptions, and system design (SDS).</li>
+</ul>
+</li>
+</ol>
+<h4 id="level-3-advanced-questions"><a class="heading-anchor" href="#level-3-advanced-questions" aria-label="Link to this section">#</a>Level 3: Advanced questions</h4>
+<ol start="5">
+<li><strong>How must we design the software architecture to support BDD effectively at both the acceptance and integration test levels?</strong><ul>
+<li><em>What a good answer should include:</em> Layered architecture is required (Layered Architecture / Hexagonal / Clean Architecture). It is important to separate business logic (Service Layer) from external adapters (UI, DB, external APIs). Tests must be able to access the system below the UI layer (subcutaneous tests) as well as through API adapters.</li>
+</ul>
+</li>
+</ol>
+<h4 id="level-4-questions-about-practical-experience"><a class="heading-anchor" href="#level-4-questions-about-practical-experience" aria-label="Link to this section">#</a>Level 4: Questions about practical experience</h4>
+<ol start="6">
+<li><strong>How should BDD be introduced in an environment with separate siloed teams (Business Analysts, Developers, QA)?</strong><ul>
+<li><em>What a good answer should include:</em> A description of the transition from siloed document handoffs to agile conversations (&quot;Three Amigos workshops&quot;). Emphasize that automation without a cultural change will not deliver the expected benefits and will only lead to high maintenance costs.</li>
+</ul>
+</li>
+</ol>
+<h4 id="level-5-questions-about-trade-off-decisions"><a class="heading-anchor" href="#level-5-questions-about-trade-off-decisions" aria-label="Link to this section">#</a>Level 5: Questions about trade-off decisions</h4>
+<ol start="7">
+<li><strong>What are the main trade-offs when deciding whether to write acceptance specifications at the GUI level, the REST API level, or directly over the Business Logic layer?</strong><ul>
+<li><em>What a good answer should include:</em> GUI tests provide the highest end-to-end confidence, but they are slow, brittle, and expensive to maintain. API / Service Layer tests are fast and stable and verify the complete business logic, but they do not describe the user experience. An appropriate strategy combines BDD at the service layer with a minimum of critical E2E GUI tests.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="model-exam-answer"><a class="heading-anchor" href="#model-exam-answer" aria-label="Link to this section">#</a>Model exam answer</h3>
+<p><strong>Behavior-Driven Development (BDD)</strong> is a key engineering and architectural approach that connects business requirements with technical design and automated testing.</p>
+<p><strong>Definition and essence of BDD:</strong><br>I view BDD not as a mere testing tool, but as a communication and design discipline. It is based on the idea that the greatest risk in software development comes not from code errors, but from misunderstandings between the business domain and the development team. BDD uses concrete examples of behavior written in a structured language – most commonly Gherkin with <code>Given-When-Then</code> syntax – that serve as reliable acceptance criteria.</p>
+<p><strong>Significance for software architecture:</strong><br>From a software architecture perspective, BDD dictates an <strong>Outside-In</strong> approach. We start with the expected external behavior and work toward designing internal components. For a system to be testable using BDD, its architecture <strong>must</strong> meet the principles of high testability (Design for Testability). This means strictly separating business logic from infrastructure details such as the user interface or database. Scenarios should not be coupled directly to GUI elements, but should communicate with the domain or service layer through test adapters. This prevents the architectural anti-pattern of brittle tests.</p>
+<p><strong>Significance for testing and quality:</strong><br>In testing, BDD introduces the concept of <strong>executable specifications (Executable Specifications)</strong> and <strong>living documentation (Living Documentation)</strong>. Acceptance scenarios are executed in the CI/CD pipeline. If the code matches the specification, the tests pass and automatically generate documentation of the system&#39;s current state. This shortens the feedback cycle and frees up testers, who no longer need to perform manual regression tests and can focus on exploratory testing with high added value.</p>
+<p><strong>Practical example:</strong><br>If we are designing a banking system for transferring funds, instead of writing an imperative test script describing form elements, we specify a declarative BDD scenario: <code>Given</code> the payer&#39;s account has a balance of 1000 EUR, <code>When</code> the payer transfers 200 EUR to a foreign account, <code>Then</code> the payer&#39;s account balance is 800 EUR and the transfer fee is posted. At the architecture level, we connect this scenario to the service layer API, replacing the external banking gateway in the test environment with a test double (Test Double / Stub).</p>
+<p><strong>Trade-offs and conclusion:</strong><br>The fundamental trade-off decision in BDD is <strong>higher initial costs of communication and test infrastructure maintenance</strong> versus <strong>long-term savings in software maintenance</strong>. BDD requires active business involvement and discipline in writing scenarios. When done correctly, however, it eliminates the creation of unnecessary code, dramatically reduces the occurrence of production defects, and ensures that the software created actually delivers the required business value.”</p>
+<hr>
+<h3 id="short-version-for-quick-revision"><a class="heading-anchor" href="#short-version-for-quick-revision" aria-label="Link to this section">#</a>Short version for quick revision</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 main points</h4>
+<ol>
+<li>BDD is a communication and design methodology that brings the business and technical team together around concrete examples of behavior.</li>
+<li>It uses the structured Gherkin format (<code>Given-When-Then</code>) to write acceptance criteria.</li>
+<li>It supports architecture designed from the outside in (<strong>Outside-In</strong>), with business logic separated from infrastructure.</li>
+<li>It creates <strong>executable specifications</strong> and <strong>living documentation</strong> that replace static specifications.</li>
+<li>It saves testers time by automating regression acceptance tests and freeing up space for exploratory testing.</li>
+</ol>
+<h4 id="5-key-concepts"><a class="heading-anchor" href="#5-key-concepts" aria-label="Link to this section">#</a>5 key concepts</h4>
+<ul>
+<li><strong>BDD (Behavior-Driven Development):</strong> A development methodology focused on system behavior.</li>
+<li><strong>Gherkin:</strong> A domain language with a Given-When-Then vocabulary.</li>
+<li><strong>Executable Specification:</strong> An acceptance specification that is also an automated test.</li>
+<li><strong>Living Documentation:</strong> Always-current documentation generated from test results in CI.</li>
+<li><strong>Outside-In Approach:</strong> Designing a system from external acceptance criteria toward internal components.</li>
+</ul>
+<h4 id="5-exam-questions"><a class="heading-anchor" href="#5-exam-questions" aria-label="Link to this section">#</a>5 exam questions</h4>
+<ol>
+<li>What is the fundamental difference between TDD and BDD?</li>
+<li>What do the individual keywords in Gherkin syntax (<code>Given</code>, <code>When</code>, <code>Then</code>) express?</li>
+<li>Why is the imperative style of scenarios considered an anti-pattern, and what risks does it introduce?</li>
+<li>What architectural prerequisites must a system meet for BDD to be introduced successfully?</li>
+<li>What are the limitations of Living documentation compared with traditional architectural documentation?</li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 most common mistakes</h4>
+<ol>
+<li><strong>Tool-centric BDD:</strong> Viewing BDD as an automation tool without changing team communication.</li>
+<li><strong>UI-bound Scenarios:</strong> Writing scenarios coupled to GUI elements instead of business logic.</li>
+<li><strong>Siloed Writing:</strong> Analysts writing specifications in isolation without a &quot;Three Amigos&quot; conversation.</li>
+</ol>
+<h4 id="1-concise-model-sentence-for-the-exam"><a class="heading-anchor" href="#1-concise-model-sentence-for-the-exam" aria-label="Link to this section">#</a>1 concise model sentence for the exam</h4>
+<blockquote>
+<p><em>&quot;BDD is an outside-in (Outside-In) development method that uses structured conversations and executable specifications in Gherkin to transform business requirements directly into testable software architecture and living documentation.&quot;</em></p>
+</blockquote>
+<hr>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning outcome</h3>
+<p>This overview reflects the requirements of the normative document <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and practice outcomes (LOPO)</strong></a>:</p>
+<ul>
+<li><strong>Design for Testability &amp; Architecture:</strong> Applying the property of &quot;testability&quot; at multiple architectural levels through clearly defined interfaces and test adapters.</li>
+<li><strong>Clarification of roles and responsibilities:</strong> Creating reliable acceptance criteria for different team roles (BA, Dev, QA) within the test pyramid / trophy.</li>
+<li><strong>Prevention of technical debt:</strong> Preventing documentation from deteriorating and reducing maintenance costs in later phases of the software life cycle.</li>
+</ul>
+<hr>
+<h3 id="summary-in-one-table"><a class="heading-anchor" href="#summary-in-one-table" aria-label="Link to this section">#</a>Summary in one table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What is important</th>
+<th>Relationship to architecture</th>
+<th>Relationship to testing</th>
+<th>Typical exam question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Communication &amp; Requirements</strong></td>
+<td>&quot;Three Amigos&quot; workshop (BA, Dev, QA); a shared domain language.</td>
+<td>Clarifies domain boundaries and defines the correct external interface contracts.</td>
+<td>Transforms vague requirements into ambiguous acceptance criteria.</td>
+<td>How can BDD and examples prevent misunderstandings of requirements?</td>
+</tr>
+<tr>
+<td><strong>Format &amp; Specification</strong></td>
+<td>Declarative Gherkin notation (<code>Given-When-Then</code>).</td>
+<td>Isolates the behavior specification from implementation details (UI, DB).</td>
+<td>Enables direct mapping (binding) of text to test methods.</td>
+<td>What is the difference between an imperative and a declarative scenario?</td>
+</tr>
+<tr>
+<td><strong>System design (Design)</strong></td>
+<td>Outside-In approach; code development driven by an acceptance test.</td>
+<td>Enforces architecture with loosely coupled components (Service Layer, Adapters).</td>
+<td>Ensures that unit tests are created specifically for supporting behavior.</td>
+<td>How does BDD influence the design of an application&#39;s internal architecture?</td>
+</tr>
+<tr>
+<td><strong>Automation &amp; CI/CD</strong></td>
+<td>Executable specifications integrated into the build pipeline.</td>
+<td>Requires infrastructure for isolating test data and fast execution.</td>
+<td>Automates acceptance and regression tests at the API / service level.</td>
+<td>How can BDD specifications be included in the CI/CD pipeline without slowing down the build?</td>
+</tr>
+<tr>
+<td><strong>Documentation &amp; Quality</strong></td>
+<td>Living documentation (Living Documentation) generated from tests.</td>
+<td>Shows coverage of domain features and architectural modules.</td>
+<td>Shortens regression testing time and expands the scope for exploratory tests.</td>
+<td>What are the advantages and limitations of living documentation on a project?</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/test-driven-development.html"><span class="pager__label">← Previous</span><span>Test-Driven Development (TDD)</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/risk-based-testing.html"><span class="pager__label">Next →</span><span>Risk Based Testing</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#behavior-driven-development-bdd">Behavior Driven Development (BDD)</a></li><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and basic concepts</a></li><li class="lvl-4"><a href="#1-behavior-driven-development-bdd">1. Behavior Driven Development (BDD)</a></li><li class="lvl-4"><a href="#2-gherkin-format-and-feature-files">2. Gherkin format and Feature Files</a></li><li class="lvl-4"><a href="#3-executable-specification-executable-specifications">3. Executable specification (Executable Specifications)</a></li><li class="lvl-4"><a href="#4-living-documentation-living-documentation">4. Living documentation (Living Documentation)</a></li><li class="lvl-4"><a href="#5-outside-in-development-top-down-bdd">5. Outside-In Development (Top-Down BDD)</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-3"><a href="#exam-questions">Exam questions</a></li><li class="lvl-4"><a href="#level-1-basic-questions">Level 1: Basic questions</a></li><li class="lvl-4"><a href="#level-2-intermediate-questions">Level 2: Intermediate questions</a></li><li class="lvl-4"><a href="#level-3-advanced-questions">Level 3: Advanced questions</a></li><li class="lvl-4"><a href="#level-4-questions-about-practical-experience">Level 4: Questions about practical experience</a></li><li class="lvl-4"><a href="#level-5-questions-about-trade-off-decisions">Level 5: Questions about trade-off decisions</a></li><li class="lvl-3"><a href="#model-exam-answer">Model exam answer</a></li><li class="lvl-3"><a href="#short-version-for-quick-revision">Short version for quick revision</a></li><li class="lvl-4"><a href="#5-main-points">5 main points</a></li><li class="lvl-4"><a href="#5-key-concepts">5 key concepts</a></li><li class="lvl-4"><a href="#5-exam-questions">5 exam questions</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 most common mistakes</a></li><li class="lvl-4"><a href="#1-concise-model-sentence-for-the-exam">1 concise model sentence for the exam</a></li><li class="lvl-3"><a href="#learning-outcome">Learning outcome</a></li><li class="lvl-3"><a href="#summary-in-one-table">Summary in one table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

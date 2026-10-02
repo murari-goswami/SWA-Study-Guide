@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Test-Driven Development (TDD) - RED - Test and Quality - SWA preparation study guide.">
+<title>Test-Driven Development (TDD) · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development" aria-current="page">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,173 words · about 16 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/test-driven-development" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="test-driven-development-tdd">Test-Driven Development (TDD)</h1>
+<p>Test-Driven Development (TDD) is a development methodology formulated by Kent Beck as part of the agile practices of Extreme Programming (XP) in the second half of the 1990s. TDD is based on two fundamental rules: <strong>do not write a single line of production code until a failing automated test exists</strong>, and <strong>regularly refactor the code to remove duplication and maintain high internal quality</strong>.</p>
+<p>From the perspective of software architecture and testing, TDD represents a fundamental shift in thinking. Although it has the word &quot;testing&quot; in its name, in practice it is primarily an <strong>analysis and design technique (Test-Driven Design)</strong>. By requiring developers to write a test before the implementation itself, TDD enforces clarification of requirements and interfaces before programming begins. From an architectural perspective, TDD naturally eliminates tight coupling, promotes high cohesion, modularity, and <strong>the internal testability of the system (Design for Testability)</strong>. Within the test strategy, unit tests created through TDD form the fundamental, fastest, and least expensive layer of the testing pyramid.</p>
+<p><img src="../../assets/images/red-test-and-quality/tdd_overview.png" alt="TDD overview"></p>
+<p><img src="../../assets/images/red-test-and-quality/tdd_topic.png" alt="TDD topics"></p>
+<hr>
+<h3 id="2-definitions-and-basic-concepts"><a class="heading-anchor" href="#2-definitions-and-basic-concepts" aria-label="Link to this section">#</a>2. Definitions and Basic Concepts</h3>
+<h4 id="test-driven-development-tdd-2"><a class="heading-anchor" href="#test-driven-development-tdd-2" aria-label="Link to this section">#</a>Test-Driven Development (TDD)</h4>
+<ul>
+<li><strong>Definition:</strong> A development process in which automated unit tests are written before the production code itself in short iterations. Development is driven by the requirement to make the failing test pass.</li>
+<li><strong>Significance in architecture:</strong> It enforces the decomposition of the system into small, loosely coupled, and independent components. The architecture emerges organically and is protected by a safety net against code degeneration and technical debt.</li>
+<li><strong>Significance in testing:</strong> It ensures high test coverage of the code from the very beginning and provides developers with immediate feedback on detected regression defects.</li>
+<li><strong>Typical mistake / misunderstanding:</strong> Understanding TDD solely as a QA verification technique, rather than as a tool for architectural design and behavior specification.</li>
+<li><strong>Example from an industrial/embedded environment:</strong> When developing an embedded module for controlling a motor unit (according to normative procedures such as Valeo SWE.4), the developer first defines a test driver that checks the limits of sensor input values, and only then implements the algorithmic processing block.</li>
+</ul>
+<h4 id="the-red-green-refactor-cycle"><a class="heading-anchor" href="#the-red-green-refactor-cycle" aria-label="Link to this section">#</a>The Red-Green-Refactor Cycle</h4>
+<ul>
+<li><strong>Definition:</strong> The fundamental micro-iterative rhythm of TDD, consisting of three steps: <strong>Red</strong> (writing the simplest test that fails or does not even compile), <strong>Green</strong> (writing the minimum production code necessary to pass the test, even at the cost of temporarily inelegant solutions), and <strong>Refactor</strong> (removing duplication and cleaning up both the production and test code while maintaining a green bar).</li>
+<li><strong>Significance in architecture:</strong> The <em>Refactor</em> step enables continuous improvement of the architecture without fear of breaking existing functionality.</li>
+<li><strong>Significance in testing:</strong> The <em>Red</em> step verifies that the test actually fails for the right reason and is capable of detecting a defect.</li>
+<li><strong>Typical mistake / misunderstanding:</strong> Limiting the cycle to the Red-Green steps while completely omitting the Refactor phase, which leads to unmaintainable &quot;dirty&quot; code full of duplication.</li>
+</ul>
+<h4 id="design-for-testability-dft"><a class="heading-anchor" href="#design-for-testability-dft" aria-label="Link to this section">#</a>Design for Testability (DfT)</h4>
+<ul>
+<li><strong>Definition:</strong> An architectural quality and a set of design tactics that enable easy, efficient, and controlled testing of a system through control points and observation points.</li>
+<li><strong>Significance in architecture:</strong> It includes the application of SOLID principles, Dependency Injection, interfaces, modularity, and the minimization of cyclic dependencies.</li>
+<li><strong>Significance in testing:</strong> It increases the controllability and observability of the internal states of components, making tests less expensive and faster.</li>
+<li><strong>Typical mistake / misunderstanding:</strong> The view that testability is only a subsequent concern for testers after development is complete, rather than a primary non-functional requirement of the architecture.</li>
+</ul>
+<h4 id="test-doubles-mocks-stubs-spies-fakes"><a class="heading-anchor" href="#test-doubles-mocks-stubs-spies-fakes" aria-label="Link to this section">#</a>Test Doubles (Mocks, Stubs, Spies, Fakes)</h4>
+<ul>
+<li><strong>Definition:</strong> Substitute objects or components created for testing purposes that simulate or verify the behavior of the real dependencies of the unit under test (System/Code Under Test – SUT/CUT).</li>
+<li><strong>Significance in architecture:</strong> They enable the isolation of architectural layers (for example, separating domain logic from the database or hardware).</li>
+<li><strong>Significance in testing:</strong> They isolate the unit under test, enable the simulation of error conditions (fault injection), and speed up test execution by eliminating I/O operations.</li>
+<li><strong>Typical mistake / misunderstanding:</strong> Confusing a Mock with a Stub or excessive use of mocks (over-mocking), which couples the test to the internal implementation instead of observable behavior.</li>
+</ul>
+<h4 id="sociable-vs-solitary-tests-classic-vs-mockist-tdd"><a class="heading-anchor" href="#sociable-vs-solitary-tests-classic-vs-mockist-tdd" aria-label="Link to this section">#</a>Sociable vs. Solitary Tests (Classic vs. Mockist TDD)</h4>
+<ul>
+<li><strong>Definition:</strong> <em>Solitary Tests (Mockist/London style)</em> isolate the class under test from all dependencies using mocks. <em>Sociable Tests (Classic/Detroit style)</em> test a group of real collaborating classes together and use test doubles only for external I/O or slow dependencies.</li>
+<li><strong>Significance in architecture:</strong> Classic TDD allows free refactoring of a module&#39;s internal classes without having to modify the tests; Mockist TDD enforces a strict definition of the interfaces between every class.</li>
+<li><strong>Significance in testing:</strong> Classic TDD provides greater confidence in component collaboration; Mockist TDD offers more precise fault localization within an isolated class.</li>
+<li><strong>Typical mistake / misunderstanding:</strong> Dogmatically requiring 100% Solitary tests with mocking of every internal helper class.</li>
+</ul>
+<h4 id="executable-specifications-bdd-bridge"><a class="heading-anchor" href="#executable-specifications-bdd-bridge" aria-label="Link to this section">#</a>Executable Specifications (BDD Bridge)</h4>
+<ul>
+<li><strong>Definition:</strong> A format for writing unit and acceptance tests as living executable documentation describing the required behavior of the system (using domain language or Given-When-Then / Should-When conventions).</li>
+<li><strong>Significance in architecture:</strong> It connects business requirements directly to the architecture and low-level interfaces.</li>
+<li><strong>Significance in testing:</strong> It improves test readability and shields test scenarios from changes to the names of internal methods.</li>
+<li><strong>Typical mistake / misunderstanding:</strong> Naming tests after the methods being tested (for example, <code>testCalculate()</code>) instead of describing the expected behavior (for example, <code>shouldCalculateTaxWhenCountryIsEU()</code>).</li>
+</ul>
+<hr>
+<h3 id="3-common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#3-common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>3. Common Mistakes and Anti-Patterns</h3>
+<pre><code>  +-------------------------------------------------------------------------+
+  |                        ARCHITECTURAL ANTI-PATTERNS                     |
+  +-------------------------------------------------------------------------+
+  |  Over-Mocking (Tight test-to-code coupling)  --&gt;  Fragile Tests         |
+  |  No Upfront Design (Lack of vision)          --&gt;  Spaghetti Architecture |
+  |  I/O in Unit Tests                         --&gt;  Slow Tests &amp; Flakiness  |
+  +-------------------------------------------------------------------------+
+</code></pre>
+<h4 id="1-architectural-mistakes"><a class="heading-anchor" href="#1-architectural-mistakes" aria-label="Link to this section">#</a>1. Architectural Mistakes</h4>
+<ul>
+<li><strong>Over-Mocking and testing internal structure instead of behavior:</strong> Creating mocks for all internal classes causes tests to reflect the current code structure instead of observable input/output. Any architectural refactoring then breaks dozens of tests, even though the external behavior has remained unchanged (creating what are known as <em>Fragile Tests</em>).</li>
+<li><strong>Lack of an architectural vision (&quot;No Upfront Design alibi&quot;):</strong> Relying on TDD alone to create the complete system architecture without any initial concept. While the design of small components emerges, in large and safety-critical systems a missing initial architectural framework leads to local optical optima and architectural chaos.</li>
+</ul>
+<h4 id="2-requirements-mistakes"><a class="heading-anchor" href="#2-requirements-mistakes" aria-label="Link to this section">#</a>2. Requirements Mistakes</h4>
+<ul>
+<li><strong>A blind spot for non-functional requirements (NFRs):</strong> By its nature, TDD tests functional increments through unit tests. Security defects, concurrent access (concurrency), real-time timing, performance, and memory demands cannot be reliably anticipated and designed for using unit-level TDD tests alone.</li>
+<li><strong>Lack of acceptance criteria from a domain perspective:</strong> Developers write unit tests focused on &quot;happy day&quot; scenarios from their own technical perspective, while missing the actual behavior and boundary conditions required by the customer.</li>
+</ul>
+<h4 id="3-test-strategy-mistakes"><a class="heading-anchor" href="#3-test-strategy-mistakes" aria-label="Link to this section">#</a>3. Test Strategy Mistakes</h4>
+<ul>
+<li><strong>&quot;Test-Last Alibi&quot;:</strong> The claim that tests written after the code is complete have the same value as TDD. Tests written afterwards suffer from the developer testing what they actually implemented (with confirmation bias), rather than what should have been designed, and the code often requires drastic refactoring because of poor internal testability.</li>
+<li><strong>Replacing higher levels of testing with TDD unit tests alone:</strong> The assumption that 100% unit test coverage from TDD eliminates the need for integration, system, or acceptance tests. Verification of real hardware, databases, and interfaces between enterprises is missing.</li>
+</ul>
+<h4 id="4-automation-mistakes"><a class="heading-anchor" href="#4-automation-mistakes" aria-label="Link to this section">#</a>4. Automation Mistakes</h4>
+<ul>
+<li><strong>Slow and dependent unit tests (Slow Tests):</strong> Bringing I/O operations, databases, the network, or the file system directly into TDD unit tests. If a unit test suite takes longer than a few seconds or minutes, developers stop running the Red-Green-Refactor cycle continuously.</li>
+<li><strong>Testing trivial code:</strong> Writing TDD tests for simple getters, setters, or purely declarative properties without logic. This increases maintenance costs without adding value in defect detection.</li>
+</ul>
+<h4 id="5-mistakes-in-interpreting-testability"><a class="heading-anchor" href="#5-mistakes-in-interpreting-testability" aria-label="Link to this section">#</a>5. Mistakes in Interpreting Testability</h4>
+<ul>
+<li><strong>Confusing Code Coverage with test quality:</strong> Monitoring only the percentage of line coverage instead of focusing on testing risks and boundary conditions. 100% coverage does not guarantee correct design or the absence of logical errors.</li>
+</ul>
+<h4 id="6-communication-mistakes"><a class="heading-anchor" href="#6-communication-mistakes" aria-label="Link to this section">#</a>6. Communication Mistakes</h4>
+<ul>
+<li><strong>Isolation of developers from testers and architects:</strong> Developers perceive TDD as their private activity and do not share executable specifications with test architects or business analysts. The opportunity to create unified living documentation of the system is therefore lost.</li>
+</ul>
+<hr>
+<h3 id="4-examination-questions"><a class="heading-anchor" href="#4-examination-questions" aria-label="Link to this section">#</a>4. Examination Questions</h3>
+<h4 id="1-basic-questions"><a class="heading-anchor" href="#1-basic-questions" aria-label="Link to this section">#</a>1. Basic Questions</h4>
+<ul>
+<li><strong>Question:</strong> Explain the three phases of the Red-Green-Refactor cycle in TDD and the main purpose of the Refactor phase.<ul>
+<li><em>A correct answer should include:</em> A definition of the Red step (a failing test), Green (the minimum code needed to pass), and Refactor (removing duplication without changing behavior). Emphasize that Refactor applies to both production and test code.</li>
+</ul>
+</li>
+<li><strong>Question:</strong> Why is TDD said to be primarily a design technique rather than a verification technique?<ul>
+<li><em>A correct answer should include:</em> An explanation that the requirement to write a test first necessarily shapes the API, interfaces, and dependencies of the unit under test. It enforces low coupling and high cohesion before implementation.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-intermediate-questions"><a class="heading-anchor" href="#2-intermediate-questions" aria-label="Link to this section">#</a>2. Intermediate Questions</h4>
+<ul>
+<li><strong>Question:</strong> What is the difference between <em>Sociable Tests</em> (Detroit style) and <em>Solitary Tests</em> (London/Mockist style) in the context of TDD, and how do they affect architectural refactoring?<ul>
+<li><em>A correct answer should include:</em> The difference in the use of mocks versus real objects. An explanation that Solitary tests can hinder refactoring of internal classes because of tight coupling to mock interfaces, whereas Sociable tests verify the observable behavior of a cluster of classes.</li>
+</ul>
+</li>
+<li><strong>Question:</strong> How does TDD support the architectural principle of <em>Design for Testability (DfT)</em>, and which specific design tactics does it enforce?<ul>
+<li><em>A correct answer should include:</em> Enforcement of Dependency Injection, separation of state and I/O operations, introduction of control and observation points, and elimination of cyclic dependencies.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-advanced-questions"><a class="heading-anchor" href="#3-advanced-questions" aria-label="Link to this section">#</a>3. Advanced Questions</h4>
+<ul>
+<li><strong>Question:</strong> Describe the relationship and transition between Acceptance Test-Driven Development (ATDD / BDD) at the system level and TDD at the unit test level.<ul>
+<li><em>A correct answer should include:</em> The Top-down (Outside-In) approach: Acceptance tests define the broad boundaries of a user story (the outer loop), from which low-level requirements for TDD unit tests emerge (the inner loop).</li>
+</ul>
+</li>
+<li><strong>Question:</strong> What are the limitations of TDD for reactive, event-driven, or multi-threaded systems in industrial automation or automotive applications?<ul>
+<li><em>A correct answer should include:</em> The difficulty of simulating asynchronous timing, race conditions, and hardware interrupts using pure unit tests. The need to combine TDD with HW-in-the-loop (HIL) and environment models.</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-practical-experience-questions"><a class="heading-anchor" href="#4-practical-experience-questions" aria-label="Link to this section">#</a>4. Practical Experience Questions</h4>
+<ul>
+<li><strong>Question:</strong> How should TDD be introduced into a large legacy system (brownfield) that was not originally designed with testability in mind?<ul>
+<li><em>A correct answer should include:</em> Introducing acceptance/characterization tests around the area being modified (a safety net), carefully creating seams and refactoring using tactics from Michael Feathers&#39; book, and subsequently applying TDD only to new code.</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-trade-off-decision-questions"><a class="heading-anchor" href="#5-trade-off-decision-questions" aria-label="Link to this section">#</a>5. Trade-Off Decision Questions</h4>
+<ul>
+<li><strong>Question:</strong> What is the trade-off between development speed in the early phase of a project and investment in TDD from the perspective of the overall software life cycle?<ul>
+<li><em>A correct answer should include:</em> TDD increases initial code development time (by approximately 15–30% because of the creation of tests and mocks), but dramatically reduces production defects and maintenance/regression costs over time.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5-model-examination-answer"><a class="heading-anchor" href="#5-model-examination-answer" aria-label="Link to this section">#</a>5. Model Examination Answer</h3>
+<blockquote>
+<p><strong>Oral examination scenario:</strong> <em>&quot;Sir / Madam, explain the significance of Test-Driven Development for software architecture and test strategy. Explain its principles, benefits, limitations, and architectural trade-offs.&quot;</em></p>
+</blockquote>
+<p><em>(Speaking time: approximately 4–5 minutes)</em></p>
+<p><strong>[Definition and Fundamental Principles]</strong><br>&quot;Test-Driven Development is a development methodology based on extremely short iterations, in which we first write a failing automated unit test and only then the minimum production code necessary to satisfy it. The entire process is governed by the well-known <strong>Red-Green-Refactor</strong> cycle. In the Red step, we write a test specifying a new feature; in the Green step, we achieve a green bar by the fastest possible route; and in the Refactor step, we remove duplication and architectural smells from the code and tests without changing the external behavior.</p>
+<p><strong>[Significance for Software Architecture]</strong><br>From a software architect&#39;s perspective, it is essential to understand that TDD is not primarily a verification tool for QA, but a <strong>software design method (Test-Driven Design)</strong>. You cannot write a unit test for a component without first thinking through its public interface, responsibilities, and dependencies. TDD naturally pushes developers to follow SOLID principles, especially Dependency Inversion, and to apply the Dependency Injection pattern consistently. The result is a highly modular architecture with low coupling and high cohesion that directly fulfills the requirements for <strong>Design for Testability (DfT)</strong>.</p>
+<p><strong>[Significance for Test Strategy]</strong><br>From a testing architecture perspective, TDD forms the base of the testing pyramid. It generates a suite of fast, deterministic, and low-cost unit tests that serve as a continuously executed regression safety net in the CI/CD pipeline. These tests also function as <strong>living executable documentation</strong> – the test code makes it immediately clear how the given API should be used.</p>
+<p><strong>[Practical Example]</strong><br>Let us consider an example from the development of a control module in automotive software (according to ISO 26262 / Valeo SWE.4). If we wrote the code without TDD, the developer would probably hardcode calls directly to a hardware driver or global state. When using TDD, the developer is forced to create an abstraction of the sensor interface and pass it through the constructor. In the Red step, they write a test simulating sensor failure using a Test Double (for example, a Stub/Mock). This verifies that the code correctly transitions to a Safe State. Only then do they implement the control logic itself.</p>
+<p><strong>[Trade-Offs and Limitations]</strong><br>Like every architectural approach, TDD has its trade-offs. </p>
+<ol>
+<li><strong>Initial time investment:</strong> Development in the first phase takes 15–30% longer, which requires team discipline and management support.</li>
+<li><strong>The Over-Mocking anti-pattern:</strong> If developers succumb to dogmatic mocking of every internal class (London style), they create tests that are extremely sensitive to interface refactoring. Here, I recommend preferring <em>Classic/Sociable TDD</em>, in which we test the behavior of entire small clusters of collaborating classes through their public interfaces.</li>
+<li><strong>Coverage limitations:</strong> TDD does not cover non-functional requirements such as performance, reliability during a power failure, or real-time concurrency. TDD unit tests must therefore be supplemented by Risk-Based Testing at higher layers – at the integration and system levels.</li>
+</ol>
+<p><strong>[Concluding Summary]</strong><br>TDD is an exceptionally powerful tool for building sustainable internal software quality. An architect should not view TDD as a panacea, but as a fundamental engineering discipline that brings rapid feedback, modularity, and confidence when refactoring the entire system to the development team.&quot;</p>
+<hr>
+<h3 id="6-short-version-for-quick-review-cheat-sheet"><a class="heading-anchor" href="#6-short-version-for-quick-review-cheat-sheet" aria-label="Link to this section">#</a>6. Short Version for Quick Review (Cheat Sheet)</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 Main Points</h4>
+<ol>
+<li><strong>TDD is an analysis and design technique (Test-Driven Design)</strong>, not merely code verification.</li>
+<li><strong>The Red-Green-Refactor micro-cycle:</strong> Write a failing test \(\rightarrow\) make it work with the simplest code \(\rightarrow\) remove duplication and clean up the code.</li>
+<li><strong>Enforcing testability (Design for Testability):</strong> TDD naturally eliminates tight coupling and cyclic dependencies, and supports Dependency Injection.</li>
+<li><strong>Living documentation and a regression safety net:</strong> Tests created in TDD serve as a precise specification of API usage and an immediate indicator of regression defects.</li>
+<li><strong>The need to combine it with higher levels of testing:</strong> TDD guarantees the correctness of units, but does not cover non-functional requirements (NFRs) or system integration.</li>
+</ol>
+<h4 id="5-key-concepts"><a class="heading-anchor" href="#5-key-concepts" aria-label="Link to this section">#</a>5 Key Concepts</h4>
+<ol>
+<li><strong>Red-Green-Refactor:</strong> The fundamental rhythm of TDD.</li>
+<li><strong>Design for Testability (DfT):</strong> The architectural ability of a system to be tested easily and efficiently.</li>
+<li><strong>Test Double (Mock / Stub / Spy / Fake):</strong> A replacement for a dependency to isolate the SUT.</li>
+<li><strong>Sociable vs. Solitary Tests:</strong> Testing the behavior of a group of classes versus strict isolation of each class using mocks.</li>
+<li><strong>Executable Specification:</strong> A test written as a readable specification of domain behavior.</li>
+</ol>
+<h4 id="5-examination-questions"><a class="heading-anchor" href="#5-examination-questions" aria-label="Link to this section">#</a>5 Examination Questions</h4>
+<ol>
+<li>What is the main difference between testing in TDD and the traditional &quot;Test-Last&quot; approach?</li>
+<li>How does the Refactor phase prevent architectural debt?</li>
+<li>What danger does the Over-Mocking anti-pattern pose to test maintainability?</li>
+<li>What is the relationship between TDD unit tests and BDD acceptance tests in Top-Down development?</li>
+<li>Why can TDD not fully replace testing of non-functional requirements (NFRs)?</li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 Most Common Mistakes</h4>
+<ol>
+<li><strong>Omitting the Refactor phase</strong> (both code and tests deteriorate into a confusing tangle).</li>
+<li><strong>Testing implementation details instead of observable behavior</strong> (leads to fragile tests that are difficult to maintain).</li>
+<li><strong>Bringing the network/database into TDD unit tests</strong> (slows execution and destroys the feedback cycle).</li>
+</ol>
+<h4 id="1-sentence-for-the-examination"><a class="heading-anchor" href="#1-sentence-for-the-examination" aria-label="Link to this section">#</a>1 Sentence for the Examination</h4>
+<blockquote>
+<p><em>&quot;TDD is an engineering design discipline that uses the Red-Green-Refactor cycle to transform requirements into an executable specification and enforces a modular, loosely coupled architecture with high internal testability.&quot;</em></p>
+</blockquote>
+<hr>
+<h3 id="7-learning-outcome-impact-according-to-lopo"><a class="heading-anchor" href="#7-learning-outcome-impact-according-to-lopo" aria-label="Link to this section">#</a>7. Learning Outcome (Impact According to <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1">LOPO</a>)</h3>
+<p>In accordance with the requirements of the <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and Practice Outcomes (LOPO)</strong></a> document, the outcome demonstrates and develops the following competencies:</p>
+<ol>
+<li><strong>Design for Testability (DfT) at the architectural level:</strong> Understanding how TDD implements tactics for improving the <strong>controllability</strong> and <strong>observability</strong> of architectural components in practice.</li>
+<li><strong>A structured view of testing layers (Testing Pyramid / Test Trophy):</strong> The ability to justify the role of TDD unit tests in the lowest layer of the pyramid and explain their relationship to integration and NFR tests that verify the architecture as a whole.</li>
+<li><strong>Internal Quality Management:</strong> The ability to use TDD as a preventive mechanism against code degeneration and increasing technical debt.</li>
+<li><strong>Risk-Based Testing:</strong> The ability to identify architectural and product risks and determine where TDD should be applied most thoroughly in combination with systematic test design.</li>
+</ol>
+<hr>
+<h3 id="8-summary-in-a-single-table"><a class="heading-anchor" href="#8-summary-in-a-single-table" aria-label="Link to this section">#</a>8. Summary in a Single Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Is Important</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Methodology and Cycle</strong></td>
+<td>The <strong>Red-Green-Refactor</strong> cycle; writing the test strictly before the production code.</td>
+<td>Gives the architect and developers a safe space for continuous refactoring without the risk of regressions.</td>
+<td>Guarantees 100% test functionality (verifying failure in the Red step) and high coverage.</td>
+<td><em>What benefit does the Refactor phase in TDD bring to architectural maintainability?</em></td>
+</tr>
+<tr>
+<td><strong>Design and Testability (DfT)</strong></td>
+<td>TDD as a design tool (<strong>Test-Driven Design</strong>); application of SOLID and Dependency Injection.</td>
+<td>Enforces low coupling, high cohesion, and clearly defined component interfaces.</td>
+<td>Increases the controllability and observability of the SUT.</td>
+<td><em>How does TDD enforce application of the Dependency Inversion principle in architecture?</em></td>
+</tr>
+<tr>
+<td><strong>Isolation and Test Doubles</strong></td>
+<td>The difference between Mock/Stub; the choice between <strong>Sociable</strong> and <strong>Solitary</strong> tests.</td>
+<td>Determines the degree of coupling in the architecture and the dependence of tests on internal interfaces.</td>
+<td>Incorrect use leading to Over-Mocking creates Fragile Tests.</td>
+<td><em>When is it appropriate to use real collaborating objects (Sociable), and when should Test Doubles (Solitary) be used?</em></td>
+</tr>
+<tr>
+<td><strong>Documentation and Requirements</strong></td>
+<td>Tests as <strong>executable specifications (Executable Specifications)</strong> and the connection to BDD.</td>
+<td>Translates domain and business requirements directly into the architecture and API interfaces.</td>
+<td>Creates readable, always up-to-date executable documentation of code behavior.</td>
+<td><em>How do executable specifications replace static documentation that becomes outdated?</em></td>
+</tr>
+<tr>
+<td><strong>Strategy and Limitations</strong></td>
+<td>TDD does not cover non-functional requirements (NFRs); combination with <strong>Test Pyramid / RBT</strong> is necessary.</td>
+<td>The need to design the overall architecture, including NFRs (security, concurrency, performance), beyond the scope of TDD.</td>
+<td>TDD forms the fundamental unit-level layer; higher risks require integration and E2E tests.</td>
+<td><em>Why are TDD unit tests insufficient to verify the overall quality and safety of a system?</em></td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/test-design-tactics.html"><span class="pager__label">← Previous</span><span>Test Design Tactics</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/behavior-driven-development.html"><span class="pager__label">Next →</span><span>behavior driven development</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#2-definitions-and-basic-concepts">2. Definitions and Basic Concepts</a></li><li class="lvl-4"><a href="#test-driven-development-tdd-2">Test-Driven Development (TDD)</a></li><li class="lvl-4"><a href="#the-red-green-refactor-cycle">The Red-Green-Refactor Cycle</a></li><li class="lvl-4"><a href="#design-for-testability-dft">Design for Testability (DfT)</a></li><li class="lvl-4"><a href="#test-doubles-mocks-stubs-spies-fakes">Test Doubles (Mocks, Stubs, Spies, Fakes)</a></li><li class="lvl-4"><a href="#sociable-vs-solitary-tests-classic-vs-mockist-tdd">Sociable vs. Solitary Tests (Classic vs. Mockist TDD)</a></li><li class="lvl-4"><a href="#executable-specifications-bdd-bridge">Executable Specifications (BDD Bridge)</a></li><li class="lvl-3"><a href="#3-common-mistakes-and-anti-patterns">3. Common Mistakes and Anti-Patterns</a></li><li class="lvl-4"><a href="#1-architectural-mistakes">1. Architectural Mistakes</a></li><li class="lvl-4"><a href="#2-requirements-mistakes">2. Requirements Mistakes</a></li><li class="lvl-4"><a href="#3-test-strategy-mistakes">3. Test Strategy Mistakes</a></li><li class="lvl-4"><a href="#4-automation-mistakes">4. Automation Mistakes</a></li><li class="lvl-4"><a href="#5-mistakes-in-interpreting-testability">5. Mistakes in Interpreting Testability</a></li><li class="lvl-4"><a href="#6-communication-mistakes">6. Communication Mistakes</a></li><li class="lvl-3"><a href="#4-examination-questions">4. Examination Questions</a></li><li class="lvl-4"><a href="#1-basic-questions">1. Basic Questions</a></li><li class="lvl-4"><a href="#2-intermediate-questions">2. Intermediate Questions</a></li><li class="lvl-4"><a href="#3-advanced-questions">3. Advanced Questions</a></li><li class="lvl-4"><a href="#4-practical-experience-questions">4. Practical Experience Questions</a></li><li class="lvl-4"><a href="#5-trade-off-decision-questions">5. Trade-Off Decision Questions</a></li><li class="lvl-3"><a href="#5-model-examination-answer">5. Model Examination Answer</a></li><li class="lvl-3"><a href="#6-short-version-for-quick-review-cheat-sheet">6. Short Version for Quick Review (Cheat Sheet)</a></li><li class="lvl-4"><a href="#5-main-points">5 Main Points</a></li><li class="lvl-4"><a href="#5-key-concepts">5 Key Concepts</a></li><li class="lvl-4"><a href="#5-examination-questions">5 Examination Questions</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 Most Common Mistakes</a></li><li class="lvl-4"><a href="#1-sentence-for-the-examination">1 Sentence for the Examination</a></li><li class="lvl-3"><a href="#7-learning-outcome-impact-according-to-lopo">7. Learning Outcome (Impact According to LOPO )</a></li><li class="lvl-3"><a href="#8-summary-in-a-single-table">8. Summary in a Single Table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

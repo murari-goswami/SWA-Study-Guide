@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Systematic Architecture Design - BLUE - Architecture - SWA preparation study guide.">
+<title>Systematic Architecture Design · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture" open>
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design" aria-current="page">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>BLUE - Architecture</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
+      <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
+      <div class="topic-meta">
+        <span>2,542 words · about 13 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/fixed-systematic-architecture-design" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="systematic-architecture-design">🔵 Systematic Architecture Design</h1>
+<h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
+<p>Systematic architecture design describes how architecture is created through a controlled and repeatable approach, rather than ad hoc. It is based on the premise that architecture is the result of the forces at work (requirements and constraints), creative problem-solving, communication, and decisions. The aim of this topic is to explain how an architect proceeds from the initial assignment to implementation, identifies architecturally significant requirements, manages the level of detail, and builds architecture incrementally and in an agile manner. The topic is important for testing because the design approach directly influences testability, the ability to validate high-risk parts early, and the quality verification strategy.</p>
+<h3 id="starting-point-and-the-basic-equation-forces"><a class="heading-anchor" href="#starting-point-and-the-basic-equation-forces" aria-label="Link to this section">#</a>Starting Point and the Basic Equation (Forces)</h3>
+<p>Architecture does not arise in a vacuum. It is the result of the equation <strong>Forces + Creativity + Communication + Decisions</strong> (forces + creativity + communication + decisions).</p>
+<ul>
+<li><strong>Forces (Forces) = Requirements + Constraints (Constraints).</strong></li>
+<li>Requirements are divided into:<ul>
+<li>functional (functional requirements),</li>
+<li>non-functional (non-functional requirements) = quality requirements.</li>
+</ul>
+</li>
+<li>Constraints are divided into:<ul>
+<li>infrastructural (system, database, legacy framework, networking),</li>
+<li>non-technical (organization, business, processes).</li>
+</ul>
+</li>
+</ul>
+<br>
+<img src="../../assets/images/blue-architecture/Architecture-10000-feet.png" width="500">
+
+<p>Forces and constraints define the space within which the architect operates. The size of this space is expressed by the term <strong>“Freedom of Choice”</strong> (the degree of freedom in decision-making).</p>
+<p>Requirements elicitation and negotiation primarily <strong>refine and narrow</strong> this space – they serve to clarify the boundaries of the solution space. The space is expanded only in exceptional cases, typically when the solution space appears to be empty (no solution satisfies all forces simultaneously) and a requirement or constraint needs to be reopened and renegotiated.</p>
+<blockquote>
+<p>Note: This understanding is based on common engineering experience and practice, not on a specific cited standard.</p>
+</blockquote>
+<h3 id="asr-architecturally-significant-requirements"><a class="heading-anchor" href="#asr-architecturally-significant-requirements" aria-label="Link to this section">#</a>ASR (Architecturally Significant Requirements)</h3>
+<ul>
+<li>These are requirements (both functional and quality-related) with a <strong>system-wide impact</strong> – their fulfillment or non-fulfillment affects the architecture as a whole.</li>
+<li>They are identified using the <strong>“5 miles wide, 5 inches deep”</strong> method (5 miles in width, 5 inches in depth):<ul>
+<li>first, a shallow scan is performed across all requirements,</li>
+<li>high-risk candidates are identified,</li>
+<li>and only those undergo a detailed, in-depth analysis (deep dive).</li>
+</ul>
+</li>
+</ul>
+<p>This approach saves effort and focuses attention where the architectural risk is greatest.</p>
+<h3 id="architecture-maturity-stages"><a class="heading-anchor" href="#architecture-maturity-stages" aria-label="Link to this section">#</a>Architecture Maturity Stages</h3>
+<p>Architecture grows incrementally, from learning to results:</p>
+<ul>
+<li><strong>Initial draft:</strong> An initial sketch used for discussion.</li>
+<li><strong>Walking Skeleton:</strong> The first implementation. A use case with the highest risk or business value is selected and built <strong>end-to-end at production quality</strong> (including consideration of quality attributes).</li>
+<li><strong>MVP (Minimum Viable Product):</strong> Serves learning and the validation of market acceptance.</li>
+<li><strong>MMP (Minimal Marketable Product):</strong> The first version that can actually be sold and generates profit (Earn).</li>
+</ul>
+<blockquote>
+<p>Supplementary practical insight: The term MMP is now often replaced by <strong>MLP – Minimum Lovable Product</strong> (a minimal product that users will love).</p>
+</blockquote>
+<h3 id="strategic-vs-tactical-design"><a class="heading-anchor" href="#strategic-vs-tactical-design" aria-label="Link to this section">#</a>Strategic vs. Tactical Design</h3>
+<ul>
+<li><strong>Strategic design:</strong> Decisions with a system-wide impact (operating system, programming language, fundamental framework).</li>
+<li><strong>Tactical design:</strong> Local decisions at the component level (configuration, error handling within a service).</li>
+<li>The two types are connected by <strong>infrastructure for tactical design</strong> – that is, a shared technical foundation that translates strategic decisions into everyday work on components.</li>
+</ul>
+<h2 id="architecture-approach-l-model"><a class="heading-anchor" href="#architecture-approach-l-model" aria-label="Link to this section">#</a>Architecture Approach (L-Model)</h2>
+<p>The L-model defines a systematic approach to the architect&#39;s work (workflow), from the initial assignment to implementation. The individual steps visually form the letter “L”, with the activities following one another and being applied iteratively and in an agile manner.</p>
+<h4 id="vertical-phase-analysis-and-preparation"><a class="heading-anchor" href="#vertical-phase-analysis-and-preparation" aria-label="Link to this section">#</a>Vertical Phase (Analysis and Preparation)</h4>
+<ul>
+<li><strong>Perform user requirements elicitation:</strong> Identifying user needs and capturing non-functional requirements (NFRs).</li>
+<li><strong>Create domain model:</strong> Defining the basic entities and relationships in the domain.</li>
+<li><strong>Model dynamics of scenarios:</strong> Modeling the system&#39;s behavior over time.</li>
+<li><strong>Determine scope &amp; boundaries:</strong> Clearly defining the scope and boundaries of the system.</li>
+</ul>
+<h4 id="horizontal-phase-the-design-itself"><a class="heading-anchor" href="#horizontal-phase-the-design-itself" aria-label="Link to this section">#</a>Horizontal Phase (The Design Itself)</h4>
+<ul>
+<li><strong>Create first conceptual draft:</strong> The first rough concept, considering technologies and reference architectures.</li>
+<li><strong>Structure the baseline architecture:</strong> Creating the basic supporting skeleton of the architecture.</li>
+<li><strong>Introduce deployment views:</strong> Introducing views of physical deployment (deployment).</li>
+<li><strong>Define principles &amp; guidelines:</strong> Defining architectural principles and rules for development.</li>
+<li><strong>Plan / realize increment(s):</strong> Planning and implementing successive prioritized increments.</li>
+</ul>
+<br>
+<img src="../../assets/images/blue-architecture/Systematic-L-model.png" width="500">
+
+<h3 id="pyramid-model-level-of-detail"><a class="heading-anchor" href="#pyramid-model-level-of-detail" aria-label="Link to this section">#</a>Pyramid Model (Level of Detail)</h3>
+<p>The pyramid model limits the depth of documentation. The rule is that the baseline architecture must be complete enough to guide development, yet simple enough to communicate.</p>
+<ul>
+<li>It focuses on a maximum of 3 levels: <strong>System → Subsystem/Service → Component.</strong></li>
+<li><strong>Cross-cutting concerns</strong> (concerns spanning multiple areas, such as security or logging) run across all levels.</li>
+</ul>
+<h3 id="conway-s-law"><a class="heading-anchor" href="#conway-s-law" aria-label="Link to this section">#</a>Conway&#39;s Law</h3>
+<ul>
+<li>“The design of a system is bound to reflect the communication structure of the organization.”</li>
+<li>The natural direction is therefore: <strong>organizational structure → shape of the architecture.</strong></li>
+</ul>
+<blockquote>
+<p>Supplementary practical insight: This point often leads to an examination question about the so-called <strong>Inverse Conway Maneuver</strong>. It means deliberately designing the architecture to match the desired communication and team structure. The architect therefore first establishes the target architecture, and the company&#39;s communication flows and teams are then adjusted accordingly so that Conway&#39;s law works in favor of the design, not against it.</p>
+</blockquote>
+<h3 id="incremental-cycle"><a class="heading-anchor" href="#incremental-cycle" aria-label="Link to this section">#</a>Incremental Cycle</h3>
+<p>Architecture is built in iterations guided by clear priorities. This is not merely a general cycle of forces → increment → assess → refactor (which would correspond more closely to the general PDCA – Plan-Do-Check-Act). The essential point is that <strong>the entire L-model is traversed in every iteration</strong>:</p>
+<ul>
+<li>in each iteration, the forces (Forces) are determined, the architecture is created or extended (next increment), the result is evaluated (assess), and refactoring is performed if appropriate,</li>
+<li><strong>all phases of the L-model</strong> are covered in the process; phases with nothing to do in a given iteration become an empty operation (no-op), but are not excluded from consideration.</li>
+</ul>
+<p>This ensures that no important aspect (for example, system boundaries or deployment) remains overlooked iteration after iteration merely because “there was no time for it” at that moment.</p>
+<h2 id="practical-example-systematic-design-of-flex-rt-flexibility-manager-for-operations"><a class="heading-anchor" href="#practical-example-systematic-design-of-flex-rt-flexibility-manager-for-operations" aria-label="Link to this section">#</a>Practical Example: Systematic Design of Flex RT (Flexibility Manager for Operations)</h2>
+<blockquote>
+<p>The following text is an illustrative example of applying the theory, not part of the definitions.</p>
+</blockquote>
+<h3 id="situation-playing-field-and-forces"><a class="heading-anchor" href="#situation-playing-field-and-forces" aria-label="Link to this section">#</a>Situation (Playing field and forces)</h3>
+<p>Flex RT (Flexibility Manager for Operations, &quot;Flex Real Time&quot;) is a product <strong>before product-market fit</strong>. The business goal itself was still a hypothesis, which meant the solution space was wide but the knowledge was thin — exactly the situation where a Big Design Up-Front would have been waste. The architecture therefore had to be <strong>grown</strong>, not specified in advance.</p>
+<h3 id="applying-the-l-model"><a class="heading-anchor" href="#applying-the-l-model" aria-label="Link to this section">#</a>Applying the L-Model</h3>
+<p>I deliberately ran the <strong>full L-model in every iteration</strong> rather than designing up-front:</p>
+<ul>
+<li><strong>Vertical phase (analysis):</strong><ul>
+<li><em>Requirements elicitation</em> — features and NFRs derived directly from the use cases with the co-innovation partner, instead of from a speculative requirements catalogue.</li>
+<li><em>Domain model</em> — built through <strong>Event Storming</strong> workshops with domain experts; the events discovered there became the backbone of the domain model and later of the Kafka topics.</li>
+<li><em>Dynamics of scenarios</em> — behaviour over time modelled per scenario (sequence/flow level), which exposed ownership of state and the real service boundaries.</li>
+<li><em>Scope &amp; boundaries</em> — explicit system boundary, so it was clear what Flex RT owns and what it only consumes.</li>
+</ul>
+</li>
+<li><strong>Horizontal phase (design):</strong><ul>
+<li><em>First conceptual draft</em> → <em>baseline architecture</em> → <em>deployment views</em> → <strong>goals, principles &amp; guidelines</strong> (the GPD chain that made later decisions traceable) → <em>planned increments</em>.</li>
+</ul>
+</li>
+<li><strong>Iteration:</strong> each increment re-entered the vertical phase; phases with nothing new became a no-op but were never dropped. That is what kept boundaries and deployment from silently rotting.</li>
+</ul>
+<h3 id="maturity-stages-actually-traversed"><a class="heading-anchor" href="#maturity-stages-actually-traversed" aria-label="Link to this section">#</a>Maturity stages actually traversed</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What it was in Flex RT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Initial draft</strong></td>
+<td>Conceptual sketch from event storming — used for stakeholder discussion and review, not for implementation</td>
+</tr>
+<tr>
+<td><strong>Walking Skeleton</strong></td>
+<td>One high-risk flow built <strong>end-to-end at production quality</strong> — real interfaces, real deployment, test setup in place</td>
+</tr>
+<tr>
+<td><strong>MVP</strong></td>
+<td>Released to the <strong>co-innovation partner</strong> to validate product-market fit and learn from real grid operation</td>
+</tr>
+</tbody></table></div>
+<h3 id="documentation-depth-pyramid-model"><a class="heading-anchor" href="#documentation-depth-pyramid-model" aria-label="Link to this section">#</a>Documentation depth (Pyramid model)</h3>
+<p>Documentation was kept to the three allowed levels — <strong>System → Subsystem/Service → Component</strong> — with <strong>cross-cutting concerns</strong> (security, logging/observability, unit &amp; multiplier handling, API conventions) documented once and applied across all levels. This kept the architecture complete enough to guide development and simple enough to communicate to a partner who is not part of the team.</p>
+<h3 id="lessons-learned"><a class="heading-anchor" href="#lessons-learned" aria-label="Link to this section">#</a>Lessons learned</h3>
+<ul>
+<li><strong>Before product-market fit, the Walking Skeleton is the cheapest risk reducer</strong> — it forces the interfaces, deployment and test infrastructure to exist before the business hypothesis is confirmed.</li>
+<li><strong>Event Storming is the practical substitute for a heavy UML domain model</strong> — it produces the domain model, the dynamics <em>and</em> stakeholder alignment in one workshop.</li>
+<li><strong>Running the whole L-model per iteration is the discipline that prevents erosion</strong>; skipping the &quot;boring&quot; phases (boundaries, deployment) is what makes architecture drift.</li>
+</ul>
+<h2 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-patterns</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Mistake / Anti-pattern</th>
+<th>Why It Is a Problem</th>
+<th>How It Manifests</th>
+<th>How to Prevent It</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ignoring non-technical forces</td>
+<td>The architecture may be technically correct but organizationally unworkable</td>
+<td>Nobody adopts the finished solution</td>
+<td>Involve stakeholders and a decision group from the beginning</td>
+</tr>
+<tr>
+<td>Skipping ASR identification</td>
+<td>Key risks are discovered late</td>
+<td>Late and costly rework</td>
+<td>Use “5 miles wide, 5 inches deep”</td>
+</tr>
+<tr>
+<td>Overly detailed design in advance (big design up-front)</td>
+<td>Loss of agility, waste</td>
+<td>Extensive documentation without validation</td>
+<td>Follow the pyramid model (maximum 3 levels)</td>
+</tr>
+<tr>
+<td>Omitting L-model phases between iterations</td>
+<td>Important aspects are overlooked (boundaries, deployment)</td>
+<td>“Forgotten” areas emerge late</td>
+<td>Traverse the entire L-model in each iteration (a no-op is acceptable)</td>
+</tr>
+<tr>
+<td>Reducing the incremental cycle to general PDCA</td>
+<td>The architectural essence is lost</td>
+<td>Iterations without systematic coverage</td>
+<td>Emphasize iteration through the entire L-model</td>
+</tr>
+<tr>
+<td>Postponing the Walking Skeleton</td>
+<td>Early end-to-end validation is missing</td>
+<td>Integration risks emerge late</td>
+<td>Build a high-risk use case end-to-end early</td>
+</tr>
+</tbody></table></div>
+<h2 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h2>
+<p><strong>Basic Level</strong></p>
+<ul>
+<li>What is systematic architecture design, and what makes up the “equation of forces”? → The expected answer is the equation Forces + Creativity + Communication + Decisions and the division of forces into requirements and constraints.</li>
+<li>What are ASR, and how are they identified? → Definition of system-wide impact + the “5 miles wide, 5 inches deep” method.</li>
+</ul>
+<p><strong>Intermediate Level</strong></p>
+<ul>
+<li>Explain the architecture maturity stages (Skeleton, MVP, MMP/MLP). → The difference between validation, marketability, and end-to-end quality.</li>
+<li>What does the pyramid model address, and why does it limit depth? → The balance between completeness and communicability, 3 levels, cross-cutting concerns.</li>
+</ul>
+<p><strong>Advanced Level</strong></p>
+<ul>
+<li>How does the L-model work, and why is it traversed in full in every iteration? → Vertical and horizontal phases, no-op phases, prevention of omissions.</li>
+<li>Explain Conway&#39;s law and the Inverse Conway Maneuver. → The direction of causality and its deliberate reversal.</li>
+</ul>
+<p><strong>Questions About Practical Experience</strong></p>
+<ul>
+<li>Describe a situation in which non-technical forces determined the fate of an architecture. → A specific example and lessons learned are expected.</li>
+</ul>
+<p><strong>Questions About Decisions and Trade-offs</strong></p>
+<ul>
+<li>When is an Initial Draft sufficient, and when is a Walking Skeleton necessary? → Reasoning based on risk and the need for early validation.</li>
+<li>How can documentation depth and agility be balanced? → The pyramid model vs. big design up-front.</li>
+</ul>
+<h2 id="model-answer-3-5-minutes"><a class="heading-anchor" href="#model-answer-3-5-minutes" aria-label="Link to this section">#</a>Model Answer (3–5 Minutes)</h2>
+<p>Systematic architecture design means that architecture does not arise by chance, but through a controlled and repeatable approach. It is based on the equation according to which architecture is the result of forces, creativity, communication, and decisions. Forces mean requirements (both functional and quality-related) and constraints (infrastructural and non-technical). These forces define the solution space, whose size is described by the term “Freedom of Choice”. Requirements elicitation and negotiation usually refine and narrow this space; expansion is more of an exception when the space appears to be empty.</p>
+<p>For architecture, it is crucial to recognize architecturally significant requirements (ASR), meaning those with a system-wide impact. They are identified using the “5 miles wide, 5 inches deep” method – first a shallow scan across the breadth, followed by in-depth analysis only for high-risk candidates.</p>
+<p>The approach itself is described by the L-model: first the vertical phase (elicitation, domain model, scenario dynamics, system boundaries), then the horizontal phase (conceptual design, baseline architecture, deployment, principles, implementation of increments). The essential point is that architecture grows incrementally and the entire L-model is traversed in every iteration – phases with nothing to do are merely skipped as an empty operation, but are not excluded from consideration. This distinguishes it from a mere general PDCA cycle.</p>
+<p>Architecture maturity grows from the Initial Draft through the Walking Skeleton (a high-risk use case built end-to-end at production quality) and MVP to MMP, or MLP. The level of detail is kept in check by the pyramid model, which is limited to three levels and also addresses cross-cutting concerns.</p>
+<p>From a testing perspective, systematic design is important because the Walking Skeleton enables early end-to-end verification of high-risk parts and the establishment of testing infrastructure, while incremental growth enables continuous validation and the discovery of integration difficulties.</p>
+<p>The trade-off is primarily between completeness and agility: overly detailed design in advance kills flexibility, while overly shallow design fails to guide development. Non-technical forces also play a role – as practice shows, even a technically correct architecture can fail when it encounters organizational and psychological boundaries.</p>
+<p>In summary: systematic architecture design provides an approach for turning the forces at work into a solution that grows in a controlled way and is testable and communicable.</p>
+<h2 id="short-version-for-quick-revision-cheat-sheet"><a class="heading-anchor" href="#short-version-for-quick-revision-cheat-sheet" aria-label="Link to this section">#</a>Short Version for Quick Revision (Cheat Sheet)</h2>
+<p><strong>5 Main Points</strong></p>
+<ol>
+<li>Architecture = Forces + Creativity + Communication + Decisions.</li>
+<li>Forces = requirements + constraints; they define “Freedom of Choice”.</li>
+<li>ASR are identified using the “5 miles wide, 5 inches deep” method.</li>
+<li>The approach is guided by the L-model, which is traversed in full in every iteration.</li>
+<li>Maturity grows: Draft → Skeleton → MVP → MMP/MLP.</li>
+</ol>
+<p><strong>5 Key Concepts</strong></p>
+<ul>
+<li>Forces / Constraints</li>
+<li>ASR (Architecturally Significant Requirements)</li>
+<li>Walking Skeleton</li>
+<li>Pyramid model (System → Subsystem → Component)</li>
+<li>Inverse Conway Maneuver</li>
+</ul>
+<p><strong>5 Typical Examination Questions</strong></p>
+<ul>
+<li>What makes up the equation of forces?</li>
+<li>How are ASR identified?</li>
+<li>What is a Walking Skeleton, and why is it built early?</li>
+<li>Why is the entire L-model traversed in every iteration?</li>
+<li>What is the Inverse Conway Maneuver?</li>
+</ul>
+<p><strong>3 Most Common Mistakes</strong></p>
+<ul>
+<li>Ignoring non-technical forces.</li>
+<li>Omitting L-model phases between iterations.</li>
+<li>Big design up-front instead of the pyramid model.</li>
+</ul>
+<p><strong>1 Model Examination Sentence</strong>
+“Systematic architecture design translates the forces at work, through a controlled incremental approach across the entire L-model, into a testable and communicable solution.”</p>
+<h2 id="summary-table"><a class="heading-anchor" href="#summary-table" aria-label="Link to this section">#</a>Summary Table</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Matters</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Forces</td>
+<td>Requirements + constraints define the solution space</td>
+<td>Determine the degree of design freedom</td>
+<td>Define what must be verified</td>
+<td>What makes up the forces?</td>
+</tr>
+<tr>
+<td>ASR</td>
+<td>Requirements with a system-wide impact</td>
+<td>Guide fundamental decisions</td>
+<td>Determine risk-based testing priorities</td>
+<td>How are ASR identified?</td>
+</tr>
+<tr>
+<td>Maturity stages</td>
+<td>Draft → Skeleton → MVP → MMP/MLP</td>
+<td>Gradual construction of the solution</td>
+<td>The skeleton enables early e2e validation</td>
+<td>What is a Walking Skeleton?</td>
+</tr>
+<tr>
+<td>L-model</td>
+<td>The architect&#39;s systematic workflow</td>
+<td>Leads from analysis to implementation</td>
+<td>Ensures coverage of testable aspects</td>
+<td>Why traverse the entire L-model?</td>
+</tr>
+<tr>
+<td>Pyramid model</td>
+<td>Limiting depth to 3 levels</td>
+<td>Keeps the documentation communicable</td>
+<td>Defines the integration levels to be tested</td>
+<td>What does the pyramid model address?</td>
+</tr>
+<tr>
+<td>Conway&#39;s law</td>
+<td>The organization shapes the architecture</td>
+<td>Influences the system structure</td>
+<td>Influences team boundaries and integration</td>
+<td>What is the Inverse Conway Maneuver?</td>
+</tr>
+<tr>
+<td>Incremental cycle</td>
+<td>Iteration through the entire L-model</td>
+<td>Controlled architectural growth</td>
+<td>Enables continuous validation</td>
+<td>How does it differ from PDCA?</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/blue-architecture/architecture-documentation.html"><span class="pager__label">← Previous</span><span>Architecture Documentation</span></a>
+      <a class="pager__next" href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html"><span class="pager__label">Next →</span><span>Quality scenarios and Design Tactics</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#starting-point-and-the-basic-equation-forces">Starting Point and the Basic Equation (Forces)</a></li><li class="lvl-3"><a href="#asr-architecturally-significant-requirements">ASR (Architecturally Significant Requirements)</a></li><li class="lvl-3"><a href="#architecture-maturity-stages">Architecture Maturity Stages</a></li><li class="lvl-3"><a href="#strategic-vs-tactical-design">Strategic vs. Tactical Design</a></li><li class="lvl-2"><a href="#architecture-approach-l-model">Architecture Approach (L-Model)</a></li><li class="lvl-4"><a href="#vertical-phase-analysis-and-preparation">Vertical Phase (Analysis and Preparation)</a></li><li class="lvl-4"><a href="#horizontal-phase-the-design-itself">Horizontal Phase (The Design Itself)</a></li><li class="lvl-3"><a href="#pyramid-model-level-of-detail">Pyramid Model (Level of Detail)</a></li><li class="lvl-3"><a href="#conway-s-law">Conway s Law</a></li><li class="lvl-3"><a href="#incremental-cycle">Incremental Cycle</a></li><li class="lvl-2"><a href="#practical-example-systematic-design-of-flex-rt-flexibility-manager-for-operations">Practical Example: Systematic Design of Flex RT (Flexibility Manager for Operations)</a></li><li class="lvl-3"><a href="#situation-playing-field-and-forces">Situation (Playing field and forces)</a></li><li class="lvl-3"><a href="#applying-the-l-model">Applying the L-Model</a></li><li class="lvl-3"><a href="#maturity-stages-actually-traversed">Maturity stages actually traversed</a></li><li class="lvl-3"><a href="#documentation-depth-pyramid-model">Documentation depth (Pyramid model)</a></li><li class="lvl-3"><a href="#lessons-learned">Lessons learned</a></li><li class="lvl-2"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-patterns</a></li><li class="lvl-2"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-2"><a href="#model-answer-3-5-minutes">Model Answer (3–5 Minutes)</a></li><li class="lvl-2"><a href="#short-version-for-quick-revision-cheat-sheet">Short Version for Quick Revision (Cheat Sheet)</a></li><li class="lvl-2"><a href="#summary-table">Summary Table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

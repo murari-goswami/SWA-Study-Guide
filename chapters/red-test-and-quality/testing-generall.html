@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Software Testing and Quality - RED - Test and Quality - SWA preparation study guide.">
+<title>Software Testing and Quality · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall" aria-current="page">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>4,150 words · about 21 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/testing-generall" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="software-testing-and-quality">Software Testing and Quality</h1>
+<h3 id="brief-topic-summary"><a class="heading-anchor" href="#brief-topic-summary" aria-label="Link to this section">#</a>Brief Topic Summary</h3>
+<p>Software quality and its systematic testing represent fundamental pillars of software engineering and architecture. In modern complex systems, especially in the areas of embedded software, safety-critical systems, or industrial automation, quality cannot be perceived merely as a phase at the end of the development cycle. Quality must be built into the system from the design and architecture level onward. Testing serves as an empirical investigation of the system with the aim of providing stakeholders with objective information about the state of quality and risks. Close cooperation between the software architect and the test manager is essential for establishing an effective test strategy that minimizes unnecessary costs of correcting defects in later project phases.</p>
+<p>Software Quality Management is not a one-time activity, but a comprehensive discipline that runs throughout the entire software development life cycle (SDLC). For the software architect and test architect, it is essential to understand that quality cannot be &quot;tested into&quot; a system at the end of development. Quality must be designed into the system (built proactively) through architectural tactics and process discipline, while testing serves as a critical mechanism for verifying compliance with requirements and validating that the end user&#39;s needs are met.</p>
+<p><img src="../../assets/images/red-test-and-quality/test_quality_engineering.jpg" alt="Test and Quality Engineering"></p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<h4 id="a-software-quality-software-quality"><a class="heading-anchor" href="#a-software-quality-software-quality" aria-label="Link to this section">#</a>A. Software Quality (Software Quality)</h4>
+<ul>
+<li><strong>Definition:</strong> Conformance to requirements (compliance with specified requirements) or fitness for use (suitability for use and the ability to satisfy both explicit and implicit customer needs). Quality is divided into functional quality (compliance with functional requirements) and structural quality (internal properties such as maintainability, efficiency, and security).</li>
+<li><strong>Significance in architecture:</strong> The architect defines quality through non-functional requirements (NFR, known as <em>quality attributes</em> or &quot;-ilities&quot;) and the selection of architectural tactics to achieve them.</li>
+<li><strong>Significance in testing:</strong> Testing provides objective metrics and an assessment of the extent to which the system fulfills these described quality attributes.</li>
+<li><strong>Typical examination misunderstanding:</strong> Reducing quality solely to the technical correctness of the code (removing bugs). A system that is technically perfect but does not meet the user&#39;s business needs has almost zero quality .</li>
+<li><strong>Practical example:</strong> In embedded software for automotive applications (for example, a brake control unit), a non-functional requirement (NFR) for quality is a guaranteed response time (timing) below 5 ms under all circumstances.</li>
+</ul>
+<h4 id="b-quality-assurance-qa-vs-quality-control-qc-vs-software-testing"><a class="heading-anchor" href="#b-quality-assurance-qa-vs-quality-control-qc-vs-software-testing" aria-label="Link to this section">#</a>B. Quality Assurance (QA) vs. Quality Control (QC) vs. Software Testing</h4>
+<ul>
+<li><strong>Definition:</strong> <ul>
+<li><strong>Quality Assurance (QA):</strong> A preventive and process-oriented activity. It focuses on establishing, auditing, and continuously improving development processes to prevent defects.</li>
+<li><strong>Quality Control (QC):</strong> A corrective and product-oriented activity. It includes reviewing the finished product before release to verify its compliance with the specification.</li>
+<li><strong>Software Testing:</strong> The technical and dynamic implementation of defect detection directly in the code by executing it under controlled conditions.</li>
+</ul>
+</li>
+<li><strong>Significance in architecture:</strong> The architect participates in QA by defining coding standards and design guidelines. As part of QC, the architect reviews the architectural design against the requirements.</li>
+<li><strong>Significance in testing:</strong> Testing falls under QC and provides empirical data that serves as feedback for QA processes to optimize the entire SDLC.</li>
+<li><strong>Typical examination misunderstanding:</strong> Using the term &quot;QA engineer&quot; for a tester who only clicks through scenarios or writes integration tests. A tester detects existing defects (QC), whereas QA seeks to use processes to ensure that these defects do not arise in the first place.</li>
+<li><strong>Practical example:</strong> QA is the introduction of a mandatory static code analyzer (for example, PolySpace or QAC) into the CI pipeline. QC is the final test drive of the integrated vehicle. Testing is the actual execution of test scripts that simulate sensor inputs on a HIL (Hardware-in-the-Loop) simulator.</li>
+</ul>
+<h4 id="c-verification-verification-vs-validation-validation"><a class="heading-anchor" href="#c-verification-verification-vs-validation-validation" aria-label="Link to this section">#</a>C. Verification (Verification) vs. Validation (Validation)</h4>
+<ul>
+<li><strong>Definition:</strong> <ul>
+<li><strong>Verification:</strong> &quot;Checking whether we have built the product correctly&quot; (<em>Are we building the product right?</em>). This concerns compliance with the specification and technical requirements.</li>
+<li><strong>Validation:</strong> &quot;Checking whether we have built the right product&quot; (<em>Are we building the right product?</em>). This concerns meeting the user&#39;s actual needs and the business purpose in the real environment.</li>
+</ul>
+</li>
+<li><strong>Significance in architecture:</strong> The architect needs to verify that the implementation corresponds precisely to the detailed design (LLD) and interfaces, and to validate that the architecture as a whole solves the customer&#39;s real problems.</li>
+<li><strong>Significance in testing:</strong> Verification tests are typically low-level (Unit, Integration) and check compliance with the technical specification. Validation is performed through acceptance tests (UAT, Alpha/Beta) with end users.</li>
+<li><strong>Typical examination misunderstanding:</strong> Assuming that if a system has passed 100% verification (all tests against the specification have passed), it is automatically valid. If the specification itself was incorrect or misunderstood, verification succeeds but validation fails (see the case of the Hubble telescope).</li>
+</ul>
+<h4 id="d-software-testability-software-testability"><a class="heading-anchor" href="#d-software-testability-software-testability" aria-label="Link to this section">#</a>D. Software Testability (Software Testability)</h4>
+<ul>
+<li><strong>Definition:</strong> The extent (degree of effectiveness and efficiency) to which a software artifact allows test criteria to be established and tests to be performed to verify their fulfillment in a given context. Practical testability expresses how easily a product can be tested by a particular tester and process.</li>
+<li><strong>Significance in architecture:</strong> Testability is a key non-functional requirement (NFR). If a system lacks testability, the architecture becomes unmaintainable, and technical debt and regression risks increase.</li>
+<li><strong>Significance in testing:</strong> High testability directly reduces the time, effort, and cost of preparing and executing tests, and improves fault localizability.</li>
+<li><strong>Typical examination misunderstanding:</strong> Measuring testability solely through the Code Coverage metric. High code coverage does not mean that the code is easily testable or that the architecture allows easy isolation of modules.</li>
+<li><strong>Practical example:</strong> If an industrial PLC system does not allow power failures or bus errors to be simulated through software (controllability), its testability is low and the tester must induce faults by manually disconnecting cables.</li>
+</ul>
+<h4 id="e-design-for-testability-design-for-testability-dft"><a class="heading-anchor" href="#e-design-for-testability-design-for-testability-dft" aria-label="Link to this section">#</a>E. Design for Testability (Design for Testability - DFT)</h4>
+<ul>
+<li><strong>Definition:</strong> The proactive application of design principles, tactics, and patterns to maximize system testability from the very beginning of design.</li>
+<li><strong>Significance in architecture:</strong> The architect applies tactics such as separating dependencies (Dependency Injection), encapsulating external interfaces, introducing Control &amp; Observation Points, or using patterns such as Humble Object.</li>
+<li><strong>Significance in testing:</strong> It enables the introduction of test Drivers, simulators, stubs, and mock objects, minimizing the need to test everything on expensive final hardware.</li>
+<li><strong>Typical examination misunderstanding:</strong> The view that DFT is a matter for developers at the unit test level. DFT must begin at the system architecture level by dividing the system into independently testable components.</li>
+</ul>
+<hr>
+<h3 id="test-strategy-test-strategy"><a class="heading-anchor" href="#test-strategy-test-strategy" aria-label="Link to this section">#</a>Test Strategy (Test Strategy)</h3>
+<p>A test strategy is a high-level document that defines the general approach and methodology for software testing. It aims to establish a cross-cutting approach to software testing within an organization, identify priorities, and determine the expected level of quality. It primarily documents <em>how</em> testing will be performed, including the use of systematic testing methods and risk-based testing strategies. It tends to be relatively static, meaning that once approved, it rarely changes during the life cycle. For example, it defines the incorporation of test design techniques into individual testing levels, the definition of testing methods for requirements, and the criteria for entering and exiting testing. It is usually designed by a Test Architect or Test Manager.</p>
+<p><img src="../../assets/images/red-test-and-quality/swa_test_strategy.png" alt="Test and Quality Engineering"></p>
+<h3 id="test-plan-test-plan"><a class="heading-anchor" href="#test-plan-test-plan" aria-label="Link to this section">#</a>Test Plan (Test Plan)</h3>
+<p>A test plan is a detailed document specifying the scope, approach, resources, and schedule of the intended testing activities for a particular project, iteration, or release. It is one of the documents produced from the test strategy. While the strategy is general, the plan is very specific and answers the questions of <em>what</em> will be tested, <em>who</em> will test it, and <em>when</em> testing will take place. It is a dynamic document that can be updated during software development in response to changes in requirements, delays, or newly discovered project risks. For example, it defines the assignment of specific testers, the test execution schedule, and specific project milestones.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th align="left">Criterion</th>
+<th align="left">Test Strategy (Test Strategy)</th>
+<th align="left">Test Plan (Test Plan)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Purpose</strong></td>
+<td align="left">Defines the general cross-cutting approach, methodology, and standards for testing.</td>
+<td align="left">Defines the testing specifics for a particular project or phase (who, what, when).</td>
+</tr>
+<tr>
+<td align="left"><strong>Level of detail</strong></td>
+<td align="left">High-level (high level), often applicable across multiple projects within the organization.</td>
+<td align="left">Low-level (detailed level), applicable to one particular project or sprint.</td>
+</tr>
+<tr>
+<td align="left"><strong>Dynamics</strong></td>
+<td align="left">Static – rarely changes after approval.</td>
+<td align="left">Dynamic – regularly updated according to the current progress of the project.</td>
+</tr>
+<tr>
+<td align="left"><strong>Key components</strong></td>
+<td align="left">Expected level of quality, testing levels, testing techniques, entry/exit criteria.</td>
+<td align="left">Features to be tested and not tested, schedule, resource allocation, testing environment for the given release.</td>
+</tr>
+<tr>
+<td align="left"><strong>Owner/Author</strong></td>
+<td align="left">Test Architect or Test Manager.</td>
+<td align="left">Test Lead or QA Manager.</td>
+</tr>
+<tr>
+<td align="left"><strong>Dependency</strong></td>
+<td align="left">Exists independently and establishes an overarching framework.</td>
+<td align="left">Is based on the test strategy and serves as its output document for specific needs.</td>
+</tr>
+</tbody></table></div>
+<p><img src="../../assets/images/red-test-and-quality/test_strategy_planning.png" alt="Test and Strategy"></p>
+<p><em>The background coloring visually identifies the key differences between the test strategy and the test plan.</em></p>
+<hr>
+<h3 id="seven-principles-of-software-testing"><a class="heading-anchor" href="#seven-principles-of-software-testing" aria-label="Link to this section">#</a>Seven Principles of Software Testing</h3>
+<p>In the examination, it is necessary not only to list these principles, but also to demonstrate a deep understanding of them in the context of architecture and test strategy:</p>
+<ol>
+<li><strong>Testing shows the presence of defects, not their absence (Testing shows the presence of defects):</strong> Testing can demonstrate that defects are present in a system, but it cannot prove that none remain. Architectural implication: The system must be designed to be <em>fault-tolerant</em> (resistant to faults), because it must be assumed that some defects will make it into production.</li>
+<li><strong>Complete (exhaustive) testing is impossible (Exhaustive testing is impossible):</strong> Testing all combinations of inputs, paths, and conditions is unrealistic because of limited time and budget. Architectural implication: Prioritization based on risk analysis (Risk-Based Testing) must be defined, with a focus on the most critical scenarios.</li>
+<li><strong>Early testing (Early testing):</strong> Testing activities (especially static testing and requirements reviews) should begin as early as possible in the SDLC. Fixing a defect discovered in the requirements costs orders of magnitude less than fixing the same defect discovered only after the software has been released.</li>
+<li><strong>Defect clustering (Defect clustering):</strong> Approximately 80% of defects are found in 20% of modules (an application of the Pareto principle). The cause is often high code complexity or tight coupling between components. Architectural response: Modules with high defect rates must undergo refactoring to reduce complexity and increase modularity.</li>
+<li><strong>The pesticide paradox (Pesticide paradox):</strong> Repeatedly running the same test suite eventually stops revealing new defects. Developers subconsciously write code so that existing tests pass. Strategic response: Tests and test scenarios must be regularly reviewed, varied, and supplemented with exploratory testing.</li>
+<li><strong>Testing is context-dependent (Testing is context-dependent):</strong> There is no universal test strategy. An online shop is tested differently from railway traffic control software. Architectural response: The architecture of the testing environment and tools must directly reflect the domain&#39;s specific characteristics (for example, the need to simulate real time, hardware failures, and similar conditions).</li>
+<li><strong>The absence of errors fallacy (Absence of errors fallacy):</strong> Finding and fixing all defects does not help if the system does not meet user needs or support business objectives. Architectural response: The architect must actively participate in validating requirements directly with the commissioning stakeholders.</li>
+</ol>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-Patterns</h3>
+<p>The following table describes key mistakes encountered across projects:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th align="left">Anti-pattern / Mistake</th>
+<th align="left">Why Is It a Problem?</th>
+<th align="left">How Does It Manifest?</th>
+<th align="left">How Can It Be Prevented / Resolved?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Monolithic test automation without DFT</strong></td>
+<td align="left">Tests are fragile, slow, and dependent on a specific graphical user interface (GUI).</td>
+<td align="left">Every minor code change causes widespread test failures (<em>fragile tests</em>). Defect detection is slow.</td>
+<td align="left">Implement the <strong>Humble Object pattern</strong> – separate the presentation layer from the business logic, which can be tested in isolation.</td>
+</tr>
+<tr>
+<td align="left"><strong>Ice Cream Cone Pattern (Inverted Pyramid)</strong></td>
+<td align="left">Most tests are implemented at the GUI/E2E level, while there are very few unit tests.</td>
+<td align="left">Test runs take hours, failure analysis is extremely time-consuming, and tests are unstable (flickering).</td>
+<td align="left">Transform the test strategy toward the <strong>Testing Pyramid</strong> or <strong>Testing Trophy</strong>.</td>
+</tr>
+<tr>
+<td align="left"><strong>Insufficient isolation of dependencies in unit tests</strong></td>
+<td align="left">Unit tests access the real database, network, or hardware.</td>
+<td align="left">Slow tests that cannot be run locally without the complete infrastructure. Tests often fail because of environment errors.</td>
+<td align="left">Use <strong>Dependency Injection</strong> techniques and replace external dependencies with test doubles (Stubs, Mocks, Fakes).</td>
+</tr>
+<tr>
+<td align="left"><strong>Ignoring testability when defining requirements</strong></td>
+<td align="left">Requirements are vague and precise test criteria cannot be designed for them.</td>
+<td align="left">Disputes during system acceptance, inability to automate, and an unclear testing scope.</td>
+<td align="left">Introduce the practice of <strong>BDD (Behavior-Driven Development)</strong> – defining requirements in the form of executable specifications (<em>Given-When-Then</em>).</td>
+</tr>
+<tr>
+<td align="left"><strong>Absence of testing for negative conditions and error handling</strong></td>
+<td align="left">Only the so-called <em>happy path</em> (optimal course of events) is tested.</td>
+<td align="left">When faced with unexpected input or hardware failure, the system crashes, freezes, or exhibits undefined behavior in production.</td>
+<td align="left">Use techniques such as <strong>Fault Injection</strong> (injecting faults) at both the architecture and testing levels.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<p>Examiners often ask about deeper connections. Here is an overview of questions divided by difficulty:</p>
+<h4 id="a-basic-questions"><a class="heading-anchor" href="#a-basic-questions" aria-label="Link to this section">#</a>A. Basic Questions</h4>
+<ol>
+<li><strong>What is the difference between static and dynamic testing?</strong><ul>
+<li>Static testing does not require code execution (documentation reviews, code reviews, static analysis). Dynamic testing requires executing the code with specific inputs and comparing the result with the expected output. The two methods complement each other.</li>
+</ul>
+</li>
+<li><strong>What is a Test Case, and what are its key elements?</strong><ul>
+<li>A set of input values, prerequisites (execution preconditions), expected results, and postconditions developed for a specific objective (for example, covering a path through the code).</li>
+</ul>
+</li>
+<li><strong>How would you define the difference between QA, QC, and software testing?</strong><ul>
+<li>QA is process-focused defect prevention. QC is the detection of deviations in the final product before release. Testing is the dynamic execution of code to find defects.</li>
+</ul>
+</li>
+<li><strong>Explain the difference between verification and validation.</strong><ul>
+<li>Verification: compliance with the specification (Are we building the product right?). Validation: compliance with user needs in the real environment (Are we building the right product?).</li>
+</ul>
+</li>
+</ol>
+<h4 id="b-intermediate-questions"><a class="heading-anchor" href="#b-intermediate-questions" aria-label="Link to this section">#</a>B. Intermediate Questions</h4>
+<ol>
+<li><strong>Explain the difference between Testing Pyramid and Testing Trophy.</strong><ul>
+<li>Testing Pyramid (Cohn) recommends a broad base of fast and inexpensive unit tests, fewer integration tests, and a minimum of E2E/UI tests. Testing Trophy (Kent C. Dodds) places the greatest emphasis on integration tests and static analysis, because they provide the best balance between cost, speed, and the level of confidence for modern web/distributed applications.</li>
+</ul>
+</li>
+<li><strong>How are the Cyclomatic Complexity of code and testing related?</strong><ul>
+<li>Cyclomatic complexity determines the number of linearly independent paths through the code. It directly defines the minimum number of test cases required to achieve 100% Decision Coverage. High complexity indicates poorer testability and a higher risk of defects.</li>
+</ul>
+</li>
+<li><strong>What is the &quot;Pesticide Paradox&quot; in testing, and how do you counter it as a test architect?</strong><ul>
+<li>The pesticide paradox states that repeatedly running the same tests eventually stops finding new defects. The response consists of regular review, updating tests, writing new test scenarios, and incorporating exploratory testing.</li>
+</ul>
+</li>
+<li><strong>Explain the Pareto principle in the context of software defect rates.</strong><ul>
+<li>The concept of Defect Clustering – approximately 80% of defects are found in 20% of modules. Knowledge of these critical modules helps optimize the allocation of testing resources based on risk.</li>
+</ul>
+</li>
+</ol>
+<h4 id="c-advanced-questions"><a class="heading-anchor" href="#c-advanced-questions" aria-label="Link to this section">#</a>C. Advanced Questions</h4>
+<ol>
+<li><strong>How are Dijkstra&#39;s statement about testing and the &quot;absence-of-errors fallacy&quot; (Absence-of-errors fallacy) related?</strong><ul>
+<li>Dijkstra points out that testing can never prove 100% freedom from defects. The absence of errors fallacy adds that even if a system were technically completely defect-free, it would be a failure if it did not meet the user&#39;s actual business needs.</li>
+</ul>
+</li>
+<li><strong>Which architectural patterns (Design Patterns) directly support testability at the code level?</strong><ul>
+<li><strong>Dependency Injection (DI)</strong> to allow the substitution of Test Doubles (Stubs/Mocks), <strong>Humble Object</strong> to separate complex business logic from a difficult-to-test framework/GUI, and <strong>Dependency Inversion</strong> to eliminate cyclic dependencies.</li>
+</ul>
+</li>
+<li><strong>How can a software architect improve observability in a distributed microservices system to facilitate testing and diagnostics?</strong><ul>
+<li>By implementing patterns and tactics such as centralized logging with unique correlation IDs (Correlation ID) propagated across services, introducing standardized health checks and monitoring endpoints, and using tracing (for example, OpenTelemetry).</li>
+</ul>
+</li>
+<li><strong>Describe the Humble Object pattern and its use in testing systems with a graphical interface.</strong><ul>
+<li>The Humble Object pattern extracts all complex business and presentation logic from a component that is difficult to test (for example, a GUI window or mobile view) into a simple, clean class (Presenter/ViewModel). The GUI itself remains &quot;dumb&quot; (humble), contains no logic, and does not need to be tested with complex GUI tests.</li>
+</ul>
+</li>
+</ol>
+<h4 id="d-practical-experience-and-trade-off-decision-questions"><a class="heading-anchor" href="#d-practical-experience-and-trade-off-decision-questions" aria-label="Link to this section">#</a>D. Practical Experience and Trade-Off Decision Questions</h4>
+<ol>
+<li><strong>We have limited budget and time. We must decide whether to invest in refactoring to improve the testability of older (legacy) code, or instead write more integration tests over the existing system. How would you decide?</strong><ul>
+<li>The decision depends on the business plans for the module in question. If it is a stable module with a low frequency of changes, refactoring would be uneconomical; it is better to cover it at the surface with integration tests (Subcutaneous Tests). If it is a module with a high frequency of changes and a high defect rate (defect cluster), refactoring is necessary to maintain development speed and stability in the long term.</li>
+</ul>
+</li>
+<li><strong>How do you resolve the conflict between testability and Encapsulation?</strong><ul>
+<li>Exposing a component&#39;s internal state for testing purposes (for example, through reflection, friend classes in C++, or package/internal modifiers) weakens encapsulation. The solution is to design dedicated Testability Interfaces that are active only in debug/test builds.</li>
+</ul>
+</li>
+<li><strong>How does code instrumentation for testing purposes (for example, coverage measurement or trace logs) affect systems operating in real time (Real-Time Safety-Critical)?</strong><ul>
+<li>Instrumentation introduces additional instructions (tracers) into the code, which changes the system&#39;s timing behavior (the Heisenbug effect). The architect must account for performance overhead and also validate the system&#39;s behavior using the final production code without instrumentation.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<p>*(The following text presents a continuous, professionally structured speech suitable as an answer to the question: <strong>&quot;What is the significance of testing, testability, and quality in software architecture?&quot;</strong>)*</p>
+<p>Software quality cannot be viewed as a property that can be &#39;tested into&#39; a system afterwards at the end of a project. Quality is a system attribute that must be proactively designed and managed throughout the entire life cycle.</p>
+<p>From the perspective of software architecture, a key concept is <strong>testability (testability)</strong>. We define testability as the ability of a system to allow efficient and rapid verification of whether it meets the established criteria. If the architecture is untestable, maintenance costs rise rapidly, feedback slows down, and the project enters a spiral of technical debt.</p>
+<p>As architects, we must actively design for testability using specific <strong>architectural tactics and patterns</strong>. The most important include:</p>
+<ol>
+<li><strong>Reducing Coupling through Dependency Injection:</strong> This allows us to isolate the component under test and replace its production dependencies (for example, a database or hardware) with test doubles (Stubs, Mocks).</li>
+<li><strong>Ensuring Controllability and Observability:</strong> We must design dedicated testing interfaces, Test Hooks, or enhanced logging and tracing capabilities into the system so that we can bring it into the required state and reliably verify its internal behavior.</li>
+</ol>
+<p>Let us consider an <strong>example from embedded safety-critical software</strong>, specifically the control of an industrial robotic arm. If we designed an architecture in which the path-planning logic was tightly coupled to the drivers of physical motors and safety sensors, we would have no way to test the path algorithms without real hardware. This would mean an extreme risk of property damage or injury during development. The correct architectural decision here is to introduce a hardware abstraction layer (HAL) and encapsulate the sensors behind clearly defined interfaces. This allows us to run the complete path-planning logic in a simulated environment (for example, at the level of software integration SIL – Software-in-the-Loop).</p>
+<p>When designing the test strategy, we naturally encounter <strong>trade-off decisions</strong>. Improving testability often requires the introduction of additional abstractions and interfaces, which can slightly increase code complexity and, in embedded systems, processor overhead (runtime overhead). Nevertheless, this trade-off is almost always offset by a dramatic reduction in the time needed to localize faults, faster development, and minimized risks of production failures.</p>
+<p>In conclusion, I would like to emphasize that the architect&#39;s role is not to write the tests themselves, but to <strong>create an architecture that makes testing possible in the first place</strong>. The architect must work closely with the test manager to define Entry/Exit Criteria for individual testing levels and ensure that, from day one, the system is designed with an awareness of how it will be verified.&quot;</p>
+<hr>
+<h3 id="short-version-for-quick-review-cheat-sheet"><a class="heading-anchor" href="#short-version-for-quick-review-cheat-sheet" aria-label="Link to this section">#</a>Short Version for Quick Review (Cheat Sheet)</h3>
+<ul>
+<li><p><strong>Main points:</strong></p>
+<ol>
+<li>Quality cannot be &#39;tested into&#39; software afterwards; it must be designed as part of the architecture.</li>
+<li>Verification checks compliance with the specification; Validation checks suitability for real-world use.</li>
+<li>Testability (testability) is a critical non-functional requirement (NFR) that reduces development and maintenance costs.</li>
+<li>Design for Testability (DFT) uses patterns such as Dependency Injection, Humble Object, or HAL to isolate components.</li>
+<li>The testing pyramid (fast &amp; cheap unit tests at the base) must be prioritized over expensive GUI tests.</li>
+<li><strong>QA</strong> is process-based prevention; <strong>QC</strong> is product conformity control; <strong>Testing</strong> is the dynamic detection of defects in code.</li>
+<li><strong>Test Strategy (Strategy)</strong> defines the organization-approved, project-independent technological direction, principles, and methodology of testing.</li>
+<li><strong>Test Plan (Plan)</strong> is an operational and specific document that allocates people, time, and hardware, and defines the precise testing scope for a particular project.</li>
+</ol>
+</li>
+<li><p><strong>Key concepts:</strong></p>
+<ul>
+<li><strong>Quality Assurance (QA)</strong>: Control and continuous improvement of development processes to prevent defects from arising.</li>
+<li><strong>Testability:</strong> The degree of ease with which test criteria can be established and tests performed.</li>
+<li><strong>Controllability &amp; Observability:</strong> Architectural properties that determine the ability to control inputs/states and observe outputs/internal system states.</li>
+<li><strong>Verification vs. Validation:</strong> &quot;Building the product right&quot; versus &quot;Building the right product&quot;.</li>
+<li><strong>Defect Clustering:</strong> The concentration of 80% of defects in 20% of modules (Pareto principle).</li>
+<li><strong>Pesticide Paradox:</strong> The need to vary tests regularly to find new defects.</li>
+<li><strong>Test Strategy</strong>: A long-term framework that determines test types, methodologies, and the architecture of the testing system.</li>
+<li><strong>Test Plan</strong>: A project plan describing the scope, schedule, resources, and test success criteria.</li>
+</ul>
+</li>
+<li><p><strong>4 most common mistakes:</strong></p>
+<ol>
+<li>Neglecting testability in the early design phases (DFT is addressed only when there is pressure to automate).</li>
+<li>Blindly targeting 100% Code Coverage regardless of the actual value and quality of test scenarios.</li>
+<li>Confusing Verification (fulfillment of the specification) with Validation (fulfillment of actual user needs).</li>
+<li>Designing a system without control and observation interfaces, leading to unstable GUI-based tests.</li>
+</ol>
+</li>
+<li><p><strong>Model sentence for use in the examination:</strong></p>
+<blockquote>
+<p>&quot;As a software architect, I regard testability as a key system quality attribute because an untestable architecture is unmaintainable and economically unjustifiable in the long term.&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;While the Test Strategy lays an independent technological and architectural foundation for how we verify quality across the organization, the Test Plan is our operational roadmap that applies these principles to the specific milestones, resources, and risks of the given project.&quot;</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="learning-outcome-connection-to-lopo"><a class="heading-anchor" href="#learning-outcome-connection-to-lopo" aria-label="Link to this section">#</a>Learning Outcome (Connection to LOPO)</h3>
+<p>This overview fully covers the requirements of the <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and practice outcomes (LOPO)</strong></a> document:</p>
+<ul>
+<li><strong>Connection to testing levels for architects:</strong> It discusses the significance of low-level (SWE.4 Unit, SWE.5 Integration) and high-level (SWE.6 Validation, System) tests in the context of architecture and their effect on detecting defects.</li>
+<li><strong>Application of Testing Pyramid vs. Testing Trophy:</strong> It analyzes in detail the distribution of testing effort, feedback speed, and the economic aspects of both approaches.</li>
+<li><strong>Implementation of the &quot;testability&quot; quality at multiple levels:</strong> The overview defines specific tactics and design patterns (DI, Humble Object, control and observation points) for both the system and code levels.</li>
+</ul>
+<hr>
+<h3 id="summary-in-a-single-table"><a class="heading-anchor" href="#summary-in-a-single-table" aria-label="Link to this section">#</a>Summary in a Single Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th align="left">Area</th>
+<th align="left">What Is Important</th>
+<th align="left">Relationship to Architecture</th>
+<th align="left">Relationship to Testing</th>
+<th align="left">Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Software Quality</strong></td>
+<td align="left">Conformance &amp; Fitness for use. Balancing functional and non-functional requirements (NFR).</td>
+<td align="left">The architect designs the system to meet quality attributes (NFR).</td>
+<td align="left">Testing provides objective feedback on the quality achieved by the system.</td>
+<td align="left">How do you define software quality, and why is technical freedom from defects alone insufficient?</td>
+</tr>
+<tr>
+<td align="left"><strong>QA vs. QC vs. Testing</strong></td>
+<td align="left">QA is process-based prevention. QC is product verification. Testing is the detection of defects in code.</td>
+<td align="left">The architect co-creates QA standards and processes ( guidelines, coding).</td>
+<td align="left">Testing performs QC defect detection on the running system.</td>
+<td align="left">Explain the difference between Quality Assurance and Quality Control using a specific example.</td>
+</tr>
+<tr>
+<td align="left"><strong>Verification vs. Validation</strong></td>
+<td align="left">Checking compliance with the specification (verification) vs. checking that user needs are met (validation).</td>
+<td align="left">The architect verifies the design against requirements and validates business decisions.</td>
+<td align="left">Verification is performed through unit/integration tests; Validation through acceptance tests with users.</td>
+<td align="left">Can verification succeed (100% of tests passed) while validation still fails?</td>
+</tr>
+<tr>
+<td align="left"><strong>Testability (Testability)</strong></td>
+<td align="left">Effectiveness and efficiency of testing. Heuristics: Observability, Controllability, Simplicity.</td>
+<td align="left">Testability is a key NFR affecting maintainability and technical debt.</td>
+<td align="left">High testability facilitates automation and accelerates defect detection and localization.</td>
+<td align="left">What are Control and Observation Points, and how do they affect system testability?</td>
+</tr>
+<tr>
+<td align="left"><strong>Design for Testability (DFT)</strong></td>
+<td align="left">Proactive application of patterns and tactics (Dependency Injection, Humble Object, HAL).</td>
+<td align="left">The architect designs interfaces and components with their potential isolation in mind.</td>
+<td align="left">Enables the use of Test Stubs/Mocks for fast and stable testing without real dependencies.</td>
+<td align="left">Describe how the Dependency Injection pattern contributes to better system testability.</td>
+</tr>
+</tbody></table></div>
+<p><img src="../../assets/images/red-test-and-quality/test_quality_recap.png" alt="Test and Quality Recap"></p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/value-of-testing.html"><span class="pager__label">← Previous</span><span>Value of Testing, Test exit criteria</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/test-levels-pyramid.html"><span class="pager__label">Next →</span><span>Test Levels, Test pyramid</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#brief-topic-summary">Brief Topic Summary</a></li><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-4"><a href="#a-software-quality-software-quality">A. Software Quality (Software Quality)</a></li><li class="lvl-4"><a href="#b-quality-assurance-qa-vs-quality-control-qc-vs-software-testing">B. Quality Assurance (QA) vs. Quality Control (QC) vs. Software Testing</a></li><li class="lvl-4"><a href="#c-verification-verification-vs-validation-validation">C. Verification (Verification) vs. Validation (Validation)</a></li><li class="lvl-4"><a href="#d-software-testability-software-testability">D. Software Testability (Software Testability)</a></li><li class="lvl-4"><a href="#e-design-for-testability-design-for-testability-dft">E. Design for Testability (Design for Testability - DFT)</a></li><li class="lvl-3"><a href="#test-strategy-test-strategy">Test Strategy (Test Strategy)</a></li><li class="lvl-3"><a href="#test-plan-test-plan">Test Plan (Test Plan)</a></li><li class="lvl-3"><a href="#seven-principles-of-software-testing">Seven Principles of Software Testing</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-Patterns</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-4"><a href="#a-basic-questions">A. Basic Questions</a></li><li class="lvl-4"><a href="#b-intermediate-questions">B. Intermediate Questions</a></li><li class="lvl-4"><a href="#c-advanced-questions">C. Advanced Questions</a></li><li class="lvl-4"><a href="#d-practical-experience-and-trade-off-decision-questions">D. Practical Experience and Trade-Off Decision Questions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#short-version-for-quick-review-cheat-sheet">Short Version for Quick Review (Cheat Sheet)</a></li><li class="lvl-3"><a href="#learning-outcome-connection-to-lopo">Learning Outcome (Connection to LOPO)</a></li><li class="lvl-3"><a href="#summary-in-a-single-table">Summary in a Single Table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

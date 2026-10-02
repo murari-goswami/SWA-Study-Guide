@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Integration testing (Integration Testing) - RED - Test and Quality - SWA preparation study guide.">
+<title>Integration testing (Integration Testing) · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing" aria-current="page">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,180 words · about 16 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/integration-testing" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="integration-testing-integration-testing">Integration testing (Integration Testing)</h1>
+<p><strong>Integration testing (Integration Testing)</strong> is a level of software verification focused on verifying interactions, communication, and data and control flows between integrated software units, modules, or external subsystems. While unit tests (Unit Testing) verify the functionality of isolated components, integration testing detects errors arising at their boundaries – for example, incorrect interpretation of interface parameters, data type incompatibility, timing errors, and violations of architectural contracts.</p>
+<p>From the perspective of software architecture and process models (e.g., <strong>AUTOMOTIVE SPICE – SWE.5 Software Integration and Integration Test</strong>), the objective of integration testing is to demonstrate that integrated software items conform to the higher-level architectural design (Architectural Design). In industrial and safety-critical software, integration testing verifies not only the functional connection of components, but also <strong>hardware-software interfaces (HSI)</strong>, <strong>the stability of the dynamic architecture</strong>, and <strong>the allocation of critical system resources</strong> (stack/stack size, CPU utilization, RAM/ROM limits).</p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and basic concepts</h3>
+<h4 id="1-software-integration-testing-software-software-integration-testing-aspice-swe-5"><a class="heading-anchor" href="#1-software-integration-testing-software-software-integration-testing-aspice-swe-5" aria-label="Link to this section">#</a>1. Software integration testing (Software-Software Integration Testing / ASPICE SWE.5)</h4>
+<ul>
+<li><strong>Definition</strong>: The process of testing combinations of interconnected software components to verify their mutual relationships, the correctness of their implementation within the software architecture, and compliance with architectural design requirements.</li>
+<li><strong>Significance in architecture</strong>: Verifies both static and dynamic aspects of the architecture – correct call sequencing, mode management (mode management), data and control flows, and behavior in degraded states.</li>
+<li><strong>Significance in testing</strong>: Reduces the risk of undetected failures in data flows and workflows during system execution and verifies the robustness of the architecture.</li>
+<li><strong>Typical mistake / misconception</strong>: Treating integration testing as merely “running the entire system all at once” (confusing it with system testing) or relying on passing unit tests to guarantee error-free cooperation between components.</li>
+<li><em>Example from embedded/industrial systems</em>: Testing the cooperation of a module processing the signal from a rotational speed sensor with a drive control module through an intermediate data abstraction layer (Data Abstraction Layer).</li>
+</ul>
+<h4 id="2-integration-strategies-top-down-bottom-up-sandwich-mixed-big-bang"><a class="heading-anchor" href="#2-integration-strategies-top-down-bottom-up-sandwich-mixed-big-bang" aria-label="Link to this section">#</a>2. Integration strategies (Top-Down, Bottom-Up, Sandwich/Mixed, Big-Bang)</h4>
+<ul>
+<li><strong>Definition</strong>: Designing the procedure that determines the order in which individual software modules are assembled and progressively tested.<ul>
+<li><strong>Top-Down</strong>: Integration starts with the highest-level architectural modules (e.g., the <code>main</code> loop, interrupt entry points) and proceeds toward the lowest-level ones. Requires the creation of <em>Stubs</em> (stubs).</li>
+<li><strong>Bottom-Up</strong>: Starts with the lowest-level modules (e.g., BSW/HAL hardware drivers) and proceeds toward the application logic. Requires the creation of <em>Drivers</em> (control modules).</li>
+<li><strong>Sandwich / Mixed</strong>: A combination of both approaches; integrates the most critical components regardless of their layer, thereby eliminating the need for redundant substitutes and addressing high architectural risks.</li>
+<li><strong>Big-Bang</strong>: A non-incremental approach in which all modules are connected at once without prior incremental testing.</li>
+</ul>
+</li>
+<li><strong>Significance in architecture</strong>: The strategy directly reflects dependencies in the architecture (Dependency Graph) and determines the delivery order of software increments.</li>
+<li><strong>Significance in testing</strong>: Influences the number of test doubles (stubs/drivers) required and the difficulty of locating errors (the defect manifests in the most recently added module).</li>
+<li><strong>Typical mistake / misconception</strong>: Choosing <em>Big-Bang</em> integration to save time on writing stubs/drivers, which leads to extremely difficult error localization and a collapse in planning.</li>
+</ul>
+<h4 id="3-test-driver-control-module-vs-test-stub-test-stub"><a class="heading-anchor" href="#3-test-driver-control-module-vs-test-stub-test-stub" aria-label="Link to this section">#</a>3. Test Driver (Control module) vs. Test Stub (Test stub)</h4>
+<ul>
+<li><strong>Definition</strong>:<ul>
+<li><strong>Test Driver</strong>: Auxiliary code or a test tool that replaces a higher-level component; initializes inputs, calls the interface under test, and verifies the output response.</li>
+<li><strong>Test Stub</strong>: Auxiliary code that replaces a subordinate or unfinished component; provides predefined responses to calls from the SUT without implementing real logic.</li>
+</ul>
+</li>
+<li><strong>Significance in architecture</strong>: Serves as a temporary substitute for missing architectural layers or external subsystems during progressive integration.</li>
+<li><strong>Significance in testing</strong>: Enables isolated testing of intermediate interfaces and simulation of error states (e.g., returning a bus error from a Stub).</li>
+<li><strong>Typical mistake / misconception</strong>: Confusing a Mock object in unit tests with an integration Driver/Stub; neglecting to verify whether the Stubs themselves distort the timing of the real architecture.</li>
+</ul>
+<h4 id="4-contract-testing-consumer-driven-contracts-cdc"><a class="heading-anchor" href="#4-contract-testing-consumer-driven-contracts-cdc" aria-label="Link to this section">#</a>4. Contract Testing &amp; Consumer-Driven Contracts (CDC)</h4>
+<ul>
+<li><strong>Definition</strong>: An interface testing methodology (APIs/services) that verifies whether the interface provider (Provider) and its consumer (Consumer) agree on a defined contract (data format, protocols, error codes) without requiring the entire end-to-end environment to run. <em>(It is used primarily in distributed systems and microservices; for C/embedded systems, it corresponds to formal verification of HSI interfaces)</em>.</li>
+<li><strong>Significance in architecture</strong>: Enforces explicit interface versioning and prevents breaking changes (breaking changes) in distributed systems.</li>
+<li><strong>Significance in testing</strong>: Provides extremely fast and stable integration tests at the interface level compared with expensive E2E tests.</li>
+<li><strong>Typical mistake / misconception</strong>: Assuming that a successful Contract Test replaces verification of the functional logic inside a component.</li>
+</ul>
+<h4 id="5-testing-hsi-and-the-allocation-of-critical-resources-resource-hardware-software-interface-testing"><a class="heading-anchor" href="#5-testing-hsi-and-the-allocation-of-critical-resources-resource-hardware-software-interface-testing" aria-label="Link to this section">#</a>5. Testing HSI and the allocation of critical resources (Resource &amp; Hardware-Software Interface Testing)</h4>
+<ul>
+<li><strong>Definition</strong>: A specific type of integration test that verifies the correctness of software interaction with the microcontroller/peripherals (HSI – e.g., access to SPI, registers, CAN drivers) and compliance with system limits on memory and computing power.</li>
+<li><strong>Significance in architecture</strong>: Ensures that the assembled code does not exceed the specified architectural limits (ROM, RAM, NVM, stack/stack size, and CPU load) and meets the real-time schedule.</li>
+<li><strong>Significance in testing</strong>: Requires execution on the real target platform (Target) or a high-fidelity emulator using static and dynamic analysis (stack measurement tools).</li>
+<li><strong>Typical mistake / misconception</strong>: Performing HSI integration tests exclusively on a development simulator (Host), thereby completely missing hardware timing errors, stack overflows, and compiler behavior.</li>
+</ul>
+<p><img src="../../assets/images/red-test-and-quality/integration_testing_basic.png" alt="Integration Testing basics"></p>
+<hr>
+<h3 id="test-double"><a class="heading-anchor" href="#test-double" aria-label="Link to this section">#</a>Test Double</h3>
+<p><strong>Test Double</strong> is a general term (analogous to a film stunt double) for any substitute object used during testing in place of a real production component. According to Gerard Meszaros and Martin Fowler&#39;s classification, test doubles are divided into five basic types:</p>
+<ul>
+<li><p><strong>Dummy</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Serves only as a parameter placeholder.</li>
+<li><strong>Principle:</strong> It is passed as an argument to methods or constructors to satisfy the signature (the compiler), but the code under test never actually works with it or calls its methods. A <code>null</code> value or an empty object is often sufficient.</li>
+</ul>
+</li>
+<li><p><strong>Stub</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Providing predefined indirect inputs to the system under test.</li>
+<li><strong>Principle:</strong> It has methods with programmed responses (“canned answers”). When the system under test calls the stub, it returns a fixed value or throws a defined exception. It neither tracks nor verifies how it was called.</li>
+</ul>
+</li>
+<li><p><strong>Spy</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Tracking and recording indirect outputs from the system.</li>
+<li><strong>Principle:</strong> It works like a Stub, but additionally stores information about calls internally (e.g., how many times a method was called and with which parameters). The test checks these records only later, in the assertion phase.</li>
+</ul>
+</li>
+<li><p><strong>Mock</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Verifying behavior (Behavior Verification).</li>
+<li><strong>Principle:</strong> It is preconfigured with expectations (which methods <em>must</em> be called, in what order, and with which arguments). The Mock itself checks whether these expectations are met and can cause the test to fail immediately upon an unexpected call.</li>
+</ul>
+</li>
+<li><p><strong>Fake</strong></p>
+<ul>
+<li><strong>Purpose:</strong> A fully functional but simplified substitute that is unsuitable for production.</li>
+<li><strong>Principle:</strong> It has real business logic and behavior, but uses shortcuts that simplify test execution (e.g., storing data in memory instead of writing it to disk or a real database). A typical example is an in-memory database or an in-memory filesystem.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common mistakes and anti-patterns</h3>
+<h4 id="architecture-mistakes"><a class="heading-anchor" href="#architecture-mistakes" aria-label="Link to this section">#</a>Architecture mistakes</h4>
+<ul>
+<li><strong>Absence of clear module boundaries and hidden dependencies</strong>:<ul>
+<li><em>Why it is a problem</em>: Components access shared global variables or bypass defined interfaces (poor encapsulation).</li>
+<li><em>How it manifests</em>: Integration tests fail because another module unexpectedly overwrites data; <em>Top-Down</em> or <em>Bottom-Up</em> integration cannot be applied.</li>
+<li><em>How to prevent it</em>: Strictly define interfaces in the architecture, introduce a Data Abstraction Layer (DAL), and apply static architecture analysis.</li>
+</ul>
+</li>
+</ul>
+<h4 id="requirements-mistakes"><a class="heading-anchor" href="#requirements-mistakes" aria-label="Link to this section">#</a>Requirements mistakes</h4>
+<ul>
+<li><strong>Incomplete or inaccurate interface specification (HSI / API)</strong>:<ul>
+<li><em>Why it is a problem</em>: The architectural design lacks specifications of data formats, value ranges, error states, and resource limits.</li>
+<li><em>How it manifests</em>: Uncertainty when writing integration test cases (ITS); disputes about correct behavior between teams developing adjacent modules.</li>
+<li><em>How to prevent it</em>: A formal HSI specification and a Component Design Document (CDD) with explicit acceptance criteria and a testability review.</li>
+</ul>
+</li>
+</ul>
+<h4 id="test-strategy-mistakes"><a class="heading-anchor" href="#test-strategy-mistakes" aria-label="Link to this section">#</a>Test strategy mistakes</h4>
+<ul>
+<li><strong>Using Big-Bang integration on complex projects</strong>:<ul>
+<li><em>Why it is a problem</em>: Merging all modules in a single step without prior incremental verification of interfaces.</li>
+<li><em>How it manifests</em>: A massive occurrence of error states on the first run, extreme difficulty in locating the cause of errors, and an inability to manage the test schedule.</li>
+<li><em>How to prevent it</em>: Establish an incremental integration strategy (Bottom-Up for HW-dependent layers, Top-Down for the application skeleton, or Mixed according to risks) in the Software Integration Test Strategy document.</li>
+</ul>
+</li>
+</ul>
+<h4 id="automation-mistakes"><a class="heading-anchor" href="#automation-mistakes" aria-label="Link to this section">#</a>Automation mistakes</h4>
+<ul>
+<li><strong>Neglecting fault injection testing (Fault Injection Testing)</strong>:<ul>
+<li><em>Why it is a problem</em>: Integration tests verify only the “happy path” (positive scenarios) and ignore interface responses to failures.</li>
+<li><em>How it manifests</em>: The system crashes or freezes when bus communication fails or a peripheral returns an error code.</li>
+<li><em>How to prevent it</em>: Include fault injection tests in the integration suite to verify safety mechanisms (Fault Detection, Isolation &amp; Recovery).</li>
+</ul>
+</li>
+</ul>
+<h4 id="mistakes-in-interpreting-testability"><a class="heading-anchor" href="#mistakes-in-interpreting-testability" aria-label="Link to this section">#</a>Mistakes in interpreting testability</h4>
+<ul>
+<li><strong>Ignoring dynamic aspects and resource limits</strong>:<ul>
+<li><em>Why it is a problem</em>: Focusing only on the functional correctness of data at the interface inputs and outputs without monitoring system resource consumption.</li>
+<li><em>How it manifests</em>: Stack overflow (stack overflow), delayed real-time responses, or bus collisions under full load.</li>
+<li><em>How to prevent it</em>: Perform resource usage tests (Resource Usage Tests) and analyze memory requirements (ROM, RAM, Stack, CPU Load) as part of the integration campaign.</li>
+</ul>
+</li>
+</ul>
+<h4 id="mistakes-in-communication-between-architects-developers-and-testers"><a class="heading-anchor" href="#mistakes-in-communication-between-architects-developers-and-testers" aria-label="Link to this section">#</a>Mistakes in communication between architects, developers, and testers</h4>
+<ul>
+<li><strong>Missing bidirectional traceability (Bilateral Traceability)</strong>:<ul>
+<li><em>Why it is a problem</em>: There is no link between software architecture requirements, the HSI specification, and integration test cases.</li>
+<li><em>How it manifests</em>: An inability to demonstrate full coverage of architectural requirements during audits (e.g., ASPICE SWE.5).</li>
+<li><em>How to prevent it</em>: Maintain an up-to-date traceability matrix (SRTM) for each software increment.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="exam-questions"><a class="heading-anchor" href="#exam-questions" aria-label="Link to this section">#</a>Exam questions</h3>
+<h4 id="1-basic-levels"><a class="heading-anchor" href="#1-basic-levels" aria-label="Link to this section">#</a>1. Basic levels</h4>
+<ul>
+<li><strong>Question</strong>: What is the primary objective of software integration testing (ASPICE SWE.5), and how does it fundamentally differ from unit testing?</li>
+<li><strong>Content of a good answer</strong>: Integration testing verifies interactions, interfaces, and data and control flows between interconnected components and verifies compliance with the architectural design. Unlike unit tests, it does not detect errors in the internal logic of an isolated unit, but failures at module boundaries and interface incompatibility.</li>
+</ul>
+<h4 id="2-intermediate"><a class="heading-anchor" href="#2-intermediate" aria-label="Link to this section">#</a>2. Intermediate</h4>
+<ul>
+<li><strong>Question</strong>: Compare the Top-Down and Bottom-Up integration strategies. What test doubles do they require, and for what types of architectures are they suitable?</li>
+<li><strong>Content of a good answer</strong>: Top-Down proceeds downward from the highest layers, requires <em>Stubs</em>, and enables early verification of the skeleton and main logic. Bottom-Up starts with the lowest layers (drivers, HAL), requires <em>Drivers</em>, and is ideal when the most complicated and riskiest parts are at the HW level.</li>
+</ul>
+<h4 id="3-advanced"><a class="heading-anchor" href="#3-advanced" aria-label="Link to this section">#</a>3. Advanced</h4>
+<ul>
+<li><strong>Question</strong>: How is compliance with non-functional architectural requirements and resource allocation verified as part of integration testing?</li>
+<li><strong>Content of a good answer</strong>: A description of test methods focused on resource limits (ROM, RAM, NVM, CPU load, Stack size), dynamic real-time analysis (interrupts, execution periods), and the use of static/dynamic stack analysis tools (e.g., Get_Stack).</li>
+</ul>
+<h4 id="4-questions-about-practical-experience"><a class="heading-anchor" href="#4-questions-about-practical-experience" aria-label="Link to this section">#</a>4. Questions about practical experience</h4>
+<ul>
+<li><strong>Question</strong>: How would you design an integration test strategy for a project in which application software is being developed in parallel with a new hardware driver (BSW/HAL) that is not yet physically available?</li>
+<li><strong>Content of a good answer</strong>: Use a <em>Top-Down</em> or <em>Sandwich</em> integration strategy in the Host environment with emulation/stubbing of HAL interfaces. Subsequently transition to <em>Bottom-Up</em> integration in the Target environment once the drivers are available and perform HSI interface tests.</li>
+</ul>
+<h4 id="5-trade-off-decisions"><a class="heading-anchor" href="#5-trade-off-decisions" aria-label="Link to this section">#</a>5. Trade-off decisions</h4>
+<ul>
+<li><strong>Question</strong>: What are the architectural and testing trade-offs between incremental integration testing and the non-incremental Big-Bang strategy?</li>
+<li><strong>Content of a good answer</strong>: Big-Bang eliminates the need to develop stubs and drivers, but increases the risk in error localization more dramatically, makes planning more difficult, and threatens a collapse at the end of the project. Incremental integration requires additional effort to create test scaffolding (test harness/stubs/drivers), but provides early detection of interface errors and continuous insight into system stability.</li>
+</ul>
+<hr>
+<h3 id="model-exam-answer"><a class="heading-anchor" href="#model-exam-answer" aria-label="Link to this section">#</a>Model exam answer</h3>
+<p>From my architectural perspective, the topic of software integration testing represents a key bridge between detailed component design and the overall system architecture.</p>
+<p><strong>Definition and scope</strong>: Software integration testing, specified in process models such as AUTOMOTIVE SPICE under process SWE.5, is defined as the verification of interactions, communication, and data/control flows between integrated software items. While unit tests guarantee that individual modules work correctly in isolation, integration testing answers the question of whether these modules cooperate correctly within the defined software architecture.</p>
+<p><strong>Significance for architecture and testing</strong>: From an architectural perspective, we verify both static structures and dynamic behavior – that is, mode management, timing, responses to faults, and adherence to the allocation of critical system resources. Integration tests must explicitly examine hardware-software interfaces (HSI), verify the adequacy of RAM and ROM memory reserves and stack (stack) size, and confirm that the CPU&#39;s computational load complies with the designed limits. Without thorough integration testing, even fully tested unit modules may fail at the first real communication due to data type incompatibility, incorrect sequencing, or real-time collisions.</p>
+<p><strong>Practical example from embedded/automotive development</strong>: Consider the development of a control unit for an electrohydraulic pump [<em>(general addition based on the industrial context)</em>]. The architecture is divided into a driver layer (BSW/HAL), a data abstraction layer (Data Abstraction Layer), and application logic. During integration testing, we connect the BSW drivers to the corrected abstraction layer and verify that CAN messages specifying the required pressure correctly propagate all the way to the PWM module&#39;s timer registers. At the same time, using fault injection (Fault Injection), we simulate a bus communication failure and verify that the architecture transitions safely into a degraded mode.</p>
+<p><strong>Architectural Trade-off</strong>: When designing an integration strategy, we face a fundamental decision about the choice of integration procedure:</p>
+<ol>
+<li><strong>Big-Bang vs. Incremental integration</strong>: The non-incremental <em>Big-Bang</em> approach may seem appealing because it does not require the development of substitute code (Stubs and Drivers). In practice, however, it poses an extreme risk – if the overall build fails, locating the error is extremely difficult and test planning is almost impossible. I therefore strictly advocate an incremental approach.</li>
+<li><strong>Top-Down vs. Bottom-Up vs. Mixed</strong>: <em>Bottom-Up</em> integration is excellent for early verification of hardware-dependent layers on the real Target using Drivers. <em>Top-Down</em>, in contrast, enables early verification of the application skeleton on the Host using Stubs. In practice, I most often choose a <em>Mixed/Sandwich</em> strategy in which we prioritize the integration of the riskiest components across layers in order to eliminate critical architectural risks as early as possible.</li>
+</ol>
+<p><strong>Summary</strong>: Integration testing is not merely an intermediate step between development and system testing. It is a formalized process with bidirectional traceability to the architectural design (SRTM) that gives the architect confidence that the assembled system is stable and safe, and respects the specified system boundaries and resources.”</p>
+<hr>
+<h3 id="short-version-for-quick-revision"><a class="heading-anchor" href="#short-version-for-quick-revision" aria-label="Link to this section">#</a>Short version for quick revision</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 main points</h4>
+<ol>
+<li>Integration testing verifies interfaces, communication, and data/control flows between interconnected modules (ASPICE SWE.5).</li>
+<li>Non-incremental <em>Big-Bang</em> integration is an anti-pattern; an incremental procedure must be chosen (Top-Down, Bottom-Up, Mixed).</li>
+<li>Integration tests verify invalid states and safety mechanisms through fault injection (Fault Injection).</li>
+<li>Part of integration verification is checking adherence to the allocation of critical resources (RAM, ROM, Stack size, CPU load).</li>
+<li>Integration test cases must demonstrate bidirectional traceability (SRTM) to architectural design requirements and HSI.</li>
+</ol>
+<h4 id="5-key-concepts"><a class="heading-anchor" href="#5-key-concepts" aria-label="Link to this section">#</a>5 key concepts</h4>
+<ol>
+<li><strong>ASPICE SWE.5</strong>: A process standard for integrating software units and integration testing.</li>
+<li><strong>Test Driver</strong>: An auxiliary module replacing a higher-level layer (simulates calls and inputs).</li>
+<li><strong>Test Stub</strong>: An auxiliary module replacing a subordinate layer (provides passive responses).</li>
+<li><strong>HSI (Hardware-Software Interface)</strong>: Specification and testing of the boundary between software drivers and hardware registers/peripherals.</li>
+<li><strong>Contract Testing (CDC)</strong>: Verification of compliance with the interface format and protocol between the consumer and provider.</li>
+</ol>
+<h4 id="5-typical-exam-questions"><a class="heading-anchor" href="#5-typical-exam-questions" aria-label="Link to this section">#</a>5 typical exam questions</h4>
+<ol>
+<li>What is the difference in objectives between Unit Testing (SWE.4) and Integration Testing (SWE.5)?</li>
+<li>What advantages and disadvantages does the Top-Down integration strategy offer compared with Bottom-Up?</li>
+<li>Why is it necessary to perform resource allocation tests during integration in industrial software?</li>
+<li>How is fault injection testing (Fault Injection Testing) applied in integration tests?</li>
+<li>What does the traceability matrix (SRTM) contain at the integration testing level?</li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 most common mistakes</h4>
+<ol>
+<li>Integrating all components at once without an incremental procedure (the <em>Big-Bang</em> anti-pattern).</li>
+<li>Ignoring HSI testing and resource allocation, and relying only on functional tests in a simulator.</li>
+<li>Missing formal interface specifications and the absence of bidirectional traceability to the architecture.</li>
+</ol>
+<h4 id="1-concise-model-sentence-for-the-exam"><a class="heading-anchor" href="#1-concise-model-sentence-for-the-exam" aria-label="Link to this section">#</a>1 concise model sentence for the exam</h4>
+<blockquote>
+<p>“Integration testing according to ASPICE SWE.5 verifies the compliance of interfaces, data flows, and the dynamic behavior of interconnected components with the architectural design, while guaranteeing HSI stability and that system memory and computing resource limits are not exceeded.”</p>
+</blockquote>
+<hr>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning Outcome</h3>
+<p>In accordance with the requirements of <strong>Learning and Practice Outcomes (LOPO) – testing</strong> and the process standard <strong>ASPICE SWE.5 (Software Integration and Integration Test)</strong>:</p>
+<ul>
+<li><strong>Architectural insight</strong>: The architect understands the role of integration testing in verifying architectural contracts, HSI, and dynamic system properties (real-time aspects, mode management).</li>
+<li><strong>Assessing testability</strong>: The architect can design component interfaces so that they allow easy substitution of test control modules (Drivers) and stubs (Stubs) without breaking encapsulation.</li>
+<li><strong>Deciding on a test strategy</strong>: The development/test architect can formulate a <em>Software Integration Test Strategy</em> document, choose an appropriate incremental procedure (Bottom-Up vs Top-Down vs Mixed) according to the level of architectural risk, and establish criteria for verifying non-functional parameters (RAM/ROM/Stack/CPU load).</li>
+</ul>
+<hr>
+<h3 id="summary-in-one-table"><a class="heading-anchor" href="#summary-in-one-table" aria-label="Link to this section">#</a>Summary in one table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What is important</th>
+<th>Relationship to architecture</th>
+<th>Relationship to testing</th>
+<th>Typical exam question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Integration objectives (ASPICE SWE.5)</strong></td>
+<td>Verifying cooperation between modules, interfaces, and data/control flows.</td>
+<td>Demonstrates code compliance with the higher-level architectural design.</td>
+<td>Detects incompatibility errors at module boundaries.</td>
+<td>How does the objective of SWE.5 differ from SWE.4 unit testing?</td>
+</tr>
+<tr>
+<td><strong>Integration strategies</strong></td>
+<td>Choosing a procedure for incrementally assembling the system.</td>
+<td>Mirrors the architecture&#39;s dependency graph and increment plan.</td>
+<td>Determines the need for and number of Stubs and Drivers.</td>
+<td>What are the risks of non-incremental Big-Bang integration?</td>
+</tr>
+<tr>
+<td><strong>Test Harness (Harness)</strong></td>
+<td>Correct use of Test Drivers and Test Stubs.</td>
+<td>Enables simulation of unfinished architectural layers.</td>
+<td>Isolates integration defects to the most recently added interface.</td>
+<td>When is it more advantageous to use a Stub, and when a Driver?</td>
+</tr>
+<tr>
+<td><strong>HSI &amp; Resource Testing</strong></td>
+<td>Verification of HW/SW interfaces and memory and computation time limits.</td>
+<td>Verifies resource allocation (RAM, ROM, Stack, CPU Load) from the design.</td>
+<td>Requires execution on the Target and measurement of stack/time consumption.</td>
+<td>How is the stack size limit (stack size) verified?</td>
+</tr>
+<tr>
+<td><strong>Fault Injection &amp; Traceability</strong></td>
+<td>Fault Injection tests and maintenance of the SRTM matrix.</td>
+<td>Demonstrates bidirectional traceability of design requirements to tests.</td>
+<td>Verifies safety mechanisms in interface error states.</td>
+<td>How is behavior in degraded modes verified during integration?</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/unit-testing.html"><span class="pager__label">← Previous</span><span>Unit Testing</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/contract-testing.html"><span class="pager__label">Next →</span><span>Contract Testing (contract testing)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and basic concepts</a></li><li class="lvl-4"><a href="#1-software-integration-testing-software-software-integration-testing-aspice-swe-5">1. Software integration testing (Software-Software Integration Testing / ASPICE SWE.5)</a></li><li class="lvl-4"><a href="#2-integration-strategies-top-down-bottom-up-sandwich-mixed-big-bang">2. Integration strategies (Top-Down, Bottom-Up, Sandwich/Mixed, Big-Bang)</a></li><li class="lvl-4"><a href="#3-test-driver-control-module-vs-test-stub-test-stub">3. Test Driver (Control module) vs. Test Stub (Test stub)</a></li><li class="lvl-4"><a href="#4-contract-testing-consumer-driven-contracts-cdc">4. Contract Testing Consumer-Driven Contracts (CDC)</a></li><li class="lvl-4"><a href="#5-testing-hsi-and-the-allocation-of-critical-resources-resource-hardware-software-interface-testing">5. Testing HSI and the allocation of critical resources (Resource Hardware-Software Interface Testing)</a></li><li class="lvl-3"><a href="#test-double">Test Double</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-4"><a href="#architecture-mistakes">Architecture mistakes</a></li><li class="lvl-4"><a href="#requirements-mistakes">Requirements mistakes</a></li><li class="lvl-4"><a href="#test-strategy-mistakes">Test strategy mistakes</a></li><li class="lvl-4"><a href="#automation-mistakes">Automation mistakes</a></li><li class="lvl-4"><a href="#mistakes-in-interpreting-testability">Mistakes in interpreting testability</a></li><li class="lvl-4"><a href="#mistakes-in-communication-between-architects-developers-and-testers">Mistakes in communication between architects, developers, and testers</a></li><li class="lvl-3"><a href="#exam-questions">Exam questions</a></li><li class="lvl-4"><a href="#1-basic-levels">1. Basic levels</a></li><li class="lvl-4"><a href="#2-intermediate">2. Intermediate</a></li><li class="lvl-4"><a href="#3-advanced">3. Advanced</a></li><li class="lvl-4"><a href="#4-questions-about-practical-experience">4. Questions about practical experience</a></li><li class="lvl-4"><a href="#5-trade-off-decisions">5. Trade-off decisions</a></li><li class="lvl-3"><a href="#model-exam-answer">Model exam answer</a></li><li class="lvl-3"><a href="#short-version-for-quick-revision">Short version for quick revision</a></li><li class="lvl-4"><a href="#5-main-points">5 main points</a></li><li class="lvl-4"><a href="#5-key-concepts">5 key concepts</a></li><li class="lvl-4"><a href="#5-typical-exam-questions">5 typical exam questions</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 most common mistakes</a></li><li class="lvl-4"><a href="#1-concise-model-sentence-for-the-exam">1 concise model sentence for the exam</a></li><li class="lvl-3"><a href="#learning-outcome">Learning Outcome</a></li><li class="lvl-3"><a href="#summary-in-one-table">Summary in one table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

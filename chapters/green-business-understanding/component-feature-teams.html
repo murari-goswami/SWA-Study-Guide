@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Component Teams vs. Feature Teams - GREEN - Business Understanding - SWA preparation study guide.">
+<title>Component Teams vs. Feature Teams · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding" open>
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams" aria-current="page">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>GREEN - Business Understanding</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#4CAF50;--i:0">
+      <a class="chapter-chip" href="../../index.html#green-business-understanding"><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business</a>
+      <div class="topic-meta">
+        <span>3,222 words · about 16 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="green-business-understanding/component-feature-teams" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="component-teams-vs-feature-teams">🟢 Component Teams vs. Feature Teams</h1>
+<h3 id="topic-summary"><a class="heading-anchor" href="#topic-summary" aria-label="Link to this section">#</a>Topic Summary</h3>
+<p>This topic addresses two fundamental ways of organizing development teams in larger software organizations: according to the <strong>technical structure of the system</strong> (Component Teams), or according to the <strong>value delivered to the customer</strong> (Feature Teams). The decision about the type of team is not purely an “HR matter” – it directly shapes the system architecture (Conway&#39;s Law), the speed and reliability of delivery, the degree of dependencies between teams, and the testing strategy.</p>
+<p>For a software architect, this is an essential topic because team structure and architectural structure mirror each other. The choice of team type affects modularity, code ownership, the integration and testing strategy, and the organization&#39;s ability to deliver a complete <em>outcome</em>, not just an isolated <em>output</em>. The concept is a central element of the <strong>LeSS (Large-Scale Scrum)</strong> framework by Craig Larman and Bas Vodde, which clearly favors feature teams.</p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<h4 id="1-component-team-component-team"><a class="heading-anchor" href="#1-component-team-component-team" aria-label="Link to this section">#</a>1. Component Team (Component Team)</h4>
+<ul>
+<li><strong>Definition</strong>: A team with long-term responsibility for one specific part of the system – an architectural layer, subsystem, component, or technology (for example, only the backend, database layer, payment module, or UI framework).</li>
+<li><strong>Significance for architecture</strong>: This creates an organization that mirrors the technical decomposition of the system. According to Conway&#39;s Law, this structure itself pushes the architecture toward the same division and reinforces the boundaries between components.</li>
+<li><strong>Significance for testing</strong>: The team typically verifies its component in isolation (unit and component tests), but cannot verify end-to-end functionality on its own – integration and system tests require coordination between multiple teams.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Confusing deep technical expertise with delivery efficiency. A component team may have high local productivity (<em>output</em>), yet the organization delivers value to the customer (<em>outcome</em>) slowly because of dependencies.</li>
+</ul>
+<h4 id="2-functional-feature-team-feature-team"><a class="heading-anchor" href="#2-functional-feature-team-feature-team" aria-label="Link to this section">#</a>2. Functional / Feature Team (Feature Team)</h4>
+<ul>
+<li><strong>Definition</strong>: A long-lived, cross-functional (multidisciplinary) and cross-component team that delivers complete customer features end-to-end across the entire technology stack – from the UI through business logic to the database.</li>
+<li><strong>Significance for architecture</strong>: It requires <strong>collective code ownership</strong> (collective / shared code ownership), because multiple teams make changes to the same components. It places high demands on modularity, clear interfaces, and automated protection of the architecture.</li>
+<li><strong>Significance for testing</strong>: The team can test the entire vertical slice of functionality (including acceptance and end-to-end tests) on its own, without waiting for other teams. This drastically shortens the feedback loop.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: The idea that a feature team means “everyone does everything superficially.” In fact, it is about <strong>T-shaped specialists</strong> (generalizing specialists) – deep expertise in one area and the ability to work beyond it as well.</li>
+</ul>
+<h4 id="3-conway-s-law-conway-s-law"><a class="heading-anchor" href="#3-conway-s-law-conway-s-law" aria-label="Link to this section">#</a>3. Conway&#39;s Law (Conway&#39;s Law)</h4>
+<ul>
+<li><strong>Definition</strong>: Organizations design systems whose structure copies the communication structure of the organization.</li>
+<li><strong>Significance for architecture</strong>: It explains why the choice of team type predetermines the resulting architecture. Deliberately shaping teams to achieve the desired architecture is called the <strong>Inverse Conway Maneuver</strong>.</li>
+<li><strong>Significance for testing</strong>: Boundaries between teams become integration seams where most defects arise – this is precisely where integration and contract tests need to be concentrated.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Viewing Conway&#39;s Law as an “interesting fact,” rather than a real architectural constraint that must be actively managed.</li>
+</ul>
+<h4 id="4-t-shaped-skills-generalizing-specialist"><a class="heading-anchor" href="#4-t-shaped-skills-generalizing-specialist" aria-label="Link to this section">#</a>4. T-shaped Skills (Generalizing Specialist)</h4>
+<ul>
+<li><strong>Definition</strong>: The profile of a team member with deep knowledge of one area (the vertical part of the “T”) and a broader understanding that enables contributions in other areas as well (the horizontal part of the “T”).</li>
+<li><strong>Significance for architecture</strong>: It allows feature teams to work across components without having to hand work over to another specialist.</li>
+<li><strong>Significance for testing</strong>: Developers can write tests at all levels (unit, integration, acceptance) and take responsibility for the quality of the entire feature.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Expecting “full-stack superheroes” who know everything in depth (I-shaped × generalists). The realistic goal is the gradual expansion of skills, not immediate versatility.</li>
+</ul>
+<h4 id="5-dependencies-and-coordination-overhead-dependencies-hand-offs"><a class="heading-anchor" href="#5-dependencies-and-coordination-overhead-dependencies-hand-offs" aria-label="Link to this section">#</a>5. Dependencies and Coordination Overhead (Dependencies &amp; Hand-offs)</h4>
+<ul>
+<li><strong>Definition</strong>: The need to wait for another team&#39;s output in order to complete one&#39;s own work; “throwing work over the wall” between specialized teams.</li>
+<li><strong>Significance for architecture</strong>: High coupling between components creates high coupling between teams, and vice versa. The goal is to minimize inter-team dependencies.</li>
+<li><strong>Significance for testing</strong>: Dependencies postpone integration and system tests until the end (known as “big bang integration”), increasing the risk of discovering defects late.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Considering dependencies inevitable. LeSS shows that moving to feature teams is precisely a means of eliminating most dependencies.</li>
+</ul>
+<h4 id="6-component-guardian-component-mentor-less"><a class="heading-anchor" href="#6-component-guardian-component-mentor-less" aria-label="Link to this section">#</a>6. Component Guardian / Component Mentor (LeSS)</h4>
+<ul>
+<li><strong>Definition</strong>: In the feature team model, an individual mentor (the “component guardian”) remains responsible for a critical component; this person does not make all changes alone, but oversees quality and mentors other teams that make changes to the component.</li>
+<li><strong>Significance for architecture</strong>: It preserves architectural integrity and knowledge even with collective code ownership, without creating a narrowly focused component team as a bottleneck.</li>
+<li><strong>Significance for testing</strong>: The guardian oversees the quality of the component&#39;s tests and code review, thereby preventing the erosion of testability.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Confusing a component guardian with a component team – a guardian is a role/mentoring function, not a closed team that owns the code.</li>
+</ul>
+<h4 id="7-context-of-the-po-sm-team-leader-roles-less"><a class="heading-anchor" href="#7-context-of-the-po-sm-team-leader-roles-less" aria-label="Link to this section">#</a>7. Context of the PO / SM / Team Leader Roles (LeSS)</h4>
+<ul>
+<li><strong>Definition</strong>: In LeSS, the entire product has one <strong>Product Owner (PO)</strong>, who determines <em>what</em> and <em>why</em> (maximizing value). The <strong>Scrum Master (SM)</strong> develops the process and removes impediments. The <strong>self-organizing feature team</strong> itself decides <em>how</em> to solve the matter technically and how to divide the work.</li>
+<li><strong>Significance for architecture</strong>: Moving to feature teams requires abandoning the traditional directive “Team Leader” who assigns tasks and guards the component as “their own territory.” With self-organization and collective code ownership, this role effectively disappears.</li>
+<li><strong>Significance for testing</strong>: Responsibility for quality moves into the team (whole-team approach) – the team itself owns the testing strategy for the feature being delivered.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Assuming that architecture will be left without an owner. In fact, architectural leadership moves to communities of practice (Communities of Practice) and roles such as the guardian, not to a formal superior.</li>
+</ul>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-patterns</h3>
+<h4 id="1-mistakes-in-architecture"><a class="heading-anchor" href="#1-mistakes-in-architecture" aria-label="Link to this section">#</a>1. Mistakes in Architecture</h4>
+<ul>
+<li><strong>Blindly copying the technical structure into the team structure (without managing Conway&#39;s Law)</strong><ul>
+<li><em>Why it is a problem</em>: The architecture hardens along team boundaries and becomes rigid; every customer feature then cuts across many teams.</li>
+<li><em>How it manifests</em>: A simple change requires coordination between five teams and takes weeks.</li>
+<li><em>Prevention</em>: Deliberate use of the Inverse Conway Maneuver – build teams according to the desired flow of value, not according to layers.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-mistakes-in-requirements"><a class="heading-anchor" href="#2-mistakes-in-requirements" aria-label="Link to this section">#</a>2. Mistakes in Requirements</h4>
+<ul>
+<li><strong>Defining the backlog by components instead of customer value</strong><ul>
+<li><em>Why it is a problem</em>: Backlog items describe technical tasks (“modify the DB layer”) instead of features (“the customer pays by card”).</li>
+<li><em>How it manifests</em>: It is unclear when real value has been delivered; <em>output</em> increases without <em>outcome</em>.</li>
+<li><em>Prevention</em>: A backlog oriented toward customer features (vertical slices), one PO for the product.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-mistakes-in-the-testing-strategy"><a class="heading-anchor" href="#3-mistakes-in-the-testing-strategy" aria-label="Link to this section">#</a>3. Mistakes in the Testing Strategy</h4>
+<ul>
+<li><strong>Postponing integration until the end (Big Bang integration)</strong><ul>
+<li><em>Why it is a problem</em>: Component teams integrate and perform system testing only after completing their parts; defects at the seams are discovered late.</li>
+<li><em>How it manifests</em>: A long, painful integration phase, an unstable release.</li>
+<li><em>Prevention</em>: Feature teams continuously test the vertical slice; continuous integration and end-to-end tests from the start.</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-mistakes-in-automation"><a class="heading-anchor" href="#4-mistakes-in-automation" aria-label="Link to this section">#</a>4. Mistakes in Automation</h4>
+<ul>
+<li><strong>Feature teams without mature CI/CD and automated tests</strong><ul>
+<li><em>Why it is a problem</em>: Multiple teams make changes to the same code without rapid feedback → regressions and chaos.</li>
+<li><em>How it manifests</em>: Frequent breakage of the main branch, “flaky” builds, fear of refactoring.</li>
+<li><em>Prevention</em>: Collective code ownership must be supported by strong test automation, trunk-based development, and code review.</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-mistakes-in-interpretation-testability-and-modularity"><a class="heading-anchor" href="#5-mistakes-in-interpretation-testability-and-modularity" aria-label="Link to this section">#</a>5. Mistakes in Interpretation (Testability and Modularity)</h4>
+<ul>
+<li><strong>Introducing feature teams without a modular architecture and clear interfaces</strong><ul>
+<li><em>Why it is a problem</em>: Without the ability to isolate components, features cannot be tested independently; teams break each other&#39;s code.</li>
+<li><em>How it manifests</em>: Inability to test in isolation, cascading test failures across teams.</li>
+<li><em>Prevention</em>: Investment in modularity, clear contracts, and Design for Testability as a prerequisite for shared ownership.</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-mistakes-in-communication"><a class="heading-anchor" href="#6-mistakes-in-communication" aria-label="Link to this section">#</a>6. Mistakes in Communication</h4>
+<ul>
+<li><strong>Retaining a directive Team Leader and a silo mentality in an “agile guise”</strong><ul>
+<li><em>Why it is a problem</em>: A formally agile team is effectively managed from above and protects its component → dependencies and “throwing work over the wall” reappear.</li>
+<li><em>How it manifests</em>: Decision-making is held up by one individual, the team does not self-organize, and quality is “delegated to testers.”</li>
+<li><em>Prevention</em>: A shift to PO/SM roles, a whole-team approach to quality, knowledge sharing through Communities of Practice and component guardians.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<h4 id="basic-questions"><a class="heading-anchor" href="#basic-questions" aria-label="Link to this section">#</a>Basic Questions</h4>
+<ul>
+<li><strong>What is the difference between a component team and a feature team?</strong>
+A good answer: component = organized according to a technical part of the system; feature = cross-functional, delivers an end-to-end customer feature.</li>
+<li><strong>What does the term T-shaped skills mean, and why is it important for feature teams?</strong>
+A good answer: depth in one area + breadth across the others; enables work across components without hand-offs.</li>
+</ul>
+<h4 id="intermediate-questions"><a class="heading-anchor" href="#intermediate-questions" aria-label="Link to this section">#</a>Intermediate Questions</h4>
+<ul>
+<li><strong>How does the choice of team type relate to Conway&#39;s Law?</strong>
+A good answer: the structure of the organization is reflected in the architecture; by choosing the team type, we therefore effectively decide on the architecture (Inverse Conway Maneuver).</li>
+<li><strong>Why do component teams create dependencies, and how does this affect delivery?</strong>
+A good answer: no team delivers an entire feature on its own → waiting, hand-offs, late integration, longer change lead time.</li>
+</ul>
+<h4 id="advanced-questions"><a class="heading-anchor" href="#advanced-questions" aria-label="Link to this section">#</a>Advanced Questions</h4>
+<ul>
+<li><strong>How do feature teams maintain architectural integrity with collective code ownership?</strong>
+A good answer: component guardians/mentors, strong code review, Communities of Practice, modularity and Design for Testability, automated tests.</li>
+<li><strong>How do the roles of PO, SM, and Team Leader change when moving to feature teams according to LeSS?</strong>
+A good answer: one PO determines <em>what/why</em>, the SM develops the process, and the team self-organizes around <em>how</em>; the directive Team Leader disappears.</li>
+</ul>
+<h4 id="questions-about-practical-experience"><a class="heading-anchor" href="#questions-about-practical-experience" aria-label="Link to this section">#</a>Questions about Practical Experience</h4>
+<ul>
+<li><strong>Have you experienced a transition from component teams to feature teams? What was the biggest obstacle?</strong>
+A good answer: specific experience with modularity, shared code ownership, building CI/CD, and changing roles.</li>
+</ul>
+<h4 id="questions-about-trade-off-decisions"><a class="heading-anchor" href="#questions-about-trade-off-decisions" aria-label="Link to this section">#</a>Questions about Trade-off Decisions</h4>
+<ul>
+<li><strong>When does a component team make sense even in an agile environment?</strong>
+A good answer: for a highly specialized component with great technical depth (for example, a security kernel or a layer close to the HW), where expertise is critical and changes are infrequent – ideally in the form of a guardian, not a closed silo.</li>
+</ul>
+<hr>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<p>The topic <em>Component Teams vs. Feature Teams</em> addresses two fundamental ways of organizing development teams in larger organizations. A <strong>component team</strong> has long-term responsibility for one technical part of the system – a layer, subsystem, or technology. A <strong>feature team</strong>, by contrast, is cross-functional and delivers a complete customer feature end-to-end across the entire stack, from the UI to the database.</p>
+<p>From an architectural perspective, the key point is that this choice is not merely organizational. According to <strong>Conway&#39;s Law</strong>, the structure of the organization predetermines the structure of the system. If we build teams according to components, we therefore get a rigid architecture divided precisely along those boundaries – and every customer feature then cuts across many teams. Deliberately shaping teams according to the desired flow of value is called the <em>Inverse Conway Maneuver</em>, and it is an architect&#39;s tool for achieving the desired modularity.</p>
+<p>The main weakness of component teams is <strong>dependencies</strong>. No component team can deliver an entire feature on its own, so waiting, “throwing work over the wall,” and late integration arise – essentially waterfall in an agile guise. This increases <em>change lead time</em> and diminishes the value delivered. Feature teams minimize these dependencies because they can handle a complete slice of functionality on their own.</p>
+<p>Feature teams, however, do not come for free. They require <strong>T-shaped specialists</strong>, <strong>collective code ownership</strong>, and, above all, mature <strong>test automation and CI/CD</strong>. Without these, chaos ensues because multiple teams make changes to the same code. There is a direct connection to testing here: a feature team can test the entire vertical slice on its own – unit, integration, and acceptance tests – thereby dramatically shortening the feedback loop. By contrast, component teams push integration and system tests to the end, where fixing defects is most expensive.</p>
+<p>The trade-off is that feature teams require greater investment in modularity, clear interfaces, and Design for Testability, with faster and more reliable delivery as the reward. The component approach provides deeper expertise locally, but slows things down globally. A compromise used in LeSS is to retain a <strong>component guardian</strong> for a critical component – a mentor who oversees quality without creating a closed team as a bottleneck. At the same time, roles change: one <strong>Product Owner</strong> determines <em>what</em> and <em>why</em>, the <strong>Scrum Master</strong> develops the process, and the self-organizing team decides <em>how</em>, while the directive Team Leader disappears.</p>
+<p>In summary: component teams optimize technical depth; feature teams optimize the flow of value. For fast and reliable delivery, most scaling frameworks, particularly LeSS, recommend feature teams – but only if the organization is willing to invest in a modular architecture, shared code ownership, and test automation.</p>
+<hr>
+<h3 id="short-version-for-quick-review"><a class="heading-anchor" href="#short-version-for-quick-review" aria-label="Link to this section">#</a>Short Version for Quick Review</h3>
+<p><strong>5 Main Points</strong></p>
+<ol>
+<li>Component team = organized by technical part; feature team = organized by end-to-end customer feature.</li>
+<li>Conway&#39;s Law: the team type predetermines the architecture (Inverse Conway Maneuver).</li>
+<li>Component teams generate dependencies and late integration; feature teams minimize them.</li>
+<li>Feature teams require T-shaped skills, collective code ownership, and strong CI/CD.</li>
+<li>LeSS favors feature teams; a critical component is overseen by a guardian, not a closed silo.</li>
+</ol>
+<p><strong>5 Key Concepts</strong>
+Component Team · Feature Team · Conway&#39;s Law · T-shaped skills · Component Guardian.</p>
+<p><strong>5 Typical Examination Questions</strong></p>
+<ol>
+<li>What is the difference between a component team and a feature team?</li>
+<li>How does the team type relate to Conway&#39;s Law?</li>
+<li>Why do component teams create dependencies?</li>
+<li>How do feature teams maintain architectural integrity?</li>
+<li>How do the PO/SM/TL roles change in LeSS?</li>
+</ol>
+<p><strong>3 Most Common Mistakes</strong></p>
+<ol>
+<li>Copying the technical structure into teams without managing Conway&#39;s Law.</li>
+<li>Feature teams without mature test automation and modularity → chaos.</li>
+<li>Retaining a directive Team Leader and a silo mentality (“agile guise”).</li>
+</ol>
+<p><strong>1 Sentence to Use in the Examination</strong>
+“Component teams optimize technical depth, feature teams optimize the flow of value – and because, according to Conway&#39;s Law, team structure shapes architecture, the choice of team type is also an architectural decision.”</p>
+<hr>
+<h3 id="learning-outcome-lopo"><a class="heading-anchor" href="#learning-outcome-lopo" aria-label="Link to this section">#</a>Learning Outcome (LOPO)</h3>
+<p>The candidate can:</p>
+<ul>
+<li>explain the difference between component teams and feature teams and their impact on architecture and the testing strategy;</li>
+<li>justify the connection to Conway&#39;s Law and use it as an argument when designing both the organization and the system;</li>
+<li>identify the prerequisites for successfully introducing feature teams (modularity, collective code ownership, CI/CD, Design for Testability);</li>
+<li>discuss the trade-off between technical depth and the flow of value and articulate when it is appropriate to retain component expertise in the form of a guardian;</li>
+<li>describe the change in roles (PO, SM, self-organizing team) in the context of LeSS.</li>
+</ul>
+<hr>
+<h3 id="summary-table"><a class="heading-anchor" href="#summary-table" aria-label="Link to this section">#</a>Summary Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Is Important</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Component Team</td>
+<td>Deep technical expertise in one part</td>
+<td>Mirrors technical decomposition; reinforces component boundaries</td>
+<td>Isolated component tests; late integration</td>
+<td>When does a component team make sense?</td>
+</tr>
+<tr>
+<td>Feature Team</td>
+<td>End-to-end delivery of a customer feature</td>
+<td>Requires modularity and collective code ownership</td>
+<td>Vertical testing of the entire feature; short loop</td>
+<td>Why do feature teams shorten delivery?</td>
+</tr>
+<tr>
+<td>Conway&#39;s Law</td>
+<td>Team structure = system structure</td>
+<td>Inverse Conway Maneuver as an architect&#39;s tool</td>
+<td>Seams between teams = defect locations (integration/contracts)</td>
+<td>How does the team type relate to architecture?</td>
+</tr>
+<tr>
+<td>Dependencies</td>
+<td>Minimizing hand-offs</td>
+<td>High component coupling = high team coupling</td>
+<td>Big-bang integration versus ongoing tests</td>
+<td>Why do component teams cause delays?</td>
+</tr>
+<tr>
+<td>Roles (LeSS)</td>
+<td>PO/SM + self-organization</td>
+<td>Leadership through guardians and CoP instead of a TL</td>
+<td>Whole-team ownership of quality</td>
+<td>How do the PO/SM/TL roles change?</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="practical-example"><a class="heading-anchor" href="#practical-example" aria-label="Link to this section">#</a>Practical Example</h2>
+<p>In practice, a <strong>hybrid model</strong> is used, combining both approaches according to the nature of the work being delivered.</p>
+<h3 id="product-teams-close-to-feature-teams"><a class="heading-anchor" href="#product-teams-close-to-feature-teams" aria-label="Link to this section">#</a>Product Teams (Close to Feature Teams)</h3>
+<p>Product teams are responsible for individual product lines and independently decide on both scope and deadlines. A team has a Product Owner, and possibly a Scrum Master and a Project Leader. The focus on complete product value corresponds to feature teams; the Project Leader role is a practical departure from the pure LeSS model. The product and the feature are tested in its context, so identical functionality is verified repeatedly across products.</p>
+<h3 id="global-features-and-clone-own-anti-pattern"><a class="heading-anchor" href="#global-features-and-clone-own-anti-pattern" aria-label="Link to this section">#</a>Global Features and Clone &amp; Own (Anti-pattern)</h3>
+<p>The solution for a feature that spans multiple products is designed by the architectural CoP, but implementation is carried out independently by the product teams. Faster teams serve as a model for the others (<strong>Clone &amp; Own</strong>). The copied solution gradually diverges because of local modifications; after several iterations, mutually incompatible variants with different fixes exist. Only the architectural idea is shared, not the code, which leads to growing technical debt and duplicate testing of the same logic in different contexts.</p>
+<h3 id="platform-and-component-teams-a-deliberate-component-approach"><a class="heading-anchor" href="#platform-and-component-teams-a-deliberate-component-approach" aria-label="Link to this section">#</a>Platform and Component Teams (A Deliberate Component Approach)</h3>
+<p>In parallel, there are teams that own key building blocks – platform middleware or a framework on top of which product teams build, and modular component teams that deliver reusable components with detailed tests and an architecture designed for use without modifications. Here, the component approach is appropriate: stability and reusability are the priorities. Code ownership is unambiguous, local fixes are only temporary and are incorporated into subsequent releases through the upstream. The component is tested once at the source; product teams verify only the integration.</p>
+<h3 id="comparison-of-the-two-modes"><a class="heading-anchor" href="#comparison-of-the-two-modes" aria-label="Link to this section">#</a>Comparison of the Two Modes</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Global Feature through Clone &amp; Own</th>
+<th>Owned Reusable Component</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Code ownership</td>
+<td>Dispersed (N copies)</td>
+<td>Unambiguous</td>
+</tr>
+<tr>
+<td>Source of truth</td>
+<td>Does not exist</td>
+<td>A single upstream</td>
+</tr>
+<tr>
+<td>Local fixes</td>
+<td>Permanent, fragment the solution</td>
+<td>Temporary, incorporated through the upstream</td>
+</tr>
+<tr>
+<td>Evolution over time</td>
+<td>Divergence</td>
+<td>Convergence</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Duplicated across contexts</td>
+<td>Once at the source + integration</td>
+</tr>
+<tr>
+<td>Technical debt</td>
+<td>Grows with every iteration</td>
+<td>Managed</td>
+</tr>
+</tbody></table></div>
+<h3 id="example-summary"><a class="heading-anchor" href="#example-summary" aria-label="Link to this section">#</a>Example Summary</h3>
+<p>The model illustrates both sides of the decision simultaneously. Product teams deliver value quickly, but for shared features, without shared code ownership, they slip into Clone &amp; Own and divergence. Component teams, by contrast, demonstrate the benefit of the component approach where the goal is reusability and a single source of truth. The architectural lesson: a CoP that merely designs the architecture without enforcing a shared implementation will not prevent divergence – a global feature would have to be owned by one team (or have a component guardian) and distributed as a component with an upstream, thus moving from a mode of inspiration to a mode of shared code.</p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/green-business-understanding/continuous-delivery.html"><span class="pager__label">← Previous</span><span>Continuous Delivery and the DORA Model</span></a>
+      <a class="pager__next" href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html"><span class="pager__label">Next →</span><span>Business Understanding: Leading as a host</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#topic-summary">Topic Summary</a></li><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-4"><a href="#1-component-team-component-team">1. Component Team (Component Team)</a></li><li class="lvl-4"><a href="#2-functional-feature-team-feature-team">2. Functional / Feature Team (Feature Team)</a></li><li class="lvl-4"><a href="#3-conway-s-law-conway-s-law">3. Conway s Law (Conway s Law)</a></li><li class="lvl-4"><a href="#4-t-shaped-skills-generalizing-specialist">4. T-shaped Skills (Generalizing Specialist)</a></li><li class="lvl-4"><a href="#5-dependencies-and-coordination-overhead-dependencies-hand-offs">5. Dependencies and Coordination Overhead (Dependencies Hand-offs)</a></li><li class="lvl-4"><a href="#6-component-guardian-component-mentor-less">6. Component Guardian / Component Mentor (LeSS)</a></li><li class="lvl-4"><a href="#7-context-of-the-po-sm-team-leader-roles-less">7. Context of the PO / SM / Team Leader Roles (LeSS)</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-patterns</a></li><li class="lvl-4"><a href="#1-mistakes-in-architecture">1. Mistakes in Architecture</a></li><li class="lvl-4"><a href="#2-mistakes-in-requirements">2. Mistakes in Requirements</a></li><li class="lvl-4"><a href="#3-mistakes-in-the-testing-strategy">3. Mistakes in the Testing Strategy</a></li><li class="lvl-4"><a href="#4-mistakes-in-automation">4. Mistakes in Automation</a></li><li class="lvl-4"><a href="#5-mistakes-in-interpretation-testability-and-modularity">5. Mistakes in Interpretation (Testability and Modularity)</a></li><li class="lvl-4"><a href="#6-mistakes-in-communication">6. Mistakes in Communication</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-4"><a href="#basic-questions">Basic Questions</a></li><li class="lvl-4"><a href="#intermediate-questions">Intermediate Questions</a></li><li class="lvl-4"><a href="#advanced-questions">Advanced Questions</a></li><li class="lvl-4"><a href="#questions-about-practical-experience">Questions about Practical Experience</a></li><li class="lvl-4"><a href="#questions-about-trade-off-decisions">Questions about Trade-off Decisions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#short-version-for-quick-review">Short Version for Quick Review</a></li><li class="lvl-3"><a href="#learning-outcome-lopo">Learning Outcome (LOPO)</a></li><li class="lvl-3"><a href="#summary-table">Summary Table</a></li><li class="lvl-2"><a href="#practical-example">Practical Example</a></li><li class="lvl-3"><a href="#product-teams-close-to-feature-teams">Product Teams (Close to Feature Teams)</a></li><li class="lvl-3"><a href="#global-features-and-clone-own-anti-pattern">Global Features and Clone Own (Anti-pattern)</a></li><li class="lvl-3"><a href="#platform-and-component-teams-a-deliberate-component-approach">Platform and Component Teams (A Deliberate Component Approach)</a></li><li class="lvl-3"><a href="#comparison-of-the-two-modes">Comparison of the Two Modes</a></li><li class="lvl-3"><a href="#example-summary">Example Summary</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

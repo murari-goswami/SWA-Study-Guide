@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Unit Testing - RED - Test and Quality - SWA preparation study guide.">
+<title>Unit Testing · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing" aria-current="page">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>2,711 words · about 14 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/unit-testing" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="unit-testing">Unit Testing</h1>
+<p><strong>Unit Testing (unit testing)</strong> is the fundamental and lowest level of software verification in the testing pyramid. Its primary objective is to verify the correctness, completeness, robustness, and structural coverage of the smallest independently testable parts of source code (units/components) in isolation from the surrounding environment and external dependencies.</p>
+<p>From a software architecture perspective, unit testing is a crucial indicator of design quality. Code that can be easily tested at the unit level exhibits <strong>low coupling (low coupling)</strong>, <strong>high cohesion (high cohesion)</strong>, and <strong>explicit dependency management</strong>. In industrial and safety-critical systems (e.g., automotive control units according to the <strong>ISO 26262 (ASIL A–D)</strong> standard or the <strong>AUTOMOTIVE SPICE – SWE.4</strong> process model), unit testing is a normative requirement associated with bidirectional traceability (traceability) and strict measurement of structural coverage (Statement, Branch/Decision, MC/DC).</p>
+<p><img src="../../assets/images/red-test-and-quality/good_unit_test.png" alt="Good Unit Testing Practices"></p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and basic concepts</h3>
+<h4 id="1-software-unit-software-unit-cut-sut"><a class="heading-anchor" href="#1-software-unit-software-unit-cut-sut" aria-label="Link to this section">#</a>1. Software unit (Software Unit / CUT / SUT)</h4>
+<ul>
+<li><strong>Definition</strong>: The smallest independently tested software element, characterized by its functional unambiguity (e.g., a single function, method, or standalone class).</li>
+<li><strong>Significance in architecture</strong>: Determines the encapsulation boundary and atomic granularity of a module in a layered or component-based architecture.</li>
+<li><strong>Significance in testing</strong>: Represents the object directly under test (System Under Test – SUT / Code Under Test – CUT), to which the specified inputs and expected outputs relate.</li>
+<li><strong>Typical mistake / misconception</strong>: Incorrectly assuming that a unit must always correspond strictly to a single class or function; overlooking the difference between a <em>solitary</em> (isolated) and a <em>sociable</em> (sociable) unit.</li>
+<li><em>Example from embedded/industrial systems</em>: In an embedded brake system control module (C/C++), the unit is a function calculating corrected braking torque based on input data from an ABS sensor.</li>
+</ul>
+<h4 id="2-test-double-test-double-stub-mock-spy-fake"><a class="heading-anchor" href="#2-test-double-test-double-stub-mock-spy-fake" aria-label="Link to this section">#</a>2. Test double (Test Double: Stub, Mock, Spy, Fake)</h4>
+<ul>
+<li><strong>Definition</strong>: A substitute object or function that replaces the real dependencies of the SUT (Depended-on Components – DOC) to control indirect inputs and verify indirect outputs.</li>
+<li><strong>Significance in architecture</strong>: Enforces architecture based on interfaces (Interfaces) and patterns such as Dependency Injection (DI) or Humble Object.</li>
+<li><strong>Significance in testing</strong>: Ensures that the test is isolated from slow, unstable, or hard-to-access dependencies (databases, CAN/LIN command buses, physical sensors).</li>
+<li><strong>Typical mistake / misconception</strong>: <strong>Over-mocking</strong> – excessive creation of mocks even for internal data structures, leading to tests coupled to the internal implementation instead of behavior and to their breaking during refactoring.</li>
+<li><em>Example from embedded/industrial systems</em>: Using a <em>Stub</em> to simulate reading a temperature from a physical ADC converter and a <em>Mock</em> to evaluate whether the function for activating the cooling fan was called correctly when the limit was exceeded.</li>
+</ul>
+<h4 id="3-structural-code-coverage-structural-code-coverage"><a class="heading-anchor" href="#3-structural-code-coverage-structural-code-coverage" aria-label="Link to this section">#</a>3. Structural code coverage (Structural Code Coverage)</h4>
+<ul>
+<li><strong>Definition</strong>: A White-Box analysis methodology that measures the percentage of source code executed during a test suite run (statements, branches, MC/DC).</li>
+<li><strong>Significance in architecture</strong>: The architecture must support the execution of instrumented (instrumented) code and data collection without failures due to insufficient memory or disruption of real-time timing.</li>
+<li><strong>Significance in testing</strong>: Serves as a formal exit criterion (Exit Criteria). In safety software (ASIL D), 100% MC/DC (Modified Condition / Decision Coverage) is strictly required.</li>
+<li><strong>Typical mistake / misconception</strong>: Treating 100% code coverage as proof of the absence of errors. Code coverage only indicates which code was executed, but does not reveal missing requirements or guarantee the correctness of the logic.</li>
+</ul>
+<h4 id="4-test-driven-development-tdd"><a class="heading-anchor" href="#4-test-driven-development-tdd" aria-label="Link to this section">#</a>4. Test-Driven Development (TDD)</h4>
+<ul>
+<li><strong>Definition</strong>: A software development methodology following an iterative <em>Red-Green-Refactor</em> cycle, in which the test is written before the production implementation itself.</li>
+<li><strong>Significance in architecture</strong>: Serves primarily as an architectural design tool (Test-Driven Design) that naturally eliminates unnecessary code and enforces modularity.</li>
+<li><strong>Significance in testing</strong>: Provides immediate feedback and ensures high regression test coverage from the beginning of development.</li>
+<li><strong>Typical mistake / misconception</strong>: Viewing TDD as a verification testing technique performed only after the code has been written.</li>
+</ul>
+<h4 id="5-execution-environment-host-vs-target-execution"><a class="heading-anchor" href="#5-execution-environment-host-vs-target-execution" aria-label="Link to this section">#</a>5. Execution environment: Host vs. Target Execution</h4>
+<ul>
+<li><strong>Definition</strong>: Running unit tests in the development computing system / CI environment (Host) vs. running them on a real microcontroller or target simulator (Target).</li>
+<li><strong>Significance in architecture</strong>: Requires a clear separation of application logic from hardware-dependent code through abstraction (HAL).</li>
+<li><strong>Significance in testing</strong>: Host tests are fast and enable extensive automation; Target tests verify compiler specifics, endianness, memory alignment, and type overflow.</li>
+<li><strong>Typical mistake / misconception</strong>: Neglecting testing in the Target environment and relying exclusively on Host tests, which can hide errors caused by compiler optimizations or the target architecture&#39;s data types.</li>
+</ul>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common mistakes and anti-patterns</h3>
+<h4 id="architecture-mistakes"><a class="heading-anchor" href="#architecture-mistakes" aria-label="Link to this section">#</a>Architecture mistakes</h4>
+<ul>
+<li><strong>Tight coupling to infrastructure and static dependencies</strong>:<ul>
+<li><em>Why it is a problem</em>: Using global variables, static methods, or the Singleton pattern makes it impossible to isolate the unit and substitute test doubles.</li>
+<li><em>How it manifests</em>: Tests require complex initialization of the entire system or fail because of shared state between tests.</li>
+<li><em>How to prevent it</em>: Apply Dependency Injection (DI) patterns and interfaces; use refactoring to a <em>Humble Object</em>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="requirements-mistakes"><a class="heading-anchor" href="#requirements-mistakes" aria-label="Link to this section">#</a>Requirements mistakes</h4>
+<ul>
+<li><strong>Absence of testability parameters in requirements</strong>:<ul>
+<li><em>Why it is a problem</em>: Requirements do not contain defined limits, tolerances, or behavior in error states (robustness).</li>
+<li><em>How it manifests</em>: Developers cannot unambiguously define acceptance criteria for unit tests (Pass/Fail).</li>
+<li><em>How to prevent it</em>: Check the testability of requirements before development begins (UTS/SRS review according to ASPICE SWE.4).</li>
+</ul>
+</li>
+</ul>
+<h4 id="test-strategy-mistakes"><a class="heading-anchor" href="#test-strategy-mistakes" aria-label="Link to this section">#</a>Test strategy mistakes</h4>
+<ul>
+<li><strong>Incorrect order of techniques (skipping Black-Box testing)</strong>:<ul>
+<li><em>Why it is a problem</em>: Writing unit tests exclusively based on internal code (White-Box) without first verifying functional requirements.</li>
+<li><em>How it manifests</em>: The code achieves high coverage but does not implement the required business logic or fails on invalid inputs.</li>
+<li><em>How to prevent it</em>: Follow the rule: first create Black-Box tests (equivalence classes, boundary values) to achieve functional coverage, and only then add White-Box tests for missing structural coverage.</li>
+</ul>
+</li>
+</ul>
+<h4 id="automation-mistakes"><a class="heading-anchor" href="#automation-mistakes" aria-label="Link to this section">#</a>Automation mistakes</h4>
+<ul>
+<li><strong>Testing implementation details (Coupled Tests / Overspecified Software)</strong>:<ul>
+<li><em>Why it is a problem</em>: Tests verify internal private method calls instead of the public interface and resulting state.</li>
+<li><em>How it manifests</em>: Any code refactoring (without changing functionality) causes widespread test failures.</li>
+<li><em>How to prevent it</em>: Focus tests on the public interface (API) and observable behavior; prefer real implementations (sociable tests) where this is effective.</li>
+</ul>
+</li>
+</ul>
+<h4 id="mistakes-in-interpreting-testability"><a class="heading-anchor" href="#mistakes-in-interpreting-testability" aria-label="Link to this section">#</a>Mistakes in interpreting testability</h4>
+<ul>
+<li><strong>Confusing testability with bypassing encapsulation</strong>:<ul>
+<li><em>Why it is a problem</em>: Changing access modifiers (from private to public) or inserting production macro directives solely for tests.</li>
+<li><em>How it manifests</em>: Degradation of the architecture and violation of production code encapsulation.</li>
+<li><em>How to prevent it</em>: Test private methods through the public API, or extract the logic into a separate testable class.</li>
+</ul>
+</li>
+</ul>
+<h4 id="mistakes-in-communication-between-architects-developers-and-testers"><a class="heading-anchor" href="#mistakes-in-communication-between-architects-developers-and-testers" aria-label="Link to this section">#</a>Mistakes in communication between architects, developers, and testers</h4>
+<ul>
+<li><strong>Absence of a traceability matrix (Traceability)</strong>:<ul>
+<li><em>Why it is a problem</em>: An unclear link between architectural detail (DDD/CDD), requirements, and test cases.</li>
+<li><em>How it manifests</em>: An inability to demonstrate to an auditor that all requirements have been tested at the unit level.</li>
+<li><em>How to prevent it</em>: Introduce bidirectional traceability in tools (SRTM / ALM) in accordance with ASPICE SWE.4.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="exam-questions"><a class="heading-anchor" href="#exam-questions" aria-label="Link to this section">#</a>Exam questions</h3>
+<h4 id="1-basic-levels"><a class="heading-anchor" href="#1-basic-levels" aria-label="Link to this section">#</a>1. Basic levels</h4>
+<ul>
+<li><strong>Question</strong>: How is a software unit defined, and what are the main objectives of unit testing in process models such as ASPICE?</li>
+<li><strong>Content of a good answer</strong>: Definition of a unit (function, method, class). Objectives: verification of correctness, completeness with respect to the detailed design (DDD), robustness, Absence of unidentified functionality, and achievement of structural coverage.</li>
+</ul>
+<h4 id="2-intermediate"><a class="heading-anchor" href="#2-intermediate" aria-label="Link to this section">#</a>2. Intermediate</h4>
+<ul>
+<li><strong>Question</strong>: What is the difference between <em>solitary</em> and <em>sociable</em> unit tests, and what impact does the choice between them have on software refactoring?</li>
+<li><strong>Content of a good answer</strong>: <em>Solitary</em> strictly isolates the SUT using test doubles (stubs/mocks). <em>Sociable</em> uses real neighboring classes if they do not perform I/O. <em>Solitary</em> can lead to excessive coupling of tests to the implementation (<em>overspecified tests</em>), while <em>sociable</em> supports safer refactoring.</li>
+</ul>
+<h4 id="3-advanced"><a class="heading-anchor" href="#3-advanced" aria-label="Link to this section">#</a>3. Advanced</h4>
+<ul>
+<li><strong>Question</strong>: How is code coverage measurement approached in safety-critical development (ISO 26262 ASIL D), and what obstacles does code instrumentation introduce?</li>
+<li><strong>Content of a good answer</strong>: A requirement for 100% MC/DC coverage. The answer must mention the need to run tests without instrumentation (to verify actual behavior) and subsequently with instrumentation (to measure coverage). An explanation of the risks associated with memory size and timing on the Target.</li>
+</ul>
+<h4 id="4-practical-experience"><a class="heading-anchor" href="#4-practical-experience" aria-label="Link to this section">#</a>4. Practical experience</h4>
+<ul>
+<li><strong>Question</strong>: How would you modify the architecture of a legacy C/C++ module full of global variables to make it unit-testable without risking a break in production?</li>
+<li><strong>Content of a good answer</strong>: Use refactoring patterns: <em>Extract Interface</em>, create wrapper structures, introduce <em>Test Hooks</em> as a transitional strategy, or use the <em>Humble Object</em> pattern to isolate hardware dependencies.</li>
+</ul>
+<h4 id="5-trade-off-decisions"><a class="heading-anchor" href="#5-trade-off-decisions" aria-label="Link to this section">#</a>5. Trade-off decisions</h4>
+<ul>
+<li><strong>Question</strong>: What are the advantages and disadvantages of running unit tests in the Host (PC) environment compared with the Target environment (real hardware)?</li>
+<li><strong>Content of a good answer</strong>: The Host offers extreme speed, easy CI/CD integration, and the availability of powerful mocking frameworks. The Target verifies code compiled by the real compiler with real optimizations, addresses type overflow, endianness, and memory constraints, but is slow and requires costly infrastructure.</li>
+</ul>
+<hr>
+<h3 id="model-exam-answer"><a class="heading-anchor" href="#model-exam-answer" aria-label="Link to this section">#</a>Model exam answer</h3>
+<p>As a software architect, I view Unit Testing not merely as a testing technique, but as a key architectural litmus test of design quality.</p>
+<p><strong>Definition and scope</strong>: A software unit is the smallest independently tested element of a software system – typically a class or method in the object-oriented world, or an individual function in procedural C programming. Unit testing verifies this unit in isolation from surrounding components and external systems. In process standards such as AUTOMOTIVE SPICE SWE.4 or ISO 26262, the objective of unit tests is to demonstrate that the code precisely matches the detailed design (DDD), exhibits robustness with invalid inputs, and achieves the specified structural coverage.</p>
+<p><strong>Significance for architecture</strong>: From an architectural perspective, unit tests cannot be written in isolation if the architecture does not support testability (Design for Testability). Code that uses static dependencies, global state, or tightly coupled instantiations cannot be unit-tested. To enable unit testing, we must apply principles such as <em>Separation of Concerns</em>, <em>Dependency Inversion</em>, and design patterns such as <em>Humble Object</em> or <em>Adapter</em> in the architecture. Under the pressure to ensure testability, the architecture therefore naturally moves toward a modular, loosely coupled design.</p>
+<p><strong>Significance for testing and methodology</strong>: In the test strategy, we must strictly separate two steps. The first is <strong>Black-Box testing</strong> based on the requirements specification – here we use equivalence classes and boundary values. Only in the second step does <strong>White-Box testing</strong> come in, through which we add test cases to achieve the required structural coverage, for example Statement, Branch, or the critical MC/DC coverage at the highest safety levels, ASIL D.</p>
+<p><strong>Practical example from embedded practice</strong>: Imagine the development of an electric motor control module [<em>(general addition based on the industrial context)</em>]. The application logic for calculating the required rotational speed is completely separated from the inverter drivers and the CAN bus. For unit tests of the application logic, we replace the CAN bus interface with a <em>Test Double</em> (e.g., a Stub). This allows us to verify the mathematical calculation and response to boundary states within milliseconds without having to connect physical hardware.</p>
+<p><strong>Architectural Trade-off</strong>: Here we reach a fundamental decision: <strong>Host vs. Target execution</strong> and <strong>Solitary vs. Sociable tests</strong>.</p>
+<ol>
+<li>If we test exclusively in <em>Solitary</em> mode with extensive use of Mocks, there is a risk of what is known as <em>Overspecified Software</em> – tests verify internal dependency calls instead of the resulting behavior and fail extensively during refactoring. We therefore prefer <em>Sociable</em> tests for domain objects that have no I/O side effects.</li>
+<li>The second trade-off is that testing on the Host (PC) is extremely fast in the CI/CD pipeline, but does not reveal errors specific to the target compiler, data type sizes, or memory alignment. A proper test strategy therefore combines extensive daily unit test execution on the Host with periodic verification of a representative suite on a real/simulated Target.</li>
+</ol>
+<p><strong>Summary</strong>: Unit testing is not an isolated developer activity, but a fundamental pillar of software architecture quality. Without a well-designed architecture, effective unit tests cannot be written, and without unit tests, the architecture cannot be safely refactored.”</p>
+<hr>
+<h3 id="short-version-for-quick-revision"><a class="heading-anchor" href="#short-version-for-quick-revision" aria-label="Link to this section">#</a>Short version for quick revision</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 main points</h4>
+<ol>
+<li>A unit test verifies the smallest part of the code (a unit) in isolation from its surroundings.</li>
+<li>Code testability requires low coupling (low coupling) and explicit dependency management (DI).</li>
+<li>Tests are first designed as Black-Box tests (functional requirements) and only then supplemented with White-Box tests (structural coverage).</li>
+<li>In safety-critical systems (ASIL D), 100% MC/DC structural coverage is mandatory.</li>
+<li>Testing implementation details (over-mocking) leads to brittle tests that hinder refactoring.</li>
+</ol>
+<h4 id="5-key-concepts"><a class="heading-anchor" href="#5-key-concepts" aria-label="Link to this section">#</a>5 key concepts</h4>
+<ol>
+<li><strong>SUT / CUT</strong>: System / Code Under Test – the object directly under test.</li>
+<li><strong>Test Double</strong>: A substitute object (Stub, Mock, Spy, Fake) for isolating the SUT.</li>
+<li><strong>MC/DC</strong>: Modified Condition / Decision Coverage – coverage of logical conditions required by safety standards.</li>
+<li><strong>Humble Object</strong>: A design pattern separating testable logic from an untestable environment.</li>
+<li><strong>Traceability (SRTM)</strong>: Bidirectional traceability between the requirement, design, and test cable.</li>
+</ol>
+<h4 id="5-typical-exam-questions"><a class="heading-anchor" href="#5-typical-exam-questions" aria-label="Link to this section">#</a>5 typical exam questions</h4>
+<ol>
+<li>What is the difference between a unit test and an integration test in terms of the SUT and isolation?</li>
+<li>Why is 100% statement coverage (Statement Coverage) insufficient for safety code?</li>
+<li>What is the <em>Over-mocking</em> anti-pattern, and what are its consequences?</li>
+<li>How does the <em>Dependency Injection</em> design pattern support testability?</li>
+<li>What is the difference in the behavior of a unit test run on a Host development PC vs. a Target MCU?</li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 most common mistakes</h4>
+<ol>
+<li>Writing unit tests coupled to the internal implementation instead of the public interface.</li>
+<li>Replacing architectural design with bypassing encapsulation (exposing private methods).</li>
+<li>Relying on 100% code coverage without verifying boundary and invalid states (robustness).</li>
+</ol>
+<h4 id="1-concise-model-sentence-for-the-exam"><a class="heading-anchor" href="#1-concise-model-sentence-for-the-exam" aria-label="Link to this section">#</a>1 concise model sentence for the exam</h4>
+<blockquote>
+<p>“Unit testing verifies the smallest software components in isolation, serving as a fundamental indicator of a high-quality, loosely coupled architecture and, in safety-critical software, guaranteeing both correctness and structural code coverage according to normative requirements.”</p>
+</blockquote>
+<hr>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning Outcome</h3>
+<p>In accordance with the requirements of <strong>Learning and Practice Outcomes (LOPO) – testing</strong> and the <strong>ASPICE SWE.4</strong> process standard:</p>
+<ul>
+<li><strong>Architectural insight</strong>: The architect understands the role of unit tests in the testing pyramid and can justify why isolated testing is the cheapest tool for catching defects.</li>
+<li><strong>Assessing testability</strong>: The architect can identify architectural blockers to testability (spaghetti code, hidden dependencies) and apply patterns to remove them (DI, Humble Object, Facade).</li>
+<li><strong>Deciding on a test strategy</strong>: The development/test architect can establish a balanced strategy combining Black-Box and White-Box techniques, determine appropriate exit criteria (Statement, MC/DC) according to the level of risk/ASIL, and correctly choose the balance between Host and Target test execution.</li>
+</ul>
+<hr>
+<h3 id="summary-in-one-table"><a class="heading-anchor" href="#summary-in-one-table" aria-label="Link to this section">#</a>Summary in one table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What is important</th>
+<th>Relationship to architecture</th>
+<th>Relationship to testing</th>
+<th>Typical exam question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Isolation &amp; SUT</strong></td>
+<td>Precise definition of the boundaries of the unit under test and isolation from its surroundings.</td>
+<td>Enforces interfaces, modularity, and dependency management patterns (DI).</td>
+<td>Enables fast, repeatable, and deterministic test execution.</td>
+<td>What is the difference between a <em>solitary</em> and a <em>sociable</em> unit test?</td>
+</tr>
+<tr>
+<td><strong>Test Doubles</strong></td>
+<td>Using the appropriate type of substitute (Stub, Mock, Fake, Spy).</td>
+<td>Requires interfaces (Interfaces) and separation of I/O from logic.</td>
+<td>Ensures control over indirect inputs and verification of outputs.</td>
+<td>When is it appropriate to use a Mock, and when a real class (Fake/Real)?</td>
+</tr>
+<tr>
+<td><strong>Structural coverage</strong></td>
+<td>Measuring code execution (Statement, Decision, MC/DC).</td>
+<td>Requires support for code instrumentation in the build toolchain.</td>
+<td>Serves as Exit Criteria for verifying test completeness.</td>
+<td>Why does 100% Statement Coverage not guarantee safety (ASIL D)?</td>
+</tr>
+<tr>
+<td><strong>Testability Design</strong></td>
+<td>Modifying code to facilitate testing without breaking encapsulation.</td>
+<td>Applying the Humble Object, Adapter, and Separated Interface patterns.</td>
+<td>Eliminates the need for complex and brittle test fixtures.</td>
+<td>How can legacy C code with Singletons be refactored for unit testing?</td>
+</tr>
+<tr>
+<td><strong>Host vs. Target</strong></td>
+<td>Choosing an environment for running unit tests.</td>
+<td>Requires a hardware abstraction layer (HAL) in the architecture.</td>
+<td>Balances the speed of feedback in CI against Target fidelity.</td>
+<td>What errors will a unit test run exclusively on a PC (Host) fail to detect?</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/test-levels-pyramid.html"><span class="pager__label">← Previous</span><span>Test Levels, Test pyramid</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/integration-testing.html"><span class="pager__label">Next →</span><span>Integration testing (Integration Testing)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and basic concepts</a></li><li class="lvl-4"><a href="#1-software-unit-software-unit-cut-sut">1. Software unit (Software Unit / CUT / SUT)</a></li><li class="lvl-4"><a href="#2-test-double-test-double-stub-mock-spy-fake">2. Test double (Test Double: Stub, Mock, Spy, Fake)</a></li><li class="lvl-4"><a href="#3-structural-code-coverage-structural-code-coverage">3. Structural code coverage (Structural Code Coverage)</a></li><li class="lvl-4"><a href="#4-test-driven-development-tdd">4. Test-Driven Development (TDD)</a></li><li class="lvl-4"><a href="#5-execution-environment-host-vs-target-execution">5. Execution environment: Host vs. Target Execution</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-4"><a href="#architecture-mistakes">Architecture mistakes</a></li><li class="lvl-4"><a href="#requirements-mistakes">Requirements mistakes</a></li><li class="lvl-4"><a href="#test-strategy-mistakes">Test strategy mistakes</a></li><li class="lvl-4"><a href="#automation-mistakes">Automation mistakes</a></li><li class="lvl-4"><a href="#mistakes-in-interpreting-testability">Mistakes in interpreting testability</a></li><li class="lvl-4"><a href="#mistakes-in-communication-between-architects-developers-and-testers">Mistakes in communication between architects, developers, and testers</a></li><li class="lvl-3"><a href="#exam-questions">Exam questions</a></li><li class="lvl-4"><a href="#1-basic-levels">1. Basic levels</a></li><li class="lvl-4"><a href="#2-intermediate">2. Intermediate</a></li><li class="lvl-4"><a href="#3-advanced">3. Advanced</a></li><li class="lvl-4"><a href="#4-practical-experience">4. Practical experience</a></li><li class="lvl-4"><a href="#5-trade-off-decisions">5. Trade-off decisions</a></li><li class="lvl-3"><a href="#model-exam-answer">Model exam answer</a></li><li class="lvl-3"><a href="#short-version-for-quick-revision">Short version for quick revision</a></li><li class="lvl-4"><a href="#5-main-points">5 main points</a></li><li class="lvl-4"><a href="#5-key-concepts">5 key concepts</a></li><li class="lvl-4"><a href="#5-typical-exam-questions">5 typical exam questions</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 most common mistakes</a></li><li class="lvl-4"><a href="#1-concise-model-sentence-for-the-exam">1 concise model sentence for the exam</a></li><li class="lvl-3"><a href="#learning-outcome">Learning Outcome</a></li><li class="lvl-3"><a href="#summary-in-one-table">Summary in one table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

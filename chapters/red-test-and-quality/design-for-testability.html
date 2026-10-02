@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Design for Testability - RED - Test and Quality - SWA preparation study guide.">
+<title>Design for Testability · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability" aria-current="page">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,991 words · about 20 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/design-for-testability" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="design-for-testability">Design for Testability</h1>
+<p><strong>Design for Testability (DFT)</strong> – that is, design focused on testability – is an architectural and design approach aimed at incorporating features that facilitate testing directly into the structure of a software system. Testability is not an incidental by-product of development, but a key non-functional quality characteristic (NFR). A fundamental architectural rule applies: <em>for a system to be tested effectively, it must be designed to be testable</em>.</p>
+<p><img src="../../assets/images/red-test-and-quality/design_for_testability_principles.png" alt="Principles of Testability"></p>
+<p><em>Front Door First means that a module, class, or component should be tested through its official public interface (Public API).</em></p>
+<p>From the perspective of a software architect and a test architect, DFT is a decisive factor in overall maintainability, delivery speed (time-to-market), technical debt management, and the reduction of development costs. Insufficient testability leads to highly fragile tests, an inability to isolate faults, slow regression testing, and a disproportionate increase in the cost of finding and correcting defects in the later stages of the life cycle.</p>
+<p><img src="../../assets/images/red-test-and-quality/testability_basics.png" alt="Testability basics"></p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<h4 id="1-software-testability-software-testability"><a class="heading-anchor" href="#1-software-testability-software-testability" aria-label="Link to this section">#</a>1. Software Testability (Software Testability)</h4>
+<ul>
+<li><strong>Definition</strong>: The degree of effectiveness and efficiency with which test criteria can be established for a system, product, or component, and tests can be performed to determine whether those criteria have been met. James Bach distinguishes three dimensions of testability:<ul>
+<li><strong>Intrinsic (Intrinsic)</strong>: Determined by the properties of the code and architecture themselves (observability, controllability, decomposability, algorithms).</li>
+<li><strong>Practical (Practical)</strong>: How easy it is for a particular tester to test the system in a given context and process.</li>
+<li><strong>Epistemic (Epistemic)</strong>: The size of the gap between what we know about the system and what we need to know about it.</li>
+</ul>
+</li>
+<li><strong>Significance in architecture</strong>: Determines the extent to which the architecture supports verification of its properties (both functional and NFR) at different levels of abstraction.</li>
+<li><strong>Significance in testing</strong>: Directly affects the effort required, test coverage, the feasibility of automation, and the ability to locate defects.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Equating testability solely with the existence of unit tests or high code coverage, regardless of the architecture.</li>
+</ul>
+<h4 id="2-controllability-controllability"><a class="heading-anchor" href="#2-controllability-controllability" aria-label="Link to this section">#</a>2. Controllability (Controllability)</h4>
+<ul>
+<li><strong>Definition</strong>: The degree of ability to supply control inputs to the system under test (SUT), induce the required states, or reset the system to a known initial state through control points.</li>
+<li><strong>Significance in architecture</strong>: Requires the design of interfaces (API, configuration, DI) that allow any system state to be set without having to go through complex real-world scenarios.</li>
+<li><strong>Significance in testing</strong>: A fundamental prerequisite for deterministic, repeatable, and fully automated testing (for example, triggering error states).</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Claiming that controllability means bypassing security or validation mechanisms in the production environment.</li>
+</ul>
+<h4 id="3-observability-and-visibility-observability-visibility"><a class="heading-anchor" href="#3-observability-and-visibility-observability-visibility" aria-label="Link to this section">#</a>3. Observability and Visibility (Observability / Visibility)</h4>
+<ul>
+<li><strong>Definition</strong>: The degree of ability to monitor the outputs, internal states, resource consumption, side effects, and error conditions of the system under test through observation points.</li>
+<li><strong>Significance in architecture</strong>: Requires built-in structured logging, metrics, diagnostic tools (dumps, tracing), and clearly defined output interfaces.</li>
+<li><strong>Significance in testing</strong>: <em>“What cannot be seen cannot be tested.”</em> Observability enables reliable evaluation of test results (test oracles).</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Relying exclusively on monitoring the visual user interface (GUI) instead of monitoring internal states and data flows.</li>
+</ul>
+<h4 id="4-isolability-and-decomposability-isolability-decomposability"><a class="heading-anchor" href="#4-isolability-and-decomposability-isolability-decomposability" aria-label="Link to this section">#</a>4. Isolability and Decomposability (Isolability &amp; Decomposability)</h4>
+<ul>
+<li><strong>Definition</strong>: The ability to divide a system into separate, loosely coupled modules with high cohesion that can be tested independently of other parts of the system.</li>
+<li><strong>Significance in architecture</strong>: Application of layered architecture, interfaces, and patterns such as Ports &amp; Adapters (Hexagonal) or Microservices.</li>
+<li><strong>Significance in testing</strong>: Enables the use of test doubles (Test Doubles – Stubs, Mocks, Fakes) to isolate dependencies and speed up test execution.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Using globally shared state (Singletons, databases) between components, which prevents parallel and independent test execution.</li>
+</ul>
+<h4 id="5-testability-interfaces-testability-interfaces"><a class="heading-anchor" href="#5-testability-interfaces-testability-interfaces" aria-label="Link to this section">#</a>5. Testability Interfaces (Testability Interfaces)</h4>
+<ul>
+<li><strong>Definition</strong>: Dedicated (internal or external) interfaces designed specifically for testing, diagnostics, and controlling the state of the SUT.</li>
+<li><strong>Significance in architecture</strong>: The architect must determine the scope, access permissions, and performance and security implications of these interfaces (for example, calls available only in a debug build or protected by a diagnostic protocol).</li>
+<li><strong>Significance in testing</strong>: Provide “back-door” access (back-door manipulation) to set preconditions or verify postconditions where the front door is excessively slow or unavailable.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Leaving testability interfaces active and unprotected in the production environment, thereby creating security vulnerabilities.</li>
+</ul>
+<h4 id="6-design-tactics-for-testability-dft-tactics"><a class="heading-anchor" href="#6-design-tactics-for-testability-dft-tactics" aria-label="Link to this section">#</a>6. Design Tactics for Testability (DFT Tactics)</h4>
+<ul>
+<li><strong>Definition</strong>: Architectural and design decisions (for example, Dependency Injection, Separation of Concerns, Humble Object) that directly increase the observability and controllability of code.</li>
+<li><strong>Significance in architecture</strong>: A tool for the architect to prevent untestable code from being created before implementation even begins.</li>
+<li><strong>Significance in testing</strong>: Dramatically simplify writing unit and integration tests and reduce the need for complex test environment setup.</li>
+<li><strong>Typical mistake or misunderstanding</strong>: Viewing these tactics as an academic exercise with no real impact on business or development speed.</li>
+</ul>
+<p>&nbsp;</p>
+<p><img src="../../assets/images/red-test-and-quality/design_for_testability_patterns.png" alt="Testability patterns"></p>
+<p><img src="../../assets/images/red-test-and-quality/testability_refined.png" alt="Testability refined">
+<img src="../../assets/images/red-test-and-quality/testability_aspects.png" alt="Testability aspects">
+<img src="../../assets/images/red-test-and-quality/testability_aspects2.png" alt="Testability more aspects"></p>
+<p><em>Example from the embedded / safety-related domain</em>: In an engine control unit (ECU) governed by ISO 26262, testability requires the separation of hardware-dependent code (HAL/OS) from application logic. It also requires a diagnostic interface (for example, through the CAN/UDS bus or XCP protocol) that allows a test bench (HIL bench) to inject sensor faults (fault injection) and read the internal state of the algorithm without having to physically remove the sensor.</p>
+<hr>
+<p><img src="../../assets/images/red-test-and-quality/heuristic_software_testability.png" alt="Heuristics of Testability"></p>
+<p><strong>Heuristics of Software Testability</strong> (Software Testability Heuristics), by testing expert James Bach. The central idea of this model is that the testability of any system is determined not only by the quality of the source code itself, but is the dynamic result of the interaction of five different dimensions.</p>
+<p>The central node, <strong>Practical Testability</strong> (Practical Testability), represents the overall, real-world situation – how easily, effectively, and confidently the particular system can be tested at a given moment. This situation is directly influenced by five external factors:</p>
+<ul>
+<li><strong>Intrinsic Testability (Intrinsic Testability):</strong> This concerns the properties of the product and architecture themselves (for example, the integration of hardware and software components). It includes <em>observability</em> (whether the system generates diagnostic logs and status messages) and <em>controllability</em> (whether the system can be placed in a specific error state through an API or dedicated interfaces). Clearly defined interfaces and low coupling between components (loose coupling) radically increase this testability.</li>
+<li><strong>Epistemic Testability (Knowledge-Related / Epistemic Testability):</strong> This concerns the information that exists about the system and is available. It includes the quality of specifications, the accuracy of software models (for example, state diagrams), and the level of detail in technical documentation for microcontrollers or other components. If a system exhibits unexpected behavior and lacks architectural documentation, this aspect of testability is very low.</li>
+<li><strong>Project-Related Testability (Project-Related Testability):</strong> This reflects logistics, processes, and infrastructure. It means the existence of a stable test environment, reliable CI/CD pipelines, automated builds, debugging tools, and, not least, whether the development team has been allocated time and a budget for thorough testing.</li>
+<li><strong>Subjective Testability (Subjective Testability):</strong> This defines the knowledge, skills, and domain expertise of the particular person performing the testing. A developer or tester who thoroughly understands register behavior, linker scripts, or standards such as MISRA C++ will uncover critical problems much faster than someone without these specific skills.</li>
+<li><strong>Value-Related Testability (Value-Related Testability):</strong> This introduces the perspective of risk analysis and efficiency. It assesses whether the effort spent testing a particular property corresponds to its importance to the functioning of the whole. Ensuring 100% coverage of a critical failsafe routine has enormous value, whereas exhaustive testing of a cosmetic logging script may waste resources.</li>
+</ul>
+<p>In practice, overall testability is always a compromise. For example, if you design an excellent, fully controllable architecture (high <em>Intrinsic</em>), but lack the necessary integration infrastructure (low <em>Project-Related</em>) and the hardware specifications are outdated (low <em>Epistemic</em>), the real-world testability (Practical Testability) of the entire system decreases significantly.</p>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-Patterns</h3>
+<h4 id="1-architectural-mistakes"><a class="heading-anchor" href="#1-architectural-mistakes" aria-label="Link to this section">#</a>1. Architectural Mistakes</h4>
+<ul>
+<li><strong>Tight coupling and monolithic code (God Object)</strong>: Components instantiate their dependencies directly (<code>new Service()</code>) or share internal data structures.<ul>
+<li><em>Why it is a problem</em>: Prevents dependencies from being replaced with test doubles and prevents isolated testing.</li>
+<li><em>How it manifests</em>: Unit tests cannot be written without starting the entire database server or external services.</li>
+<li><em>Prevention</em>: Use the Inversion of Control (IoC) principle, Dependency Injection, and strict separation of interfaces from implementations.</li>
+</ul>
+</li>
+<li><strong>Excessive use of the Singleton design pattern and global state</strong>:<ul>
+<li><em>Why it is a problem</em>: Retains state between individual tests, violating the principle of test independence.</li>
+<li><em>How it manifests</em>: Tests behave unreliably (flickering/flaky tests) – they passed individually, but fail when run as a suite, depending on their order.</li>
+<li><em>Prevention</em>: Pass dependencies through the constructor and manage object life cycles explicitly.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-requirements-mistakes"><a class="heading-anchor" href="#2-requirements-mistakes" aria-label="Link to this section">#</a>2. Requirements Mistakes</h4>
+<ul>
+<li><strong>Vaguely defined or untestable non-functional requirements (NFRs)</strong>: Statements such as <em>“the system must be fast and highly available”</em>.<ul>
+<li><em>Why it is a problem</em>: Acceptance criteria and interfaces for verifying the quality in question are missing.</li>
+<li><em>How it manifests</em>: The testing team cannot design verification scenarios or evaluate whether a test has succeeded.</li>
+<li><em>Prevention</em>: Define NFRs using measurable metric-based scenarios (quantitative limits, for example, latency &lt; 100 ms at 1000 req/s).</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-test-strategy-mistakes"><a class="heading-anchor" href="#3-test-strategy-mistakes" aria-label="Link to this section">#</a>3. Test Strategy Mistakes</h4>
+<ul>
+<li><strong>Neglecting DFT until the Design Freeze stage</strong>:<ul>
+<li><em>Why it is a problem</em>: Testability is treated as an “afterthought” only when automation fails.</li>
+<li><em>How it manifests</em>: Enormous costs of refactoring production code late in the project.</li>
+<li><em>Prevention</em>: Involve the test architect in architectural reviews from the outset; testability requirements are part of the backlog and have the same priority as functional requirements.</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-automation-mistakes"><a class="heading-anchor" href="#4-automation-mistakes" aria-label="Link to this section">#</a>4. Automation Mistakes</h4>
+<ul>
+<li><strong>The Retry Failed Tests anti-pattern</strong>:<ul>
+<li><em>Why it is a problem</em>: Masks architectural errors in SUT isolation and state management by repeatedly running failed tests until they pass.</li>
+<li><em>How it manifests</em>: Loss of trust in tests and delayed detection of real timing and concurrency defects.</li>
+<li><em>Prevention</em>: Consistent SUT isolation, resetting state before every test, and correcting the cause of instability instead of working around it with a retry mechanism.</li>
+</ul>
+</li>
+<li><strong>Overengineered and overspecified tests (Overspecified Tests)</strong>:<ul>
+<li><em>Why it is a problem</em>: Tests verify internal implementation details (the exact order of internal method calls through mocks) instead of observable behavior.</li>
+<li><em>How it manifests</em>: Any refactoring of the code (that does not change external functionality) causes dozens of tests to fail.</li>
+<li><em>Prevention</em>: Test through the public interface (Front-door first principle), focusing on resulting states rather than interaction details.</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-mistakes-in-interpreting-testability"><a class="heading-anchor" href="#5-mistakes-in-interpreting-testability" aria-label="Link to this section">#</a>5. Mistakes in Interpreting Testability</h4>
+<ul>
+<li><strong>Mixing test logic into production code</strong>:<ul>
+<li><em>Why it is a problem</em>: Inserting conditions such as <code>if (isTestingMode) { ... }</code> directly into application logic.</li>
+<li><em>How it manifests</em>: The code executed during testing differs from the code executed in production; untested branches create a risk of production failures.</li>
+<li><em>Prevention</em>: Separate test configuration through polymorphism, Dependency Injection, or Test-Specific Subclasses.</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-communication-mistakes"><a class="heading-anchor" href="#6-communication-mistakes" aria-label="Link to this section">#</a>6. Communication Mistakes</h4>
+<ul>
+<li><strong>Silo mentality (Development vs. Testing)</strong>:<ul>
+<li><em>Why it is a problem</em>: The architect and developers design the code without consulting testers, who then receive an untestable black box “over the wall”.</li>
+<li><em>How it manifests</em>: Long automation cycles, an inability to create stable stubs/mocks, and constant confrontation between teams.</li>
+<li><em>Prevention</em>: Joint creation of acceptance criteria (BDD/ATDD) and regular dialogue between the SW architect and the test architect.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<h4 id="1-basic-questions"><a class="heading-anchor" href="#1-basic-questions" aria-label="Link to this section">#</a>1. Basic Questions</h4>
+<ul>
+<li><strong>Question 1</strong>: How is software testability defined, and what are its two main components from a practical perspective?<ul>
+<li><em>Answer note</em>: The answer must include the definition according to the standard (ISO 9126 / IEEE) and the two key components: <strong>controllability (controllability)</strong> and <strong>observability (observability)</strong>, including an explanation of control and observation points.</li>
+</ul>
+</li>
+<li><strong>Question 2</strong>: What is the difference between “front-door” and “back-door” testing?<ul>
+<li><em>Answer note</em>: The front door uses the public API/interface available to ordinary clients. The back door uses special testability interfaces, stubs, mocks, or direct state access to speed up the test or establish error states.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-intermediate-questions"><a class="heading-anchor" href="#2-intermediate-questions" aria-label="Link to this section">#</a>2. Intermediate Questions</h4>
+<ul>
+<li><strong>Question 3</strong>: Which architectural patterns and tactics directly support testability at the component level?<ul>
+<li><em>Answer note</em>: The candidate should name layered architecture, Dependency Injection, Inversion of Control, Adapter/Facade, and the Humble Object pattern for separating untestable infrastructure (for example, GUI/HW) from testable logic.</li>
+</ul>
+</li>
+<li><strong>Question 4</strong>: How does the SW architect&#39;s role support testability in the early stages of the project life cycle?<ul>
+<li><em>Answer note</em>: Formulation of NFR requirements for testability, prevention of cyclic dependencies, definition of interfaces and component isolation before design freeze, and close collaboration with the Test Manager / Test Architect.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-advanced-questions"><a class="heading-anchor" href="#3-advanced-questions" aria-label="Link to this section">#</a>3. Advanced Questions</h4>
+<ul>
+<li><strong>Question 5</strong>: Explain the “Humble Object” pattern and give an example of its use in architecture.<ul>
+<li><em>Answer note</em>: The answer must explain extracting logic from an object that is difficult to test (GUI, GUI controller, HW module, framework interface) into a pure, easily testable object without dependencies, while the original object remains “humble” and contains only a minimum of wiring code.</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-questions-about-practical-experience"><a class="heading-anchor" href="#4-questions-about-practical-experience" aria-label="Link to this section">#</a>4. Questions About Practical Experience</h4>
+<ul>
+<li><strong>Question 6</strong>: How do you handle a situation in which you need to test a legacy system that suffers from tight coupling, lacks testability interfaces, and has no unit tests?<ul>
+<li><em>Answer note</em>: Mention techniques from Michael Feathers&#39;s book (Working Effectively with Legacy Code): identifying seams, gradually refactoring around critical functions, and establishing a safety net of protective characterization tests at a higher level before modifying the internal structure.</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-questions-about-trade-off-decisions"><a class="heading-anchor" href="#5-questions-about-trade-off-decisions" aria-label="Link to this section">#</a>5. Questions About Trade-Off Decisions</h4>
+<ul>
+<li><strong>Question 7</strong>: Which architectural trade-offs must you consider when increasing the testability of a system?<ul>
+<li><em>Answer note</em>: Analysis of the conflict between testability and <strong>encapsulation (encapsulation)</strong>, <strong>performance (performance)</strong>, <strong>security (security)</strong>, and <strong>code complexity (overhead)</strong>. A good answer explains how to balance these conflicts without compromising production parameters.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<p><em>(A model continuous response for an oral examination, approximately 4–5 minutes long)</em></p>
+<p>The topic of <strong>Design for Testability (DFT)</strong> represents one of the most critical architectural pillars of modern software engineering.</p>
+<p>Testability means the degree of effectiveness and ease with which test criteria can be established for a software system and tests can be performed to determine whether those criteria have been met. From an architect&#39;s practical perspective, testability rests on two fundamental pillars: <strong>controllability (controllability)</strong> and <strong>observability (observability)</strong>. Controllability tells us how easily we can bring the system under test into the required state and supply it with test inputs. Observability indicates the extent to which we can monitor the system&#39;s internal states, outputs, and side effects. If a system does not have sufficient observability or controllability, effective testing and automation become impossible.</p>
+<p>For <strong>software architecture</strong>, testability is essential because it directly correlates with modularity, loose coupling, and high cohesion. Software cannot be tested effectively unless it has been designed for this from the outset. If the architect ignores testability, the result is monolithic code full of global state, hidden dependencies, and tight coupling.</p>
+<p>From a <strong>testing</strong> perspective, DFT has a fundamental economic and quality impact. Studies (for example, Stefan Jungmeier) show that testing-related costs often account for more than 40% of total development costs, while proper design for testability can save up to 10% of the total project budget. High testability enables early fault detection (shift-left), dramatically accelerates fault diagnosis and localization, and provides a safety net for refactoring.</p>
+<p>Let us consider a <strong>practical example from embedded / automotive software</strong>. Suppose we have a braking system control unit (ECU). The application logic for calculating braking torque must not be tightly coupled to reading the microcontroller&#39;s physical registers. The architect designs a layered architecture with a hardware abstraction layer (HAL). The architect also incorporates a diagnostic testability interface and the Inversion of Control pattern into the architecture. This allows the application logic to be run and tested in a fully automated manner in a simulator on a developer&#39;s computer (SIL – Software-in-the-Loop), using test doubles without having to connect a physical brake test bench (HIL).</p>
+<p>Incorporating testability also introduces <strong>architectural trade-offs</strong>:</p>
+<ol>
+<li><strong>Testability vs. Encapsulation (Encapsulation)</strong>: Exposing internal states for tests can compromise encapsulation. The solution is to use Dependency Injection or testability interfaces instead of opening up private variables.</li>
+<li><strong>Testability vs. Performance (Performance)</strong>: Added abstractions, interfaces, and logging may introduce slight time and memory overhead. In the vast majority of cases, however, this is negligible compared with the benefits.</li>
+<li><strong>Testability vs. Security (Security)</strong>: Testability interfaces and diagnostic inputs can provide back doors for attackers if they remain active in production. The architect must ensure their strict isolation (for example, compilation only for debug builds or encrypted authentication).</li>
+</ol>
+<p>In conclusion, design for testability is a shared commitment of the SW architect, the test architect, and developers. Incorporating testability into the architecture from the very beginning significantly reduces technical debt, shortens development time, and guarantees high quality in the final product.”</p>
+<hr>
+<h3 id="11-short-version-for-quick-review"><a class="heading-anchor" href="#11-short-version-for-quick-review" aria-label="Link to this section">#</a>11. Short Version for Quick Review</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 Main Points</h4>
+<ol>
+<li><strong>Untestable code is poor-quality code</strong>: A system must be designed so that it can be tested.</li>
+<li><strong>Two pillars of DFT</strong>: Controllability (inputs/states) and observability (outputs/internal states).</li>
+<li><strong>Shift-Left in architecture</strong>: Testability must be addressed as an NFR before the architectural design is frozen.</li>
+<li><strong>Architectural tactics</strong>: Dependency isolation (DI), layering, the Humble Object pattern, and testability interfaces.</li>
+<li><strong>Significant cost savings</strong>: Faster regression testing, reduced flakiness, and savings of up to 10% of the total budget.</li>
+</ol>
+<h4 id="5-key-terms"><a class="heading-anchor" href="#5-key-terms" aria-label="Link to this section">#</a>5 Key Terms</h4>
+<ol>
+<li><strong>Software Testability</strong> (Software Testability)</li>
+<li><strong>Controllability &amp; Observability</strong> (Controllability and Observability)</li>
+<li><strong>Testability Interfaces / Control &amp; Observation Points</strong> (Testability Interfaces and Points)</li>
+<li><strong>Humble Object Pattern</strong> (Humble Object Pattern)</li>
+<li><strong>Flaky / Flickering Tests</strong> (Unstable Tests Caused by Poor Isolation)</li>
+</ol>
+<h4 id="5-typical-examination-questions"><a class="heading-anchor" href="#5-typical-examination-questions" aria-label="Link to this section">#</a>5 Typical Examination Questions</h4>
+<ol>
+<li>What is testability, and what are its two fundamental dimensions from an automation perspective?</li>
+<li>Which architectural anti-patterns are most damaging to testability?</li>
+<li>What are the principle and purpose of the Humble Object design pattern?</li>
+<li>What are the main acceptance trade-offs when increasing testability?</li>
+<li>How do the SW architect and Test manager/architect collaborate in promoting DFT?</li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 Most Common Mistakes</h4>
+<ol>
+<li><strong>Test-Last approach</strong>: Trying to address testability only when monoliths without interfaces have already been completed.</li>
+<li><strong>Ignoring state isolation</strong>: Using global state/Singletons, leading to the re-try anti-pattern for failing tests.</li>
+<li><strong>Overengineered tests (Overspecified Tests)</strong>: Testing internal implementation details through an excessive number of mocks instead of testing observable behavior.</li>
+</ol>
+<h4 id="1-concise-model-sentence-to-use-in-the-examination"><a class="heading-anchor" href="#1-concise-model-sentence-to-use-in-the-examination" aria-label="Link to this section">#</a>1 Concise Model Sentence to Use in the Examination</h4>
+<blockquote>
+<p><em>“Design for Testability is a deliberate architectural decision to build controllability and observability into a system through loose coupling and testability interfaces, enabling fast, deterministic, and cost-effective quality verification.”</em></p>
+</blockquote>
+<hr>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning outcome</h3>
+<p>The answer directly reflects the requirements of the <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and practice outcomes (LOPO)</strong></a> document:</p>
+<ul>
+<li><strong>Understanding and defining testability</strong>: A detailed analysis of the concept of testability for architecture and development.</li>
+<li><strong>Categorizing testability practices</strong>:<ul>
+<li><em>Improving controllability (Controllability)</em>: Dependency Injection, direct state setup, configuration, stubs/mocks.</li>
+<li><em>Improving observability (Observability)</em>: Structured logging, diagnostic interfaces, metrics, tracing.</li>
+<li><em>Other testability improvements</em>: Component decomposition, reduction of cyclic dependencies, testability interfaces.</li>
+<li><em>Good testing practices (Good Testing Practices)</em>: Test-driven development (TDD), SUT isolation, front-door first.</li>
+</ul>
+</li>
+<li><strong>Implementing testability at multiple architectural levels</strong>: Applying DFT at the micro (class/function level), macro (component/module level), and system/architectural levels.</li>
+<li><strong>Managing internal quality (Internal Quality)</strong>: Preventing code degeneration and managing technical debt through built-in testability.</li>
+</ul>
+<hr>
+<h3 id="summary-in-one-table"><a class="heading-anchor" href="#summary-in-one-table" aria-label="Link to this section">#</a>Summary in One Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What Matters</th>
+<th>Relationship to Architecture</th>
+<th>Relationship to Testing</th>
+<th>Typical Examination Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definition &amp; Dimensions</strong></td>
+<td>Controllability (Controllability) and Observability (Observability).</td>
+<td>The architect designs control and observation points (control &amp; observation points).</td>
+<td>Enables deterministic test execution and an unambiguous test oracle.</td>
+<td><em>“What are the main components of testability, and how do they affect automation?”</em></td>
+</tr>
+<tr>
+<td><strong>Architectural tactics</strong></td>
+<td>Loose coupling (Loose coupling), DI, Humble Object.</td>
+<td>Prevents monolithic dependencies and cyclic coupling between modules.</td>
+<td>Enables dependencies to be replaced with Test Doubles (Stubs/Mocks).</td>
+<td><em>“Which design patterns increase testability at the component level?”</em></td>
+</tr>
+<tr>
+<td><strong>Testability interfaces</strong></td>
+<td>“Back-door” access (Back-door access) and fault simulation.</td>
+<td>Design of diagnostic ports, logging, and reset caches.</td>
+<td>Accelerates initial state setup and enables Fault Injection tests.</td>
+<td><em>“What is the difference between Front-door and Back-door testing?”</em></td>
+</tr>
+<tr>
+<td><strong>Anti-patterns &amp; Risks</strong></td>
+<td>Singletons, Retry anti-pattern, Overspecified tests.</td>
+<td>Compromised isolation, hidden global state, and untestable code.</td>
+<td>Unstable tests (flaky tests), high refactoring effort.</td>
+<td><em>“Why is repeatedly running failed tests (Retry) considered an anti-pattern?”</em></td>
+</tr>
+<tr>
+<td><strong>Trade-offs &amp; NFRs</strong></td>
+<td>Balancing DFT against Encapsulation, Performance, and Security.</td>
+<td>Managing access permissions for testability interfaces in production.</td>
+<td>Protecting the production environment against security vulnerabilities.</td>
+<td><em>“Which trade-offs must you consider when designing testability interfaces?”</em></td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="architectural-testability"><a class="heading-anchor" href="#architectural-testability" aria-label="Link to this section">#</a>Architectural Testability</h2>
+<p>The fundamental idea is the rule that every architectural decision must be testable and supported by a specific test. If a decision cannot be tested, it is merely a non-binding opinion or recommendation. Testability is not just a matter of writing unit tests, but a systemic property of the entire architecture.</p>
+<p><strong>Key propositions:</strong></p>
+<ul>
+<li><strong>Architecture automation:</strong> Traditional architecture approval through review boards (ARB) is slow, error-prone, and scales poorly. Rules must therefore be defined so that they can be verified programmatically.</li>
+</ul>
+<p><strong>Services and Platforms (Services &amp; Platforms)</strong></p>
+<ul>
+<li><strong>Containerization and cloud platforms:</strong> Use of platforms such as Kubernetes and cloud services that enable the isolation of runtime environments.</li>
+<li><strong>Infrastructure services:</strong> Databases, message brokers (for example, Kafka, RabbitMQ), and API gateways.</li>
+<li><strong>Architectural impact:</strong> Platforms and services must be easy to replicate or emulate in both local and CI/CD environments so that integration tests do not depend on expensive and unstable shared cloud instances.</li>
+</ul>
+<p><strong>Languages and Libraries (Languages &amp; Libraries)</strong></p>
+<ul>
+<li><strong>Dependency Injection support:</strong> Selection of languages and frameworks (for example, Java with Spring, TypeScript/Node.js, Go) that natively support dependency injection for easy mocking and stubbing.</li>
+<li><strong>Testing and mocking ecosystem:</strong> Libraries for unit testing (JUnit, Mocha/Jest), assertions, and mocking frameworks (Mockito and similar tools).</li>
+<li><strong>Contract libraries:</strong> Tools such as Pact for verifying API interface compatibility between services without having to run the entire distributed system.</li>
+</ul>
+<p><strong>Development, Testing, and Monitoring Tools in CI/CD (Tools &amp; CI/CD Pipelines)</strong></p>
+<ul>
+<li><strong>Test pyramid automation:</strong> CI/CD pipelines (for example, GitHub Actions, Jenkins, GitLab CI) are configured to run fast unit tests promptly, followed by integration and contract tests.</li>
+<li><strong>Testcontainers &amp; ephemeral environments:</strong> Use of lightweight, single-purpose containers directly in the pipeline for reliable testing against real databases and brokers.</li>
+<li><strong>Observability as part of testing:</strong> Integration of tools for distributed tracing (OpenTelemetry, Jaeger), logging, and metrics into both the pipeline and staging, enabling system behavior to be verified during load and integration tests as well.</li>
+</ul>
+<p><strong>Application Patterns and Idioms (Patterns &amp; Idioms)</strong></p>
+<ul>
+<li><strong>Hexagonal architecture (Ports and Adapters):</strong> Isolation of the business logic core from external systems, databases, and frameworks, enabling domain logic to be tested in complete isolation without I/O operations.</li>
+<li><strong>Loose Coupling &amp; High Cohesion:</strong> Minimization of direct coupling between components and services.</li>
+<li><strong>Resilience patterns:</strong> Use of patterns such as Circuit Breaker, Retry, or the Outbox pattern for reliable asynchronous message processing and easier testing of error states.</li>
+</ul>
+<hr>
+<h2 id="humble-object-brief-overview"><a class="heading-anchor" href="#humble-object-brief-overview" aria-label="Link to this section">#</a>Humble Object – Brief Overview</h2>
+<p><strong>Humble Object</strong> is an architectural design pattern for testability (<em>Design for Testability</em>), centered on <strong>extracting untestable or hard-to-test logic into a separate, pure component</strong> isolated from its surrounding environment.
+The original component, tied to a complex framework or environment (for example, GUI, multithreaded, or asynchronous code), becomes a very thin adapter/wrapper layer – the so-called “humble object” (<em>Humble Object</em>). This humble object contains almost no computational or decision-making logic; it merely receives requests and delegates them to the new, easily testable component.</p>
+<p><strong>Decomposition into two parts</strong>:</p>
+<ol>
+<li><strong>Testable component (<em>Testable Component</em>)</strong>: Contains all application and computational logic. It is accessible through synchronous calls and can be tested with extremely fast unit tests.</li>
+<li><strong>Humble object (<em>Humble Object</em>)</strong>: A thin layer that communicates with the surrounding framework or asynchronous environment and delegates all work to the testable component.</li>
+</ol>
+<p><strong>Minimal risk</strong>: Because no decision-making logic remains in the <em>Humble Object</em>, the risk of defects decreases, and there is no need to write complex automated tests for it in a demanding environment.</p>
+<p><img src="../../assets/images/red-test-and-quality/testability_why_how.png" alt="Testability Why and How"></p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/nfr-testing.html"><span class="pager__label">← Previous</span><span>Testing Non-Functional Requirements (NFR Testing)</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/internal-software-quality.html"><span class="pager__label">Next →</span><span>Internal Software Quality</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-4"><a href="#1-software-testability-software-testability">1. Software Testability (Software Testability)</a></li><li class="lvl-4"><a href="#2-controllability-controllability">2. Controllability (Controllability)</a></li><li class="lvl-4"><a href="#3-observability-and-visibility-observability-visibility">3. Observability and Visibility (Observability / Visibility)</a></li><li class="lvl-4"><a href="#4-isolability-and-decomposability-isolability-decomposability">4. Isolability and Decomposability (Isolability Decomposability)</a></li><li class="lvl-4"><a href="#5-testability-interfaces-testability-interfaces">5. Testability Interfaces (Testability Interfaces)</a></li><li class="lvl-4"><a href="#6-design-tactics-for-testability-dft-tactics">6. Design Tactics for Testability (DFT Tactics)</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-Patterns</a></li><li class="lvl-4"><a href="#1-architectural-mistakes">1. Architectural Mistakes</a></li><li class="lvl-4"><a href="#2-requirements-mistakes">2. Requirements Mistakes</a></li><li class="lvl-4"><a href="#3-test-strategy-mistakes">3. Test Strategy Mistakes</a></li><li class="lvl-4"><a href="#4-automation-mistakes">4. Automation Mistakes</a></li><li class="lvl-4"><a href="#5-mistakes-in-interpreting-testability">5. Mistakes in Interpreting Testability</a></li><li class="lvl-4"><a href="#6-communication-mistakes">6. Communication Mistakes</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-4"><a href="#1-basic-questions">1. Basic Questions</a></li><li class="lvl-4"><a href="#2-intermediate-questions">2. Intermediate Questions</a></li><li class="lvl-4"><a href="#3-advanced-questions">3. Advanced Questions</a></li><li class="lvl-4"><a href="#4-questions-about-practical-experience">4. Questions About Practical Experience</a></li><li class="lvl-4"><a href="#5-questions-about-trade-off-decisions">5. Questions About Trade-Off Decisions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#11-short-version-for-quick-review">11. Short Version for Quick Review</a></li><li class="lvl-4"><a href="#5-main-points">5 Main Points</a></li><li class="lvl-4"><a href="#5-key-terms">5 Key Terms</a></li><li class="lvl-4"><a href="#5-typical-examination-questions">5 Typical Examination Questions</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 Most Common Mistakes</a></li><li class="lvl-4"><a href="#1-concise-model-sentence-to-use-in-the-examination">1 Concise Model Sentence to Use in the Examination</a></li><li class="lvl-3"><a href="#learning-outcome">Learning outcome</a></li><li class="lvl-3"><a href="#summary-in-one-table">Summary in One Table</a></li><li class="lvl-2"><a href="#architectural-testability">Architectural Testability</a></li><li class="lvl-2"><a href="#humble-object-brief-overview">Humble Object – Brief Overview</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

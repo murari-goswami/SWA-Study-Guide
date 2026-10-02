@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Systematic Test Design - RED - Test and Quality - SWA preparation study guide.">
+<title>Systematic Test Design · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design" aria-current="page">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,173 words · about 16 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/systematic-test-design" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="systematic-test-design">Systematic Test Design</h1>
+<p>Systematic Test Design (STD) is a structured process of transforming general testing objectives into specific test conditions and test cases (test cases). Moving away from an ad-hoc approach toward the systematic application of test design techniques (Test Design Techniques - TDT) enables demonstrable measurement of requirements or code coverage, effective defect detection, and optimization of testing effort. From a software architecture perspective, STD is crucial for design verification: if the architecture is properly designed (for example, using explicit state machines), systematic test design methods can be applied to it directly and algorithmically. Formalized test design proves to be almost twice as effective at detecting defects per test case compared with purely expert-based (exploratory) testing.</p>
+<p><strong>Systematic Test Design (STD)</strong> is a structured engineering approach to analyzing the test basis (test basis) and deriving test cases and sequences in order to achieve the required coverage of quality and risks. The main objective of STD is to replace ad-hoc testing with a reproducible methodology that minimizes redundant tests, maximizes the effectiveness of defect detection, and provides objective coverage metrics.</p>
+<h2 id="item"><a class="heading-anchor" href="#item" aria-label="Link to this section">#</a><img src="../../assets/images/red-test-and-quality/systematic_test_design.png" alt="STD"></h2>
+<h2 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h2>
+<p>The following concepts form the fundamental vocabulary for discussing systematic test design.</p>
+<ul>
+<li><p><strong>Systematic Test Design (STD)</strong></p>
+<ul>
+<li><strong>Definition:</strong> A formalized process of identifying test conditions and transforming requirements, architecture, or code into specific test cases and test procedures using defined techniques.</li>
+<li><strong>Significance in architecture:</strong> The architecture must provide a stable and unambiguous test basis (functional and structural models) from which tests can be derived systematically.</li>
+<li><strong>Significance in testing:</strong> Ensures measurable coverage (coverage), test repeatability, and the elimination of blind spots in the test strategy.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Mistaking STD for merely writing down test steps without using formal mathematical methods/coverage policies, or relying exclusively on intuitive ad-hoc testing.</li>
+</ul>
+</li>
+<li><p><strong>Test Design (Test Design)</strong></p>
+<ul>
+<li><strong>Definition:</strong> The process of transforming general testing objectives into measurable test conditions (test conditions) and specifying concrete test cases. </li>
+<li><strong>Significance in architecture:</strong> The architecture must be designed with testability in mind (Design for Testability) to make it possible to derive test cases systematically and apply them to component interfaces at all.</li>
+<li><strong>Significance in testing:</strong> Provides a bridge between analysis (what we will test) and implementation (how we will test it).</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Confusing test design (creating scenarios) with execution (actually running them). Jumping to execution without systematic design leads to redundant tests and overlooked boundary conditions.</li>
+</ul>
+</li>
+<li><p><strong>Test Basis (Test Basis)</strong></p>
+<ul>
+<li><strong>Definition:</strong> A body of knowledge or documentation (for example, requirements, architecture, specifications) that serves as the foundation for test analysis and design.</li>
+<li><strong>Significance in architecture:</strong> Architectural models (UML, SysML, state machine diagrams) often serve as the main test basis for integration tests.</li>
+<li><strong>Significance in testing:</strong> Without a valid test basis, a precise test oracle (expected result) cannot be designed.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Using the source code itself as the sole test basis for functional tests, which merely verifies that the code does what it does and fails to reveal missing functionality.</li>
+</ul>
+</li>
+<li><p><strong>Test Case (Test Case)</strong></p>
+<ul>
+<li><strong>Definition:</strong> A set of input values, execution preconditions (preconditions), expected results, and postconditions (postconditions), developed for a particular objective or test condition, such as verifying compliance with a specific requirement or exercising a particular path through the program.</li>
+<li><strong>Significance in architecture:</strong> Serves as a verification mechanism for architectural boundaries and interface contracts (APIs, component communication protocols, state machines). In turn, this confirms that the decomposition and interaction of subsystems correspond to the architectural design.</li>
+<li><strong>Significance in testing:</strong> Represents the smallest atomic unit of execution and traceability (traceability) covering the test basis. Enables precise specification of the oracle (pass/fail criteria) and reproducibility of results independently of the tester.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Creating a so-called &quot;Eager Test&quot; (a test case verifies too many things at once in a single run), or omitting a precise expected result, so that the test relies on the vague assertion &quot;the system works without errors&quot; instead of strictly evaluating the output and state.</li>
+</ul>
+</li>
+<li><p><strong>Test Effectiveness (Testing Effectiveness)</strong></p>
+<ul>
+<li><strong>Definition:</strong> A measure of a testing technique&#39;s ability to detect defects in software.</li>
+<li><strong>Significance in architecture:</strong> The choice of architectural patterns affects how effectively defects can be isolated and diagnosed.</li>
+<li><strong>Significance in testing:</strong> Evaluates how many defects the test design has detected relative to the effort expended. Systematic design is demonstrably more effective than testing according to a &quot;checklist&quot;.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Pursuing the quantity of test cases (test cases) instead of tracking their ability to find actual defects.</li>
+</ul>
+</li>
+<li><p><strong>Specification-based techniques (Black-box TDTs)</strong></p>
+<ul>
+<li><strong>Definition:</strong> Test derivation methods based on analysis of the specification without knowledge of the internal structure (for example, Equivalence Partitioning, Boundary Value Analysis, State-based testing).</li>
+<li><strong>Significance in architecture:</strong> Focus on verifying the contracts and interfaces (APIs) defined by the architect.</li>
+<li><strong>Significance in testing:</strong> Are the primary tool for verifying requirements (Requirements-based testing) and user scenarios.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Assuming that covering all specified functionality implies zero risk of a crash (the system may fail on an undefined input that the black-box test did not cover).</li>
+</ul>
+</li>
+<li><p><strong>Structure-based techniques (White-box TDTs)</strong></p>
+<ul>
+<li><strong>Definition:</strong> Test derivation methods based on analysis of a component&#39;s internal structure (for example, Control flow testing, Statement coverage, Decision/Branch coverage).</li>
+<li><strong>Significance in architecture:</strong> Serve to validate the internal control flow and data processing specified in the detailed design.</li>
+<li><strong>Significance in testing:</strong> Ensure structural code coverage, which is often mandated by legislation (for example, automotive ISO 26262 or aviation DO-178C).</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Relying on 100% statement coverage as a guarantee of freedom from defects. 100% statement coverage does not guarantee 100% decision coverage or the correctness of business logic.</li>
+</ul>
+</li>
+<li><p><strong>Requirements Traceability Matrix (SRTM / Traceability Matrix)</strong></p>
+<ul>
+<li><strong>Definition:</strong> A tool or artifact mapping the relationships between requirements, top-level architectural design, test cases, and test results.</li>
+<li><strong>Significance in architecture:</strong> Demonstrates the completeness of the architecture with respect to requirements and supports change impact analysis (impact analysis).</li>
+<li><strong>Significance in testing:</strong> Ensures verification of 100% requirements coverage by tests and enables straightforward reporting for certification audits (ASPICE, ISO 26262).</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Viewing the SRTM as a static document created only at the end of a project instead of a living tool within the development cycle.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-Patterns</h3>
+<p>A number of failures can be identified in the context of systematic test design, across the development phases:</p>
+<ul>
+<li><strong>Mistakes in architecture and testability:</strong><ul>
+<li><em>Poor observability and controllability:</em> If the architect does not make it possible to inject states (for example, introducing fault signals) and read a component&#39;s internal states, systematic techniques (such as State-based testing) cannot be applied because the tester cannot bring the system into the required state.</li>
+</ul>
+</li>
+<li><strong>Mistakes in test strategy:</strong><ul>
+<li><em>Losing breadth because of excessive depth (Losing breadth because of too much depth):</em> Applying a single testing method (for example, only boundary values) to an absurd degree of perfection while ignoring other types (for example, scenario or load testing).</li>
+<li><em>Ignoring exploratory testing:</em> Systematic TDT must not replace exploratory testing. Systematic tests verify what we have anticipated; exploratory testing is necessary to reveal unanticipated risks.</li>
+</ul>
+</li>
+<li><strong>Mistakes in requirements (Test Basis):</strong><ul>
+<li><em>Using untestable requirements:</em> If the specification contains vague expressions (for example, &quot;the system must respond quickly&quot;), equivalence classes or a test oracle cannot be derived mathematically from it.</li>
+</ul>
+</li>
+<li><strong>Mistakes in automation:</strong><ul>
+<li><em>Converting poorly designed tests into automated tests:</em> Automating ad-hoc tests without systematic design merely results in poor-quality tests running faster, creating a so-called maintenance nightmare (maintenance nightmare).</li>
+</ul>
+</li>
+<li><strong>Siloed separation of architect and tester roles (Communication Anti-pattern)</strong><ul>
+<li><em>Problem:</em> The architect designs the system without consulting the test manager / test architect, and the testing team does not create tests until the code is complete.</li>
+<li><em>Manifestation:</em> Late discovery of architectural defects (high correction costs) and an inability to use advanced STD techniques in time.</li>
+<li><em>Remedy:</em> Establishing close collaboration between the software architect and the test architect from the initial phases of the project (Joint Venture).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<p>The questions are designed to assess a deep understanding of TDTs and their relationship to architecture and risks.</p>
+<p><strong>Basic questions:</strong></p>
+<ul>
+<li><em>Question:</em> What is the difference between black-box and white-box testing methods, and what are their inputs?<ul>
+<li><em>Expected answer:</em> Black-box is based on specifications and requirements (without knowledge of the internal structure). White-box is based on source code and detailed design.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Intermediate questions:</strong></p>
+<ul>
+<li><em>Question:</em> Name at least three systematic techniques for specification-based test design, and state what type of problem you would use each one for.<ul>
+<li><em>Expected answer:</em> Equivalence partitioning (minimizing the number of inputs for domain constraints), Boundary Value Analysis (finding off-by-one errors at interval boundaries), State-based testing (verifying transition logic in state machines).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Advanced questions:</strong></p>
+<ul>
+<li><em>Question:</em> According to ISTQB definitions and safety standards (ISO 26262), what does 100% Statement Coverage guarantee, and what does it lack?<ul>
+<li><em>Expected answer:</em> It guarantees that every statement has been executed at least once. However, it does not guarantee 100% Branch/Decision coverage (for example, if an <code>else</code> branch is missing, statement coverage is satisfied even though the logical defect remains hidden), and certainly does not guarantee Condition coverage.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Questions about practical experience:</strong></p>
+<ul>
+<li><em>Question:</em> While testing a vehicle&#39;s embedded system, you encounter a function that combines inputs from 4 independent sensors. Which systematic method would you choose to test their combinations effectively without having to test every conceivable state?<ul>
+<li><em>Expected answer:</em> Using combinatorial techniques, typically Pairwise testing (Orthogonal arrays), which reduce the number of tests while preserving coverage of all pairs of discrete inputs.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Questions about trade-off decisions:</strong></p>
+<ul>
+<li><em>Question:</em> Your project is behind schedule. As a Test Architect, how would you decide to reduce the volume of tests (Test Effort Allocation) using Risk-based testing and TDTs?<ul>
+<li><em>Expected answer:</em> I would reduce tests on less critical components to the level of Boundary Values or Opportunity testing. For critical (Mission-critical) components, I would retain rigorous techniques (for example, Multiple Condition Coverage) and full backward traceability. The decision depends on the combination of the probability of a defect occurring and its impact.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<p><em>The following text is designed as a continuous spoken presentation (approximately 4–5 minutes).</em></p>
+<p>&quot;Systematic Test Design, that is, systematic test design, is a key engineering process. Its essence is the transformation of abstract testing objectives – often high-level requirements or architectural risks – into entirely tangible and repeatable test conditions and specific test cases. </p>
+<p>For me as an architect, this topic has two fundamental connections. The first is the &#39;Test Basis&#39;, or test basis. An abstract design is useless if the architectural models, state diagrams, or API specifications do not provide a sufficient basis for the tester to derive an unambiguous oracle – the expected result. The second connection is the testability of the architecture itself. We may know perfect test design techniques, but if the architecture lacks observability and controllability, these techniques cannot be applied.</p>
+<p>From a testing perspective, a systematic approach gives us a tool for &#39;Test Effectiveness&#39; – testing effectiveness. Data, for example from Peter Zimmerer at Siemens, show that formal test design can detect almost twice as many defects per test case compared with a purely expert-based approach relying on estimates or checklists. </p>
+<p>What does this look like in practice? Let us imagine cruise control software (Cruise Control). Instead of trying inputs at random, I use <em>Equivalence Partitioning</em> and <em>Boundary Value Analysis</em> to test the input speed – I test speeds within the valid interval, right at the activation boundary, and invalid speeds. I then take the state machine from the architectural design and apply <em>State-based testing</em> (a Black-box technique) to verify that the system safely ignores acceleration commands when it is in the &#39;Braking&#39; state. Finally, because this is a safety-critical component, I apply <em>Structure-based techniques</em> (White-box) to mathematically demonstrate 100% Branch Coverage (decision coverage).</p>
+<p>However, we must not forget trade-offs. Systematic techniques (TDTs) have high preparation costs. &#39;Test design methods&#39; verify that the system does what is required of it in the specification, but they are less effective at revealing risks that no one has thought of (so-called unknown unknowns). This gives rise to a typical anti-pattern: trying to replace all exploratory testing with formal design, which leads to blindness to unanticipated behavior. </p>
+<p>In conclusion, I can summarize as follows: A good test strategy does not use just one method. The selection, intensity, and combination of systematic TDTs, such as flow-based, state-based, or boundary analyses, must be guided by risks (Risk-Based Testing) and must be closely aligned with the maturity of the software architecture.&quot;</p>
+<hr>
+<h3 id="11-short-version-for-quick-revision"><a class="heading-anchor" href="#11-short-version-for-quick-revision" aria-label="Link to this section">#</a>11. Short Version for Quick Revision</h3>
+<p><strong>5 main points:</strong></p>
+<ol>
+<li>STD transforms testing from random &quot;clicking around&quot; into an engineering discipline governed by algorithms.</li>
+<li>A properly designed test (TDT) catches more defects earlier and at lower cost.</li>
+<li>STD requires a testable architecture (observability, controllability, statefulness).</li>
+<li>Black-box (Specification-based) and White-box (Structure-based) techniques must be combined.</li>
+<li>The choice of depth and breadth of test design techniques must be guided by risk analysis (Risk-based testing).</li>
+</ol>
+<p><strong>5 key concepts:</strong></p>
+<ol>
+<li><strong>Test Basis (Test Basis)</strong> – Sources from which we design tests (requirements, architecture).</li>
+<li><strong>Test Oracle (Oracle)</strong> – The source for determining the expected test result (it must never be the code under test itself).</li>
+<li><strong>Equivalence Partitioning</strong> – Dividing inputs into equivalence classes in order to reduce the number of tests.</li>
+<li><strong>Boundary Value Analysis</strong> – Testing values at the edges of equivalence classes (where most off-by-one errors occur).</li>
+<li><strong>State-based testing</strong> – Designing tests based on the state transitions defined in the design (FSM).</li>
+</ol>
+<p><strong>5 typical examination questions:</strong></p>
+<ol>
+<li>What is a test basis, and what must not be used as a test oracle for functional tests?</li>
+<li>What is the difference between Statement Coverage and Decision Coverage?</li>
+<li>How would you test a system with an enormous number of input combinations? (Answer: Combinatorial/Pair-wise testing)</li>
+<li>What is the purpose of the Error Guessing technique, and where does it fit in the classification?</li>
+<li>Why can systematic Test Design not completely replace Exploratory Testing?</li>
+</ol>
+<p><strong>3 most common mistakes:</strong></p>
+<ol>
+<li>Focusing only on structural coverage (code) and ignoring the specification.</li>
+<li>The architecture&#39;s inability to provide the inputs/outputs necessary for an automated systematic test (low testability).</li>
+<li>&quot;Losing breadth because of too much depth&quot; – fixation on a single design method.</li>
+</ol>
+<p><strong>Model examination sentence:</strong>
+<em>&quot;Systematic test design transforms the specification and architectural design into measurable test cases; however, achieving maximum effectiveness and coverage requires combining black-box and white-box techniques based on an assessment of project risks.&quot;</em></p>
+<hr>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning outcome</h3>
+<p>This answer fulfills the objectives defined in <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>LOPO</strong></a> in the &quot;Systematic Test Design&quot; section:</p>
+<ul>
+<li><strong>Importance of STD:</strong> It has been explained in detail that STD helps structure testing, make it objective, and increase <em>Test Effectiveness</em> (the ability to detect defects).</li>
+<li><strong>Examples of TDTs:</strong> The application of techniques such as <em>state-based testing</em>, <em>control flow-based</em>, <em>equivalence classes</em>, and <em>boundary values</em> has been demonstrated in model scenarios, and their underlying principles have been explained.</li>
+<li><strong>Inputs and Benefits:</strong> We have emphasized that the main input is the <em>Test Basis</em> (architecture, specification, risks), and the benefits are maximizing <em>Test Effectiveness</em> and ensuring traceability and reproducibility.</li>
+</ul>
+<hr>
+<h3 id="summary-in-a-single-table"><a class="heading-anchor" href="#summary-in-a-single-table" aria-label="Link to this section">#</a>Summary in a Single Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What is important</th>
+<th>Relationship to architecture</th>
+<th>Relationship to testing</th>
+<th>Typical examination question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Black-box (Spec-based)</strong></td>
+<td>Creating tests without knowledge of the code (Equivalence, Boundaries, State-based).</td>
+<td>Verifying application interfaces, contracts, and the overall system design (GDD).</td>
+<td>Ensures functional coverage against the specification and reveals omitted business logic.</td>
+<td>How would you test cruise control speed limits using Boundary Value Analysis?</td>
+</tr>
+<tr>
+<td><strong>White-box (Structure-based)</strong></td>
+<td>Based directly on the code structure (Statement, Branch, Path coverage).</td>
+<td>Affected by code complexity (cyclomatic complexity). Dictates the level of unit isolation.</td>
+<td>Primarily serves to detect dead code and structural failures at the Unit test level.</td>
+<td>Explain why 100% Statement Coverage does not guarantee 100% Decision Coverage.</td>
+</tr>
+<tr>
+<td><strong>Test Effectiveness</strong></td>
+<td>Emphasis on the ability to find defects, not merely to produce large numbers of tests.</td>
+<td>Reflects the quality of &quot;Design for Testability&quot;. An architecture that is difficult to test sharply reduces effectiveness.</td>
+<td>An argument for introducing formal test design (it is more effective than ad-hoc/error guessing).</td>
+<td>Why is systematic test design (STD) more effective than the checklist method?</td>
+</tr>
+<tr>
+<td><strong>Test Basis &amp; Oracle</strong></td>
+<td>Design inputs (requirements, models) and an independent source for the expected result.</td>
+<td>The architecture must be described formally; otherwise, correct behavior cannot be defined precisely.</td>
+<td>If there is no oracle, the test cannot determine a Pass/Fail status.</td>
+<td>What is a test oracle, and why can it not be the code under test?</td>
+</tr>
+<tr>
+<td><strong>Choice of strategies and TDT</strong></td>
+<td>There is no single ideal method. They must be combined based on RBT (Risk-Based Testing).</td>
+<td>Critical architectural modules require more rigorous test design.</td>
+<td>Ensures cost optimization (&quot;not performing unnecessary tests&quot; and &quot;not omitting key tests&quot;).</td>
+<td>How would you allocate testing effort between a critical and a non-critical part of the system?</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="difference-between-systematic-test-design-and-test-design-tactics"><a class="heading-anchor" href="#difference-between-systematic-test-design-and-test-design-tactics" aria-label="Link to this section">#</a>Difference between Systematic Test Design and Test Design Tactics</h3>
+<ul>
+<li><strong>Systematic Test Design (STD)</strong> is a <strong>process and methodological framework</strong> on the verification side. It addresses the question: <em>&quot;WHAT test data and sequences must we generate from the specification or code to systematically cover functional and structural requirements?&quot;</em></li>
+<li><strong>Test Design Tactics</strong> represent <strong>architectural and design decisions/patterns</strong> on the side of the system under test (SUT) and the test environment. They address the question: <em>&quot;HOW must we construct the software and its interfaces (stubs, mocks, hooks, BIST) so that the systematic tests described above can be injected, executed, and evaluated at all?&quot;</em></li>
+</ul>
+<h4 id="scope-of-activities-scope-of-activities"><a class="heading-anchor" href="#scope-of-activities-scope-of-activities" aria-label="Link to this section">#</a>Scope of Activities (Scope of Activities)</h4>
+<h5>Scope of Activities in Systematic Test Design (STD):</h5>
+<ol>
+<li><strong>Test basis analysis:</strong> Reviewing requirements (SRS), architecture (SDD), and code to identify test conditions.</li>
+<li><strong>Application of test design methods:</strong> Deriving test cases using ECP, BVA, decision tables, state transitions (black-box), or C0/C1/MC-DC (white-box).</li>
+<li><strong>Design for testability (Design for Testability):</strong> Principles such as reducing dependencies through layered architecture and component orientation are incorporated into the system design, making integration testing easier.</li>
+<li><strong>Definition of expected results (Test Oracles):</strong> Establishing success/failure criteria for each test case.</li>
+<li><strong>Traceability and coverage:</strong> Creating and updating the traceability matrix (SRTM) and evaluating the degree of coverage.</li>
+</ol>
+<h5>Scope of Activities in Test Design Tactics:</h5>
+<ol>
+<li><strong>Increasing observability (Observability):</strong> Implementing diagnostic interfaces, logging, tracing, and internal inspection points.</li>
+<li><strong>Increasing controllability (Controllability):</strong> Architectural separation of dependencies (Dependency Injection) to allow the insertion of simulators, stubs, and mock objects.</li>
+<li><strong>Preparing interfaces for fault injection (Fault Injection Hooks):</strong> Designing mechanisms to simulate hardware failures, memory corruption, or time delays.</li>
+<li><strong>Creating built-in tests (Built-In Self-Test – BIST):</strong> Implementing automatic integrity checks at component startup or during operation.</li>
+</ol>
+<h3 id="summary-table-for-the-software-architect"><a class="heading-anchor" href="#summary-table-for-the-software-architect" aria-label="Link to this section">#</a>Summary Table for the Software Architect</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Systematic Test Design (Strategy)</th>
+<th>Test Design Tactics (Techniques)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Level of abstraction</strong></td>
+<td>Strategic level, guiding principles, and overall ideas.</td>
+<td>Logistical, tactical, and detailed level.</td>
+</tr>
+<tr>
+<td><strong>Main objective</strong></td>
+<td>Answer the question of &quot;how&quot; we will test and reduce the overall testing effort.</td>
+<td>Apply procedures to solve specific testing tasks.</td>
+</tr>
+<tr>
+<td><strong>Architect&#39;s role</strong></td>
+<td>Specifying the architecture (models, interfaces), ensuring testability, and choosing the overall approach.</td>
+<td>Understanding and overseeing tactics for verifying specific architectural quality attributes.</td>
+</tr>
+<tr>
+<td><strong>Typical outputs</strong></td>
+<td>Test strategy, test system architecture, traceability matrix.</td>
+<td>Specific test cases (test cases), sets of input values, and expected results.</td>
+</tr>
+</tbody></table></div>
+<p>For a software architect, it is crucial to understand that without a defined systematic framework and good software testability, even the best tactics at the individual test level will encounter the limits of the overall architecture.</p>
+<hr>
+<p><img src="../../assets/images/red-test-and-quality/std_summary.png" alt="STD summary"></p>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/contract-testing.html"><span class="pager__label">← Previous</span><span>Contract Testing (contract testing)</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/test-design-tactics.html"><span class="pager__label">Next →</span><span>Test Design Tactics</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-2"><a href="#item"></a></li><li class="lvl-2"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-Patterns</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#11-short-version-for-quick-revision">11. Short Version for Quick Revision</a></li><li class="lvl-3"><a href="#learning-outcome">Learning outcome</a></li><li class="lvl-3"><a href="#summary-in-a-single-table">Summary in a Single Table</a></li><li class="lvl-3"><a href="#difference-between-systematic-test-design-and-test-design-tactics">Difference between Systematic Test Design and Test Design Tactics</a></li><li class="lvl-4"><a href="#scope-of-activities-scope-of-activities">Scope of Activities (Scope of Activities)</a></li><li class="lvl-3"><a href="#summary-table-for-the-software-architect">Summary Table for the Software Architect</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

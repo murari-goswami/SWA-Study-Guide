@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Architecture Decision Records (ADR) - BLUE - Architecture - SWA preparation study guide.">
+<title>Architecture Decision Records (ADR) · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture" open>
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records" aria-current="page">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>BLUE - Architecture</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
+      <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
+      <div class="topic-meta">
+        <span>1,030 words · about 5 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/adr-architecture-decision-records" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="architecture-decision-records-adr">🔵 Architecture Decision Records (ADR)</h1>
+<p><strong>What it is and why we need it</strong></p>
+<p>An ADR is a short text record (typically in Markdown) that captures a single significant architectural decision. It addresses the main problem of classical documentation — the loss of context (architectural amnesia). It prevents future developers from either blindly accepting old decisions or dangerously changing them without knowing the original rationale.</p>
+<h4 id="key-attributes"><a class="heading-anchor" href="#key-attributes" aria-label="Link to this section">#</a>Key attributes</h4>
+<p>When introducing ADRs, the following questions must be answered:</p>
+<ul>
+<li><strong>What?</strong> (What exactly are we deciding)</li>
+<li><strong>How?</strong> (What format will we use and where will it be stored — ideally directly alongside the code)</li>
+<li><strong>Where?</strong> (Where is the boundary of validity of the decision)</li>
+<li><strong>How much?</strong> (Level of detail — an ADR should be 1 to 2 pages long)</li>
+<li><strong>Difficulties?</strong> (What pitfalls and risks are associated with it)</li>
+</ul>
+<h4 id="standard-structure-michael-nygard-2011"><a class="heading-anchor" href="#standard-structure-michael-nygard-2011" aria-label="Link to this section">#</a>Standard structure (Michael Nygard, 2011)</h4>
+<ol>
+<li><strong>Title:</strong> A short name (e.g., &quot;ADR 1: Migration to PostgreSQL&quot;).</li>
+<li><strong>Context:</strong> A neutral description of the situation, forces, and facts that drive us towards a solution.</li>
+<li><strong>Decision:</strong> The actual decision (active sentences, &quot;We will...&quot;).</li>
+<li><strong>Status:</strong> The state (Proposed, Accepted, Superseded).</li>
+<li><strong>Consequences:</strong> The consequences of the decision (positive and negative future impacts).</li>
+</ol>
+<h3 id="swa-responsibilities-in-relation-to-adr"><a class="heading-anchor" href="#swa-responsibilities-in-relation-to-adr" aria-label="Link to this section">#</a>SWA responsibilities in relation to ADR</h3>
+<p>The Software Architect (SWA) bears direct responsibility for ensuring that key decisions do not remain only in the heads of developers or in meeting notes. Their main tasks include:</p>
+<ul>
+<li><strong>Documenting taken decisions:</strong> The SWA must ensure that every architecturally significant decision is formally captured.</li>
+<li><strong>Ensuring consistency:</strong> The architect is responsible for ensuring that new decisions (ADRs) do not contradict existing architectural views and principles.</li>
+<li><strong>Regular review:</strong> The SWA must regularly check and revise the state of documentation and decisions so that they reflect the current reality of the system.</li>
+<li><strong>Defining the process:</strong> The SWA determines what will be documented, in what format, and where the records will be stored.</li>
+</ul>
+<h3 id="templates"><a class="heading-anchor" href="#templates" aria-label="Link to this section">#</a>Templates</h3>
+<ul>
+<li>arc42 has no special ADR template, but the ARCH documentation template contains an Architectural Decisions section where links to ADRs stored in the repository (e.g., as MD files) can be placed.</li>
+<li>A range of templates available online (Henderson)</li>
+<li>The classic Nygard (2011) template — simple</li>
+<li>MADR (Markdown Any Decision Record) — a modern, open-source standard. Compared to the classic version, it adds Considered Options and Pros/Cons.</li>
+</ul>
+<h4 id="madr-structure-the-template-used-in-practice"><a class="heading-anchor" href="#madr-structure-the-template-used-in-practice" aria-label="Link to this section">#</a>MADR structure (the template used in practice)</h4>
+<p>MADR is the de-facto standard when an organization needs <em>comparable</em> decisions, not just recorded ones. Nygard answers &quot;what did we decide and why&quot;; MADR additionally answers &quot;what else did we evaluate and why did we reject it&quot; — which is exactly the information an architecture review or a later reversal needs.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Title</strong></td>
+<td>Short, solution-oriented phrase (&quot;Use Kafka for inter-service eventing&quot;).</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Proposed / Accepted / Rejected / Deprecated / Superseded by ADR-XXX.</td>
+</tr>
+<tr>
+<td><strong>Context and Problem Statement</strong></td>
+<td>The situation and the question being answered, neutrally phrased.</td>
+</tr>
+<tr>
+<td><strong>Decision Drivers</strong></td>
+<td>The forces: quality attributes, constraints, compliance, cost, skills. These are the criteria the options are judged against.</td>
+</tr>
+<tr>
+<td><strong>Considered Options</strong></td>
+<td>The realistic alternatives, including &quot;do nothing&quot;.</td>
+</tr>
+<tr>
+<td><strong>Decision Outcome</strong></td>
+<td>The chosen option <em>and the justification against the drivers</em>.</td>
+</tr>
+<tr>
+<td><strong>Positive Consequences</strong></td>
+<td>What improves (which quality attribute is gained).</td>
+</tr>
+<tr>
+<td><strong>Negative Consequences</strong></td>
+<td>The accepted trade-off, risk, or new debt.</td>
+</tr>
+<tr>
+<td><strong>Pros and Cons of the Options</strong></td>
+<td>Per-option evaluation — the audit trail of the reasoning.</td>
+</tr>
+<tr>
+<td><strong>Links</strong></td>
+<td>Related ADRs, requirements, superseded/superseding records, spikes, PoCs.</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p>The decision drivers are the hinge of the whole template: they turn an opinion into a traceable evaluation, and they are the first thing to re-read when someone asks &quot;can we reverse this now?&quot;</p>
+</blockquote>
+<h3 id="process-operation-practice"><a class="heading-anchor" href="#process-operation-practice" aria-label="Link to this section">#</a>Process operation (Practice)</h3>
+<ul>
+<li><strong>Who writes it:</strong> The topic owner (developer, tech lead). It does not always have to be the architect who writes it, but the SWA (Software Architect) bears responsibility for ensuring the decision is formally captured (&quot;Documents taken decisions&quot;).</li>
+<li><strong>Who approves it:</strong> An architecture committee (board), lead architect, or affected stakeholders (depending on how large an impact the decision has).</li>
+<li><strong>How it is communicated:</strong> Discussion and review of the proposal typically take place via Pull Requests. Once approved, the final ADR is published (e.g., via an automated build from Git to an internal portal) so that it is readable for the entire organization.</li>
+<li><strong>Who maintains it:</strong> The development team. The documentation is versioned directly alongside the source code (Docs as Code). When the architecture changes, old ADRs are not deleted — their status is simply updated to &quot;Superseded&quot; and a link to the new decision is added.</li>
+</ul>
+<h2 id="real-world-example-turning-adrs-into-an-architecture-fitness-function"><a class="heading-anchor" href="#real-world-example-turning-adrs-into-an-architecture-fitness-function" aria-label="Link to this section">#</a>Real-world example: Turning ADRs into an Architecture Fitness Function</h2>
+<h4 id="situation"><a class="heading-anchor" href="#situation" aria-label="Link to this section">#</a>Situation</h4>
+<p>Our <strong>NGM group</strong> already had an ADR culture: the <strong>MADR</strong> template, a review process, and the wiki as source of truth. I authored ADRs for my product area and evaluated those drafted by teammates. The process worked — the <strong>scale</strong> did not. Past <strong>110 ADRs</strong>:</p>
+<ul>
+<li><strong>Nobody could find the right decision</strong> (wiki keyword search ≠ knowing the title).</li>
+<li><strong>Nothing verified that the code still obeyed it</strong> (e.g., our Kafka topic naming convention).</li>
+<li>Teams started seeing ADRs as bureaucracy.</li>
+</ul>
+<h4 id="my-actions-applying-the-theory"><a class="heading-anchor" href="#my-actions-applying-the-theory" aria-label="Link to this section">#</a>My actions (Applying the theory)</h4>
+<p>I treated ADRs as <strong>executable constraints</strong>, not documentation:</p>
+<ul>
+<li><strong>Wiki → Markdown in the repo</strong> (Docs as Code), same MADR template, versioned next to the code.</li>
+<li><strong>Pull Request per decision</strong> — review on the PR, merge = approval, <code>git log</code> = decision history, supersession is traceable.</li>
+<li><strong>Indexed all ADRs into the NGM context (&quot;engine brain&quot;)</strong> so they are findable in <strong>natural language</strong> (&quot;how do we name Kafka topics?&quot;) instead of by title.</li>
+<li><strong>ADRs loaded into the agent&#39;s context before coding</strong> — the decision shapes the code at authoring time.</li>
+<li><strong>Validation as a fitness function:</strong> the agent checks source code against the applicable ADRs and reports violations with a link back to the deciding record.</li>
+</ul>
+<h4 id="evaluation-and-lessons-learned"><a class="heading-anchor" href="#evaluation-and-lessons-learned" aria-label="Link to this section">#</a>Evaluation and lessons learned</h4>
+<ul>
+<li><strong>A decision that cannot be found does not exist</strong> — past ~50 records, <em>retrieval</em> is the bottleneck, not authoring.</li>
+<li><strong>An unverified decision degrades into an opinion</strong> — automate the check where the rule is machine-checkable (naming, layering, dependencies); the rest stays context for humans and agents.</li>
+<li><strong>Adoption follows value, not mandate:</strong> ADRs stopped being &quot;extra bureaucracy&quot; once they instantly answered <em>&quot;why is it designed this way?&quot;</em>.</li>
+</ul>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/blue-architecture/goals-principles-decisions.html"><span class="pager__label">← Previous</span><span>Goals-Principles-Decisions (GPD) Model</span></a>
+      <a class="pager__next" href="../../chapters/blue-architecture/architecture-documentation.html"><span class="pager__label">Next →</span><span>Architecture Documentation</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-4"><a href="#key-attributes">Key attributes</a></li><li class="lvl-4"><a href="#standard-structure-michael-nygard-2011">Standard structure (Michael Nygard, 2011)</a></li><li class="lvl-3"><a href="#swa-responsibilities-in-relation-to-adr">SWA responsibilities in relation to ADR</a></li><li class="lvl-3"><a href="#templates">Templates</a></li><li class="lvl-4"><a href="#madr-structure-the-template-used-in-practice">MADR structure (the template used in practice)</a></li><li class="lvl-3"><a href="#process-operation-practice">Process operation (Practice)</a></li><li class="lvl-2"><a href="#real-world-example-turning-adrs-into-an-architecture-fitness-function">Real-world example: Turning ADRs into an Architecture Fitness Function</a></li><li class="lvl-4"><a href="#situation">Situation</a></li><li class="lvl-4"><a href="#my-actions-applying-the-theory">My actions (Applying the theory)</a></li><li class="lvl-4"><a href="#evaluation-and-lessons-learned">Evaluation and lessons learned</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

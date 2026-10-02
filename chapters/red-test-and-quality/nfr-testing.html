@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Testing Non-Functional Requirements (NFR Testing) - RED - Test and Quality - SWA preparation study guide.">
+<title>Testing Non-Functional Requirements (NFR Testing) · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality" open>
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing" aria-current="page">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>RED - Test and Quality</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#F44336;--i:0">
+      <a class="chapter-chip" href="../../index.html#red-test-and-quality"><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality</a>
+      <div class="topic-meta">
+        <span>3,347 words · about 17 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="red-test-and-quality/nfr-testing" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="testing-non-functional-requirements-nfr-testing">Testing Non-Functional Requirements (NFR Testing)</h1>
+<p><strong>NFR Testing (Testing Non-Functional Requirements / Quality Attributes)</strong> is the process of verifying and validating <em>how</em> well a system performs its functions, as opposed to functional testing, which verifies <em>what</em> the system does. While functional properties express specific business or operational tasks, quality attributes – such as <strong>performance (Efficiency/Performance)</strong>, <strong>reliability (Reliability)</strong>, <strong>security and safety (Security/Safety)</strong>, <strong>maintainability (Maintainability)</strong>, and <strong>testability (Testability)</strong> – define the system&#39;s operational boundaries, structural integrity, and architecture.</p>
+<p>From a software architecture perspective, quality attributes are key drivers of architectural decisions and design tactics. Quality cannot be &quot;tested into&quot; software after the fact; testing serves as a measurement and indication mechanism for architectural design. If non-functional requirements are neglected or incorrectly specified, this leads to catastrophic failures in production, architectural debt, or an inability to scale and maintain the system. The Test Architect and Software Architect must work closely together to define the utility tree (Utility Tree), establish precise metrics, and integrate NFR tests early throughout the entire life cycle.</p>
+<p><img src="../../assets/images/red-test-and-quality/nfr_testing.png" alt="NFR Testing"></p>
+<p><img src="../../assets/images/red-test-and-quality/nfr_keep_in_mind.png" alt="NFR Testing Keep in Mind"></p>
+<hr>
+<h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
+<p>The key concepts of NFR and quality attribute testing are presented below, with an emphasis on their architectural and testing significance as well as the examination context.</p>
+<h4 id="1-non-functional-requirement-quality-attribute-non-functional-requirement-quality-attribute"><a class="heading-anchor" href="#1-non-functional-requirement-quality-attribute-non-functional-requirement-quality-attribute" aria-label="Link to this section">#</a>1. Non-Functional Requirement / Quality Attribute (Non-Functional Requirement / Quality Attribute)</h4>
+<ul>
+<li><strong>Definition:</strong> A technical or operational requirement describing the properties and quality of the system&#39;s operation as a whole (for example, reliability, security and safety, response time), rather than a specific user function. The ISO/IEC 9126 and ISO/IEC 25010 standards formalize these attributes into clusters of subordinate characteristics.</li>
+<li><strong>Significance in architecture:</strong> Directly determines the architectural style, choice of technologies, distribution of components, and application of design tactics.</li>
+<li><strong>Significance in testing:</strong> Defines acceptance criteria for system and integration tests; requires a dedicated environment and specifications of load or security profiles.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Mistaking NFR for &quot;secondary&quot; requirements and postponing them until the acceptance testing phase (late NFR testing).</li>
+<li><strong>Examination discussion &amp; Case example:</strong> The examination assesses the ability to transform a vague requirement (for example, a &quot;fast system&quot;) into a measurable architectural scenario. <em>Example from embedded/industrial software:</em> For a brake electronic control unit (ECU), the NFR is defined as an interrupt processing response time of no more than 2 ms at 100% CAN bus load.</li>
+</ul>
+<h4 id="2-iso-iec-9126-or-iso-iec-25010-quality-model-quality-model"><a class="heading-anchor" href="#2-iso-iec-9126-or-iso-iec-25010-quality-model-quality-model" aria-label="Link to this section">#</a>2. ISO/IEC 9126 (or ISO/IEC 25010) Quality Model (Quality Model)</h4>
+<ul>
+<li><strong>Definition:</strong> A standardized framework categorizing software quality into main characteristics: Functionality (Functionality), Reliability (Reliability), Usability (Usability), Efficiency/Performance (Efficiency), Maintainability (Maintainability), and Portability (Portability).</li>
+<li><strong>Significance in architecture:</strong> Provides a complete taxonomy for managing architectural compromises (trade-offs) and structuring architectural documentation.</li>
+<li><strong>Significance in testing:</strong> Serves as a systematic checklist for the coverage of test strategies and requirements reviews (Requirements Reviews), ensuring that no dimension of quality is overlooked.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Restricting testing to functionality and ignoring structural attributes such as Maintainability or Testability.</li>
+<li><strong>Examination discussion &amp; Case example:</strong> Questions often focus on subcharacteristics. <em>Example:</em> Distinguishing between <em>Fault Tolerance</em> (the ability to maintain operation in the presence of a fault) and <em>Recoverability</em> (the ability to recover after a failure) in a train control safety system.</li>
+</ul>
+<h4 id="3-quality-attribute-scenario-and-utility-tree-quality-attribute-scenario-utility-tree"><a class="heading-anchor" href="#3-quality-attribute-scenario-and-utility-tree-quality-attribute-scenario-utility-tree" aria-label="Link to this section">#</a>3. Quality Attribute Scenario and Utility Tree (Quality Attribute Scenario &amp; Utility Tree)</h4>
+<ul>
+<li><strong>Definition:</strong> A construct used to describe NFR precisely using 6 parts (Source of Stimulus, Stimulus, Environment, Artifact, Response, Response Measure); the utility tree (Utility Tree) then prioritizes these scenarios according to business value and architectural risk.</li>
+<li><strong>Significance in architecture:</strong> Enables the architect to quantify objectives and select appropriate patterns or tactics.</li>
+<li><strong>Significance in testing:</strong> A direct basis for creating acceptance test cases and test oracles (Test Oracles) for NFR.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Specifying NFR without a response measure (Response Measure), which makes objective test evaluation (Pass/Fail) impossible.</li>
+<li><strong>Examination discussion &amp; Case example:</strong> <em>Example:</em> When the primary power supply fails (Stimulus) in an industrial control cabinet (Environment), the backup microcontroller must take over control within 50 ms and save the state to NVM (Response Measure).</li>
+</ul>
+<h4 id="4-testability-and-internal-software-quality-design-for-testability-internal-quality"><a class="heading-anchor" href="#4-testability-and-internal-software-quality-design-for-testability-internal-quality" aria-label="Link to this section">#</a>4. Testability and Internal Software Quality (Design for Testability &amp; Internal Quality)</h4>
+<ul>
+<li><strong>Definition:</strong> Testability is the ability of a software product to allow easy and effective verification and validation. Internal quality represents structural cleanliness at the levels of architecture, macro-structure, and micro-structure.</li>
+<li><strong>Significance in architecture:</strong> Requires the application of tactics such as observability (Observability), controllability (Controllability), decomposition, and minimization of cyclomatic complexity.</li>
+<li><strong>Significance in testing:</strong> Fundamentally determines automation costs, test stability, and the ability to perform isolated unit and integration tests without dependence on physical hardware.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Viewing testability as a matter for testers rather than as a fundamental architectural requirement for code and components.</li>
+<li><strong>Examination discussion &amp; Case example:</strong> Discussion of interfaces. <em>Example:</em> A complete absence of diagnostic APIs or interfaces for fault injection (Fault Injection) in a safety-critical module makes it impossible to achieve 100% MC/DC coverage.</li>
+</ul>
+<h4 id="5-reliability-testing-and-fault-injection-reliability-fault-injection-testing"><a class="heading-anchor" href="#5-reliability-testing-and-fault-injection-reliability-fault-injection-testing" aria-label="Link to this section">#</a>5. Reliability Testing and Fault Injection (Reliability &amp; Fault Injection Testing)</h4>
+<ul>
+<li><strong>Definition:</strong> Reliability testing verifies the system&#39;s ability to maintain a specified level of performance under stated conditions for a specified period. Fault injection (Fault Injection) is a technique for deliberately introducing faults (hardware transients, faulty memory, communication outages) to verify safety mechanisms.</li>
+<li><strong>Significance in architecture:</strong> Verifies fault detection and recovery tactics (for example, Watchdog, BIST – Built-In Self-Test, error states, degraded mode).</li>
+<li><strong>Significance in testing:</strong> Requires automated long-duration tests (Soak/Endurance testing) and specific test setups for simulating component failures.</li>
+<li><strong>Typical mistake or misunderstanding:</strong> Assuming that the absence of error messages during normal operation proves reliability in critical/degraded states.</li>
+<li><strong>Examination discussion &amp; Case example:</strong> <em>Example from automotive software (ISO 26262):</em> Testing the software&#39;s response to a sensor power supply failure by injecting an error code at the interface and monitoring the transition to a safe state (Safe State).</li>
+</ul>
+<hr>
+<h3 id="furps-model"><a class="heading-anchor" href="#furps-model" aria-label="Link to this section">#</a>FURPS Model</h3>
+<p>The <strong>FURPS</strong> model is a classification framework for software requirements and quality attributes that serves as a comprehensive outline for designing functional and non-functional tests.</p>
+<ul>
+<li><strong>F – Functionality (Functionality):</strong> System capabilities, scope of functions, accuracy of calculations, and security. It determines whether the application does exactly what the user and the specification require of it (functional testing).</li>
+<li><strong>U – Usability (Usability):</strong> Ergonomics, aesthetics, user interface friendliness (UI/UX), and clarity of documentation. Ease of use and prevention of user errors are tested.</li>
+<li><strong>R – Reliability (Reliability):</strong> Frequency and severity of failures, ability to recover after an error (recoverability), availability, and predictability of the system in abnormal states.</li>
+<li><strong>P – Performance (Performance):</strong> Response speed, throughput, scalability, and consumption of hardware resources (RAM, CPU). Includes load and stress tests.</li>
+<li><strong>S – Supportability (Maintainability / Support):</strong> Testability (testability), ease of locating and correcting defects, configurability, installability, and code extensibility.</li>
+</ul>
+<p>The extended version <strong>FURPS+</strong> is also often used, where the &quot;+&quot; symbol includes additional constraints – primarily design requirements (design constraints), implementation standards, interfaces to third parties, and physical limits of the environment. In practice, the model acts as an effective checklist to ensure that tests do not focus solely on functionality but cover all dimensions of quality.</p>
+<hr>
+<h3 id="testing-quality"><a class="heading-anchor" href="#testing-quality" aria-label="Link to this section">#</a>Testing quality</h3>
+<h4 id="issues"><a class="heading-anchor" href="#issues" aria-label="Link to this section">#</a><strong>Issues</strong></h4>
+<p><img src="../../assets/images/red-test-and-quality/quality_issues.png" alt="Testing quality issues"></p>
+<h4 id="process"><a class="heading-anchor" href="#process" aria-label="Link to this section">#</a><strong>Process</strong></h4>
+<p><img src="../../assets/images/red-test-and-quality/testing_qualities_process.png" alt="Testing quality process"></p>
+<h4 id="attributes"><a class="heading-anchor" href="#attributes" aria-label="Link to this section">#</a><strong>Attributes</strong></h4>
+<p><img src="../../assets/images/red-test-and-quality/testing_qualities_attributes.png" alt="Testing quality attributes"></p>
+<h4 id="goals-and-inputs"><a class="heading-anchor" href="#goals-and-inputs" aria-label="Link to this section">#</a><strong>Goals and Inputs</strong></h4>
+<p><img src="../../assets/images/red-test-and-quality/quality_goals.png" alt="Testing quality goals and inputs"></p>
+<hr>
+<h3 id="typical-problems-with-quality-attributes-quality-attributes"><a class="heading-anchor" href="#typical-problems-with-quality-attributes-quality-attributes" aria-label="Link to this section">#</a>Typical Problems with Quality Attributes (Quality Attributes)</h3>
+<ul>
+<li><p><strong>Inconsistent terminology among stakeholders:</strong></p>
+<ul>
+<li>There is no jointly agreed vocabulary (semantics and syntax) for describing non-functional requirements and quality attributes.</li>
+</ul>
+</li>
+<li><p><strong>Hidden and poorly understood dependencies:</strong></p>
+<ul>
+<li>Interrelationships and dependencies between individual attributes are often unclear or overlooked.</li>
+</ul>
+</li>
+<li><p><strong>Conflicting requirements:</strong></p>
+<ul>
+<li>Quality attributes may conflict with one another depending on the selected technical or architectural solution (for example, high security vs. performance and response time).</li>
+</ul>
+</li>
+<li><p><strong>Difficulty identifying them from processes:</strong></p>
+<ul>
+<li>These attributes often cannot be readily identified merely by analyzing customer processes and workflows.</li>
+</ul>
+</li>
+<li><p><strong>Incomplete input from stakeholders:</strong></p>
+<ul>
+<li>Stakeholders rarely provide a complete and coherent specification concerning system quality.</li>
+</ul>
+</li>
+<li><p><strong>Only indirect specification:</strong></p>
+<ul>
+<li>Often, only indirect information and input are available, based on the existing or subjectively desired level of product properties.</li>
+</ul>
+</li>
+<li><p><strong>Implicit expectations and normative requirements:</strong></p>
+<ul>
+<li>Many quality attributes derive from regulatory provisions, standards, and norms. Customers and users often take them for granted and do not state them explicitly in the specification at all.</li>
+</ul>
+</li>
+<li><p><strong>Mismatch in the level of abstraction (system vs. function) and cross-cutting nature:</strong></p>
+<ul>
+<li>Qualities are often defined generally for the entire system, although they actually relate to specific functions/elements – and, conversely, they may have a cross-cutting nature (<em>cross-cutting concerns</em>) that affects the entire architecture.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-Patterns</h3>
+<p>Typical mistakes occur in the areas of NFR and quality attribute testing that negatively affect the architecture, the project process, and the resulting quality.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Anti-pattern / Mistake</th>
+<th>Why is it a problem?</th>
+<th>How does the mistake manifest itself?</th>
+<th>How can it be prevented?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Architecture</strong></td>
+<td><strong>Absence of observability and testing interfaces (Untestable Architecture)</strong></td>
+<td>The code is tightly coupled (tight coupling), with no interfaces for monitoring internal state and injecting faults.</td>
+<td>Inability to write fast unit/integration tests; everything must be tested through the UI or final hardware, with a high incidence of production defects.</td>
+<td>Applying the Design for Testability tactic from day one; interface separation, use of Dependency Injection, and diagnostic interfaces.</td>
+</tr>
+<tr>
+<td><strong>Requirements</strong></td>
+<td><strong>Vague and unmeasurable NFR (Vague Quality Requirements)</strong></td>
+<td>Requirements such as &quot;the system must be highly available&quot; or &quot;fast&quot; provide no acceptance criteria.</td>
+<td>Developers and testers interpret requirements differently; NFR tests cannot be evaluated objectively (Pass/Fail).</td>
+<td>Formatting NFR using quality attribute scenarios (Quality Attribute Scenarios) with a precisely defined response metric.</td>
+</tr>
+<tr>
+<td><strong>Test strategy</strong></td>
+<td><strong>Postponing NFR until the end (Late NFR / Big Bang Testing)</strong></td>
+<td>NFR tests are not performed until the acceptance phase on the final system because environments are missing.</td>
+<td>Architectural defects (for example, memory leaks, thread deadlocks) are discovered just before release, when they are most expensive to fix.</td>
+<td>Applying the Shift-Left approach; continuously testing NFR at the component and integration levels using simulators.</td>
+</tr>
+<tr>
+<td><strong>Automation</strong></td>
+<td><strong>Blindly rerunning failed tests (Auto-Retry Anti-pattern)</strong></td>
+<td>When a test fails, the tool runs it again (2–3×) and marks it as passed if one attempt succeeds.</td>
+<td>Masks actual architectural defects (race conditions, memory leaks, resource inconsistencies) and creates unstable tests.</td>
+<td>Eliminating &quot;flaky&quot; tests through root-cause analysis; correcting timing, memory management, and synchronization in the code or test.</td>
+</tr>
+<tr>
+<td><strong>Testability</strong></td>
+<td><strong>Measuring inappropriate internal metrics (Irrelevant Metrics Focus)</strong></td>
+<td>The team invests effort in measuring CPU/memory lookups without knowing their connection to business objectives or user experience.</td>
+<td>Time is wasted on optimizations that deliver no value to the customer, while actual response time remains poor.</td>
+<td>Linking NFR metrics to business objectives (Business Value) and defining test oracles based on user scenarios.</td>
+</tr>
+<tr>
+<td><strong>Communication</strong></td>
+<td><strong>Silos between architecture and testing (Architect-Tester Silo)</strong></td>
+<td>The architect designs tactics (for example, failover, caching) without informing the testing team about them.</td>
+<td>The test strategy does not cover the designed architectural tactics and tests only the functional happy-path.</td>
+<td>Close collaboration between the Architect and the Test Manager/Architect when creating acceptance criteria and planning test levels.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="examination-questions"><a class="heading-anchor" href="#examination-questions" aria-label="Link to this section">#</a>Examination Questions</h3>
+<p>The following types of questions can be expected in an oral examination or certification interview (for example, ISTQB Advanced Technical Test Analyst / Software Architect).</p>
+<h4 id="1-basic-questions"><a class="heading-anchor" href="#1-basic-questions" aria-label="Link to this section">#</a>1. Basic Questions</h4>
+<ul>
+<li><strong>Question:</strong> What is the fundamental difference between functional testing and quality attribute testing (NFR)?<ul>
+<li><em>What a good answer should include:</em> A clear distinction: Functional testing verifies <em>what</em> the system does (behavior against the specification). NFR testing verifies <em>how</em> well it does it (performance, reliability, security and safety, maintainability). A good answer mentions the ISO 9126 / ISO 25010 standard.</li>
+</ul>
+</li>
+<li><strong>Question:</strong> How do you define testability (Testability), and what are its main components from a software architecture perspective?<ul>
+<li><em>What a good answer should include:</em> A definition of testability as the degree of ease with which software can be verified. From an architectural perspective, it includes observability (observability), controllability (controllability), separation of dependencies, and modifiability.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-intermediate-questions"><a class="heading-anchor" href="#2-intermediate-questions" aria-label="Link to this section">#</a>2. Intermediate Questions</h4>
+<ul>
+<li><strong>Question:</strong> Explain the difference between load testing (Load Testing), stress testing (Stress Testing), and endurance testing (Soak/Endurance Testing).<ul>
+<li><em>What a good answer should include:</em> Load testing verifies behavior under expected load. Stress testing exercises the system beyond its specified limits or under resource scarcity (for example, a combination of high TPS and low memory). Soak testing verifies long-term operation for memory leaks or resource degradation over time.</li>
+</ul>
+</li>
+<li><strong>Question:</strong> How do &quot;Quality Attribute Scenarios&quot; help specify non-functional requirements?<ul>
+<li><em>What a good answer should include:</em> A description of the 6 structural elements of a scenario (Source, Stimulus, Environment, Artifact, Response, Response Measure). Emphasis that without a response measure (Response Measure), an unambiguous test oracle cannot be created.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-advanced-questions"><a class="heading-anchor" href="#3-advanced-questions" aria-label="Link to this section">#</a>3. Advanced Questions</h4>
+<ul>
+<li><strong>Question:</strong> The &quot;Fault Injection&quot; technique is used in safety-critical systems (Safety-Critical / ISO 26262). At what test level is it applied, and what defects does it reveal?<ul>
+<li><em>What a good answer should include:</em> It is applied at the integration and validation testing levels. The objective is to verify safety mechanisms (Safety Mechanisms), fault recovery (Fault Recovery), handling of degraded modes, and transient hardware states (for example, power outages, incorrect signals).</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-questions-about-practical-experience"><a class="heading-anchor" href="#4-questions-about-practical-experience" aria-label="Link to this section">#</a>4. Questions about Practical Experience</h4>
+<ul>
+<li><strong>Question:</strong> In a project, you have encountered a situation where NFR tests pass in the test environment, but reliability and performance failures occur in production. What are the causes, and how would you resolve the problem?<ul>
+<li><em>What a good answer should include:</em> Identification of differences between environments (configuration, network latency, data volume, background load). Solution: Ensuring a production-like environment for NFR, using operational profiles (Operational Profiles), and implementing monitoring of production behavior.</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-questions-about-trade-off-decisions"><a class="heading-anchor" href="#5-questions-about-trade-off-decisions" aria-label="Link to this section">#</a>5. Questions about Trade-Off Decisions</h4>
+<ul>
+<li><strong>Question:</strong> How do you address the architectural trade-off between high Performance (speed) and Security (encryption and authorization)? How should this trade-off be tested?<ul>
+<li><em>What a good answer should include:</em> An explanation that strong encryption and complex access checks increase latency and CPU consumption. The architect must establish prioritization in the Utility Tree. The test architect designs test scenarios to measure the impact of security features on performance boundaries (Efficiency vs Security compliance).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="model-examination-answer"><a class="heading-anchor" href="#model-examination-answer" aria-label="Link to this section">#</a>Model Examination Answer</h3>
+<blockquote>
+<p><strong>Quality attribute testing (NFR Testing)</strong> and its direct connection to software architecture and the testing process.</p>
+<p>To begin, it is necessary to emphasize the fundamental principle: <strong>Software quality cannot be tested into a system after the fact</strong>. NFR testing does not function as a corrective tool, but as a verification mechanism for architectural decisions. While functional tests answer the question of whether the system performs the specified tasks, NFR tests verify structural properties – namely performance, reliability, security and safety, maintainability, and testability. These properties are based on standards such as ISO 9126 or ISO 25010.</p>
+<p><strong>From an architectural perspective</strong>, quality attributes are essential because they directly determine design tactics and patterns. If we do not subject the architecture to a precise assessment of non-functional requirements, we risk incurring massive architectural debt and system failure. The architect&#39;s key tools are the <strong>utility tree (Utility Tree)</strong> and <strong>quality attribute scenarios</strong>, which transform vague ideas into precisely measurable responses.</p>
+<p><strong>From a testing perspective</strong>, NFR present a challenge primarily in terms of the test basis and environment. NFR tests – such as load tests, reliability tests, or recovery tests – require production-like environments and precise test oracles. If testers do not have measurable boundaries available, exit criteria (Exit Criteria) cannot be established objectively.</p>
+<p>Let us consider a <strong>practical example from the embedded domain</strong>. For an automotive electronic control unit (according to ISO 26262), the non-functional requirement concerns reliability and functional safety. The architect designs fault tolerance tactics – for example, backup bus communication and a watchdog. The test architect designs integration tests using <strong>Fault Injection</strong>, in which we deliberately simulate a sensor failure or RAM corruption. The test then verifies whether the software brings the system into a safe state (Safe State) within 10 milliseconds.</p>
+<p>However, every architectural design addressing NFR encounters <strong>trade-offs (compromises)</strong>. We cannot have maximum performance, absolute security and safety, and the highest modifiability simultaneously at an acceptable cost. For example, introducing strong encryption increases CPU demands and raises latency. The architect, together with the business owner, must define prioritization, and the tests must verify whether the selected compromise lies within an acceptable range.</p>
+<p><strong>In conclusion:</strong> NFR testing is not a one-off activity at the end of a project. It requires a <em>Shift-Left</em> approach, in which the test architect helps create a testable architecture from the beginning of the project, performs static requirements reviews, and continuously verifies quality attributes at all levels of the test pyramid. Thank you for your attention.&quot;</p>
+</blockquote>
+<hr>
+<h3 id="short-version-for-quick-revision-cheat-sheet"><a class="heading-anchor" href="#short-version-for-quick-revision-cheat-sheet" aria-label="Link to this section">#</a>Short Version for Quick Revision (Cheat Sheet)</h3>
+<h4 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 Main Points</h4>
+<ol>
+<li><strong>Quality cannot be tested in after the fact</strong> – NFR tests verify architectural design tactics.</li>
+<li><strong>Precision of specification</strong> – NFR must be defined using scenarios with a quantitative response measure.</li>
+<li><strong>Shift-Left NFR testing</strong> – Reliability and performance testing must begin at the component and integration levels, not only at the end.</li>
+<li><strong>Production-like environments</strong> – Performance and security tests outside a production-representative environment provide distorted results.</li>
+<li><strong>Trade-offs are inevitable</strong> – Every quality attribute requires a compromise with another (for example, Security vs Performance).</li>
+</ol>
+<h4 id="5-key-concepts"><a class="heading-anchor" href="#5-key-concepts" aria-label="Link to this section">#</a>5 Key Concepts</h4>
+<ol>
+<li><strong>ISO 9126 / ISO 25010</strong> – Standardized software quality models.</li>
+<li><strong>Quality Attribute Scenario</strong> – A six-element format for the precise description of NFR.</li>
+<li><strong>Design for Testability</strong> – Architectural design that facilitates testing (observability, controllability).</li>
+<li><strong>Fault Injection</strong> – A technique for deliberately introducing faults to verify reliability and safety.</li>
+<li><strong>Operational Profile</strong> – A quantitative description of how a system is actually used, for reliability and load testing.</li>
+</ol>
+<h4 id="5-typical-examination-questions"><a class="heading-anchor" href="#5-typical-examination-questions" aria-label="Link to this section">#</a>5 Typical Examination Questions</h4>
+<ol>
+<li>What is the difference between functional testing and NFR testing?</li>
+<li>What constitutes a quality attribute scenario, and why is a response measure necessary?</li>
+<li>How does architecture affect system testability?</li>
+<li>What is the principle and significance of the Fault Injection method in safety-critical applications?</li>
+<li>What are the risks of postponing NFR tests until the acceptance testing phase?</li>
+</ol>
+<h4 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 Most Common Mistakes</h4>
+<ol>
+<li><strong>Vague requirements without metrics</strong> (for example, &quot;high speed&quot;).</li>
+<li><strong>Ignoring the NFR environment</strong> (testing on unrepresentative hardware).</li>
+<li><strong>Auto-Retry for flaky tests</strong> (hiding architectural timing/memory defects).</li>
+</ol>
+<h4 id="1-concise-model-sentence-for-the-oral-examination"><a class="heading-anchor" href="#1-concise-model-sentence-for-the-oral-examination" aria-label="Link to this section">#</a>1 Concise Model Sentence for the Oral Examination</h4>
+<blockquote>
+<p><em>&quot;NFR testing does not teach code new functions, but verifies whether the system&#39;s architectural tactics can sustainably and safely guarantee the required operational limits under load and in error states.&quot;</em></p>
+</blockquote>
+<hr>
+<h3 id="learning-outcome"><a class="heading-anchor" href="#learning-outcome" aria-label="Link to this section">#</a>Learning outcome</h3>
+<p>The answer directly reflects the requirements stated in <a href="../../assets/files/green-business-understanding/Learning and practice outcomes (LOPO).md" data-attachment="1"><strong>Learning and practice outcomes (LOPO)</strong></a>:</p>
+<ul>
+<li><strong>Test Pyramid and Test Trophy for NFR:</strong> Distributing NFR testing activities across levels (Unit, Integration, System) so that the architecture is verified as early as possible.</li>
+<li><strong>Design for Testability:</strong> Implementing the &quot;testability&quot; property at multiple levels of architecture to increase test efficiency and reduce automation costs.</li>
+<li><strong>Internal Quality and Technical Debt:</strong> Monitoring internal software quality at the <em>architecture</em>, <em>macro</em>, and <em>micro</em> levels to prevent code degradation and manage technical debt.</li>
+<li><strong>Architecture Validation:</strong> Ensuring the design and execution of tests intended to validate the architecture (especially integration and NFR tests).</li>
+</ul>
+<hr>
+<h3 id="summary-in-a-single-table"><a class="heading-anchor" href="#summary-in-a-single-table" aria-label="Link to this section">#</a>Summary in a Single Table</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What is important</th>
+<th>Relationship to architecture</th>
+<th>Relationship to testing</th>
+<th>Typical examination question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Performance (Efficiency / Performance)</strong></td>
+<td>Response time (Response time), throughput (Throughput), resource utilization (CPU, RAM, CAN bus).</td>
+<td>Requires tactics for resource management (caching, load balancing, asynchronous processing).</td>
+<td>Requires load-testing environments, traffic generators, and the definition of operational profiles.</td>
+<td>What is the difference between Load, Stress, and Soak testing, and what defects do they reveal?</td>
+</tr>
+<tr>
+<td><strong>Reliability and Safety (Reliability &amp; Safety)</strong></td>
+<td>Fault tolerance (Fault tolerance), recoverability (Recoverability), Fail-Safe behavior.</td>
+<td>Design of BIST, redundancy, watchdogs, and fault recovery mechanisms.</td>
+<td>Performing Fault Injection tests, simulating hardware outages, and verifying transitions to degraded states.</td>
+<td>How can safety mechanisms be verified in a system complying with ISO 26262?</td>
+</tr>
+<tr>
+<td><strong>Testability (Testability)</strong></td>
+<td>Observability of internal state, controllability of inputs, component isolation.</td>
+<td>A consequence of modular decomposition, the use of interfaces, DI, and diagnostic stubs/mocks.</td>
+<td>Direct influence on the effort required to write automated tests and eliminate unreliable (flaky) tests.</td>
+<td>Which architectural properties increase software testability?</td>
+</tr>
+<tr>
+<td><strong>Maintainability (Maintainability)</strong></td>
+<td>Analyzability, modifiability, modularity, and low complexity.</td>
+<td>Managing cyclomatic complexity, adhering to layering and design patterns (anti-spaghetti code).</td>
+<td>Verification through static code analysis (McCabe, SonarQube) and architecture reviews (checklists).</td>
+<td>How does internal software quality relate to technical debt, and how can it be tested?</td>
+</tr>
+<tr>
+<td><strong>Data Security (Security)</strong></td>
+<td>Confidentiality (Confidentiality), integrity, authentication, authorization, auditability.</td>
+<td>Security architecture (Encryption, RBAC, secure communication protocols).</td>
+<td>Includes vulnerability scanning, penetration tests, and investigation of fault conditions (Fault attacks).</td>
+<td>How can technical security attributes be tested, and how can their impact on performance be addressed?</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/red-test-and-quality/risk-based-testing.html"><span class="pager__label">← Previous</span><span>Risk Based Testing</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/design-for-testability.html"><span class="pager__label">Next →</span><span>Design for Testability</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#definitions-and-basic-concepts">Definitions and Basic Concepts</a></li><li class="lvl-4"><a href="#1-non-functional-requirement-quality-attribute-non-functional-requirement-quality-attribute">1. Non-Functional Requirement / Quality Attribute (Non-Functional Requirement / Quality Attribute)</a></li><li class="lvl-4"><a href="#2-iso-iec-9126-or-iso-iec-25010-quality-model-quality-model">2. ISO/IEC 9126 (or ISO/IEC 25010) Quality Model (Quality Model)</a></li><li class="lvl-4"><a href="#3-quality-attribute-scenario-and-utility-tree-quality-attribute-scenario-utility-tree">3. Quality Attribute Scenario and Utility Tree (Quality Attribute Scenario Utility Tree)</a></li><li class="lvl-4"><a href="#4-testability-and-internal-software-quality-design-for-testability-internal-quality">4. Testability and Internal Software Quality (Design for Testability Internal Quality)</a></li><li class="lvl-4"><a href="#5-reliability-testing-and-fault-injection-reliability-fault-injection-testing">5. Reliability Testing and Fault Injection (Reliability Fault Injection Testing)</a></li><li class="lvl-3"><a href="#furps-model">FURPS Model</a></li><li class="lvl-3"><a href="#testing-quality">Testing quality</a></li><li class="lvl-4"><a href="#issues">Issues</a></li><li class="lvl-4"><a href="#process">Process</a></li><li class="lvl-4"><a href="#attributes">Attributes</a></li><li class="lvl-4"><a href="#goals-and-inputs">Goals and Inputs</a></li><li class="lvl-3"><a href="#typical-problems-with-quality-attributes-quality-attributes">Typical Problems with Quality Attributes (Quality Attributes)</a></li><li class="lvl-3"><a href="#common-mistakes-and-anti-patterns">Common Mistakes and Anti-Patterns</a></li><li class="lvl-3"><a href="#examination-questions">Examination Questions</a></li><li class="lvl-4"><a href="#1-basic-questions">1. Basic Questions</a></li><li class="lvl-4"><a href="#2-intermediate-questions">2. Intermediate Questions</a></li><li class="lvl-4"><a href="#3-advanced-questions">3. Advanced Questions</a></li><li class="lvl-4"><a href="#4-questions-about-practical-experience">4. Questions about Practical Experience</a></li><li class="lvl-4"><a href="#5-questions-about-trade-off-decisions">5. Questions about Trade-Off Decisions</a></li><li class="lvl-3"><a href="#model-examination-answer">Model Examination Answer</a></li><li class="lvl-3"><a href="#short-version-for-quick-revision-cheat-sheet">Short Version for Quick Revision (Cheat Sheet)</a></li><li class="lvl-4"><a href="#5-main-points">5 Main Points</a></li><li class="lvl-4"><a href="#5-key-concepts">5 Key Concepts</a></li><li class="lvl-4"><a href="#5-typical-examination-questions">5 Typical Examination Questions</a></li><li class="lvl-4"><a href="#3-most-common-mistakes">3 Most Common Mistakes</a></li><li class="lvl-4"><a href="#1-concise-model-sentence-for-the-oral-examination">1 Concise Model Sentence for the Oral Examination</a></li><li class="lvl-3"><a href="#learning-outcome">Learning outcome</a></li><li class="lvl-3"><a href="#summary-in-a-single-table">Summary in a Single Table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

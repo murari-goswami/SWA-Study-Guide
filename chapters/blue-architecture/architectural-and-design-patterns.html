@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Architectural and Design Patterns - BLUE - Architecture - SWA preparation study guide.">
+<title>Architectural and Design Patterns · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture" open>
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns" aria-current="page">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/systematic-architecture-design.html" data-topic-id="blue-architecture/systematic-architecture-design">Systematic Architecture Design (Systematic-architecture-design)</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>BLUE - Architecture</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
+      <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
+      <div class="topic-meta">
+        <span>963 words · about 5 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/architectural-and-design-patterns" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="architectural-and-design-patterns">🔵 Architectural and Design Patterns</h1>
+<h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
+<p>Patterns are proven and reusable solutions to commonly recurring problems in software design. The main idea is not to reinvent the wheel, but to use a time-tested and standardized approach. Although the terms Design Pattern and Architectural Pattern are often used separately, their fundamental principle is the same and they differ primarily in their scope and level of abstraction. All patterns are standardly documented using the so-called &quot;Pattern language&quot; so that every developer can easily understand them.</p>
+<h3 id="documentation-and-structure-of-patterns-pattern-language"><a class="heading-anchor" href="#documentation-and-structure-of-patterns-pattern-language" aria-label="Link to this section">#</a>Documentation and structure of patterns (Pattern Language)</h3>
+<ul>
+<li><p><strong>Documentation structure:</strong> Each pattern should be described using a specific template.</p>
+<ul>
+<li>problem and context definition</li>
+<li>solution structure</li>
+<li>behavior (dynamics)</li>
+<li>subsequent consequences (Benefits and Liabilities / Trade-offs).</li>
+</ul>
+</li>
+<li><p><strong>Application in practice:</strong> The developer analyzes the problem, looks in the pattern catalog, selects an appropriate pattern, adapts it to their context and implements it.</p>
+</li>
+</ul>
+<h3 id="how-to-correctly-select-a-pattern-5-steps"><a class="heading-anchor" href="#how-to-correctly-select-a-pattern-5-steps" aria-label="Link to this section">#</a>How to correctly select a Pattern (5 steps)</h3>
+<p>The selection must not be done blindly, but strictly systematically through 5 clear steps:</p>
+<ol>
+<li><p><strong>Identify The Problem:</strong></p>
+<ul>
+<li>It is necessary to precisely analyze the nature of the problem, solution requirements and constraints.</li>
+</ul>
+</li>
+<li><p><strong>Check For Available Patterns:</strong></p>
+<ul>
+<li>Based on the pattern catalog, narrow down the vast number of existing patterns to a handful of those that fall into the same domain as the problem being solved.</li>
+</ul>
+</li>
+<li><p><strong>Analyze Available Patterns (Benefits):</strong></p>
+<ul>
+<li>Compare the requirements of our system with the specific benefits and forces that the considered patterns bring.</li>
+</ul>
+</li>
+<li><p><strong>Analyze Available Patterns (Liabilities):</strong></p>
+<ul>
+<li>Evaluate the disadvantages (liabilities) of the selected patterns. If a pattern brings a disadvantage that is critical for the system and cannot be satisfactorily solved, we must discard it.</li>
+</ul>
+</li>
+<li><p><strong>Select A Pattern:</strong></p>
+<ul>
+<li>From those that passed the filter, we always choose the absolutely simplest pattern that will serve its purpose (The simplest pattern that possibly could work).</li>
+</ul>
+</li>
+</ol>
+<h3 id="architectural-patterns-and-their-scope"><a class="heading-anchor" href="#architectural-patterns-and-their-scope" aria-label="Link to this section">#</a>Architectural Patterns and their Scope</h3>
+<p>While classic (Design) patterns solve code structure within components, architectural patterns have implications for the entire system. They primarily focus on these areas:</p>
+<ul>
+<li><p><strong>Large Scale Structure:</strong></p>
+<ul>
+<li>Overall structure and macro-architecture of entire packages (e.g., components in OSGi or modules and plugins in Eclipse).</li>
+</ul>
+</li>
+<li><p><strong>Concurrency &amp; Distribution:</strong></p>
+<ul>
+<li>Distributed systems and concurrency management.</li>
+</ul>
+</li>
+<li><p><strong>Crosscutting Concerns:</strong></p>
+<ul>
+<li>Cross-cutting concerns across the entire system. These include, for example, strategies for error and exception handling, Startup/Shutdown procedures, or Monitoring.</li>
+</ul>
+</li>
+</ul>
+<h3 id="examples-of-common-architectural-patterns"><a class="heading-anchor" href="#examples-of-common-architectural-patterns" aria-label="Link to this section">#</a>Examples of common Architectural Patterns</h3>
+<ul>
+<li><p><strong>Layered Architecture:</strong>
+  The system is divided into horizontal layers (e.g., Presentation, Business Logic, Data Access). Each layer typically may only communicate with the layer directly below it.</p>
+<ul>
+<li><em>Benefits:</em> Excellent separation of concerns, easier testing.</li>
+<li><em>Liabilities:</em> Lower performance (data must &quot;bubble&quot; through all layers), risk of the so-called sinkhole anti-pattern (a layer does no logic, just stupidly forwards data).</li>
+</ul>
+</li>
+<li><p><strong>Event-Driven Architecture:</strong>
+  Components do not communicate directly, but produce and consume asynchronous events (often via Publish/Subscribe).</p>
+<ul>
+<li><em>Benefits:</em> Extreme decoupling (producer does not know consumers at all), enormous scalability and flexibility when adding new features.</li>
+<li><em>Liabilities:</em> Very difficult debugging and loss of overview of the overall data flow through the system (traceability).</li>
+</ul>
+</li>
+<li><p><strong>Pipes and Filters:</strong>
+  A pattern absolutely ideal for sequential processing of data streams. Each &quot;Filter&quot; performs one isolated transformation on the data and passes it on through a &quot;Pipe&quot;.</p>
+<ul>
+<li><em>Benefits:</em> Filters can be arbitrarily chained, swapped and reused.</li>
+<li><em>Liabilities:</em> Not suitable for interactive systems (e.g., UI), data often has to be constantly parsed and serialized between filters (which consumes performance).</li>
+</ul>
+</li>
+<li><p><strong>Microservices Architecture:</strong>
+  The application is broken into many small, independently deployable services forming separate domains.</p>
+<ul>
+<li><em>Benefits:</em> Agile development (teams do not step on each other&#39;s toes), ability to independently scale only loaded parts of the system.</li>
+<li><em>Liabilities:</em> Enormous increase in complexity in network communication, distributed transactions and monitoring.</li>
+</ul>
+</li>
+</ul>
+<h3 id="example-strangler-pattern"><a class="heading-anchor" href="#example-strangler-pattern" aria-label="Link to this section">#</a>Example – Strangler Pattern</h3>
+<p>This is an exemplary architectural pattern for system modernization.</p>
+<ul>
+<li><p><strong>Problem:</strong></p>
+<ul>
+<li>We have a monolith that we want to rewrite into modern microservices, but we have to do it gradually to minimize risk and avoid outages.</li>
+</ul>
+</li>
+<li><p><strong>Solution:</strong></p>
+<ul>
+<li>We gradually &quot;strangle&quot; functional parts of the monolith and build them into separate microservices. In front of all this, we place a &quot;Strangler Facade&quot; that transparently routes client traffic either to the old monolith or to the new services.</li>
+</ul>
+</li>
+<li><p><strong>Benefits:</strong></p>
+<ul>
+<li>Significant risk reduction and ensuring continuous availability through traffic redirection at the gateway.</li>
+</ul>
+</li>
+<li><p><strong>Liabilities:</strong></p>
+<ul>
+<li>There arises an enormous need to manage communication dependencies between the rest of the monolith and the new services, and often complex database replication must be addressed.</li>
+</ul>
+</li>
+</ul>
+<h3 id="how-scenarios-tactics-and-patterns-fit-together"><a class="heading-anchor" href="#how-scenarios-tactics-and-patterns-fit-together" aria-label="Link to this section">#</a>How Scenarios, Tactics and Patterns fit together</h3>
+<p>As an architect, you proceed in a clear sequence:</p>
+<ol>
+<li>First, you define quality requirements through <strong>Quality Scenarios</strong>.</li>
+<li>Then, for the most important ones, you choose appropriate proven principles and strategies – <strong>Design Tactics</strong>.</li>
+<li>And only as the very last step do you look in the catalog for appropriate <strong>Design / Architectural Patterns</strong> that implement these selected tactics within the system.</li>
+</ol>
+<h3 id="example-from-practice-hexagonal-architecture"><a class="heading-anchor" href="#example-from-practice-hexagonal-architecture" aria-label="Link to this section">#</a>Example from practice – Hexagonal Architecture&quot;</h3>
+<p>In the target architecture refactgoring for my Flexibility value stream, I am using the Hexagonal architecture pattern Port &amp; Adaptor pattern.</p>
+<ul>
+<li><strong>Problem &amp; Context:</strong>
+The goal was to create a approproate layered architecture following the DDD principle. </li>
+<li><strong>Solution (Patterns Applied):</strong><ul>
+<li><strong>Architectural:</strong><ul>
+<li><code>Ports and Adapters (Hexagonal Architecture)</code>.</li>
+<li>I have chosen the Hexagonal architecture pattern, this in one hand provies a way to make the diferent layers of the architecture viy infrastructure - domaion- application - presentation. .</li>
+</ul>
+</li>
+<li><strong>Design:</strong> <code>Adapter Pattern</code> and <code>Dependency Injection</code>.<ul>
+<li>The core declared abstract adapter classes (Ports). Users implemented specific descendants (Adapters) and only pointers to these instances were passed to the core constructor (Constructor Injection).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Benefits:</strong><ul>
+<li>Enormous flexibility – moving all platform dependencies into adapters.</li>
+<li>Reusability – the abstract interface could be recycled for other generic cores in future projects.</li>
+</ul>
+</li>
+<li><strong>Liabilities (Disadvantages/Trade-offs):</strong><ul>
+<li>The resulting source code became somewhat more voluminous.</li>
+<li>Worse code readability at first glance due to a high degree of abstraction and pointer passing (indirection).</li>
+</ul>
+</li>
+</ul>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html"><span class="pager__label">← Previous</span><span>Quality scenarios and Design Tactics</span></a>
+      <a class="pager__next" href="../../chapters/blue-architecture/domain-driven-design.html"><span class="pager__label">Next →</span><span>Domain-Driven Design (DDD)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#documentation-and-structure-of-patterns-pattern-language">Documentation and structure of patterns (Pattern Language)</a></li><li class="lvl-3"><a href="#how-to-correctly-select-a-pattern-5-steps">How to correctly select a Pattern (5 steps)</a></li><li class="lvl-3"><a href="#architectural-patterns-and-their-scope">Architectural Patterns and their Scope</a></li><li class="lvl-3"><a href="#examples-of-common-architectural-patterns">Examples of common Architectural Patterns</a></li><li class="lvl-3"><a href="#example-strangler-pattern">Example – Strangler Pattern</a></li><li class="lvl-3"><a href="#how-scenarios-tactics-and-patterns-fit-together">How Scenarios, Tactics and Patterns fit together</a></li><li class="lvl-3"><a href="#example-from-practice-hexagonal-architecture">Example from practice – Hexagonal Architecture</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>
