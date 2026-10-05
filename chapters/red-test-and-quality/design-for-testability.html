@@ -120,10 +120,10 @@
     <article class="prose fade-in" style="--i:1">
 <h1 id="design-for-testability">Design for Testability</h1>
 <p><strong>Design for Testability (DFT)</strong> – that is, design focused on testability – is an architectural and design approach aimed at incorporating features that facilitate testing directly into the structure of a software system. Testability is not an incidental by-product of development, but a key non-functional quality characteristic (NFR). A fundamental architectural rule applies: <em>for a system to be tested effectively, it must be designed to be testable</em>.</p>
-<p><img src="../../assets/images/red-test-and-quality/design_for_testability_principles.png" alt="Principles of Testability"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/design_for_testability_principles.png" alt="Principles of Testability"></p>
 <p><em>Front Door First means that a module, class, or component should be tested through its official public interface (Public API).</em></p>
 <p>From the perspective of a software architect and a test architect, DFT is a decisive factor in overall maintainability, delivery speed (time-to-market), technical debt management, and the reduction of development costs. Insufficient testability leads to highly fragile tests, an inability to isolate faults, slow regression testing, and a disproportionate increase in the cost of finding and correcting defects in the later stages of the life cycle.</p>
-<p><img src="../../assets/images/red-test-and-quality/testability_basics.png" alt="Testability basics"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/testability_basics.png" alt="Testability basics"></p>
 <hr>
 <h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
 <h4 id="1-software-testability-software-testability"><a class="heading-anchor" href="#1-software-testability-software-testability" aria-label="Link to this section">#</a>1. Software Testability (Software Testability)</h4>
@@ -174,13 +174,13 @@
 <li><strong>Typical mistake or misunderstanding</strong>: Viewing these tactics as an academic exercise with no real impact on business or development speed.</li>
 </ul>
 <p>&nbsp;</p>
-<p><img src="../../assets/images/red-test-and-quality/design_for_testability_patterns.png" alt="Testability patterns"></p>
-<p><img src="../../assets/images/red-test-and-quality/testability_refined.png" alt="Testability refined">
-<img src="../../assets/images/red-test-and-quality/testability_aspects.png" alt="Testability aspects">
-<img src="../../assets/images/red-test-and-quality/testability_aspects2.png" alt="Testability more aspects"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/design_for_testability_patterns.png" alt="Testability patterns"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/testability_refined.png" alt="Testability refined">
+<img loading="lazy" src="../../assets/images/red-test-and-quality/testability_aspects.png" alt="Testability aspects">
+<img loading="lazy" src="../../assets/images/red-test-and-quality/testability_aspects2.png" alt="Testability more aspects"></p>
 <p><em>Example from the embedded / safety-related domain</em>: In an engine control unit (ECU) governed by ISO 26262, testability requires the separation of hardware-dependent code (HAL/OS) from application logic. It also requires a diagnostic interface (for example, through the CAN/UDS bus or XCP protocol) that allows a test bench (HIL bench) to inject sensor faults (fault injection) and read the internal state of the algorithm without having to physically remove the sensor.</p>
 <hr>
-<p><img src="../../assets/images/red-test-and-quality/heuristic_software_testability.png" alt="Heuristics of Testability"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/heuristic_software_testability.png" alt="Heuristics of Testability"></p>
 <p><strong>Heuristics of Software Testability</strong> (Software Testability Heuristics), by testing expert James Bach. The central idea of this model is that the testability of any system is determined not only by the quality of the source code itself, but is the dynamic result of the interaction of five different dimensions.</p>
 <p>The central node, <strong>Practical Testability</strong> (Practical Testability), represents the overall, real-world situation – how easily, effectively, and confidently the particular system can be tested at a given moment. This situation is directly influenced by five external factors:</p>
 <ul>
@@ -458,7 +458,7 @@ The original component, tied to a complex framework or environment (for example,
 <li><strong>Humble object (<em>Humble Object</em>)</strong>: A thin layer that communicates with the surrounding framework or asynchronous environment and delegates all work to the testable component.</li>
 </ol>
 <p><strong>Minimal risk</strong>: Because no decision-making logic remains in the <em>Humble Object</em>, the risk of defects decreases, and there is no need to write complex automated tests for it in a demanding environment.</p>
-<p><img src="../../assets/images/red-test-and-quality/testability_why_how.png" alt="Testability Why and How"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/testability_why_how.png" alt="Testability Why and How"></p>
 
     </article>
 <nav class="pager" aria-label="Topic navigation">
@@ -481,7 +481,7 @@ The original component, tied to a complex framework or environment (for example,
 
 <div class="lightbox"><img alt=""></div>
 
-<script src="../../assets/search-index.js"></script>
-<script src="../../assets/app.js"></script>
+<script src="../../assets/search-index.js" defer></script>
+<script src="../../assets/app.js" defer></script>
 </body>
 </html>

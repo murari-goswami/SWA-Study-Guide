@@ -119,16 +119,16 @@
     </div>
     <article class="prose fade-in" style="--i:1">
 <h1 id="value-of-testing-test-exit-criteria">Value of Testing, Test exit criteria</h1>
-<p><img src="../../assets/images/red-test-and-quality/dilbert_testing.png" alt="Dimension of testing"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/dilbert_testing.png" alt="Dimension of testing"></p>
 <h2 id="value-of-testing"><a class="heading-anchor" href="#value-of-testing" aria-label="Link to this section">#</a>Value of Testing</h2>
 <p>The value of testing concerns identifying and quantifying the benefits that the testing process brings to an organization. Testing itself does not increase software quality; it serves only as an indicator of that quality and a tool for obtaining objective information. Real value arises when this information is used to prevent errors, reduce costs (Cost of Quality), and manage risks.</p>
-<p><img src="../../assets/images/red-test-and-quality/dimension_testing.png" alt="Dimension of testing"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/dimension_testing.png" alt="Dimension of testing"></p>
 <p><strong>Test Exit Criteria</strong> represent a defined set of conditions that determine when a testing phase can safely and officially end. They are a key mechanism for evaluating whether the level of testing and quality achieved corresponds to business goals, and they determine the point at which the cost of searching for further errors exceeds the risk posed by errors not yet discovered.</p>
-<p><img src="../../assets/images/red-test-and-quality/test_exit_criteria.png" alt="Test Exit Criteria"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/test_exit_criteria.png" alt="Test Exit Criteria"></p>
 <h2 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and basic concepts</h2>
 <h2 id="testing"><a class="heading-anchor" href="#testing" aria-label="Link to this section">#</a>Testing</h2>
 <p>It is an empirical technical investigation of a product, which has the task of providing all involved parties (stakeholders) with objective information and evidence about quality. This information then serves as a basis for further decision-making.</p>
-<p><img src="../../assets/images/red-test-and-quality/testing_definition.png" alt="Definition of Testing"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/testing_definition.png" alt="Definition of Testing"></p>
 <ul>
 <li><p><strong>Quality myth:</strong></p>
 <p>  Testing itself does not increase software quality. Test results are only an indicator of quality (Steve McConnell, 1993).</p>
@@ -153,7 +153,7 @@
 <ul>
 <li><p><strong>Software Architect:</strong> Interested in architecture verification and integration/API tests.</p>
 <p>  <em>Goal:</em> Validation of components and their relationships, confirmation that architecture corresponds to specification and that the system functions as a whole.</p>
-<p>  <img src="../../assets/images/red-test-and-quality/sw_arch_role.png" alt="SW Arch role"></p>
+<p>  <img loading="lazy" src="../../assets/images/red-test-and-quality/sw_arch_role.png" alt="SW Arch role"></p>
 </li>
 <li><p><strong>Developer:</strong> Focuses on Unit and Integration tests.</p>
 <p>  <em>Goal:</em> Maximization of code coverage, early detection of errors and confirmation of implementation correctness (test refinement).</p>
@@ -197,7 +197,7 @@
 <h3 id="optimum-testing"><a class="heading-anchor" href="#optimum-testing" aria-label="Link to this section">#</a>Optimum testing</h3>
 <p>&quot;In software architecture and testing, there is no universal rule for determining how much testing is enough. Instead, we use the economic Cost of Quality Graph and Cost of finding and correcting. When we add these two curves together, we obtain the total cost of quality curve, which forms an imaginary U shape. The lowest point of this valley is our &#39;sweet spot&#39;. This point represents the moment when the marginal cost of uncovering another error exceeds the estimated damage that the error would cause at the customer&#39;s site.
 From the Test Architect&#39;s perspective, this point is critical for defining &#39;Test Exit Criteria&#39;. It teaches us an architectural trade-off: Testing is never truly finished – it is stopped by agreement between management and the project team, because further debugging would simply make no economic sense and would cost more than it would save. For Safety-Critical systems, this point is naturally shifted much further to the right, but the mechanics of the graph apply universally.&quot;</p>
-<p><img src="../../assets/images/red-test-and-quality/sweet_spot.png" alt="Sweet Spot"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/sweet_spot.png" alt="Sweet Spot"></p>
 <hr>
 <h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common mistakes and anti-patterns</h3>
 <ol>
@@ -252,7 +252,7 @@ From the Test Architect&#39;s perspective, this point is critical for defining &
 <p><strong>Topic:</strong> Value of Testing and Test Exit Criteria</p>
 <p>&quot;The value of testing does not lie merely in running tests, because testing without a business goal has no intrinsic value. Real Value of Testing arises when we provide stakeholders with information for decision-making, reduce residual risks, and move defect identification to the earliest possible stages of development. This demonstrably reduces the &#39;Cost of Quality&#39;, because finding a critical error in production is more expensive by orders of magnitude than finding it during the testing phase.</p>
 <p>To avoid the so-called trap of endless testing – because exhaustively testing every possibility is technically impossible – we must define <strong>Test Exit Criteria</strong> for each level. These are a set of exact conditions, such as &#39;Code coverage has reached 90%&#39;, &#39;No open critical defect&#39;, or &#39;All failover scenarios have been completed successfully&#39;.</p>
-<p><img src="../../assets/images/red-test-and-quality/test_exit_criteria_example.png" alt="Sweet Spot"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/test_exit_criteria_example.png" alt="Sweet Spot"></p>
 <p>From an architectural perspective, these criteria are crucial for defining the &#39;Definition of Done&#39;. From a testing perspective, they are a tool for reporting progress.</p>
 <p>In practice, we often encounter a trade-off when not all exit criteria are green just before release. For example, the system works, but it has not been possible to simulate extreme hardware load. At that point, as a test architect or manager, I prepare a status assessment (for example, in the form of a Red/Yellow/Green report) and initiate a discussion with stakeholders. If meeting the delivery deadline outweighs the acceptable Residual Risk, the given exit criterion can be waived by agreement. In summary, testing is never really finished – it is stopped at the moment when the cost of finding another error exceeds the potential damage it would cause.&quot;</p>
 <hr>
@@ -330,7 +330,7 @@ Here is a brief explanation of the key terms, each in one sentence:</p>
 </tr>
 </tbody></table></div>
 <hr>
-<p><img src="../../assets/images/red-test-and-quality/testing_history.png" alt="Testing history and an example of Exit Criteria"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/testing_history.png" alt="Testing history and an example of Exit Criteria"></p>
 
     </article>
 <nav class="pager" aria-label="Topic navigation">
@@ -353,7 +353,7 @@ Here is a brief explanation of the key terms, each in one sentence:</p>
 
 <div class="lightbox"><img alt=""></div>
 
-<script src="../../assets/search-index.js"></script>
-<script src="../../assets/app.js"></script>
+<script src="../../assets/search-index.js" defer></script>
+<script src="../../assets/app.js" defer></script>
 </body>
 </html>

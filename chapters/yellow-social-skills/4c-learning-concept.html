@@ -111,7 +111,7 @@
     <div class="topic-head fade-in" style="--chapter-color:#F9A825;--i:0">
       <a class="chapter-chip" href="../../index.html#yellow-social-skills"><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills</a>
       <div class="topic-meta">
-        <span>638 words · about 3 min read</span>
+        <span>657 words · about 3 min read</span>
         <button class="read-toggle" data-action="mark-read" data-topic-id="yellow-social-skills/4c-learning-concept" aria-pressed="false">
           <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
         </button>
@@ -132,19 +132,19 @@
 <h3 id="c4-conclusions"><a class="heading-anchor" href="#c4-conclusions" aria-label="Link to this section">#</a><strong>C4 - Conclusions</strong></h3>
 <p>The hardest phase of learning is retaining information. The conclusion forces participants to summarize what they learned, evaluate it and create a personal action plan for application in real life. Writing helps with this (e.g., learning logs).</p>
 <p><em>Agile parallel:</em> Agile retrospectives, where the team reflects on work and generates a concrete list of action steps for the next iteration.</p>
-<h2 id="example-from-practice-onboarding-embedded-developer-4c-model"><a class="heading-anchor" href="#example-from-practice-onboarding-embedded-developer-4c-model" aria-label="Link to this section">#</a>Example from practice: Onboarding embedded developer (4C Model)</h2>
+<h2 id="example-from-practice-closing-the-e2e-knowledge-gap-in-flexibility-manager-4c-model"><a class="heading-anchor" href="#example-from-practice-closing-the-e2e-knowledge-gap-in-flexibility-manager-4c-model" aria-label="Link to this section">#</a>Example from practice: Closing the E2E knowledge gap in Flexibility Manager (4C Model)</h2>
 <ul>
 <li><p><strong>C1 - Connections</strong>
-I did not start by immediately explaining the manual for our MCU. I asked him how he had previously solved peripheral initialization and interrupt handling on STM32. I found out that he relied a lot on ST HAL libraries. I drew him a parallel between STM32 HAL and our HW driver layer under the application layer. This immediately connected his previous habits with the way we use HW peripherals in our application.</p>
+During root cause analyses of production issues in Flexibility Manager, I noticed that team members lacked understanding of the end-to-end flow across microservices. People were unsure about service ownership and how the chain of events worked. I gathered the RCA team members and started by asking each person to write down all the microservices they knew were involved in Flexibility Manager. This revealed the knowledge gaps immediately – everyone had a partial picture, but nobody held the complete chain. It also created a shared starting point and a safe space to admit what was unknown.</p>
 </li>
 <li><p><strong>C2 - Concepts</strong>
-I did not give him the task to read hundreds of header files directly in the IDE. We went to the board and drew a high-level block diagram of our middleware. I showed him the sharp boundary where portable code ends, where the hardware adaptation layer is located (which either uses standardized drivers or works directly with registers when extreme optimization is needed) and where the structure of our own HW drivers lies. We discussed the main architectural differences compared to STM32 (engaging multiple senses – visualization, discussion).</p>
+Using a concept board, I walked through the entire Flexibility Manager flow at a high level – from the problem domain (activity diagrams, domain modelling, NFRs) to the solution domain (microservice architecture, service ownership, Kafka topic interactions). We visualized how services like Circuit Optimizer, PSR Measurement, Case Manager, Proposal Creator, and Algorithmic Core interact through topics and REST/GraphQL endpoints. The goal was to give everyone a shared mental model of the full journey, not just their own service&#39;s slice.</p>
 </li>
 <li><p><strong>C3 - Concrete Practice</strong>
-Instead of reading more theory, we took a prototype of our device with a debugging interface and did several pair programming sessions. I selected an isolated small task: get a timer running in the application using the standard cascading timer system provided by the HW layer and connect it to the application layer. I let him write code and search in manuals, I just navigated him (learning by doing). This reduced the gap between the theory from the board and real code.</p>
+I set up simulated failure scenarios (e.g., &quot;system is running but case is not created&quot;, &quot;load assessment is not coming&quot;, &quot;equipment violated but not considered for the proposal&quot;) and had teams work in groups to investigate them hands-on. Each group had to trace the issue through the microservice chain – checking simulator status, verifying published messages on Kafka topics, examining database state, and inspecting service logs. This forced them to practice observability and controllability across services they had never debugged before.</p>
 </li>
 <li><p><strong>C4 - Conclusions</strong>
-Finally, I had him describe in his own words a summary (teach back) of what is the main difference between using a timer on STM32 and in our context. I had him write down the main findings in his onboarding log and we agreed on another specific task he would work on independently (synchronous LED control on SPI expander). We agreed on a system of quick consultations and daily reviews.</p>
+At the end, I used a &quot;Feel-O-Meter&quot; to gauge each participant&#39;s confidence about the E2E process and flow. Participants also provided structured feedback on what went well and what could be improved. The confidence level had shifted noticeably toward the positive end compared to the start of the session. We captured the key findings and agreed on follow-up actions for areas that still needed deeper investigation.</p>
 </li>
 </ul>
 
@@ -155,7 +155,7 @@ Finally, I had him describe in his own words a summary (teach back) of what is t
     </nav>
   </main>
   <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
-    <ul><li class="lvl-3"><a href="#c1-connections">C1 - Connections</a></li><li class="lvl-3"><a href="#c2-concepts">C2 - Concepts</a></li><li class="lvl-3"><a href="#c3-concrete-practice">C3 - Concrete Practice</a></li><li class="lvl-3"><a href="#c4-conclusions">C4 - Conclusions</a></li><li class="lvl-2"><a href="#example-from-practice-onboarding-embedded-developer-4c-model">Example from practice: Onboarding embedded developer (4C Model)</a></li></ul></aside>
+    <ul><li class="lvl-3"><a href="#c1-connections">C1 - Connections</a></li><li class="lvl-3"><a href="#c2-concepts">C2 - Concepts</a></li><li class="lvl-3"><a href="#c3-concrete-practice">C3 - Concrete Practice</a></li><li class="lvl-3"><a href="#c4-conclusions">C4 - Conclusions</a></li><li class="lvl-2"><a href="#example-from-practice-closing-the-e2e-knowledge-gap-in-flexibility-manager-4c-model">Example from practice: Closing the E2E knowledge gap in Flexibility Manager (4C Model)</a></li></ul></aside>
 </div>
 
 <div class="palette" role="dialog" aria-modal="true" aria-label="Search">
@@ -169,7 +169,7 @@ Finally, I had him describe in his own words a summary (teach back) of what is t
 
 <div class="lightbox"><img alt=""></div>
 
-<script src="../../assets/search-index.js"></script>
-<script src="../../assets/app.js"></script>
+<script src="../../assets/search-index.js" defer></script>
+<script src="../../assets/app.js" defer></script>
 </body>
 </html>

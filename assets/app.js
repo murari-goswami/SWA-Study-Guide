@@ -190,7 +190,11 @@
   /* ---------- search palette ---------- */
 
   const palette = document.querySelector('.palette');
-  const index = window.SWA_SEARCH_INDEX || [];
+  const rawIndex = window.SWA_SEARCH_INDEX || [];
+  const index = rawIndex.map(entry => {
+    if (!entry.lower) entry.lower = entry.text.toLowerCase();
+    return entry;
+  });
   if (palette && index.length) {
     const input = palette.querySelector('.palette__input');
     const results = palette.querySelector('.palette__results');

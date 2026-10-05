@@ -111,7 +111,7 @@
     <div class="topic-head fade-in" style="--chapter-color:#F9A825;--i:0">
       <a class="chapter-chip" href="../../index.html#yellow-social-skills"><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills</a>
       <div class="topic-meta">
-        <span>840 words · about 4 min read</span>
+        <span>953 words · about 5 min read</span>
         <button class="read-toggle" data-action="mark-read" data-topic-id="yellow-social-skills/change-management-fearless-change" aria-pressed="false">
           <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
         </button>
@@ -152,33 +152,33 @@
 <li><strong>Champion:</strong> Find someone in the organization who has great respect or formal power (Vested Authority). Inspire them with your idea and use their influence to help you break through and remove bureaucratic obstacles.</li>
 <li><strong>Brown Bag</strong>: Organize an informal lunch meeting (ideally combined with the Do Food pattern), where the news will only be casually discussed. People are much more open outside the stress of classic mandatory meetings.</li>
 </ul>
-<h3 id="example-from-practice-introduction-of-ai-coding-tools-in-embedded-environment"><a class="heading-anchor" href="#example-from-practice-introduction-of-ai-coding-tools-in-embedded-environment" aria-label="Link to this section">#</a>Example from practice: Introduction of AI coding tools in embedded environment</h3>
+<h3 id="example-from-practice-introducing-automated-api-first-workflow-with-cim-tooling"><a class="heading-anchor" href="#example-from-practice-introducing-automated-api-first-workflow-with-cim-tooling" aria-label="Link to this section">#</a>Example from practice: Introducing automated API-First workflow with CIM tooling</h3>
 <h4 id="situation-analysis-through-discussed-models"><a class="heading-anchor" href="#situation-analysis-through-discussed-models" aria-label="Link to this section">#</a>Situation analysis through discussed models:</h4>
 <ul>
 <li><p><strong>Innovation Adoption Curve</strong></p>
 <ul>
-<li>I chose the strategy &quot;focus enthusiasts&quot;. I did not try to immediately break over the knee conservative embedded veterans (that is pragmatic <em>Late Majority</em> or outright <em>Laggards</em>).</li>
-<li>I focused on <em>Innovators</em> and <em>Early Adopters</em>. My goal was to create successful PoC with them and obtain data to overcome the gap (<em>Chasm</em>) towards the rest of the company.</li>
+<li>In our electrical domain (distribution system operator), we follow an API-First approach with CIM-compliant domain modelling. Architects and senior developers were working with Enterprise Architect to maintain the CIM model, but found the tooling cumbersome. APIs were handcrafted separately from the domain model, leading to inconsistencies and slow delivery.</li>
+<li>I did not try to convince everyone at once. I started as an <em>Innovator</em> myself – I investigated an open-source CIM tool that could generate API specifications (OpenAPI, AsyncAPI) directly from the CIM domain model (OWL/UML format). My goal was to build a working PoC first and then cross the <em>Chasm</em> with real evidence.</li>
 </ul>
 </li>
 <li><p><strong>Fearless Change Patterns</strong>
-  I applied patterns for conservative environment:</p>
+  I applied several patterns to introduce this workflow change:</p>
 <ul>
-<li><strong>Test the Waters / Step by Step:</strong> I proposed doing small moderated experiments and PoC, not widespread transformation.</li>
-<li><strong>Just Do It:</strong> We applied it to concrete practical examples. With this I wanted to find out the real limits of LLM models in embedded (and show whether the skepticism of seniors is technically justified, or it&#39;s just fear).</li>
+<li><strong>Just Do It:</strong> I first tried the CIM tool on my own, importing the UML from Enterprise Architect, adding custom CIM extensions, and generating API specifications. This gave me first-hand experience with the tool&#39;s capabilities and limitations before proposing it to anyone.</li>
+<li><strong>Test the Waters / Step by Step:</strong> After my solo PoC succeeded, I introduced it to a small group – one senior developer and the team architect. We ran a bounded experiment on a real service to validate that generated OpenAPI and AsyncAPI specs matched our needs. Losses would have been minimal if it failed; instead it worked and we had concrete data.</li>
+<li><strong>Personal Touch:</strong> Rather than presenting to the whole department, I personally approached key architects and developers, showed them how the CIM tool eliminated the manual handcrafting of API specs, and demonstrated version control benefits. Face-to-face discussions removed resistance more effectively than any mass email could.</li>
 </ul>
 </li>
 <li><p><strong>Change Transition Curve &amp; Leadership</strong></p>
 <ul>
-<li>The team (and at times I too) was in the phase of <strong>Panic / Dread</strong> (fear of the future) and <strong>Insecurity</strong>.</li>
-<li>Management statements (threat that there will be no work for refusers) were a textbook example of <strong>Passing unfiltered heat from above</strong>. This destroyed psychological safety and drove people into defense.</li>
-<li>In the role of <strong>Host Leader</strong>, I had to function as a shield (<strong>Defend the team</strong>). I knew that on the curve, a huge dose of support (<strong>Support</strong>) is now needed. I am solving this through mentoring and coaching – I created a safe environment where developers could try AI tools without fear of punishment for mistakes.</li>
+<li>Initially, team members were in the <strong>Shock &amp; Denial</strong> phase – they were comfortable with the existing manual process despite its inefficiencies, and sceptical that automated generation could handle our domain-specific CIM extensions.</li>
+<li>I provided <em>Information</em> by demonstrating the PoC results and showing how custom CIM objects could be incorporated. As people moved into <strong>Acceptance &amp; Testing</strong>, I gave <em>Direction</em> – defining how the new workflow fits into our existing CI/CD pipeline with version-controlled API specs. The small team&#39;s enthusiasm provided <em>Encouragement</em> to others.</li>
 </ul>
 </li>
 <li><p><strong>Responsibility Process</strong></p>
 <ul>
-<li>Conservative developers got stuck in the <strong>Justify</strong> phase (excuses about circumstances: no OS, small stack, real-time). In part they were technically right, but in part it was a subconscious defense against leaving the comfort zone.</li>
-<li>My goal through PoC was to take away these arguments for <em>Justify</em>. When agents write valid and safe code even for no-OS environment, developers will have no choice but to move to the <strong>Responsibility</strong> phase and accept a new way of working.</li>
+<li>Some architects initially stayed in the <strong>Justify</strong> phase – claiming Enterprise Architect was the &quot;official&quot; tool and that generated specs would not be flexible enough for edge cases.</li>
+<li>The successful PoC and the small team&#39;s positive experience took away these arguments. When they saw that the CIM tool handled custom extensions, produced both OpenAPI and AsyncAPI, and enabled proper version control and change tracking, they moved to the <strong>Responsibility</strong> phase and actively adopted the new workflow. Eventually, the approach was rolled out across multiple teams.</li>
 </ul>
 </li>
 </ul>
@@ -190,7 +190,7 @@
     </nav>
   </main>
   <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
-    <ul><li class="lvl-3"><a href="#innovation-adoption-curve">Innovation Adoption Curve</a></li><li class="lvl-3"><a href="#change-transition-curve">Change Transition Curve</a></li><li class="lvl-3"><a href="#fearless-change-game-framework-for-solving-obstacles">Fearless Change (Game / Framework for solving obstacles)</a></li><li class="lvl-3"><a href="#examples-of-change-patterns">Examples of Change Patterns</a></li><li class="lvl-3"><a href="#example-from-practice-introduction-of-ai-coding-tools-in-embedded-environment">Example from practice: Introduction of AI coding tools in embedded environment</a></li><li class="lvl-4"><a href="#situation-analysis-through-discussed-models">Situation analysis through discussed models:</a></li></ul></aside>
+    <ul><li class="lvl-3"><a href="#innovation-adoption-curve">Innovation Adoption Curve</a></li><li class="lvl-3"><a href="#change-transition-curve">Change Transition Curve</a></li><li class="lvl-3"><a href="#fearless-change-game-framework-for-solving-obstacles">Fearless Change (Game / Framework for solving obstacles)</a></li><li class="lvl-3"><a href="#examples-of-change-patterns">Examples of Change Patterns</a></li><li class="lvl-3"><a href="#example-from-practice-introducing-automated-api-first-workflow-with-cim-tooling">Example from practice: Introducing automated API-First workflow with CIM tooling</a></li><li class="lvl-4"><a href="#situation-analysis-through-discussed-models">Situation analysis through discussed models:</a></li></ul></aside>
 </div>
 
 <div class="palette" role="dialog" aria-modal="true" aria-label="Search">
@@ -204,7 +204,7 @@
 
 <div class="lightbox"><img alt=""></div>
 
-<script src="../../assets/search-index.js"></script>
-<script src="../../assets/app.js"></script>
+<script src="../../assets/search-index.js" defer></script>
+<script src="../../assets/app.js" defer></script>
 </body>
 </html>

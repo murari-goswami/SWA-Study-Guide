@@ -655,6 +655,24 @@ kbd {
 @media (min-width: 901px) { .nav-toggle { display: none; } }
 @media (max-width: 600px) { .chapter-grid { grid-template-columns: 1fr; } }
 
+/* ---------- iPad / touch device GPU relief ---------- */
+
+@media (pointer: coarse) {
+  .topbar { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--bg); }
+  .palette.is-open { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgb(8 10 14 / 70%); }
+  .palette__panel { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--bg-elevated); }
+  .topbar__accent { animation: none; }
+  .hero__glow { display: none; }
+  .btn--primary::after { animation: none; opacity: 0; }
+  .prose img:hover { transform: none; }
+  .chapter-card:hover { transform: none; }
+  .icon-btn:hover { transform: none; }
+  .search-trigger:hover { transform: none; }
+  .pager a:hover { transform: none; }
+  .prose { content-visibility: auto; contain-intrinsic-size: auto 800px; }
+  .fade-in { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
+
 /* ---------- print ---------- */
 
 @media print {
