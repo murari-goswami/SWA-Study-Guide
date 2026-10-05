@@ -187,21 +187,30 @@
     lightbox.addEventListener('click', closeLightbox);
   }
 
-  /* ---------- search palette ---------- */
+  /* ---------- search palette (index loaded on first open) ---------- */
 
   const palette = document.querySelector('.palette');
-  const rawIndex = window.SWA_SEARCH_INDEX || [];
-  const index = rawIndex.map(entry => {
-    if (!entry.lower) entry.lower = entry.text.toLowerCase();
-    return entry;
-  });
-  if (palette && index.length) {
+  if (palette) {
     const input = palette.querySelector('.palette__input');
     const results = palette.querySelector('.palette__results');
     const empty = palette.querySelector('.palette__empty');
+    let index = null;
     let selected = 0;
+    let loading = false;
 
-    const escapeHtml = text => text.replace(/[&<>"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char]));
+    const loadIndex = () => new Promise((resolve, reject) => {
+      if (index) { resolve(index); return; }
+      if (window.SWA_SEARCH_INDEX) { index = window.SWA_SEARCH_INDEX.map(e => { if (!e.lower) e.lower = e.text.toLowerCase(); return e; }); resolve(index); return; }
+      if (loading) { reject(); return; }
+      loading = true;
+      const script = document.createElement('script');
+      script.src = base + 'assets/search-index.js';
+      script.onload = () => { index = (window.SWA_SEARCH_INDEX || []).map(e => { if (!e.lower) e.lower = e.text.toLowerCase(); return e; }); loading = false; resolve(index); };
+      script.onerror = () => { loading = false; reject(); };
+      document.head.appendChild(script);
+    });
+
+    const escapeHtml = text => text.replace(/[&<>”]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '”': '&quot;' }[char]));
     const highlight = (text, terms) => terms.reduce(
       (out, term) => out.replace(new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'ig'), '<mark>$1</mark>'),
       escapeHtml(text)
@@ -226,6 +235,7 @@
     };
 
     const render = query => {
+      if (!index || !index.length) return;
       const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
       results.innerHTML = '';
       selected = 0;
@@ -240,11 +250,11 @@
       if (!matches.length) { empty.textContent = `No topic matches “${query}”.`; empty.hidden = false; return; }
       empty.hidden = true;
       results.innerHTML = matches.map(({ entry }, position) => `
-        <li role="option" aria-selected="${position === 0}">
-          <a href="${base}${entry.url}">
-            <span class="palette__chapter">${escapeHtml(entry.chapter)}</span>
+        <li role=”option” aria-selected=”${position === 0}”>
+          <a href=”${base}${entry.url}”>
+            <span class=”palette__chapter”>${escapeHtml(entry.chapter)}</span>
             <strong>${highlight(entry.title, terms)}</strong>
-            <span class="palette__snippet">${highlight(snippet(entry, terms[0]), terms)}</span>
+            <span class=”palette__snippet”>${highlight(snippet(entry, terms[0]), terms)}</span>
           </a>
         </li>`).join('');
     };
@@ -259,10 +269,17 @@
       item.scrollIntoView({ block: 'nearest' });
     };
 
-    const open = () => { palette.classList.add('is-open'); input.value = ''; render(''); input.focus(); };
+    const open = () => {
+      palette.classList.add('is-open');
+      input.value = '';
+      empty.textContent = 'Loading search index…'; empty.hidden = false;
+      results.innerHTML = '';
+      input.focus();
+      loadIndex().then(() => { empty.textContent = 'Type to search all topics.'; }).catch(() => { empty.textContent = 'Search index could not be loaded.'; });
+    };
     const close = () => { palette.classList.remove('is-open'); };
 
-    document.querySelectorAll('[data-action="search"]').forEach(button => button.addEventListener('click', open));
+    document.querySelectorAll('[data-action=”search”]').forEach(button => button.addEventListener('click', open));
     input.addEventListener('input', () => render(input.value));
     palette.addEventListener('click', event => { if (event.target === palette) close(); });
     palette.addEventListener('keydown', event => {
