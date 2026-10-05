@@ -121,7 +121,7 @@
 <h1 id="test-design-tactics">Test Design Tactics</h1>
 <p><strong>Test design tactics (Test Design Tactics – TDT)</strong> represent the systematic and methodological level of test engineering that translates a high-level test strategy (for example, risk-based testing – Risk-Based Testing) into specific, measurable, and repeatable procedures for creating test cases.</p>
 <p>From the perspective of software architecture and quality, a fundamental principle applies: <strong>automating poorly designed or ineffective tests is a waste of time and resources</strong>. The test design process itself serves as one of the most effective forms of defect prevention (verification of the specification and architecture before the code is even executed). TDT define ways of reducing the system&#39;s infinite input and state space to a finite, optimal set of test scenarios that provide maximum defect coverage at minimum cost.</p>
-<p><img loading="lazy" src="../../assets/images/red-test-and-quality/tdt_multiple.png" alt="TDT selection"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/tdt_multiple.webp" alt="TDT selection"></p>
 <h2 id="item"><a class="heading-anchor" href="#item" aria-label="Link to this section">#</a><img loading="lazy" src="../../assets/images/red-test-and-quality/test_design_activities.png" alt="Test Development activities"></h2>
 <h3 id="definitions-and-basic-concepts"><a class="heading-anchor" href="#definitions-and-basic-concepts" aria-label="Link to this section">#</a>Definitions and Basic Concepts</h3>
 <h4 id="1-test-design-tactics-tdt-test-design-tactics"><a class="heading-anchor" href="#1-test-design-tactics-tdt-test-design-tactics" aria-label="Link to this section">#</a>1. Test Design Tactics (TDT) / Test Design Tactics</h4>
@@ -132,7 +132,7 @@
 <li><strong>Typical mistake / misunderstanding:</strong> Confusing test design tactics (TDT) with test strategy (an approach at the project/organizational level) or with test execution (test execution).</li>
 <li><strong>Examination discussion:</strong> How do TDT connect risk assessment (RBT) with specific coverage at the unit (Unit) and integration (Integration) levels?</li>
 </ul>
-<p><img loading="lazy" src="../../assets/images/red-test-and-quality/use_case_method.png" alt="Use case testing"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/use_case_method.webp" alt="Use case testing"></p>
 <h4 id="2-test-effectiveness-testing-effectiveness"><a class="heading-anchor" href="#2-test-effectiveness-testing-effectiveness" aria-label="Link to this section">#</a>2. Test Effectiveness (Testing Effectiveness)</h4>
 <ul>
 <li><strong>Definition:</strong> A measure of the ability of testing activities and techniques to detect existing defects in a system and confirm that the software meets specified requirements and exhibits correct behavior. It usually expresses the ratio of defects found to the total number of defects present in the product (for example, Defect Detection Percentage / Defect Removal Efficiency).</li>
@@ -140,7 +140,7 @@
 <li><strong>Significance in testing:</strong> Represents a key success metric for the entire testing process – it answers the question <em>&quot;Are we doing the right tests?&quot;</em>. Unlike a mere code coverage percentage, it measures the actual ability of tests to prevent critical defects from escaping into the production environment.</li>
 <li><strong>Typical mistake or misunderstanding:</strong> Confusing <em>effectiveness</em> (effectiveness – doing the right things / detecting defects) with <em>efficiency/economy</em> (efficiency – doing things with minimal consumption of time and resources), or measuring effectiveness purely by the number of test cases executed, regardless of whether they can actually find relevant defects.</li>
 </ul>
-<p><img loading="lazy" src="../../assets/images/red-test-and-quality/test_effectiveness.png" alt="Test effectiveness"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/test_effectiveness.webp" alt="Test effectiveness"></p>
 <h4 id="3-equivalence-partitioning-equivalence-partitioning-ep-td3"><a class="heading-anchor" href="#3-equivalence-partitioning-equivalence-partitioning-ep-td3" aria-label="Link to this section">#</a>3. Equivalence Partitioning (Equivalence Partitioning – EP / TD3)</h4>
 <ul>
 <li><strong>Definition:</strong> A black-box technique (black-box) that divides the input and output domains into equivalence classes (valid and invalid) that the system is assumed to treat in the same way.</li>
@@ -172,15 +172,15 @@
 <li><strong>Significance in testing:</strong> Measures state coverage (0-switch / All States), transition coverage (1-switch / All Transitions), and invalid transitions.</li>
 <li><strong>Typical mistake:</strong> Testing only the &quot;happy path&quot; (happy path) and ignoring invalid events in a given state (for example, a start request in the Fault state).</li>
 </ul>
-<p><img loading="lazy" src="../../assets/images/red-test-and-quality/state_based_method.png" alt="State based testing"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/state_based_method.webp" alt="State based testing"></p>
 <h4 id="6-structural-tactic-white-box-coverage-c0-c1-c2-c3-mc-dc"><a class="heading-anchor" href="#6-structural-tactic-white-box-coverage-c0-c1-c2-c3-mc-dc" aria-label="Link to this section">#</a>6. Structural Tactic (White-box Coverage: C0, C1, C2/C3, MC/DC)</h4>
 <ul>
 <li><strong>Definition:</strong> Designing tests based on the internal structure of the code in order to achieve a defined level of control flow coverage (statements – C0, branches – C1, conditions – C2/C3, modified condition/decision coverage – MC/DC).</li>
 <li><strong>Significance in architecture:</strong> Requires low module complexity (cyclomatic complexity) and high modularity to make all code branches reachable.</li>
 <li><strong>Significance in testing:</strong> Ensures that no dead code (dead code) or untested logical paths remain in the code. In safety-critical systems (ASIL D), for example, MC/DC is strictly required by the standard.</li>
 </ul>
-<p><img loading="lazy" src="../../assets/images/red-test-and-quality/control_flow_method.png" alt="Control flow testing"></p>
-<p><img loading="lazy" src="../../assets/images/red-test-and-quality/black_white_grey.png" alt="Black White Grey box testing"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/control_flow_method.webp" alt="Control flow testing"></p>
+<p><img loading="lazy" src="../../assets/images/red-test-and-quality/black_white_grey.webp" alt="Black White Grey box testing"></p>
 <h4 id="7-experience-based-and-defect-based-tactics-error-guessing-td5-defect-taxonomies"><a class="heading-anchor" href="#7-experience-based-and-defect-based-tactics-error-guessing-td5-defect-taxonomies" aria-label="Link to this section">#</a>7. Experience-Based and Defect-Based Tactics (Error Guessing / TD5, Defect Taxonomies)</h4>
 <ul>
 <li><strong>Definition:</strong> Reactive and supplementary test derivation techniques based on the tester&#39;s/architect&#39;s previous experience, knowledge of typical defect patterns, and safety analyses (FMEA/FTA).</li>
@@ -188,8 +188,8 @@
 <li><strong>Significance in testing:</strong> Supplements systematic specification-based techniques and reveals unanticipated boundary conditions and undocumented behavior.</li>
 </ul>
 <p><img loading="lazy" src="../../assets/images/red-test-and-quality/tdt_overview.png" alt="TDT overview">
-<img loading="lazy" src="../../assets/images/red-test-and-quality/tdt_cathegories.png" alt="TDT categories">
-<img loading="lazy" src="../../assets/images/red-test-and-quality/tdt_vs_why_testing.png" alt="TDT vs Why testing"></p>
+<img loading="lazy" src="../../assets/images/red-test-and-quality/tdt_cathegories.webp" alt="TDT categories">
+<img loading="lazy" src="../../assets/images/red-test-and-quality/tdt_vs_why_testing.webp" alt="TDT vs Why testing"></p>
 <hr>
 <h3 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common Mistakes and Anti-Patterns</h3>
 <h4 id="1-mistakes-in-architecture-insufficient-controllability-and-observability-low-controllability-observability"><a class="heading-anchor" href="#1-mistakes-in-architecture-insufficient-controllability-and-observability-low-controllability-observability" aria-label="Link to this section">#</a>1. Mistakes in Architecture: Insufficient Controllability and Observability (Low Controllability &amp; Observability)</h4>
