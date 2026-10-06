@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Role of the Siemens SWA: the role of the software architect - BLUE - Architecture - SWA preparation study guide.">
+<title>Role of the Siemens SWA: the role of the software architect · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture" open>
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">12</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-review.html" data-topic-id="blue-architecture/architecture-review">Architecture Quality &amp; Architecture Review</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/role-of-the-siemens-swa.html" data-topic-id="blue-architecture/role-of-the-siemens-swa" aria-current="page">Role of the Siemens SWA: the role of the software architect</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>BLUE - Architecture</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
+      <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
+      <div class="topic-meta">
+        <span>3,676 words · about 18 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/role-of-the-siemens-swa" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="role-of-the-siemens-swa-the-role-of-the-software-architect">Role of the Siemens SWA: the role of the software architect</h1>
+<p>According to Siemens, the SWA is responsible for an effective technical solution in a software development project. They verify the clarity and feasibility of requirements, elaborate alternatives, drive the decision making about the solution, and help the team realize the architecture. They lead technically without direct disciplinary authority. The role therefore does not end with producing a diagram: it also covers requirements, risks, implementation, quality and communication with the involved roles.</p>
+<p><strong>Relation to testing:</strong> An architectural decision only becomes convincing once it is clear how it will be verified that the solution meets the important functional and quality requirements. LOPO explicitly expects the architect to support tests that validate the architecture — especially integration and non-functional tests — to work with architectural risks, and to design for testability.</p>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/swa_job_profile.png" alt="Job Profile">
+<a href="../../assets/files/blue-architecture/Jobprofile-SWA.pdf" data-attachment="1">Job Profile (PDF)</a></p>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/arch_vs_developer.webp" alt="Architect vs Developer"></p>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/arch_involvemnt.png" alt="Architect Involvement"></p>
+<h2 id="definitions-and-basic-terms"><a class="heading-anchor" href="#definitions-and-basic-terms" aria-label="Link to this section">#</a>Definitions and basic terms</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition and meaning in architecture</th>
+<th>Meaning in testing</th>
+<th>Typical exam mistake</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Siemens Software Architect (SWA)</strong></td>
+<td>The role responsible for defining, assessing and enforcing the technical concept of the software realization. Assesses requirements, alternatives, quality, cost and changes.</td>
+<td>Helps determine which architectural assumptions and risks must be verified by tests; this does not replace the tester or the test architect.</td>
+<td>Confusing responsibility for the architecture with an obligation to personally write every design and every test.</td>
+</tr>
+<tr>
+<td><strong>Architectural decision and trade-off</strong></td>
+<td>A choice between feasible alternatives according to requirements, constraints, risks and consequences. The SWA profile explicitly mentions elaborating alternatives and driving the decision process.</td>
+<td>A decision must lead to verifiable expectations: for example an interface test, behaviour under failure, or response time. <strong>Own synthesis.</strong></td>
+<td>Stating only the selected technology, not the reason for the choice and its drawbacks.</td>
+</tr>
+<tr>
+<td><strong>Quality requirement</strong></td>
+<td>A requirement on a property of the solution, for example performance, modifiability or robustness. In LOPO, the precision and testability of quality requirements is part of the architect&#39;s work.</td>
+<td>Must be formulated so that the verification conditions and the expected result can be determined.</td>
+<td>Declaring &quot;the system must be robust&quot; to be a sufficiently testable requirement.</td>
+</tr>
+<tr>
+<td><strong>Testability</strong></td>
+<td>A property of the design that allows the test situation to be controlled effectively and its result to be observed; LOPO explicitly works with <em>controllability</em> and <em>observability</em>.</td>
+<td>Determines whether a relevant state or failure can be triggered and the system&#39;s reaction reliably detected.</td>
+<td>Equating testability with the number of automated tests.</td>
+</tr>
+<tr>
+<td><strong>Architectural risk</strong></td>
+<td>The uncertainty that the design will not meet an important requirement or that an assumption of the solution will not hold. Siemens emphasizes knowing the biggest project risks and the alternatives.</td>
+<td>Risk helps set the priority and the level of verification; LOPO requires architectural risks to be linked to test levels.</td>
+<td>Testing everything evenly, but not verifying the riskiest interface.</td>
+</tr>
+<tr>
+<td><strong>Architecture owner</strong></td>
+<td><strong>Working interpretation for this topic:</strong> a team member explicitly entrusted with the ongoing care of architectural decisions and their realization in the implementation, possibly developing software at the same time. LOPO asks for this role to be discussed but provides no single definition.</td>
+<td>May maintain the link between the design, integration tests and discovered defects. The scope of authority must be clarified in the project. <strong>Own synthesis.</strong></td>
+<td>Taking the word <em>owner</em> as proof that a single person approves every detail.</td>
+</tr>
+</tbody></table></div>
+<p><strong>An example, not a description of an internal product:</strong> In an industrial embedded module, a decision may be to separate input processing from diagnostics. The architectural question is which behaviour and timing constraint must be preserved; the testing question is how to trigger a failure state and observe the reaction at the interface. The trade-off may lie between stronger separation of responsibilities and the cost of communication between the parts of the system. <strong>Own synthesis.</strong></p>
+<h2 id="introduction-responsibilities-and-the-boundaries-of-the-role"><a class="heading-anchor" href="#introduction-responsibilities-and-the-boundaries-of-the-role" aria-label="Link to this section">#</a>Introduction, responsibilities and the boundaries of the role</h2>
+<h3 id="why-the-role-is-needed"><a class="heading-anchor" href="#why-the-role-is-needed" aria-label="Link to this section">#</a>Why the role is needed</h3>
+<p>Siemens describes experienced architects as important for successful solutions and for the long-term outcome of projects. The SWA complements the product role: business and product goals must be translated into a feasible technical concept that holds up even when requirements and technologies change. LOPO therefore connects a sustainable architecture with responsibility for the result of the software project.</p>
+<h3 id="responsibilities-of-the-classical-software-architect"><a class="heading-anchor" href="#responsibilities-of-the-classical-software-architect" aria-label="Link to this section">#</a>Responsibilities of the &quot;classical&quot; software architect</h3>
+<ol>
+<li><strong>Clarify the problem and the requirements.</strong> The meaning and feasibility of system, customer or market requirements and their translation into software requirements are verified. For quality requirements, their precision and verifiability are examined as well.</li>
+<li><strong>Design and assess alternatives.</strong> Not only the preferred technology should be presented; the main alternatives, risks and the reasons for the decision must be known.</li>
+<li><strong>Drive the realization of the architecture.</strong> The SWA profile requires guiding and steering the architecture so that timely and cost-appropriate realization with adequate quality is possible. This includes leading developers and involving experts from other life-cycle phases.</li>
+<li><strong>Maintain shared understanding.</strong> LOPO requires up-to-date documentation of the architecture and the decisions, including <em>what</em> was chosen and <em>why</em>. Documentation is a means of communication and is meant to be reviewed.</li>
+<li><strong>Verify the quality of the result.</strong> LOPO expects the architect to participate in the test strategy, in verifying integration and non-functional properties, in working with test results, and in continuously assessing whether the architecture is right and implemented correctly.</li>
+</ol>
+<p><strong>An important boundary:</strong> Responsibility for the technical concept is not the same as exclusive ownership of all product priorities, of all tests, or disciplinary management of the team. The programme overview explicitly mentions leading without disciplinary authority; the concrete split of decision rights must be set in the project.</p>
+<h2 id="competences-and-skills"><a class="heading-anchor" href="#competences-and-skills" aria-label="Link to this section">#</a>Competences and skills</h2>
+<p>The SWA profile distinguishes architectural and development skills, requirements engineering, quality assurance, domain knowledge and social competences. It also lists a basic competence in software testing; <strong>this must not be read as testing being unimportant for the architect</strong>, because LOPO at the same time assigns them concrete responsibilities for testability and for verifying the architecture. The difference is between describing the level of one competence in the profile and the practical outcomes expected in the learning programme.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Competence group</th>
+<th>What must be explainable in the exam</th>
+<th>Link to testing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Technical and methodical</strong></td>
+<td>Designing structures and interfaces, working with alternatives, patterns and design tactics, justifying decisions.</td>
+<td>Which design assumption can be verified by a prototype, a review or a test. <strong>Own synthesis.</strong></td>
+</tr>
+<tr>
+<td><strong>Domain and product</strong></td>
+<td>Understanding the customer&#39;s problem, the solution environment and the consequences of constraints; not choosing an architecture in isolation from how the product is used.</td>
+<td>Choosing realistic scenarios, operating conditions and risks. <strong>Own synthesis.</strong></td>
+</tr>
+<tr>
+<td><strong>Requirements and quality</strong></td>
+<td>Uncovering an unclear or conflicting requirement, assessing feasibility and the testability of a quality.</td>
+<td>Translating a quality goal into a verifiable criterion and evaluating the results.</td>
+</tr>
+<tr>
+<td><strong>Communication and leadership</strong></td>
+<td>Leading a technical discussion, explaining decisions to different stakeholders, obtaining feedback and leading without formal power.</td>
+<td>Aligning design assumptions with the test strategy and addressing findings in time. <strong>Own synthesis.</strong></td>
+</tr>
+<tr>
+<td><strong>Project and business thinking</strong></td>
+<td>Assessing time, cost, risk and long-term sustainability as part of a technical choice.</td>
+<td>Prioritizing verification by impact and uncertainty, not only by ease of automation. <strong>Own synthesis.</strong></td>
+</tr>
+</tbody></table></div>
+<p><strong>What must be said:</strong> A competent SWA connects the problem domain, the technical design, quality and people. <strong>What is good to add:</strong> This is not about being a universal specialist in every discipline; what matters is the ability to bring in the right expert in time. The SWA profile explicitly accounts for involving experts from later phases, for example operation and service.</p>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/arch_competencies.png" alt="Architect Competencies"></p>
+<h2 id="communication-and-the-role-in-the-team"><a class="heading-anchor" href="#communication-and-the-role-in-the-team" aria-label="Link to this section">#</a>Communication and the role in the team</h2>
+<p>Communication is not a &quot;soft add-on&quot; to a finished architecture. Siemens requires the SWA to be able to explain the relevant views of the architecture, coach developers, motivate the team and gain support without disciplinary authority. The profile also lists a broad circle of contacts, including product and project roles, requirements engineers, other architects, developers, integrators, testers, service experts and customers.</p>
+<p>The following <strong>typical conversation topics are own synthesis</strong> on top of this list of roles:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>With whom</th>
+<th>Why the communication matters</th>
+<th>Typical topics</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product owner / product and project management</td>
+<td>Aligning value, scope, deadline and technical risk.</td>
+<td>Priorities, solution variants, cost of change, technical debt.</td>
+</tr>
+<tr>
+<td>Requirements engineer and domain expert</td>
+<td>Preventing a design built on an unclear assumption.</td>
+<td>Meaning of a requirement, boundary states, quality scenarios.</td>
+</tr>
+<tr>
+<td>Developers, integrators and other architects</td>
+<td>Carrying decisions into the actual design and interfaces.</td>
+<td>Component responsibilities, integration contracts, design changes.</td>
+</tr>
+<tr>
+<td>Tester / test architect / quality</td>
+<td>Verifying risks and qualities that unit tests alone cannot prove.</td>
+<td>Testability, integration and non-functional tests, interpretation of findings.</td>
+</tr>
+<tr>
+<td>Operations, service and relevant specialists</td>
+<td>Capturing the consequences of decisions beyond the implementation phase.</td>
+<td>Diagnostics, maintainability, environment constraints and solution handover.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Exam formulation:</strong> &quot;The architect does not only communicate the finished design. Through communication they obtain requirements and constraints, negotiate trade-offs, enable the team to realize the decisions, and ensure feedback from testing.&quot;</p>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/arch_communication_hub.png" alt="Architect Communication"></p>
+<h3 id="the-classical-architect-versus-the-architecture-owner-as-a-part-time-role"><a class="heading-anchor" href="#the-classical-architect-versus-the-architecture-owner-as-a-part-time-role" aria-label="Link to this section">#</a>The classical architect versus the architecture owner as a part-time role</h3>
+<p><strong>A working distinction, not a single Siemens organizational definition:</strong> &quot;Classical architect&quot; here means a person with an explicit, broader mandate to do architectural work across the life cycle. &quot;Part-time architecture owner&quot; denotes a member of the delivery team who, alongside development work, continuously cares for the architectural coherence of a defined area. In both cases what matters is the <strong>actual scope of responsibility, the capacity and the way of collaborating</strong>, not the role title itself. LOPO requires the advantages and disadvantages of the architecture owner to be discussed; another Siemens description, for example, distinguishes a <em>team architect</em> scoped to a single team from product and platform architects with a broader scope. These terms, however, cannot automatically be equated with a &quot;part-time architecture owner&quot;.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Potential benefit</th>
+<th>Potential risk</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Classical architect with a broader mandate</strong></td>
+<td>Room for long-term decisions, cross-team coordination and a more independent view of the design.</td>
+<td>With weak contact to the implementation, decisions that are hard to apply in daily work may arise. <strong>Own synthesis.</strong></td>
+</tr>
+<tr>
+<td><strong>Architecture owner, part-time in the team</strong></td>
+<td>Short feedback from code and tests; architectural questions can be caught during implementation.</td>
+<td>Development tasks may crowd out work on quality, documentation and risks; the owner may become a bottleneck. <strong>Own synthesis.</strong></td>
+</tr>
+</tbody></table></div>
+<p><strong>Seven trade-offs to discuss in the exam (own synthesis):</strong></p>
+<ol>
+<li><strong>Closeness to the implementation × distance for strategic decision making.</strong></li>
+<li><strong>Fast local decisions × coherence across teams.</strong></li>
+<li><strong>Using an experienced developer × their limited capacity for architecture.</strong></li>
+<li><strong>A clearly named responsible person × the risk that the team stops co-deciding.</strong></li>
+<li><strong>Continuous verification in code × lack of time for integration and quality risks.</strong></li>
+<li><strong>Fewer handover interfaces between design and development × the chance of missing independent feedback.</strong></li>
+<li><strong>A pragmatic role for a defined area × an unclear mandate for decisions affecting the whole product.</strong></li>
+</ol>
+<p><strong>How to formulate the decision:</strong> The part-time model may be suitable if the architectural scope is bounded, dedicated capacity exists, decision rights are clear, and decisions exceeding the team can be escalated. If the work involves fundamental cross-team interfaces, conflicting qualities or extensive architectural risks, it must be assessed whether partial capacity is sufficient. This is not a universal Siemens rule, but a design criterion. <strong>Own synthesis.</strong></p>
+<h2 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common mistakes and anti-patterns</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Why it is a problem and how it shows up</th>
+<th>Prevention</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>The architecture is just a document</strong></td>
+<td>The document may be formally correct, yet the implementation and tests drift away from it.</td>
+<td>Continuously compare decisions with the implementation and the verification results; keep the reasons for decisions up to date.</td>
+</tr>
+<tr>
+<td><strong>A decision without alternatives and criteria</strong></td>
+<td>The trade-off cannot be defended, nor can the impact of changed assumptions be assessed.</td>
+<td>Record the problem, the variants, the decision criteria and the consequences.</td>
+</tr>
+<tr>
+<td><strong>A vague quality requirement</strong></td>
+<td>The team and the testers may interpret &quot;sufficient performance&quot; differently.</td>
+<td>Clarify the conditions and the measurable expected result before choosing a solution.</td>
+</tr>
+<tr>
+<td><strong>A test strategy derived only from the code structure</strong></td>
+<td>Tests for interfaces, operational scenarios and architectural risks may be missing.</td>
+<td>Assign the important risks to suitable verification levels; include integration and non-functional tests.</td>
+</tr>
+<tr>
+<td><strong>&quot;Automated&quot; means &quot;testable&quot;</strong></td>
+<td>An automated test may be unable to trigger the critical state or to reliably recognize a wrong result.</td>
+<td>Assess the controllability of the test situation and the observability of the reaction separately.</td>
+</tr>
+<tr>
+<td><strong>The architect decides in isolation</strong></td>
+<td>Requirements, implementation constraints and testing insights never reach the decision.</td>
+<td>Hold the discussion with the relevant roles and adapt the explanation of decisions to them.</td>
+</tr>
+<tr>
+<td><strong>A part-time owner without dedicated capacity</strong></td>
+<td>Architectural tasks stay &quot;for later&quot;; risks appear only during integration.</td>
+<td>Explicitly define responsibilities, capacity, deputization and the escalation path. <strong>Own synthesis.</strong></td>
+</tr>
+</tbody></table></div>
+<h2 id="exam-questions"><a class="heading-anchor" href="#exam-questions" aria-label="Link to this section">#</a>Exam questions</h2>
+<p>For every answer it is useful to follow the order <strong>definition → reason → impact on the design → way of verification → trade-off</strong>.</p>
+<h3 id="basic-questions"><a class="heading-anchor" href="#basic-questions" aria-label="Link to this section">#</a>Basic questions</h3>
+<ol>
+<li><strong>What is the main responsibility of the Siemens SWA?</strong> Good answer: an effective technical solution; clarifying the feasibility of requirements, alternatives, driving the realization, quality.</li>
+<li><strong>Why does an architect need communication skills?</strong> Good answer: to achieve shared understanding and to carry a technical decision through without disciplinary authority.</li>
+<li><strong>Which roles does the SWA communicate with?</strong> Good answer: name several groups from the SWA profile and explain the concrete purpose of the communication for each, not just list titles.</li>
+</ol>
+<h3 id="intermediate-questions"><a class="heading-anchor" href="#intermediate-questions" aria-label="Link to this section">#</a>Intermediate questions</h3>
+<ol start="4">
+<li><strong>How does a quality requirement translate into the architect&#39;s work?</strong> Good answer: making it precise, assessing feasibility, choosing a design tactic and verifying the result.</li>
+<li><strong>What is the difference between responsibility for the architecture and personally performing all tests?</strong> Good answer: the architect ensures that architectural risks and qualities have an adequate means of verification; they collaborate with the testing roles.</li>
+<li><strong>What must the explanation of an architectural decision contain?</strong> Good answer: context, alternatives, criteria, consequences and assumptions that can be verified. The structure of the answer is <strong>own synthesis</strong>.</li>
+</ol>
+<h3 id="advanced-questions"><a class="heading-anchor" href="#advanced-questions" aria-label="Link to this section">#</a>Advanced questions</h3>
+<ol start="7">
+<li><strong>How do you tell that an architecture is designed correctly but implemented incorrectly?</strong> Good answer: distinguish assessing the design against the requirements from assessing the actual implementation against the design; use reviews and relevant tests.</li>
+<li><strong>How would you design the verification of failure behaviour in an embedded system?</strong> Good answer: determine the observable reaction, the way to trigger the failure, the interfaces, the timing constraints and the suitable test level. <strong>Own synthesis.</strong></li>
+<li><strong>How do you resolve a conflict between two quality goals?</strong> Good answer: clarify the priorities and the conditions of use, compare the variants, describe the sacrifices and verify the critical assumptions.</li>
+</ol>
+<h3 id="questions-about-practical-experience"><a class="heading-anchor" href="#questions-about-practical-experience" aria-label="Link to this section">#</a>Questions about practical experience</h3>
+<ol start="10">
+<li><strong>Describe a decision that was changed after the result of an integration test.</strong> Good answer: the original assumption, the test finding, the new variants and the documented reason for the change.</li>
+<li><strong>How would the team improve the testability of a hard-to-reproduce defect?</strong> Good answer: separate the ability to set the input conditions from the ability to observe the result; state the impact on the design.</li>
+</ol>
+<h3 id="trade-off-decision-questions"><a class="heading-anchor" href="#trade-off-decision-questions" aria-label="Link to this section">#</a>Trade-off decision questions</h3>
+<ol start="12">
+<li><strong>When do you choose a part-time architecture owner and when an architect with broader dedicated capacity?</strong> Good answer: scope, risks, cross-team dependencies, available capacity, mandate and feedback from the implementation. <strong>Own synthesis.</strong></li>
+<li><strong>Should the owner approve every technical decision?</strong> Good answer: distinguish strategic decisions with broader impact from local team decisions; describe the bottleneck risk. <strong>Own synthesis.</strong></li>
+</ol>
+<h2 id="model-exam-answer"><a class="heading-anchor" href="#model-exam-answer" aria-label="Link to this section">#</a>Model exam answer</h2>
+<p><em>A coherent speech draft of roughly 4–6 minutes; the formulations and the example are own synthesis, the definition of the role and the expectations are based on the Siemens source material.</em></p>
+<p>&quot;The role of the Siemens Software Architect consists in being responsible for an effective technical solution of a software project. It is not only about drawing the structure of the system. The architect helps clarify the requirements and their feasibility, creates and compares alternatives, drives the decision process and supports the team in realizing the chosen solution. The goal is an architecture that enables delivering software with adequate quality, cost and time, even when requirements change.</p>
+<p>For the architecture it is essential that decisions connect the customer&#39;s problem with the concrete responsibilities of the parts of the system, the interfaces and the technical constraints. Before a decision one must therefore know which requirements are architecturally significant, what the biggest uncertainties are, and what will be lost by choosing one variant. For instance, a faster implementation may worsen the possibility of later change; stronger separation of components may in turn increase the complexity of their communication. A good answer from an architect does not only say &#39;I chose this variant&#39;, but also &#39;under which assumptions this variant is suitable and how we will know that the assumptions hold&#39;. The Siemens requirement to know the alternatives and their advantages and disadvantages is essential at this point.</p>
+<p>The relevance for testing is direct. A quality requirement that cannot reasonably be verified gives insufficient support either to the design or to the acceptance of the result. The architect therefore collaborates on making it precise and considers whether the design allows the necessary test conditions to be created and the response to be observed. Further, they determine which architectural assumptions are the riskiest. Those should not be left to unit tests alone if they concern, for example, the interplay of components or the behaviour of the system as a whole. LOPO explicitly emphasizes testability, risk-oriented testing, and integration and non-functional tests that validate the architecture.</p>
+<p>As an illustration, consider an industrial embedded module in which input data processing and diagnostics are being designed. A requirement may stipulate the reaction to a certain failure and its timing constraint. The architect must determine where the responsibility for detection and reaction lies, which interfaces are used, and what happens with invalid or delayed data. At the same time, it must be clarified with the testing roles how the failure is safely triggered, how the reaction is measured, and at which level the interplay of the parts of the system will be verified. This is an example of design reasoning, not a statement about a concrete Siemens product.</p>
+<p>Communication is equally important. The architect works with product and project roles on priorities and constraints, with the requirements engineer on the meaning of requirements, with developers and other architects on interfaces, and with testers on verifying risks. Their influence is not based on formal authority alone. Siemens describes leading the team without disciplinary authority; decisions must therefore be understandable, justified and acceptable to those who will realize them.</p>
+<p>Finally, the role has to be distinguished from the organizational model. A classical architect with a broader mandate may have more room for the long-term coherence of the solution. A part-time architecture owner inside the team may, by contrast, be closer to the code and the tests. Their advantage is fast feedback, their disadvantage the risk of insufficient time for cross-team questions, documentation and systematic verification. The choice therefore depends on the scope and the risks of the project, not on which title sounds better.</p>
+<p>In summary: a good SWA connects requirements, alternatives, technical decisions, realization and quality verification. An architecture is successful when the team understands it, is able to realize it, and there is evidence that it fulfils the essential requirements.&quot;</p>
+<h2 id="11-short-version-for-quick-revision"><a class="heading-anchor" href="#11-short-version-for-quick-revision" aria-label="Link to this section">#</a>11. Short version for quick revision</h2>
+<p><strong>Five main points</strong></p>
+<ol>
+<li>The SWA is responsible for an effective technical concept and its realization, not just for a document.</li>
+<li>They clarify the feasibility of requirements, the alternatives and the biggest risks.</li>
+<li>They lead technically and communicate across roles without disciplinary authority.</li>
+<li>They connect design quality with testability, integration and non-functional tests.</li>
+<li>A part-time architecture owner is a trade-off between closeness to the implementation and capacity for broader architectural work. <strong>Own synthesis.</strong></li>
+</ol>
+<p><strong>Five terms:</strong> SWA; architectural decision; quality requirement; testability; architectural risk.</p>
+<p><strong>Three mistakes:</strong> a decision without alternatives; a vague requirement with no way to verify it; an owner without a clear mandate and time.</p>
+<p><strong>One model sentence:</strong> &quot;The task of the SWA is to turn important requirements and risks into justified architectural decisions, to help the team realize them, and to ensure that their result can be verified.&quot;</p>
+<h2 id="learning-outcome-what-must-be-demonstrable-after-studying"><a class="heading-anchor" href="#learning-outcome-what-must-be-demonstrable-after-studying" aria-label="Link to this section">#</a>Learning outcome: what must be demonstrable after studying</h2>
+<p>For this topic LOPO requires being able to <strong>list and describe the responsibilities of the classical architect, discuss the necessary skills, explain the importance of communication, identify the key communication partners and their topics, and analyse the advantages and disadvantages of the architecture owner</strong>. The practical outcome is meant to be a short <em>pitch</em> about responsibilities, skills and communication in a concrete project.</p>
+<p><strong>Exam self-check of your answer:</strong></p>
+<ul>
+<li><strong>Must say:</strong> the mission of the role, the responsibilities, the stakeholders, the alternatives and the risks.</li>
+<li><strong>Good to add:</strong> the relation between an architectural decision, a quality requirement and its verification.</li>
+<li><strong>Avoid:</strong> claiming that the architect &quot;only designs&quot;, that automation alone guarantees testability, or that a part-time owner is universally a suitable model.</li>
+<li><strong>Show architectural reasoning:</strong> state the variants, the selection criteria and the consequences.</li>
+<li><strong>Show understanding of testing:</strong> determine what evidence would confirm or refute a key design assumption.</li>
+<li><strong>Formulate the trade-off:</strong> &quot;Variant A improves X, but increases cost or risk Y; given these requirements I choose A, because…, and I will verify the assumption by…&quot;</li>
+</ul>
+<h2 id="summary-in-one-table"><a class="heading-anchor" href="#summary-in-one-table" aria-label="Link to this section">#</a>Summary in one table</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What matters</th>
+<th>Relation to architecture</th>
+<th>Relation to testing</th>
+<th>Typical exam question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mission of the SWA</td>
+<td>An effective and feasible technical solution.</td>
+<td>Connecting requirements, variants and realization.</td>
+<td>Verifying the key design assumptions.</td>
+<td>&quot;What is the SWA responsible for?&quot;</td>
+</tr>
+<tr>
+<td>Responsibilities</td>
+<td>Requirements, alternatives, decisions, driving the realization.</td>
+<td>A sustainable concept even under change.</td>
+<td>Risks and quality properties feed into the verification strategy.</td>
+<td>&quot;Where does design end and responsibility for realization begin?&quot;</td>
+</tr>
+<tr>
+<td>Competences</td>
+<td>Technical, domain, quality and social skills.</td>
+<td>Deciding in context, not an isolated technology choice.</td>
+<td>Assessing testability and test results.</td>
+<td>&quot;Why is being an excellent programmer not enough?&quot;</td>
+</tr>
+<tr>
+<td>Communication</td>
+<td>Shared understanding and leading without disciplinary authority.</td>
+<td>Acceptance and correct realization of decisions.</td>
+<td>Aligning the design with test scenarios and findings.</td>
+<td>&quot;With whom and about what does the architect talk?&quot;</td>
+</tr>
+<tr>
+<td>Part-time architecture owner</td>
+<td>Define the mandate, the scope and the capacity. <strong>Own synthesis.</strong></td>
+<td>Closeness to the team versus broader coherence.</td>
+<td>Fast feedback versus the risk of neglecting systematic verification.</td>
+<td>&quot;When does this model make sense and when does it not?&quot;</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/blue-architecture/experience-architecture.html"><span class="pager__label">← Previous</span><span>Experience — Architecture (all practical examples in one place)</span></a>
+      <a class="pager__next" href="../../chapters/gray-requirements/1-requirements-generally.html"><span class="pager__label">Next →</span><span>1. Requirements Engineering (RE) — General Introduction</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-2"><a href="#definitions-and-basic-terms">Definitions and basic terms</a></li><li class="lvl-2"><a href="#introduction-responsibilities-and-the-boundaries-of-the-role">Introduction, responsibilities and the boundaries of the role</a></li><li class="lvl-3"><a href="#why-the-role-is-needed">Why the role is needed</a></li><li class="lvl-3"><a href="#responsibilities-of-the-classical-software-architect">Responsibilities of the classical software architect</a></li><li class="lvl-2"><a href="#competences-and-skills">Competences and skills</a></li><li class="lvl-2"><a href="#communication-and-the-role-in-the-team">Communication and the role in the team</a></li><li class="lvl-3"><a href="#the-classical-architect-versus-the-architecture-owner-as-a-part-time-role">The classical architect versus the architecture owner as a part-time role</a></li><li class="lvl-2"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-2"><a href="#exam-questions">Exam questions</a></li><li class="lvl-3"><a href="#basic-questions">Basic questions</a></li><li class="lvl-3"><a href="#intermediate-questions">Intermediate questions</a></li><li class="lvl-3"><a href="#advanced-questions">Advanced questions</a></li><li class="lvl-3"><a href="#questions-about-practical-experience">Questions about practical experience</a></li><li class="lvl-3"><a href="#trade-off-decision-questions">Trade-off decision questions</a></li><li class="lvl-2"><a href="#model-exam-answer">Model exam answer</a></li><li class="lvl-2"><a href="#11-short-version-for-quick-revision">11. Short version for quick revision</a></li><li class="lvl-2"><a href="#learning-outcome-what-must-be-demonstrable-after-studying">Learning outcome: what must be demonstrable after studying</a></li><li class="lvl-2"><a href="#summary-in-one-table">Summary in one table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Architecture Quality &amp; Architecture Review - BLUE - Architecture - SWA preparation study guide.">
+<title>Architecture Quality &amp; Architecture Review · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture" open>
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">12</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-review.html" data-topic-id="blue-architecture/architecture-review" aria-current="page">Architecture Quality &amp; Architecture Review</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/role-of-the-siemens-swa.html" data-topic-id="blue-architecture/role-of-the-siemens-swa">Role of the Siemens SWA: the role of the software architect</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding">
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>BLUE - Architecture</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
+      <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
+      <div class="topic-meta">
+        <span>7,886 words · about 39 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/architecture-review" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="architecture-quality-architecture-review">🔵 Architecture Quality &amp; Architecture Review</h1>
+<h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
+<p>This topic ties together two inseparable questions: <strong>what makes an architecture good</strong> and <strong>how do we verify that we actually have one</strong>. Architecture quality is not a property that can be declared — it is a property that must be verified. Verification is done through architecture reviews, which fall into <strong>quantitative</strong> reviews (measurable data about code and behaviour) and <strong>qualitative</strong> reviews (structured human analysis of the design and its decisions).</p>
+<p>For <strong>architecture</strong>, the topic matters because architectural decisions are expensive and hard to reverse. A flaw in the architecture discovered in production costs orders of magnitude more than the same flaw found during a review. A review is therefore a risk-management instrument, not a formality.</p>
+<p>For <strong>testing</strong>, the topic is key because a review is essentially <strong>static verification of the architecture</strong>. It works on the same principle as static testing of code: it looks for defects in an artifact before an implementation exists. Quantitative reviews moreover use testing and analysis tooling directly (static analysis, simulation, prototypes), so they form the bridge between architecture and test strategy.</p>
+<blockquote>
+<p><strong>Note on sources:</strong> the material is based on the Siemens workshop deck &quot;Software Architect Learning Program&quot; (Workshop 3) and on the public cheat sheet &quot;Clean simple flexible evolvable agile Architecture&quot; (Urs Enzler, bbv Software Services, V1.0 2015, CC BY 4.0). Passages marked as <em>own synthesis</em> are not backed by the source material.</p>
+</blockquote>
+<hr>
+<h2 id="1-what-is-architecture-quality"><a class="heading-anchor" href="#1-what-is-architecture-quality" aria-label="Link to this section">#</a>1. What is architecture quality</h2>
+<h3 id="1-1-intuitive-answer-vs-systematic-framework"><a class="heading-anchor" href="#1-1-intuitive-answer-vs-systematic-framework" aria-label="Link to this section">#</a>1.1 Intuitive answer vs. systematic framework</h3>
+<p>When asked <em>&quot;What makes an architecture a good architecture?&quot;</em>, people spontaneously answer mostly with <strong>internal quality attributes</strong>. The following clusters appeared repeatedly in the source material:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Cluster</th>
+<th>Typical formulations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Meeting requirements</td>
+<td>fits the requirements, fit for purpose, fits to business goals, scoped clearly</td>
+</tr>
+<tr>
+<td>Quality attributes</td>
+<td>meets quality requirements, fulfills the quality attributes</td>
+</tr>
+<tr>
+<td>Testability</td>
+<td>testable</td>
+</tr>
+<tr>
+<td>Code–design alignment</td>
+<td>is realized (code adheres to design), easy to implement right</td>
+</tr>
+<tr>
+<td>Maintainability and evolvability</td>
+<td>maintainable, future-proof, open for future change, extendable, clean</td>
+</tr>
+<tr>
+<td>Understandability</td>
+<td>understandable, easy to teach, not magic, can be implemented by developers</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>well documented (up to date, unambiguous, clear), documents <em>why</em> things are the way they are, versioned</td>
+</tr>
+<tr>
+<td>Simplicity</td>
+<td>as simple as reasonably possible, lean</td>
+</tr>
+</tbody></table></div>
+<p>What is remarkable is what <strong>does not</strong> appear in intuitive answers: coupling, cohesion, concrete quality scenarios, measurable metrics. That is exactly the difference between a lay and a systematic view of quality — and the reason structured review methods are needed.</p>
+<h3 id="1-2-five-characteristics-of-a-good-architecture"><a class="heading-anchor" href="#1-2-five-characteristics-of-a-good-architecture" aria-label="Link to this section">#</a>1.2 Five characteristics of a good architecture</h3>
+<p>The reference framework (bbv cheat sheet) defines five properties that together describe a &quot;good&quot; architecture:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Core idea</th>
+<th>Key sub-categories</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Clean</strong></td>
+<td>Details can be replaced, the design can be verified</td>
+<td>Dependencies point inwards, dependency inversion, framework independence, <strong>testability of business rules without UI/DB/server</strong></td>
+</tr>
+<tr>
+<td><strong>Simple</strong></td>
+<td>Easy to understand (simplicity is subjective)</td>
+<td>Consistent decisions (one problem = one solution), number of concepts and technologies, number of interactions, size, modularity</td>
+</tr>
+<tr>
+<td><strong>Flexible</strong></td>
+<td>Supports change</td>
+<td>Separation of concerns, software mirrors the user&#39;s mental model, abstraction (beware of over-abstraction), lean interfaces, composition over inheritance, acyclic dependencies</td>
+</tr>
+<tr>
+<td><strong>Evolvable</strong></td>
+<td>Easy to adapt step by step</td>
+<td>Matches current, not future needs; no dead ends; sacrificial architecture; rolling refactoring (at most two versions of a concept at a time)</td>
+</tr>
+<tr>
+<td><strong>Agile</strong></td>
+<td>Fast change and continuous verifiability</td>
+<td><strong>Verifiable at any time</strong> (e.g. every sprint), rapid deployment, always working (walking skeleton, simulators)</td>
+</tr>
+</tbody></table></div>
+<p>For this topic the two most important properties are the ones directly linked to testing: <strong>Clean → testability</strong> and <strong>Agile → continuous verifiability</strong>. An architecture that cannot be verified continuously cannot be agile.</p>
+<h3 id="1-3-forces-acting-on-the-architecture"><a class="heading-anchor" href="#1-3-forces-acting-on-the-architecture" aria-label="Link to this section">#</a>1.3 Forces acting on the architecture</h3>
+<p>A review makes no sense without understanding <strong>what</strong> the architecture is fighting against.</p>
+<p><strong>Influencing forces:</strong>
+quality attributes (the primary driver of decisions), team knowledge and skills, ease of implementation, <strong>cost of operation</strong> (most of the cost arises in operation, not in implementation), risks, inherent opportunities, technology churn, and above all <strong>trade-offs</strong>.</p>
+<blockquote>
+<p>Designing an architecture means making compromises between conflicting goals. The compromises must reflect the prioritization of quality attributes set by the stakeholders, and they must be documented and communicated.</p>
+</blockquote>
+<p><strong>Degrading forces:</strong> here is a key distinction that is a frequent exam question:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Architectural drift</strong></td>
+<td>Introducing decisions that the planned architecture <strong>neither contains nor implies</strong> (the architecture &quot;does not know about them&quot;)</td>
+</tr>
+<tr>
+<td><strong>Architectural erosion</strong></td>
+<td>Introducing decisions that <strong>directly violate</strong> the planned architecture</td>
+</tr>
+</tbody></table></div>
+<p><strong>Architecture killers:</strong> split brain, coupling in space and time, dead-end.</p>
+<h3 id="1-4-architecture-smells"><a class="heading-anchor" href="#1-4-architecture-smells" aria-label="Link to this section">#</a>1.4 Architecture smells</h3>
+<p>A catalogue of symptoms a review looks for. They arise when a design solution is applied in an unsuitable context:</p>
+<p>overlayered architecture, overabstraction, overconfigurability, overkill architecture, futuristic architecture, technology enthusiastic architecture, <strong>paper tiger architecture</strong> (the architecture exists only on paper, with no link to reality), connector envy, scattered parasitic functionality, ambiguous interfaces, extraneous adjacent connector.</p>
+<p>The <strong>paper tiger</strong> smell is a direct argument for quantitative reviews: without verifying that the code conforms to the design, there is no way to tell whether the documented architecture exists at all.</p>
+<hr>
+<h2 id="2-why-formal-process-reviews-are-not-enough"><a class="heading-anchor" href="#2-why-formal-process-reviews-are-not-enough" aria-label="Link to this section">#</a>2. Why formal process reviews are not enough</h2>
+<p>This is the argumentative core of the whole topic:</p>
+<blockquote>
+<p>Review methods defined together with the development process are mostly <strong>formal</strong> and focus on <strong>development documents</strong>. The review goals delivered with them are <strong>not sufficient</strong> to achieve the quality goals of a &quot;good architecture&quot;.</p>
+<p><em>As responsible architects we must do better.</em></p>
+</blockquote>
+<p>The difference is fundamental:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Formal process review</th>
+<th>Architecture review</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Verifies conformance to the process</td>
+<td>Verifies the quality of the architecture</td>
+</tr>
+<tr>
+<td>Checks whether a document exists and has the right chapters</td>
+<td>Checks whether the architecture will fulfil the quality scenarios</td>
+</tr>
+<tr>
+<td>The output is a signature / approval</td>
+<td>The output is risks, trade-offs and measures</td>
+</tr>
+<tr>
+<td>Driven by the process</td>
+<td>Driven by the architect</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="3-taxonomy-of-reviews"><a class="heading-anchor" href="#3-taxonomy-of-reviews" aria-label="Link to this section">#</a>3. Taxonomy of reviews</h2>
+<p>The source material uses <strong>two independent axes</strong>:</p>
+<p><strong>Axis 1 – by the nature of the output:</strong></p>
+<ul>
+<li><strong>Quantitative reviews</strong> – measurable data (metrics, measurement results, experiment results)</li>
+<li><strong>Qualitative reviews</strong> – structured human analysis (interviews, workshops, challenges)</li>
+</ul>
+<p><strong>Axis 2 – by the source of insight:</strong></p>
+<ul>
+<li><strong>Scenario-based reviews</strong> – derived from quality scenarios (typically ATAM)</li>
+<li><strong>Experience-based reviews</strong> – derived from the reviewers&#39; experience (typically Industry Practice Reviews)</li>
+</ul>
+<p>Both axes are complementary and it is good to mention both in the exam.</p>
+<hr>
+<h2 id="4-quantitative-reviews"><a class="heading-anchor" href="#4-quantitative-reviews" aria-label="Link to this section">#</a>4. Quantitative reviews</h2>
+<h3 id="4-1-benefits-and-liabilities"><a class="heading-anchor" href="#4-1-benefits-and-liabilities" aria-label="Link to this section">#</a>4.1 Benefits and liabilities</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Benefits</th>
+<th>Liabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Provide &quot;hard&quot; results</td>
+<td>Cover only a narrow slice of concerns or parts of the system</td>
+</tr>
+<tr>
+<td>Quantifiable, objective basis for choosing between alternatives</td>
+<td>Only work if the data is interpreted correctly</td>
+</tr>
+<tr>
+<td>&quot;Experiments&quot; – easily repeatable with changed parameters</td>
+<td>The impact on quality attributes other than the observed one remains unknown</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p><strong>Analogy from the source material:</strong> as with test automation, the up-front investment tends to be high, but it is typically justified by the early detection of conceptual errors.</p>
+</blockquote>
+<p>The liabilities are exactly why quantitative reviews are not sufficient on their own: they measure what they are aimed at, but stay silent about everything else. Only qualitative methods can capture the holistic view and the trade-offs.</p>
+<h3 id="4-2-three-quantitative-methods"><a class="heading-anchor" href="#4-2-three-quantitative-methods" aria-label="Link to this section">#</a>4.2 Three quantitative methods</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Guiding question</th>
+<th>Content</th>
+<th>What it verifies</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Code Quality Assessment</strong></td>
+<td><em>Is the architecture implemented correctly?</em></td>
+<td>Static code analysis: coding rules, metrics, <strong>structure analysis / architecture conformance</strong></td>
+<td>Conformance of the implementation to the design — i.e. drift and erosion</td>
+</tr>
+<tr>
+<td><strong>Simulation</strong></td>
+<td><em>Can a certain architectural decision fulfill selected qualities?</em></td>
+<td>Simulation of the <em>system context</em> or of <em>component internals</em></td>
+<td>The behaviour of the chosen decision without needing an implementation</td>
+</tr>
+<tr>
+<td><strong>Prototyping</strong></td>
+<td><em>Does the architecture fulfill selected qualities?</em></td>
+<td>An incomplete implementation aimed at <em>technical challenges</em> or <em>user acceptance</em></td>
+<td>Real feasibility and acceptance</td>
+</tr>
+</tbody></table></div>
+<p><strong>Simulation vs. prototype:</strong> a simulation is a <em>model of behaviour</em>, a prototype is a <em>real, albeit incomplete, implementation</em>. Only a prototype can answer the question of user acceptance.</p>
+<p><strong>The architecturally most valuable part of a Code Quality Assessment</strong> is <em>architecture conformance</em> — comparing the actual dependency graph against the intended one. Coding rules and metrics evaluate the micro level; conformance evaluates the architecture.</p>
+<h3 id="4-3-prototype-typology"><a class="heading-anchor" href="#4-3-prototype-typology" aria-label="Link to this section">#</a>4.3 Prototype typology</h3>
+<p>Purposes of prototypes:</p>
+<ul>
+<li><strong>Explorative</strong> – for defining user interfaces; replaces part of the functional specification</li>
+<li><strong>Experimental</strong> – for demonstrating technical feasibility</li>
+</ul>
+<p>The decision about the prototype&#39;s fate <strong>must be made up front</strong>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Approach to quality</th>
+<th>Characteristics</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Throw-Away Prototype</strong></td>
+<td>&quot;The worst thing that might possibly work&quot;</td>
+<td>Deliberately minimal quality, because it will be discarded</td>
+</tr>
+<tr>
+<td><strong>Incremental Prototype</strong></td>
+<td><strong>Full product quality</strong></td>
+<td>If the prototype is to become the basis of further development, it must contain structuring, error handling and documentation like production code <strong>from the start</strong></td>
+</tr>
+<tr>
+<td><strong>Evolutionary Prototype</strong></td>
+<td>&quot;Consider it as a separate product&quot;</td>
+<td>The prototype is extended in several stages and forms its own life-cycle form</td>
+</tr>
+</tbody></table></div>
+<p><strong>The most common anti-pattern:</strong> a throw-away prototype that &quot;accidentally&quot; ends up in production. It is a direct and hard-to-repay source of technical debt.</p>
+<hr>
+<h2 id="5-qualitative-reviews"><a class="heading-anchor" href="#5-qualitative-reviews" aria-label="Link to this section">#</a>5. Qualitative reviews</h2>
+<p>The qualitative review process has five phases:</p>
+<p><strong>Preparation → Execution/Interview → Elaboration → Consolidation → Presentation</strong></p>
+<p>For Industry Practice Reviews the process is documented with concrete artifacts and timing:</p>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/Industry-practice-review-process.png" alt="Industry Practice Review process diagram"></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Inputs</th>
+<th>Outputs</th>
+<th>Duration / form</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Preparation</td>
+<td>Introduction to the review process, examples</td>
+<td>Questionnaires, topics and questions, schedule, document collection (requirements, architecture, design)</td>
+<td>2–3 hours, typically on the project site</td>
+</tr>
+<tr>
+<td><em>Kickoff</em></td>
+<td>—</td>
+<td>—</td>
+<td>dividing point</td>
+</tr>
+<tr>
+<td>Interview</td>
+<td>Preparation outputs</td>
+<td>Interview notes</td>
+<td>2–3 weeks, on site; phone and e-mail for follow-up questions</td>
+</tr>
+<tr>
+<td>Elaboration</td>
+<td>Notes, documents</td>
+<td>(feedback → follow-up questions back into the Interview)</td>
+<td>part of the same block</td>
+</tr>
+<tr>
+<td>Consolidation</td>
+<td>—</td>
+<td>Result slides, result document</td>
+<td>hours</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td>Result slides and document</td>
+<td>—</td>
+<td>hours, on the project site</td>
+</tr>
+</tbody></table></div>
+<p>The essential insight is that <strong>the hardest part is not the interview itself, but the preparation and the elaboration of findings</strong>, and that there is a feedback loop between elaboration and interview — a review is not a one-shot act.</p>
+<h3 id="5-1-active-design-review-adr"><a class="heading-anchor" href="#5-1-active-design-review-adr" aria-label="Link to this section">#</a>5.1 Active Design Review (ADR)</h3>
+<p><strong>Guiding question:</strong> <em>Is an artifact sufficient to solve a given problem?</em></p>
+<p><strong>Principle:</strong></p>
+<ul>
+<li><strong>Challenges</strong> (tasks) are defined to verify the quality of the artifact.</li>
+<li>The reviewer <strong>works on</strong> the challenge and provides feedback.</li>
+</ul>
+<p>The essence of ADR is <strong>reversing the reviewer&#39;s role</strong>. Instead of a passive &quot;read this and tell me what you think&quot; (which leads to superficial agreement), the reviewer gets a concrete task that can be completed from the artifact <strong>only if the artifact is sufficient</strong>. The inability to complete the task is itself a finding: the artifact is incomplete, ambiguous or inconsistent.</p>
+<p><em>Own synthesis – typical forms of a challenge:</em> write the calling code against the interface; describe the component&#39;s behaviour in a given error state; design a test case for a given scenario; list the component&#39;s invariants.</p>
+<p>ADR evaluates the <strong>sufficiency of a design artifact</strong>, not the conformance of the implementation to the design — that is how it differs from Code Quality Assessment.</p>
+<h3 id="5-2-industry-practice-reviews"><a class="heading-anchor" href="#5-2-industry-practice-reviews" aria-label="Link to this section">#</a>5.2 Industry Practice Reviews</h3>
+<p><strong>Essence:</strong> a systematic audit of the architectural process through questionnaires, interviews, evaluation and a final presentation.</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li><strong>Requires experienced reviewers</strong> – the method is not scenario-driven; the quality of the findings depends on whether the reviewer knows what to ask. This is its main limitation.</li>
+<li><strong>Duration of up to six weeks</strong> (typically four; a shortened one-day &quot;flash&quot; variant exists).</li>
+<li><strong>Proposes measures</strong> – the main differentiating benefit. The output is not just identified risks, but concrete recommended steps.</li>
+</ul>
+<h3 id="5-3-atam-architecture-tradeoff-analysis-method"><a class="heading-anchor" href="#5-3-atam-architecture-tradeoff-analysis-method" aria-label="Link to this section">#</a>5.3 ATAM (Architecture Tradeoff Analysis Method)</h3>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/ATAM-schema.png" alt="ATAM method schema"></p>
+<p><strong>Method schema</strong> – two branches converging into the analysis:</p>
+<pre class="mermaid">flowchart LR
+    BD[Business Drivers] --&gt; QA[Quality Attributes]
+    QA --&gt; SC[Scenarios]
+    SA[Software Architecture] --&gt; AA[Architectural Approaches]
+    AA --&gt; AD[Architectural Decisions]
+    SC --&gt; AN((Analysis))
+    AD --&gt; AN
+    AN --&gt; TO[Tradeoffs]
+    AN --&gt; SP[Sensitivity Points]
+    AN --&gt; NR[Non-Risks]
+    AN --&gt; RI[Risks]
+    TO --&gt; RT[Risk Themes]
+    SP --&gt; RT
+    NR --&gt; RT
+    RI --&gt; RT
+    RT -. impacts .-&gt; BD
+    RT -. impacts .-&gt; SA
+</pre>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li><strong>Requires experienced facilitators</strong> – unlike Industry Practice, where the reviewer&#39;s domain expertise is needed, ATAM needs <strong>process</strong> expertise. The method is workshop-based; guiding the discussion between stakeholders is what matters.</li>
+<li><strong>Duration of two weeks</strong>, with intensive workshops at the start.</li>
+<li><strong>Focus on qualities – both operational and developmental.</strong> Not only performance, availability and security, but also modifiability, testability and extensibility.</li>
+</ul>
+<p><strong>Closing the loop is essential:</strong> ATAM does not end with a list of findings. Risks are distilled into <strong>risk themes</strong>, which feed back both into the business drivers (they may lead to re-prioritization) and into the architecture itself (they lead to redesign).</p>
+<h4 id="definitions-of-the-four-core-atam-terms"><a class="heading-anchor" href="#definitions-of-the-four-core-atam-terms" aria-label="Link to this section">#</a>Definitions of the four core ATAM terms</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Sensitivity Point</strong></td>
+<td>An architectural decision that affects a specific quality scenario. The effect can be positive or negative.</td>
+</tr>
+<tr>
+<td><strong>Tradeoff</strong></td>
+<td>A set of sensitivity points for the <strong>same decision</strong> with <strong>conflicting</strong> impacts on quality scenarios.</td>
+</tr>
+<tr>
+<td><strong>Non-Risk</strong></td>
+<td>A quality affected predominantly by positive sensitivity points; an architectural decision that <strong>respects</strong> the prioritization of qualities.</td>
+</tr>
+<tr>
+<td><strong>Risk</strong></td>
+<td>A quality affected predominantly by negative sensitivity points; an architectural decision that <strong>violates</strong> the prioritization of qualities.</td>
+</tr>
+</tbody></table></div>
+<p><strong>The most important consequence:</strong> both risk and non-risk are defined <strong>relative to the prioritization of quality attributes</strong>. Without established priorities a risk cannot be determined at all. This precisely explains why the weakness of Industry Practice Reviews is the &quot;missing common understanding of requirement priorities&quot;.</p>
+<h4 id="the-atam-matrix-a-working-tool"><a class="heading-anchor" href="#the-atam-matrix-a-working-tool" aria-label="Link to this section">#</a>The ATAM Matrix – a working tool</h4>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/ATAM-matrix.png" alt="ATAM matrix with an example"></p>
+<p>The matrix turns the abstract method into a usable artifact:</p>
+<ul>
+<li><strong>Rows</strong> = quality requirements / scenarios, ordered by <strong>decreasing importance</strong></li>
+<li><strong>Columns</strong> = design decisions, <strong>including &quot;external decisions&quot;, i.e. constraints</strong></li>
+<li><strong>Cells</strong> = sensitivity points with a rating and a <strong>rationale</strong></li>
+</ul>
+<p><strong>How to use it:</strong></p>
+<ol>
+<li>Add rows for the scenarios (decreasing importance).</li>
+<li>Add columns for constraints and design decisions.</li>
+<li>Rate each cell as a sensitivity point according to the effect of the decision on the scenario. <strong>Add the rationale as well.</strong></li>
+<li>Evaluate <strong>row by row</strong> → Risks / Non-Risks (on the scenarios).</li>
+<li>Evaluate <strong>column by column</strong> → Good / Bad Decisions, i.e. the trade-offs.</li>
+</ol>
+<p><strong>The rating scale</strong> distinguishes positive and negative impact with gradations and contains an explicit <strong>&quot;?&quot; marker for an impact that has not yet been evaluated</strong>. That marker is didactically the most valuable: it forces you to admit the lack of knowledge instead of guessing, and it is a natural input for a prototype or a simulation.</p>
+<p><strong>Two modes of use</strong> (a significant trade-off):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+<th>Advantage</th>
+<th>Disadvantage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Continuous</td>
+<td>The matrix is built and maintained during architecture design</td>
+<td>Cheap, continuous, eliminates surprises</td>
+<td>Costs time continuously</td>
+</tr>
+<tr>
+<td>En bloc</td>
+<td>A one-off evaluation later on</td>
+<td>Deep, focused</td>
+<td>Burst effort, problems surface late</td>
+</tr>
+</tbody></table></div>
+<p><strong>Example from the source material</strong> (illustration, not theory):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Quality requirement (decreasing priority)</th>
+<th>Own communication framework</th>
+<th>All logs on one log server</th>
+<th>Use of REST</th>
+<th>Use of C# <em>(constraint)</em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>Security:</em> System withstands a DDoS attack for 4 h</td>
+<td>positive</td>
+<td>negative</td>
+<td>—</td>
+<td>negative</td>
+</tr>
+<tr>
+<td><em>Performance:</em> Alarms visualized in &lt; 4 s</td>
+<td>strongly negative</td>
+<td>—</td>
+<td>positive</td>
+<td>not evaluated</td>
+</tr>
+<tr>
+<td><em>Extensibility:</em> New algorithm added in &lt; 15 days</td>
+<td>positive</td>
+<td>positive</td>
+<td>—</td>
+<td>not evaluated</td>
+</tr>
+</tbody></table></div>
+<p>The column &quot;own communication framework&quot; is a textbook <strong>trade-off</strong>: it helps security and extensibility, but harms performance. No decision about it can be made without knowing the priorities — and because Security ranks highest, the decision is defensible. Conversely, &quot;all logs on one log server&quot; is negative against the highest priority (single point of failure, attack target) and is a candidate for a <strong>risk</strong>.</p>
+<hr>
+<h2 id="6-comparison-of-qualitative-reviews"><a class="heading-anchor" href="#6-comparison-of-qualitative-reviews" aria-label="Link to this section">#</a>6. Comparison of qualitative reviews</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>ADR</strong></th>
+<th><strong>Industry Practice</strong></th>
+<th><strong>ATAM</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Interaction</strong></td>
+<td>Designer, reviewer</td>
+<td>Interviews</td>
+<td>Workshop</td>
+</tr>
+<tr>
+<td><strong>Phase</strong></td>
+<td>Finished detailed design of a component / module</td>
+<td>After the architecture has been designed</td>
+<td>Architecture complete enough for a walkthrough</td>
+</tr>
+<tr>
+<td><strong>Strength</strong></td>
+<td>Focused on finding defects in the design</td>
+<td><strong>Concrete measures</strong></td>
+<td>Like SAAM, but a deeper architectural evaluation</td>
+</tr>
+<tr>
+<td><strong>Key restriction</strong></td>
+<td>Small scale</td>
+<td>Missing common understanding of requirement priorities</td>
+<td><strong>Proposes no measures</strong></td>
+</tr>
+<tr>
+<td><strong>Duration</strong></td>
+<td>2 days / reviewer</td>
+<td>4 weeks normally, 1 day &quot;flash&quot;</td>
+<td>2 weeks</td>
+</tr>
+</tbody></table></div>
+<p><strong>Key complementarity:</strong> ATAM has &quot;no measures&quot;, Industry Practice has &quot;concrete measures&quot;. The methods therefore do not exclude each other — <strong>ATAM tells you <em>what</em> the problem is, Industry Practice tells you <em>what to do about it</em>.</strong></p>
+<p><strong>Growing scope:</strong> the number of people involved grows from a pair (ADR) through a series of interviews (Industry Practice) to a workshop with all stakeholders (ATAM). This matches the growing scope of the evaluated artifact: component → architecture → architecture including trade-offs.</p>
+<blockquote>
+<p><strong>Note:</strong> SAAM (Software Architecture Analysis Method) is the predecessor of ATAM; the source material only mentions it as a reference point, it does not explain it.</p>
+</blockquote>
+<hr>
+<h2 id="7-who-takes-part-in-a-review"><a class="heading-anchor" href="#7-who-takes-part-in-a-review" aria-label="Link to this section">#</a>7. Who takes part in a review</h2>
+<p><em>The source material does not systematically cover this question; the following breakdown is own synthesis derived from the &quot;Interaction&quot; criterion in the comparison table and from the &quot;Participant / Driver and assessor&quot; split.</em></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Contribution to the review</th>
+<th>In which method</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Architect (architecture owner)</strong></td>
+<td>Presents the architecture and the rationale of decisions; answers questions; is the <strong>driver</strong> of a review of their own architecture</td>
+<td>All</td>
+</tr>
+<tr>
+<td><strong>Architect from another project</strong></td>
+<td>Independent view without operational blindness; acts as a <strong>participant</strong> also in projects they are not responsible for</td>
+<td>ADR, ATAM</td>
+</tr>
+<tr>
+<td><strong>Reviewer / assessor</strong></td>
+<td>Works on the challenge (ADR), conducts the interviews (Industry Practice)</td>
+<td>ADR, Industry Practice</td>
+</tr>
+<tr>
+<td><strong>Facilitator</strong></td>
+<td>Runs the workshop, guards the process, does not inject content</td>
+<td>ATAM</td>
+</tr>
+<tr>
+<td><strong>Developers</strong></td>
+<td>Know the reality of the implementation; expose the gap between documented and actual architecture</td>
+<td>ADR, Industry Practice</td>
+</tr>
+<tr>
+<td><strong>Testers / QA</strong></td>
+<td>Bring data on testability, coverage, defects and NFR test results</td>
+<td>Quantitative reviews, ATAM</td>
+</tr>
+<tr>
+<td><strong>Product Owner / business stakeholder</strong></td>
+<td>Owns the <strong>prioritization of quality attributes</strong> – without it neither risk nor non-risk can be determined</td>
+<td>ATAM</td>
+</tr>
+<tr>
+<td><strong>Operations / security</strong></td>
+<td>Bring operational and security scenarios that development does not see</td>
+<td>ATAM, Industry Practice</td>
+</tr>
+</tbody></table></div>
+<p>An essential distinction from the source material: the architect appears in two modes — as a <strong>participant</strong> (in scenario-based and experience-based reviews) and as a <strong>driver and assessor</strong> (in ADR, code quality assessment, simulations and prototypes).</p>
+<hr>
+<h2 id="8-when-to-use-which-technique"><a class="heading-anchor" href="#8-when-to-use-which-technique" aria-label="Link to this section">#</a>8. When to use which technique</h2>
+<p><img loading="lazy" src="../../assets/images/blue-architecture/Architecture-review-when-to-use.png" alt="Mapping of review techniques to project phases"></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Project phase</th>
+<th>Dominant techniques</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Inception / Elaboration</td>
+<td>Prototypes, simulations, <strong>scenario-based reviews</strong> (ATAM)</td>
+<td>Decisions have not been made yet; the goal is to reduce uncertainty and validate concepts while change is still cheap</td>
+</tr>
+<tr>
+<td>Construction</td>
+<td><strong>ADR repeatedly after iterations</strong>, code quality assessment</td>
+<td>A design exists; the goal is to find defects in the design and to guard code–architecture conformance</td>
+</tr>
+<tr>
+<td>Transition</td>
+<td>Code quality assessment, <strong>experience-based reviews</strong></td>
+<td>The system is finished; the goal is to verify compliance and collect lessons learned</td>
+</tr>
+</tbody></table></div>
+<p>The source material shows that <strong>scenario-based reviews dominate at the beginning</strong> (a decreasing wedge) and <strong>experience-based reviews gain importance later</strong> (an increasing wedge). ADR is performed <strong>repeatedly</strong> — the material shows it above every construction iteration, not once. Code quality assessment runs continuously with constant intensity.</p>
+<p><strong>Key message:</strong> there is no &quot;one review method&quot;. The choice is a function of the <strong>project phase</strong> and of <strong>what is uncertain in that phase</strong>.</p>
+<hr>
+<h2 id="9-expectations-towards-the-architect"><a class="heading-anchor" href="#9-expectations-towards-the-architect" aria-label="Link to this section">#</a>9. Expectations towards the architect</h2>
+<p>The conclusion of the whole topic:</p>
+<blockquote>
+<p><strong>You are expected to drive and support appropriate short-term reviews in the scope of your responsibility.</strong></p>
+</blockquote>
+<p>Breaking down the individual words:</p>
+<ul>
+<li><strong>drive and support</strong> – the architect is the initiator and facilitator, not a passive recipient of reviews</li>
+<li><strong>appropriate</strong> – the method is chosen according to the situation, not according to the process</li>
+<li><strong>short-term</strong> – emphasis on short, frequent and cheap reviews (ADR, flash variants) instead of one big formal act</li>
+<li><strong>in the scope of your responsibility</strong> – the architect does not wait for permission from above</li>
+</ul>
+<hr>
+<h2 id="10-reviews-and-testing"><a class="heading-anchor" href="#10-reviews-and-testing" aria-label="Link to this section">#</a>10. Reviews and testing</h2>
+<ul>
+<li><strong>A review is static verification of the architecture.</strong> Like static testing of code, it looks for defects in an artifact before implementation — i.e. as cheaply as possible (&quot;shift left&quot; at the architectural level).</li>
+<li><strong>An ADR challenge is a test case for the design.</strong> The reviewer gets an input (the artifact) and a task; the result is binary: the task was completed or it was not. Failure = a defect in the artifact.</li>
+<li><strong>Quantitative reviews use testing tools.</strong> Static analysis, simulations and prototypes are technically the same things used in testing; only the subject differs (architecture instead of function).</li>
+<li><strong>ATAM is an input for risk-based testing.</strong> Risks and risk themes from ATAM show where the deepest test coverage is needed. Rows with negative sensitivity points are exactly the places where investing in NFR tests pays off.</li>
+<li><strong>The &quot;?&quot; marker in the matrix is a test assignment.</strong> An unevaluated sensitivity point means missing knowledge — that is supplied by a prototype, a simulation or a measurement, not by discussion.</li>
+<li><strong>Architecture conformance is a regression test for the architecture.</strong> An automated check of the dependency graph against the intended model guards against drift and erosion the same way regression tests guard functional behaviour.</li>
+<li><strong>The quality of a review depends on the testability of the scenarios.</strong> The ATAM matrix is only usable if quality requirements are formulated as measurable scenarios (see <a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html">Quality-scenarios-and-design-tactics.md</a>). Without a Response Measure a cell cannot be rated.</li>
+<li><strong>Testability is itself a subject of review.</strong> It belongs to the developmental qualities that ATAM explicitly focuses on.</li>
+</ul>
+<hr>
+<h2 id="11-example-from-practice-the-trap-of-paper-conformance"><a class="heading-anchor" href="#11-example-from-practice-the-trap-of-paper-conformance" aria-label="Link to this section">#</a>11. Example from practice: the trap of paper conformance</h2>
+<p><em>The following case is personal experience, not content of the source material. It serves as an illustration of the theses from chapters 2, 4 and 5.</em></p>
+<p><strong>Situation</strong>
+An initial architecture document was produced for a new unified security component. It contained the model of relationships between entities, the logic of the communication exchanges and the definition of the API at the level of declarations and header files. The design was submitted for a formal review in the Decision Group, where delegates of all client products were represented.</p>
+<p><strong>Course and formal result</strong>
+All stakeholders approved the architecture. At the level of the document and the declarations the design was consistent, the parameters matched and there was nothing to object to technically. The review was closed as successful.</p>
+<p><strong>What the review did not uncover</strong>
+The subject of the evaluation was exclusively a static artifact — a document and empty interfaces. No integrated, even trivial, running version was evaluated (a walking skeleton with mock data). That kept the decisive factor hidden: the effort for the adapter classes on the client side was so high that the client products eventually refused to adopt the component.</p>
+<p>The approved architecture was therefore technically correct and at the same time unusable. The formal agreement of the stakeholders was no proof of quality, because at that moment agreement cost nobody anything — the cost only materialized during integration.</p>
+<p><strong>Link back to theory</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Phenomenon in the case</th>
+<th>Concept from theory</th>
+<th>Chapter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Approving a document with no link to reality</td>
+<td>A formal process review verifies the process, not the quality</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Architecture existing only in a document and headers</td>
+<td><strong>Paper tiger architecture</strong></td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>Everybody agreed, nobody found a finding</td>
+<td>Passive review instead of defined <strong>challenges</strong> (ADR)</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td>The integration effort was never measured</td>
+<td>A missing <strong>prototype</strong> as a quantitative review</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>&quot;Ease of integration&quot; was not formulated as a measurable scenario</td>
+<td>A developmental quality outside the prioritization</td>
+<td>5.3</td>
+</tr>
+<tr>
+<td>The impact of the decision on integration was unknown but not flagged</td>
+<td>A sensitivity point with the <strong>&quot;?&quot;</strong> marker instead of a guess</td>
+<td>5.3</td>
+</tr>
+<tr>
+<td>The review happened once over a finished document</td>
+<td>Missing <strong>continuous verifiability</strong> (the <em>agile</em> characteristic)</td>
+<td>1.2</td>
+</tr>
+</tbody></table></div>
+<p><strong>Which review would have uncovered the problem</strong></p>
+<ul>
+<li><strong>An ADR challenge:</strong> give a representative of a client product the task &quot;write the calling adapter class against this interface&quot;. The impossibility or disproportionate effort of the task is a finding.</li>
+<li><strong>A prototype aimed at user acceptance:</strong> integrating one real client with mock data provides measurable data about the effort.</li>
+<li><strong>The ATAM matrix:</strong> a row &quot;integrate a new client within X days&quot; would, in the column &quot;own adapter layer&quot;, lead to a negative sensitivity point, or to a &quot;?&quot; marker requiring measurement.</li>
+</ul>
+<p><strong>Conclusion for the exam</strong>
+A review of static documentation or empty interfaces provides false confidence. Stakeholder agreement says something about the understandability of the design, not about its feasibility — at the moment of approval a stakeholder bears no cost and therefore has no motivation to look for flaws. A valuable review therefore requires either an <strong>active task</strong> for the participants (ADR) or a <strong>running artifact</strong>, however minimal (walking skeleton, prototype). Only then does the real integration barrier and the non-technical forces that decide the adoption of an architecture become visible.</p>
+<hr>
+<h2 id="definitions-and-basic-terms"><a class="heading-anchor" href="#definitions-and-basic-terms" aria-label="Link to this section">#</a>Definitions and basic terms</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+<th>Meaning in architecture</th>
+<th>Meaning in testing</th>
+<th>Typical mistake / misunderstanding</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Architecture review</strong></td>
+<td>Structured evaluation of an architecture aiming to uncover risks, defects and trade-offs</td>
+<td>An instrument to manage the risk of expensive and irreversible decisions</td>
+<td>Static verification of the architecture, &quot;shift left&quot;</td>
+<td>Confusing it with the formal approval of a document</td>
+</tr>
+<tr>
+<td><strong>Quantitative review</strong></td>
+<td>An evaluation producing measurable data</td>
+<td>An objective basis for choosing between alternatives</td>
+<td>Uses static analysis, simulations, prototypes</td>
+<td>Treating numbers as a complete picture of quality</td>
+</tr>
+<tr>
+<td><strong>Qualitative review</strong></td>
+<td>Structured human analysis of the design and its decisions</td>
+<td>Captures the holistic view and the trade-offs</td>
+<td>Uncovers ambiguities before tests are written</td>
+<td>Running it without preparation and without structure</td>
+</tr>
+<tr>
+<td><strong>Code Quality Assessment</strong></td>
+<td>Static analysis: coding rules, metrics, architecture conformance</td>
+<td>Uncovers drift and erosion</td>
+<td>Regression check of the architecture</td>
+<td>Measuring only metrics and omitting architecture conformance</td>
+</tr>
+<tr>
+<td><strong>Architecture conformance</strong></td>
+<td>Comparison of the actual dependency graph against the intended one</td>
+<td>The only method proving that the documented architecture exists</td>
+<td>An automatable check</td>
+<td>Relying on the design being followed because it is documented</td>
+</tr>
+<tr>
+<td><strong>Simulation</strong></td>
+<td>A model of the behaviour of the system context or of component internals</td>
+<td>Verifies a decision without an implementation</td>
+<td>Enables NFR verification before the system exists</td>
+<td>Confusing it with a prototype</td>
+</tr>
+<tr>
+<td><strong>Prototype</strong></td>
+<td>An incomplete implementation aimed at a technical challenge or acceptance</td>
+<td>Reduces uncertainty, breaks risks</td>
+<td>A source of data for evaluating a scenario</td>
+<td>Letting a throw-away prototype reach production</td>
+</tr>
+<tr>
+<td><strong>Throw-away / Incremental / Evolutionary prototype</strong></td>
+<td>Three strategies for handling a prototype</td>
+<td>The decision must be made <strong>up front</strong></td>
+<td>Determines what test quality is needed</td>
+<td>Deciding only after the prototype works</td>
+</tr>
+<tr>
+<td><strong>Active Design Review (ADR)</strong></td>
+<td>A review where the reviewer solves defined challenges on the artifact</td>
+<td>Verifies the sufficiency of a design artifact</td>
+<td>A challenge is a test case for the design</td>
+<td>Passive reading instead of an active task</td>
+</tr>
+<tr>
+<td><strong>Industry Practice Review</strong></td>
+<td>A systematic audit of the architectural process (questionnaires, interviews, evaluation, presentation)</td>
+<td>Delivers <strong>concrete measures</strong></td>
+<td>Also assesses the project&#39;s testing practice</td>
+<td>Relying on inexperienced reviewers</td>
+</tr>
+<tr>
+<td><strong>ATAM</strong></td>
+<td>A scenario-driven workshop method analysing trade-offs between qualities</td>
+<td>Uncovers risks and trade-offs of architectural decisions</td>
+<td>Input for risk-based testing</td>
+<td>Expecting ATAM to also deliver solutions</td>
+</tr>
+<tr>
+<td><strong>Sensitivity Point</strong></td>
+<td>An architectural decision affecting a specific quality scenario</td>
+<td>A cell in the ATAM matrix; it has a sign</td>
+<td>Shows which quality must be verified</td>
+<td>Treating a sensitivity point as automatically negative</td>
+</tr>
+<tr>
+<td><strong>Tradeoff</strong></td>
+<td>A set of sensitivity points for the same decision with conflicting impacts</td>
+<td>A column of the matrix; the core of architectural decision making</td>
+<td>The need to verify both affected qualities</td>
+<td>Confusing it with a single sensitivity point</td>
+</tr>
+<tr>
+<td><strong>Risk</strong></td>
+<td>A quality affected predominantly by negative sensitivity points / a decision violating the prioritization of qualities</td>
+<td>A candidate for redesign</td>
+<td>The place for the deepest test coverage</td>
+<td>Determining risk without an established prioritization of qualities</td>
+</tr>
+<tr>
+<td><strong>Non-Risk</strong></td>
+<td>A quality affected predominantly by positive sensitivity points / a decision respecting the prioritization</td>
+<td>Confirmation that the decision is right</td>
+<td>An area where basic coverage suffices</td>
+<td>Not recording non-risks (the argumentation gets lost)</td>
+</tr>
+<tr>
+<td><strong>Risk Theme</strong></td>
+<td>Aggregation of risks into a risk area</td>
+<td>Feeds back into both business drivers and architecture</td>
+<td>Determines the topics of the test strategy</td>
+<td>Stopping at a list of findings without aggregation</td>
+</tr>
+<tr>
+<td><strong>Architectural drift</strong></td>
+<td>Introducing decisions the architecture neither contains nor implies</td>
+<td>Gradual degradation</td>
+<td>Detectable by architecture conformance</td>
+<td>Confusing it with erosion</td>
+</tr>
+<tr>
+<td><strong>Architectural erosion</strong></td>
+<td>Introducing decisions that directly violate the architecture</td>
+<td>Acute degradation</td>
+<td>Detectable by architecture conformance</td>
+<td>Confusing it with drift</td>
+</tr>
+<tr>
+<td><strong>Paper tiger architecture</strong></td>
+<td>An architecture existing only on paper, with no link to reality</td>
+<td>The most serious smell from a review perspective</td>
+<td>Only conformance or ADR will uncover it</td>
+<td>Treating the existence of a document as proof of an architecture</td>
+</tr>
+<tr>
+<td><strong>Scenario-based vs. experience-based review</strong></td>
+<td>A split by the source of insight</td>
+<td>Determines when a method is applicable</td>
+<td>Scenario-based builds on quality scenarios</td>
+<td>Knowing only the quantitative/qualitative split</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common mistakes and anti-patterns</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Mistake / anti-pattern</th>
+<th>Why it is a problem</th>
+<th>How it shows up</th>
+<th>How to prevent it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Review as formal approval</td>
+<td>The process is verified, not the quality of the architecture</td>
+<td>A signed document, but the architecture has serious risks</td>
+<td>Define the content goals of the review independently of the process</td>
+</tr>
+<tr>
+<td>Passive review (&quot;please read this&quot;)</td>
+<td>The reviewer has no reason to go deep, superficial agreement arises</td>
+<td>&quot;Looks good&quot;, no findings</td>
+<td>Use ADR – define concrete challenges</td>
+</tr>
+<tr>
+<td>Reviewing only a document and empty interfaces</td>
+<td>Stakeholder agreement costs nothing at that moment, so there is no motivation to look for flaws</td>
+<td>Unanimous approval with no findings; the problem appears during integration</td>
+<td>Add a running artifact (walking skeleton, prototype) or an active challenge for the participants</td>
+</tr>
+<tr>
+<td>ATAM without an established prioritization of qualities</td>
+<td>Neither risk nor non-risk can be defined</td>
+<td>A debate about opinions instead of about risks</td>
+<td>Prioritize the quality scenarios first (utility tree), then run ATAM</td>
+</tr>
+<tr>
+<td>Rating a matrix cell without a rationale</td>
+<td>A colour without an argument is neither transferable nor defensible</td>
+<td>In a month nobody knows why that colour is there</td>
+<td>Always record the rationale; link it to ADRs (decision records)</td>
+</tr>
+<tr>
+<td>A guess instead of the &quot;?&quot; marker</td>
+<td>False confidence arises</td>
+<td>A decision built on an assumption</td>
+<td>Use the marker for &quot;not evaluated&quot; and fill it in with a prototype or simulation</td>
+</tr>
+<tr>
+<td>Expecting solutions from ATAM</td>
+<td>By design, ATAM proposes no measures</td>
+<td>Disappointment with the output, the review is declared useless</td>
+<td>Combine it with Industry Practice or follow it with a separate measure-design phase</td>
+</tr>
+<tr>
+<td>Industry Practice with inexperienced reviewers</td>
+<td>The method is not scenario-driven, quality depends on experience</td>
+<td>A superficial questionnaire, generic conclusions</td>
+<td>Staff it with experienced assessors, otherwise choose a scenario-based method</td>
+</tr>
+<tr>
+<td>A throw-away prototype in production</td>
+<td>Code deliberately without structure, error handling and documentation</td>
+<td>Permanent technical debt, instability</td>
+<td>Decide the prototype&#39;s fate <strong>up front</strong>; incremental = full production quality from the start</td>
+</tr>
+<tr>
+<td>Relying only on code metrics</td>
+<td>Metrics do not see the architecture</td>
+<td>Green dashboards and a broken structure</td>
+<td>Add architecture conformance and qualitative reviews</td>
+</tr>
+<tr>
+<td>Omitting architecture conformance</td>
+<td>A paper tiger architecture cannot be detected</td>
+<td>Documentation and reality silently diverge</td>
+<td>Automate the dependency check in CI</td>
+</tr>
+<tr>
+<td>One big review at the end of the project</td>
+<td>Findings arrive when change is most expensive</td>
+<td>&quot;There is nothing we can do about it now&quot;</td>
+<td>Short, frequent (short-term) reviews along the way</td>
+</tr>
+<tr>
+<td>Reviewing only your own architecture</td>
+<td>An independent view is missing, operational blindness</td>
+<td>Confirming your own assumptions</td>
+<td>Participate in reviews of other architectures as a participant</td>
+</tr>
+<tr>
+<td>Missing business stakeholder in ATAM</td>
+<td>The owner of the quality prioritization is missing</td>
+<td>Architects set the priorities themselves and miss the business</td>
+<td>Ensure the attendance of the person who decides the priorities</td>
+</tr>
+<tr>
+<td>Testers excluded from the review</td>
+<td>Data on testability and defects gets lost</td>
+<td>The architecture is formally approved and yet untestable</td>
+<td>Include QA among the participants; evaluate testability explicitly</td>
+</tr>
+<tr>
+<td>Choosing a method by fashion, not by phase</td>
+<td>The method does not match what is uncertain</td>
+<td>ATAM on a project without an architecture; prototypes in the transition phase</td>
+<td>Follow the mapping of techniques to project phases</td>
+</tr>
+<tr>
+<td>Choosing a method without regard to cost</td>
+<td>The review eats the budget</td>
+<td>A four-week audit on a two-month project</td>
+<td>Compare the durations of the methods; consider flash variants</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="exam-questions"><a class="heading-anchor" href="#exam-questions" aria-label="Link to this section">#</a>Exam questions</h2>
+<p><strong>Basic level</strong></p>
+<ul>
+<li>How are architecture reviews categorized? → Quantitative vs. qualitative; additionally scenario-based vs. experience-based.</li>
+<li>Name three quantitative methods. → Code quality assessment, simulation, prototyping.</li>
+<li>Name three qualitative methods. → Active Design Review, Industry Practice Reviews, ATAM.</li>
+<li>What are the phases of a qualitative review? → Preparation, Interview/Execution, Elaboration, Consolidation, Presentation.</li>
+<li>What is an Active Design Review? → A review where the reviewer solves defined challenges on the artifact; it verifies whether the artifact is sufficient.</li>
+</ul>
+<p><strong>Intermediate level</strong></p>
+<ul>
+<li>What is the difference between a simulation and a prototype? → A simulation is a model of behaviour, a prototype a real incomplete implementation; only the prototype addresses user acceptance.</li>
+<li>What is the difference between architectural drift and erosion? → Drift introduces decisions the architecture does not contain; erosion introduces decisions that violate it.</li>
+<li>Define sensitivity point and tradeoff. → Sensitivity point = a decision affecting one scenario; tradeoff = a set of sensitivity points of the same decision with conflicting impacts.</li>
+<li>How are risk and non-risk determined in ATAM? → By the predominance of negative/positive sensitivity points and by whether the decision respects the prioritization of qualities.</li>
+<li>Why are quantitative reviews insufficient on their own? → They cover a narrow slice, the impact on other qualities stays unknown, and they depend on the correct interpretation of the data.</li>
+<li>What are the three strategies for handling a prototype? → Throw-away, incremental (full production quality from the start), evolutionary (a separate product).</li>
+</ul>
+<p><strong>Advanced level</strong></p>
+<ul>
+<li>How do ATAM and Industry Practice Reviews relate to each other? → Complementarily: ATAM identifies the problem but proposes no measures; Industry Practice supplies the measures.</li>
+<li>Why can ATAM not be done without a prioritization of quality attributes? → Both risk and non-risk are defined relative to the prioritization; without it you cannot decide whether a negative impact is acceptable.</li>
+<li>How is the ATAM matrix used and what do the row-wise and column-wise evaluations mean? → Rows → risks/non-risks on the scenarios; columns → good/bad decisions and trade-offs.</li>
+<li>What are risk themes and why do they matter? → Aggregations of risks; they feed back into business drivers and architecture — they close the method&#39;s loop.</li>
+<li>Why are formal process reviews not enough? → They verify conformance to the process and the form of documents, not the fulfilment of quality goals.</li>
+<li>How do reviews relate to testing? → A review is static verification of the architecture; quantitative methods use testing tools; ATAM outputs drive risk-based testing.</li>
+</ul>
+<p><strong>Questions about practical experience</strong></p>
+<ul>
+<li>Have you ever performed an Active Design Review? How did you formulate the challenge? → A concrete task is expected, not &quot;read it&quot;, plus a description of what the failure to complete it revealed.</li>
+<li>Did you apply the ATAM matrix to your project? → A description of the chosen scenarios, decisions, the trade-off found and what was done about it is expected.</li>
+<li>Have you taken part in a review of an architecture you are not responsible for? What did it bring? → The value of the independent view and the transfer of insights back are expected.</li>
+<li>How do you guard code–architecture conformance in your project? → Architecture conformance is expected, ideally automated in CI.</li>
+<li>Have you experienced a review that was formally successful and yet the architecture failed? → An analysis of the cause (a static artifact was evaluated, a missing challenge or running code) and a description of what would have uncovered the problem are expected.</li>
+</ul>
+<p><strong>Decision and trade-off questions</strong></p>
+<ul>
+<li>You have two weeks and an architecture in progress. Which method do you choose and why? → ATAM is expected (2 weeks, needs an architecture &quot;complete enough for a walkthrough&quot;) with a justification, or a flash variant of Industry Practice.</li>
+<li>ATAM or Industry Practice? → Depending on whether you need to identify risks and trade-offs (ATAM) or to obtain concrete measures (Industry Practice); ideally a combination.</li>
+<li>Build the ATAM matrix continuously or evaluate en bloc? → Continuously is cheaper and eliminates surprises but costs time; en bloc is deep but late.</li>
+<li>The prototype worked – shall we use it as the basis of the product? → Only if it was written as incremental with production quality from the start; otherwise it is a source of technical debt.</li>
+<li>How many reviews are &quot;enough&quot;? → Short, frequent reviews within the architect&#39;s scope of responsibility; big formal reviews only where the risk justifies them.</li>
+</ul>
+<hr>
+<h2 id="model-answer-4-6-minutes"><a class="heading-anchor" href="#model-answer-4-6-minutes" aria-label="Link to this section">#</a>Model answer (4–6 minutes)</h2>
+<p>An architecture review is a structured evaluation of an architecture aiming to uncover risks, design defects and trade-offs. It is a risk-management instrument, because architectural decisions are expensive and hard to reverse — a flaw found in production costs orders of magnitude more than a flaw found in a review.</p>
+<p>Before talking about reviews, one has to say what is actually being evaluated. A good architecture is usually described by five characteristics: it should be clean, i.e. allow details to be replaced and the design to be verified; simple, i.e. easy to understand; flexible, i.e. supporting change; evolvable, i.e. adaptable step by step; and agile, i.e. continuously verifiable and quickly deployable. Working against this are the degrading forces — architectural drift, where decisions are introduced that the architecture does not contain at all, and architectural erosion, where decisions are introduced that directly violate it.</p>
+<p>An important starting assumption: formal reviews defined together with the development process are not enough. They verify conformance to the process and the form of documents, not the fulfilment of quality goals. That is why we need dedicated methods.</p>
+<p>These split into quantitative and qualitative. Quantitative reviews give hard, measurable data and are repeatable like an experiment, but they always cover only a narrow slice and stay silent about the impact on other qualities. They include the code quality assessment, which answers whether the architecture is implemented correctly — besides coding rules and metrics, the architecturally most valuable part is architecture conformance, i.e. comparing the actual dependency graph against the intended one. Then simulation, which verifies whether a given decision can fulfil selected qualities, using a model of the system context or of component internals. And the prototype, i.e. an incomplete implementation aimed at technical challenges or user acceptance. With a prototype it is essential to decide up front what will happen to it: a throw-away prototype may deliberately be minimal, but an incremental prototype that is to become the basis of the product must have production quality from the first line.</p>
+<p>Qualitative reviews have five phases — preparation, interview or workshop, elaboration, consolidation and presentation — and come in three main variants. The Active Design Review answers whether an artifact is sufficient to solve a given problem. Its essence is that the reviewer does not read passively but receives a concrete challenge that can only be completed if the artifact is complete and unambiguous. It takes two days per reviewer and focuses on finding design defects, but its scale is small. The Industry Practice Review is a systematic audit of the architectural process via questionnaires and interviews. It takes four to six weeks, requires experienced reviewers, and its main strength is that it proposes concrete measures; its weakness is the missing common understanding of requirement priorities. And ATAM is a workshop-based, scenario-driven method that takes about two weeks and requires an experienced facilitator.</p>
+<p>ATAM works in two branches: quality attributes are derived from the business drivers and scenarios from them; architectural approaches and decisions are derived from the software architecture. The analysis of both branches produces four outputs — sensitivity points, tradeoffs, risks and non-risks. A sensitivity point is an architectural decision affecting a specific scenario, either positively or negatively. A tradeoff is a set of sensitivity points for the same decision with conflicting impacts. A risk is a quality affected predominantly negatively, or a decision violating the prioritization of qualities; a non-risk is the opposite. This yields the key insight: without an established prioritization of quality attributes a risk cannot be determined at all. Risks are then distilled into risk themes, which feed back into the business drivers and the architecture — this closes the method&#39;s loop.</p>
+<p>In practice ATAM is done with a matrix. The rows are scenarios ordered by decreasing importance, the columns are design decisions including external constraints, the cells are rated sensitivity points — always with a rationale. Row-wise evaluation yields risks and non-risks, column-wise evaluation yields trade-offs. On a project where we had scenarios for withstanding a DDoS attack for four hours, visualizing alarms within four seconds, and adding a new algorithm within fifteen days, the column &quot;own communication framework&quot; revealed a classic trade-off: it helped security and extensibility but strongly harmed performance. Because security was the top priority, the decision was defensible — but only thanks to the priorities having been established beforehand.</p>
+<p>For testing the whole topic is essential, because a review is in fact static verification of the architecture — shift left at the architectural level. A challenge in an ADR works as a test case for the design. Quantitative methods use testing and analysis tools directly. And risks from ATAM are an input for risk-based testing: they say where the deepest coverage is needed. The marker for an unevaluated sensitivity point is also interesting — an admitted lack of knowledge is an assignment for a prototype or a measurement, not for a guess.</p>
+<p>The main trade-off of the topic is between the depth of a review and its cost. ATAM identifies problems but proposes no measures; Industry Practice supplies the measures but is the most expensive; ADR is the cheapest but small in scale. The methods are therefore combined and chosen according to the project phase: scenario-based and prototype approaches early, when change is cheap, ADR repeatedly during construction, code quality assessment continuously.</p>
+<p>In summary: architecture quality cannot be declared, it must be verified. Quantitative reviews give hard data about a narrow slice, qualitative reviews capture the trade-offs and the risks of the whole, and it is the architect&#39;s responsibility to drive and support appropriate short-term reviews within their scope of responsibility — not to wait for the process to mandate them.</p>
+<hr>
+<h2 id="short-version-for-quick-revision-cheat-sheet"><a class="heading-anchor" href="#short-version-for-quick-revision-cheat-sheet" aria-label="Link to this section">#</a>Short version for quick revision (cheat sheet)</h2>
+<p><strong>5 main points</strong></p>
+<ol>
+<li>A formal process review verifies the process, not the quality of the architecture — dedicated methods are therefore needed.</li>
+<li>Split: quantitative (code quality assessment, simulation, prototyping) vs. qualitative (ADR, Industry Practice, ATAM); additionally scenario-based vs. experience-based.</li>
+<li>ATAM: sensitivity point (cell) → tradeoff (column) → risk/non-risk (row) → risk themes (feedback to drivers and architecture).</li>
+<li>ATAM proposes no measures, Industry Practice does — the methods are complementary.</li>
+<li>The choice of method is a function of the project phase and of what is uncertain; the architect drives short, frequent reviews.</li>
+</ol>
+<p><strong>5 key terms</strong></p>
+<ul>
+<li>Sensitivity point vs. Tradeoff</li>
+<li>Risk / Non-Risk (defined <strong>relative to the prioritization of qualities</strong>)</li>
+<li>Architectural drift vs. erosion</li>
+<li>Architecture conformance</li>
+<li>Throw-away vs. incremental prototype</li>
+</ul>
+<p><strong>5 typical exam questions</strong></p>
+<ul>
+<li>How are architecture reviews categorized and which methods belong where?</li>
+<li>What is an Active Design Review and why is it &quot;active&quot;?</li>
+<li>Define sensitivity point, tradeoff, risk and non-risk.</li>
+<li>Compare ADR, Industry Practice and ATAM by strength, restriction and duration.</li>
+<li>How do reviews relate to testing?</li>
+</ul>
+<p><strong>3 most common mistakes</strong></p>
+<ul>
+<li>Running ATAM without an established prioritization of quality attributes.</li>
+<li>A passive review instead of defined challenges.</li>
+<li>Letting a throw-away prototype reach production.</li>
+</ul>
+<p><strong>1 model sentence for the exam</strong>
+&quot;Architecture quality cannot be declared, it must be verified: quantitative reviews give hard data about a narrow slice, qualitative reviews capture the trade-offs and the risks of the whole — and it is the architect&#39;s responsibility to drive appropriate short-term reviews within their scope of responsibility.&quot;</p>
+<hr>
+<h2 id="learning-outcome-lopo"><a class="heading-anchor" href="#learning-outcome-lopo" aria-label="Link to this section">#</a>Learning outcome (LOPO)</h2>
+<p>According to the document <a href="../../assets/files/blue-architecture/Learning and practice outcomes (LOPO).md" data-attachment="1">Learning and practice outcomes (LOPO)</a>, row <em>Architecture Quality Assessments (Workshop 3)</em>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Expected outcome</th>
+<th>Where it is covered in this material</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Learning</td>
+<td>Prepare and conduct an active design review, give and receive feedback</td>
+<td>Chapter <em>5.1 Active Design Review</em>, section <em>Common mistakes</em> (passive review)</td>
+</tr>
+<tr>
+<td>Learning</td>
+<td>Apply the &quot;ATAM Matrix&quot; to a subset of quality scenarios and design decisions of a project</td>
+<td>Chapter <em>5.3 ATAM Matrix</em> including the procedure and the example</td>
+</tr>
+<tr>
+<td>Practice</td>
+<td>Select a suitable review method and initiate a review of (parts of) your own architecture</td>
+<td>Chapters <em>6 Comparison of qualitative reviews</em>, <em>8 When to use which technique</em>, <em>9 Expectations towards the architect</em></td>
+</tr>
+<tr>
+<td>Practice</td>
+<td>Participate in a review of an architecture you are not responsible for</td>
+<td>Chapter <em>7 Who takes part in a review</em> (the role &quot;architect from another project&quot;, the <em>participant</em> mode)</td>
+</tr>
+<tr>
+<td>Understand</td>
+<td>Know when to perform architecture reviews in a project</td>
+<td>Chapter <em>8 When to use which technique</em> (mapping to phases)</td>
+</tr>
+<tr>
+<td>Understand</td>
+<td>Know how to use architecture reviews in different situations and from different perspectives</td>
+<td>Chapters <em>3 Taxonomy of reviews</em>, <em>6 Comparison</em>, <em>7 Who takes part in a review</em></td>
+</tr>
+<tr>
+<td>Analyze &amp; Assess</td>
+<td>Check whether the architecture is right</td>
+<td>Chapter <em>5 Qualitative reviews</em> (ADR, ATAM)</td>
+</tr>
+<tr>
+<td>Analyze &amp; Assess</td>
+<td>Check whether the architecture you are responsible for is implemented correctly</td>
+<td>Chapter <em>4.2 Code Quality Assessment / architecture conformance</em></td>
+</tr>
+<tr>
+<td>Contribute &amp; Drive</td>
+<td>Regularly drive reviews of your own architecture</td>
+<td>Chapter <em>9 Expectations towards the architect</em> (&quot;drive and support appropriate short-term reviews&quot;)</td>
+</tr>
+</tbody></table></div>
+<p><strong>Compatibility assessment:</strong> all nine LOPO items of the row <em>Architecture Quality Assessments</em> are covered by this material. Two <em>Learning</em> items (conduct an ADR, apply the ATAM matrix) are practical by nature — the material provides the theoretical basis and the procedure; the actual practice happens in the workshop and in the project.</p>
+<hr>
+<h2 id="summary-table"><a class="heading-anchor" href="#summary-table" aria-label="Link to this section">#</a>Summary table</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What matters</th>
+<th>Relation to architecture</th>
+<th>Relation to testing</th>
+<th>Typical exam question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Architecture quality</td>
+<td>Clean, simple, flexible, evolvable, agile</td>
+<td>Defines what a review evaluates</td>
+<td>Clean → testability, Agile → continuous verifiability</td>
+<td>What makes an architecture good?</td>
+</tr>
+<tr>
+<td>Degrading forces</td>
+<td>Drift vs. erosion, architecture smells</td>
+<td>Describe how an architecture decays</td>
+<td>Detectable by static analysis</td>
+<td>What is the difference between drift and erosion?</td>
+</tr>
+<tr>
+<td>Taxonomy of reviews</td>
+<td>Quantitative/qualitative, scenario-/experience-based</td>
+<td>Determines which method to use when</td>
+<td>Distinguishes measuring and analytical approaches</td>
+<td>How are architecture reviews categorized?</td>
+</tr>
+<tr>
+<td>Quantitative reviews</td>
+<td>Hard data, narrow scope, repeatable</td>
+<td>Objective choice between alternatives</td>
+<td>Uses static analysis, simulations, prototypes</td>
+<td>Why are quantitative reviews not enough?</td>
+</tr>
+<tr>
+<td>Code Quality Assessment</td>
+<td>Coding rules, metrics, architecture conformance</td>
+<td>Proves that the architecture really exists</td>
+<td>Regression check of the architecture in CI</td>
+<td>How do you verify code–architecture conformance?</td>
+</tr>
+<tr>
+<td>Simulation / Prototyping</td>
+<td>Model vs. incomplete implementation</td>
+<td>Reduce uncertainty before a decision</td>
+<td>Supply data for evaluating scenarios</td>
+<td>What is the difference between a simulation and a prototype?</td>
+</tr>
+<tr>
+<td>Prototype strategies</td>
+<td>Throw-away / incremental / evolutionary</td>
+<td>The decision must be made up front</td>
+<td>Determines the required level of quality and tests</td>
+<td>Will you use the prototype as the basis of the product?</td>
+</tr>
+<tr>
+<td>Active Design Review</td>
+<td>A challenge instead of passive reading</td>
+<td>Verifies the sufficiency of a design artifact</td>
+<td>A challenge = a test case for the design</td>
+<td>Why is ADR &quot;active&quot;?</td>
+</tr>
+<tr>
+<td>Industry Practice Review</td>
+<td>Process audit, concrete measures</td>
+<td>Delivers recommendations, not just findings</td>
+<td>Also assesses the project&#39;s testing practice</td>
+<td>What is the method&#39;s strength and limitation?</td>
+</tr>
+<tr>
+<td>ATAM</td>
+<td>Scenarios × decisions → trade-offs and risks</td>
+<td>The core of architectural decision making</td>
+<td>Risks drive risk-based testing</td>
+<td>How does ATAM work and what does it produce?</td>
+</tr>
+<tr>
+<td>ATAM terms</td>
+<td>Sensitivity point, tradeoff, risk, non-risk</td>
+<td>A vocabulary for arguing about decisions</td>
+<td>Show which quality to verify and how deeply</td>
+<td>Define sensitivity point and tradeoff</td>
+</tr>
+<tr>
+<td>ATAM Matrix</td>
+<td>Rows = scenarios, columns = decisions, cells with rationale</td>
+<td>A practical artifact of the architect</td>
+<td>&quot;?&quot; = an assignment for a prototype or measurement</td>
+<td>How is the matrix evaluated by rows and by columns?</td>
+</tr>
+<tr>
+<td>Comparison of methods</td>
+<td>Interaction, phase, strength, restriction, duration</td>
+<td>A basis for choosing a method</td>
+<td>Distinguishes effort and return</td>
+<td>Compare ADR, Industry Practice and ATAM</td>
+</tr>
+<tr>
+<td>Review participants</td>
+<td>Architect, reviewer, facilitator, developers, QA, business</td>
+<td>The business owns the prioritization of qualities</td>
+<td>QA brings data on testability and defects</td>
+<td>Who takes part in a review and why?</td>
+</tr>
+<tr>
+<td>Choosing a technique</td>
+<td>By project phase and degree of uncertainty</td>
+<td>Scenarios early, ADR continuously, conformance always</td>
+<td>Determines when testing tools come in</td>
+<td>When do you use which technique?</td>
+</tr>
+<tr>
+<td>The architect&#39;s responsibility</td>
+<td>Drive and support appropriate short-term reviews</td>
+<td>The architect is the initiator, not the recipient</td>
+<td>Short frequent reviews = cheap defect detection</td>
+<td>How many reviews are &quot;enough&quot;?</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/blue-architecture/architecture-refactoring.html"><span class="pager__label">← Previous</span><span>Architecture refactoring (re-engineering, re-writing)</span></a>
+      <a class="pager__next" href="../../chapters/blue-architecture/experience-architecture.html"><span class="pager__label">Next →</span><span>Experience — Architecture (all practical examples in one place)</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-2"><a href="#1-what-is-architecture-quality">1. What is architecture quality</a></li><li class="lvl-3"><a href="#1-1-intuitive-answer-vs-systematic-framework">1.1 Intuitive answer vs. systematic framework</a></li><li class="lvl-3"><a href="#1-2-five-characteristics-of-a-good-architecture">1.2 Five characteristics of a good architecture</a></li><li class="lvl-3"><a href="#1-3-forces-acting-on-the-architecture">1.3 Forces acting on the architecture</a></li><li class="lvl-3"><a href="#1-4-architecture-smells">1.4 Architecture smells</a></li><li class="lvl-2"><a href="#2-why-formal-process-reviews-are-not-enough">2. Why formal process reviews are not enough</a></li><li class="lvl-2"><a href="#3-taxonomy-of-reviews">3. Taxonomy of reviews</a></li><li class="lvl-2"><a href="#4-quantitative-reviews">4. Quantitative reviews</a></li><li class="lvl-3"><a href="#4-1-benefits-and-liabilities">4.1 Benefits and liabilities</a></li><li class="lvl-3"><a href="#4-2-three-quantitative-methods">4.2 Three quantitative methods</a></li><li class="lvl-3"><a href="#4-3-prototype-typology">4.3 Prototype typology</a></li><li class="lvl-2"><a href="#5-qualitative-reviews">5. Qualitative reviews</a></li><li class="lvl-3"><a href="#5-1-active-design-review-adr">5.1 Active Design Review (ADR)</a></li><li class="lvl-3"><a href="#5-2-industry-practice-reviews">5.2 Industry Practice Reviews</a></li><li class="lvl-3"><a href="#5-3-atam-architecture-tradeoff-analysis-method">5.3 ATAM (Architecture Tradeoff Analysis Method)</a></li><li class="lvl-4"><a href="#definitions-of-the-four-core-atam-terms">Definitions of the four core ATAM terms</a></li><li class="lvl-4"><a href="#the-atam-matrix-a-working-tool">The ATAM Matrix – a working tool</a></li><li class="lvl-2"><a href="#6-comparison-of-qualitative-reviews">6. Comparison of qualitative reviews</a></li><li class="lvl-2"><a href="#7-who-takes-part-in-a-review">7. Who takes part in a review</a></li><li class="lvl-2"><a href="#8-when-to-use-which-technique">8. When to use which technique</a></li><li class="lvl-2"><a href="#9-expectations-towards-the-architect">9. Expectations towards the architect</a></li><li class="lvl-2"><a href="#10-reviews-and-testing">10. Reviews and testing</a></li><li class="lvl-2"><a href="#11-example-from-practice-the-trap-of-paper-conformance">11. Example from practice: the trap of paper conformance</a></li><li class="lvl-2"><a href="#definitions-and-basic-terms">Definitions and basic terms</a></li><li class="lvl-2"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-2"><a href="#exam-questions">Exam questions</a></li><li class="lvl-2"><a href="#model-answer-4-6-minutes">Model answer (4–6 minutes)</a></li><li class="lvl-2"><a href="#short-version-for-quick-revision-cheat-sheet">Short version for quick revision (cheat sheet)</a></li><li class="lvl-2"><a href="#learning-outcome-lopo">Learning outcome (LOPO)</a></li><li class="lvl-2"><a href="#summary-table">Summary table</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/mermaid.min.js" defer></script>
+<script src="../../assets/app.js" defer></script>
+</body>
+</html>
