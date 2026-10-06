@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Roles of PO, SM and TL at Siemens within Business Understanding - GREEN - Business Understanding - SWA preparation study guide.">
+<title>Roles of PO, SM and TL at Siemens within Business Understanding · SWA Study Guide</title>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body data-base="../../" data-sidebar="closed">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="progress-bar" role="presentation"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" data-action="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+  <a class="topbar__brand" href="../../index.html"><span class="topbar__dot"></span>SWA Study Guide</a>
+  <div class="topbar__spacer"></div>
+  <button class="search-trigger" data-action="search" aria-label="Search the guide">
+    <span aria-hidden="true">⌕</span><span>Search topics</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" data-action="theme" aria-label="Switch theme">☾</button>
+</header>
+<div class="topbar__accent" role="presentation"></div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Guide contents">
+    <p class="sidebar__title">Chapters</p>
+    <details class="nav-chapter" data-chapter="blue-architecture">
+        <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">12</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
+          <li><a href="../../chapters/blue-architecture/adr-architecture-decision-records.html" data-topic-id="blue-architecture/adr-architecture-decision-records">Architecture Decision Records (ADR)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-documentation.html" data-topic-id="blue-architecture/architecture-documentation">Architecture Documentation</a></li>
+          <li><a href="../../chapters/blue-architecture/fixed-systematic-architecture-design.html" data-topic-id="blue-architecture/fixed-systematic-architecture-design">Systematic Architecture Design</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html" data-topic-id="blue-architecture/quality-scenarios-and-design-tactics">Quality scenarios and Design Tactics</a></li>
+          <li><a href="../../chapters/blue-architecture/architectural-and-design-patterns.html" data-topic-id="blue-architecture/architectural-and-design-patterns">Architectural and Design Patterns</a></li>
+          <li><a href="../../chapters/blue-architecture/domain-driven-design.html" data-topic-id="blue-architecture/domain-driven-design">Domain-Driven Design (DDD)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-in-agile-environment.html" data-topic-id="blue-architecture/architecture-in-agile-environment">Architecture in Agile Environment</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
+          <li><a href="../../chapters/blue-architecture/architecture-review.html" data-topic-id="blue-architecture/architecture-review">Architecture Quality &amp; Architecture Review</a></li>
+          <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
+          <li><a href="../../chapters/blue-architecture/role-of-the-siemens-swa.html" data-topic-id="blue-architecture/role-of-the-siemens-swa">Role of the Siemens SWA: the role of the software architect</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="gray-requirements">
+        <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
+          <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
+          <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
+          <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
+          <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
+          <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
+          <li><a href="../../chapters/gray-requirements/9-definition-done-ready.html" data-topic-id="gray-requirements/9-definition-done-ready">Definition of Done (DoD) vs. Definition of Ready (DoR)</a></li>
+          <li><a href="../../chapters/gray-requirements/10-furps-nfr-classification.html" data-topic-id="gray-requirements/10-furps-nfr-classification">Classification of NFRs</a></li>
+          <li><a href="../../chapters/gray-requirements/11-role-swa-quality-attributes.html" data-topic-id="gray-requirements/11-role-swa-quality-attributes">Role of the SWA and Quality Attributes</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="green-business-understanding" open>
+        <summary><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business<span class="nav-chapter__count">10</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/green-business-understanding/siemens-development-system.html" data-topic-id="green-business-understanding/siemens-development-system">Siemens Development System (SDS)</a></li>
+          <li><a href="../../chapters/green-business-understanding/cynefin-model-framework.html" data-topic-id="green-business-understanding/cynefin-model-framework">Business Understanding: Cynefin Framework (Model)</a></li>
+          <li><a href="../../chapters/green-business-understanding/output-outcome-impact.html" data-topic-id="green-business-understanding/output-outcome-impact">Output vs. Outcome vs. Impact</a></li>
+          <li><a href="../../chapters/green-business-understanding/technical-debt-cost-of-change.html" data-topic-id="green-business-understanding/technical-debt-cost-of-change">Business Understanding: Technical Debt &amp; Long Term Costs</a></li>
+          <li><a href="../../chapters/green-business-understanding/continuous-delivery.html" data-topic-id="green-business-understanding/continuous-delivery">Continuous Delivery and the DORA Model</a></li>
+          <li><a href="../../chapters/green-business-understanding/component-feature-teams.html" data-topic-id="green-business-understanding/component-feature-teams">Component Teams vs. Feature Teams</a></li>
+          <li><a href="../../chapters/green-business-understanding/leading-as-a-host-host-leadership.html" data-topic-id="green-business-understanding/leading-as-a-host-host-leadership">Business Understanding: Leading as a host</a></li>
+          <li><a href="../../chapters/green-business-understanding/oss-at-siemens.html" data-topic-id="green-business-understanding/oss-at-siemens">Open Source Software (OSS) at Siemens</a></li>
+          <li><a href="../../chapters/green-business-understanding/97-things.html" data-topic-id="green-business-understanding/97-things">97 Things Every Software Architect Should Know: Business topics</a></li>
+          <li><a href="../../chapters/green-business-understanding/role-po-sm-tl.html" data-topic-id="green-business-understanding/role-po-sm-tl" aria-current="page">Roles of PO, SM and TL at Siemens within Business Understanding</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="red-test-and-quality">
+        <summary><span class="nav-chapter__swatch" style="background:#F44336"></span>Test &amp; Quality<span class="nav-chapter__count">14</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/red-test-and-quality/value-of-testing.html" data-topic-id="red-test-and-quality/value-of-testing">Value of Testing, Test exit criteria</a></li>
+          <li><a href="../../chapters/red-test-and-quality/testing-generall.html" data-topic-id="red-test-and-quality/testing-generall">Software Testing and Quality</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-levels-pyramid.html" data-topic-id="red-test-and-quality/test-levels-pyramid">Test Levels, Test pyramid</a></li>
+          <li><a href="../../chapters/red-test-and-quality/unit-testing.html" data-topic-id="red-test-and-quality/unit-testing">Unit Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/integration-testing.html" data-topic-id="red-test-and-quality/integration-testing">Integration testing (Integration Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/contract-testing.html" data-topic-id="red-test-and-quality/contract-testing">Contract Testing (contract testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/systematic-test-design.html" data-topic-id="red-test-and-quality/systematic-test-design">Systematic Test Design</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-design-tactics.html" data-topic-id="red-test-and-quality/test-design-tactics">Test Design Tactics</a></li>
+          <li><a href="../../chapters/red-test-and-quality/test-driven-development.html" data-topic-id="red-test-and-quality/test-driven-development">Test-Driven Development (TDD)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/behavior-driven-development.html" data-topic-id="red-test-and-quality/behavior-driven-development">behavior driven development</a></li>
+          <li><a href="../../chapters/red-test-and-quality/risk-based-testing.html" data-topic-id="red-test-and-quality/risk-based-testing">Risk Based Testing</a></li>
+          <li><a href="../../chapters/red-test-and-quality/nfr-testing.html" data-topic-id="red-test-and-quality/nfr-testing">Testing Non-Functional Requirements (NFR Testing)</a></li>
+          <li><a href="../../chapters/red-test-and-quality/design-for-testability.html" data-topic-id="red-test-and-quality/design-for-testability">Design for Testability</a></li>
+          <li><a href="../../chapters/red-test-and-quality/internal-software-quality.html" data-topic-id="red-test-and-quality/internal-software-quality">Internal Software Quality</a></li>
+        </ul>
+      </details>
+      <details class="nav-chapter" data-chapter="yellow-social-skills">
+        <summary><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills<span class="nav-chapter__count">9</span></summary>
+        <ul class="nav-list">
+          <li><a href="../../chapters/yellow-social-skills/4c-learning-concept.html" data-topic-id="yellow-social-skills/4c-learning-concept">4C Learning Concept (Accelerated Learning)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/communication.html" data-topic-id="yellow-social-skills/communication">Social Skills: Communication</a></li>
+          <li><a href="../../chapters/yellow-social-skills/feedback-send-receive.html" data-topic-id="yellow-social-skills/feedback-send-receive">Peer Feedback</a></li>
+          <li><a href="../../chapters/yellow-social-skills/leadership-without-formal-power.html" data-topic-id="yellow-social-skills/leadership-without-formal-power">Leadership (without formal power)</a></li>
+          <li><a href="../../chapters/yellow-social-skills/motivation.html" data-topic-id="yellow-social-skills/motivation">Motivation Theory</a></li>
+          <li><a href="../../chapters/yellow-social-skills/stakeholder-presentation.html" data-topic-id="yellow-social-skills/stakeholder-presentation">Stakeholder presentation</a></li>
+          <li><a href="../../chapters/yellow-social-skills/change-management-fearless-change.html" data-topic-id="yellow-social-skills/change-management-fearless-change">Change Management and Fearless Change</a></li>
+          <li><a href="../../chapters/yellow-social-skills/peer-feedback-coaching-sparring.html" data-topic-id="yellow-social-skills/peer-feedback-coaching-sparring">Peer feedback, coaching and sparring</a></li>
+          <li><a href="../../chapters/yellow-social-skills/responsibility-process-self-leadership.html" data-topic-id="yellow-social-skills/responsibility-process-self-leadership">Self-leadership and Responsibility Process</a></li>
+        </ul>
+      </details>
+  </nav>
+  <main class="main" id="content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>GREEN - Business Understanding</span>
+    </nav>
+    <div class="topic-head fade-in" style="--chapter-color:#4CAF50;--i:0">
+      <a class="chapter-chip" href="../../index.html#green-business-understanding"><span class="nav-chapter__swatch" style="background:#4CAF50"></span>Business</a>
+      <div class="topic-meta">
+        <span>4,226 words · about 21 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="green-business-understanding/role-po-sm-tl" aria-pressed="false">
+          <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
+        </button>
+      </div>
+    </div>
+    <article class="prose fade-in" style="--i:1">
+<h1 id="roles-of-po-sm-and-tl-at-siemens-within-business-understanding">Roles of PO, SM and TL at Siemens within Business Understanding</h1>
+<h2 id="short-summary-of-the-topic"><a class="heading-anchor" href="#short-summary-of-the-topic" aria-label="Link to this section">#</a>Short summary of the topic</h2>
+<p>Within <strong>Business Understanding</strong> it is not enough for a Software Architect to understand technology only. Software architecture is embedded in the environment of the product, the customer, the market, the business strategy, the competition and economic constraints.</p>
+<p>For exam purposes the roles can be summarized as follows:</p>
+<ul>
+<li><strong>Product Owner (PO):</strong> What should be built and why? Which customer and business value are we creating?</li>
+<li><strong>Technical Lead / Team Architect (TL):</strong> How can the required value be realized in a technically sustainable, safe and testable way?</li>
+<li><strong>Scrum Master (SM):</strong> How do we create a way of working and an environment in which the team delivers value effectively and repeatedly?</li>
+</ul>
+<blockquote>
+<p><strong>Note on terminology:</strong> The label TL is not defined uniformly in the source material. In this text it is interpreted as <strong>Technical Lead / Team Architect</strong>, i.e. a technical leadership role close to the development team.</p>
+</blockquote>
+<h2 id="definitions-and-basic-terms"><a class="heading-anchor" href="#definitions-and-basic-terms" aria-label="Link to this section">#</a>Definitions and basic terms</h2>
+<h3 id="product-owner"><a class="heading-anchor" href="#product-owner" aria-label="Link to this section">#</a>Product Owner</h3>
+<p><strong>Definition</strong><br>The PO represents the product and customer perspective. They understand the pain points and use cases of the target customers, create and maintain the product backlog, define acceptance criteria and prioritize the backlog.</p>
+<p><strong>Meaning in architecture</strong></p>
+<ul>
+<li>provides the business context for technical decisions,</li>
+<li>explains the customer problem and the required value,</li>
+<li>sets the priorities,</li>
+<li>collaborates with the architect on requirements, quality attributes, slicing and roadmapping,</li>
+<li>helps decide on the balance of value, cost, risk and deadline.</li>
+</ul>
+<p><strong>Meaning in testing</strong></p>
+<ul>
+<li>defines the expected result and the acceptance criteria,</li>
+<li>accepts the result against the agreed criteria,</li>
+<li>helps verify whether the product solves the right customer problem.</li>
+</ul>
+<p><strong>Typical mistake or misunderstanding</strong><br>The PO owns the backlog, but that does not imply they dictate the concrete technical solution.</p>
+<p><strong>Exam usage</strong></p>
+<ul>
+<li><strong>Must say:</strong> The PO represents customer value, the product goal and the backlog.</li>
+<li><strong>Good to add:</strong> The architect helps translate business needs and quality attributes into something realizable.</li>
+<li><strong>Avoid:</strong> &quot;The PO tells the architect how to implement the system.&quot;</li>
+</ul>
+<h3 id="scrum-master"><a class="heading-anchor" href="#scrum-master" aria-label="Link to this section">#</a>Scrum Master</h3>
+<p><strong>Definition</strong><br>The SM is an agile process expert, coach and facilitator. They support the team in removing impediments, in retrospectives, communication, transparency and continuous improvement.</p>
+<p><strong>Meaning in architecture</strong></p>
+<ul>
+<li>does not own architectural decisions,</li>
+<li>creates the conditions for an open technical discussion,</li>
+<li>supports transparent decision making,</li>
+<li>helps remove organizational and process impediments,</li>
+<li>facilitates the collaboration of PO, architect, testers and developers.</li>
+</ul>
+<p><strong>Meaning in testing</strong></p>
+<p>The SM does not determine the technical content of tests, but supports a process in which testing, the Definition of Done and fast feedback are part of the delivery flow.</p>
+<p><strong>Typical mistake or misunderstanding</strong><br>The SM is not automatically a project manager, the developers&#39; line manager or a technical decision maker.</p>
+<p><strong>Exam usage</strong></p>
+<ul>
+<li><strong>Must say:</strong> The SM supports team effectiveness, agile principles, communication and the removal of impediments.</li>
+<li><strong>Good to add:</strong> For the architect they create space for technical collaboration and short learning cycles.</li>
+<li><strong>Avoid:</strong> &quot;The SM is the boss of the team.&quot;</li>
+</ul>
+<h3 id="technical-lead-team-architect"><a class="heading-anchor" href="#technical-lead-team-architect" aria-label="Link to this section">#</a>Technical Lead / Team Architect</h3>
+<p><strong>Definition</strong><br>The technical leadership role translates the problem space into the solution space. They analyse options, quality attributes, technical risks, consequences and technical debt.</p>
+<p><strong>Meaning in architecture</strong></p>
+<ul>
+<li>maps the business problem onto technical concepts,</li>
+<li>designs and compares alternatives,</li>
+<li>drives trade-off decisions,</li>
+<li>manages technical risks and technical debt,</li>
+<li>supports the team in decision making,</li>
+<li>records significant decisions, for example using ADRs,</li>
+<li>ensures conformance with architectural, security and compliance constraints.</li>
+</ul>
+<p><strong>Meaning in testing</strong></p>
+<ul>
+<li>ensures the testability of the solution,</li>
+<li>translates quality attributes into measurable scenarios,</li>
+<li>collaborates on the test strategy,</li>
+<li>addresses observability and controllability,</li>
+<li>determines which technical evidence is needed to accept a risk.</li>
+</ul>
+<p><strong>Typical mistake or misunderstanding</strong><br>The architect should not centralize all technical decisions and become a bottleneck.</p>
+<p><strong>Exam usage</strong></p>
+<ul>
+<li><strong>Must say:</strong> The TL/Architect represents the technical HOW, the consequences, the risks and the quality of the solution.</li>
+<li><strong>Good to add:</strong> A good technical decision optimizes business value in a concrete context, not technical elegance for its own sake.</li>
+<li><strong>Avoid:</strong> &quot;The architect always has the last word.&quot;</li>
+</ul>
+<h2 id="collaboration-of-the-roles"><a class="heading-anchor" href="#collaboration-of-the-roles" aria-label="Link to this section">#</a>Collaboration of the roles</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Primary question</th>
+<th>Main focus</th>
+<th>Link to the Software Architect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PO</td>
+<td>WHAT + WHY?</td>
+<td>customer, product, value, backlog</td>
+<td>supplies business context and priorities</td>
+</tr>
+<tr>
+<td>TL / Architect</td>
+<td>HOW + consequences?</td>
+<td>solution, quality attributes, risks, trade-offs</td>
+<td>translates the problem into the solution space</td>
+</tr>
+<tr>
+<td>SM</td>
+<td>HOW DO WE WORK?</td>
+<td>team, process, flow, impediments</td>
+<td>creates the conditions for effective delivery</td>
+</tr>
+</tbody></table></div>
+<p>This split is not a hierarchy. These are complementary responsibilities around customer value.</p>
+<h2 id="common-mistakes-and-anti-patterns"><a class="heading-anchor" href="#common-mistakes-and-anti-patterns" aria-label="Link to this section">#</a>Common mistakes and anti-patterns</h2>
+<h3 id="1-the-po-dictates-the-technical-solution"><a class="heading-anchor" href="#1-the-po-dictates-the-technical-solution" aria-label="Link to this section">#</a>1. The PO dictates the technical solution</h3>
+<ul>
+<li><strong>Why it is a problem:</strong> It mixes the problem space and the solution space.</li>
+<li><strong>How it shows up:</strong> A technical decision is made without comparing alternatives and quality attributes.</li>
+<li><strong>How to prevent it:</strong> The PO defines value, priorities and constraints; the architect presents options and their consequences.</li>
+</ul>
+<h3 id="2-the-architect-decides-about-the-product-instead-of-the-po"><a class="heading-anchor" href="#2-the-architect-decides-about-the-product-instead-of-the-po" aria-label="Link to this section">#</a>2. The architect decides about the product instead of the PO</h3>
+<ul>
+<li><strong>Why it is a problem:</strong> Technical quality starts to outweigh customer value.</li>
+<li><strong>How it shows up:</strong> A sophisticated solution arises with no corresponding business benefit.</li>
+<li><strong>How to prevent it:</strong> Link every significant architectural measure to value, risk or a quality requirement.</li>
+</ul>
+<h3 id="3-the-architect-is-a-technical-bottleneck"><a class="heading-anchor" href="#3-the-architect-is-a-technical-bottleneck" aria-label="Link to this section">#</a>3. The architect is a technical bottleneck</h3>
+<ul>
+<li><strong>Why it is a problem:</strong> It slows the team down and limits local ownership.</li>
+<li><strong>How it shows up:</strong> No decision is made without the architect.</li>
+<li><strong>How to prevent it:</strong> Set principles and a decision framework, delegate local decisions and record only the significant trade-offs.</li>
+</ul>
+<h3 id="4-the-sm-steers-the-technical-content"><a class="heading-anchor" href="#4-the-sm-steers-the-technical-content" aria-label="Link to this section">#</a>4. The SM steers the technical content</h3>
+<ul>
+<li><strong>Why it is a problem:</strong> Process facilitation is confused with technical authority.</li>
+<li><strong>How it shows up:</strong> Technical decisions are optimized for the ceremony instead of for systemic risks.</li>
+<li><strong>How to prevent it:</strong> The SM facilitates the process; technical content remains the responsibility of the technical roles and the team.</li>
+</ul>
+<h3 id="5-quality-requirements-are-addressed-too-late"><a class="heading-anchor" href="#5-quality-requirements-are-addressed-too-late" aria-label="Link to this section">#</a>5. Quality requirements are addressed too late</h3>
+<ul>
+<li><strong>Why it is a problem:</strong> Safety, security, performance or testability may require changing the architecture itself.</li>
+<li><strong>How it shows up:</strong> Expensive rework, insufficient tests, unclear acceptance criteria.</li>
+<li><strong>How to prevent it:</strong> Formulate measurable quality-attribute scenarios already during refinement.</li>
+</ul>
+<h3 id="6-technical-debt-stays-a-verbal-agreement-only"><a class="heading-anchor" href="#6-technical-debt-stays-a-verbal-agreement-only" aria-label="Link to this section">#</a>6. Technical debt stays a verbal agreement only</h3>
+<ul>
+<li><strong>Why it is a problem:</strong> A temporary solution becomes permanent.</li>
+<li><strong>How it shows up:</strong> The cost of change and the risk of regressions grow.</li>
+<li><strong>How to prevent it:</strong> Identify the debt, evaluate it, put it into the backlog, define a payback strategy and verify its removal.</li>
+</ul>
+<h2 id="exam-questions"><a class="heading-anchor" href="#exam-questions" aria-label="Link to this section">#</a>Exam questions</h2>
+<h3 id="basic"><a class="heading-anchor" href="#basic" aria-label="Link to this section">#</a>Basic</h3>
+<ol>
+<li><p><strong>What is the difference between PO, SM and TL/Architect?</strong><br>A good answer distinguishes value/product, technical solution and team/process effectiveness.</p>
+</li>
+<li><p><strong>Why must a Software Architect understand the business?</strong><br>The answer should connect the customer, the product, the strategy, costs, risks and technical decisions.</p>
+</li>
+</ol>
+<h3 id="intermediate"><a class="heading-anchor" href="#intermediate" aria-label="Link to this section">#</a>Intermediate</h3>
+<ol start="3">
+<li><p><strong>How do the PO and the Software Architect collaborate?</strong><br>Mention requirements, quality attributes, feasibility, priorities, technical risks, backlog and trade-offs.</p>
+</li>
+<li><p><strong>What role does the SM have in architectural decisions?</strong><br>They do not own technical decisions, but support collaboration, transparency and the removal of impediments.</p>
+</li>
+</ol>
+<h3 id="advanced"><a class="heading-anchor" href="#advanced" aria-label="Link to this section">#</a>Advanced</h3>
+<ol start="5">
+<li><p><strong>Who decides in a conflict between time-to-market and technical risk?</strong><br>A good answer does not automatically say &quot;the PO&quot; or &quot;the architect&quot;. It describes the options, the impacts, the decision authority given by the context, the documentation of the decision and the management of the risk.</p>
+</li>
+<li><p><strong>How do you turn a business requirement into an architecturally usable input?</strong><br>Mention the stakeholder, the stimulus, the environment, the expected response, the response measure, the constraints and the way of verification.</p>
+</li>
+</ol>
+<h3 id="questions-about-practical-experience"><a class="heading-anchor" href="#questions-about-practical-experience" aria-label="Link to this section">#</a>Questions about practical experience</h3>
+<ol start="7">
+<li><p><strong>Give an example of a conflict between a product priority and a technical risk.</strong><br>Structure of the answer: business objective → technical constraint → alternatives → trade-off → decision → validation.</p>
+</li>
+<li><p><strong>How do you explain the consequence of an architectural decision to the PO?</strong><br>Use the language of time-to-market, cost, risk, future change, quality and customer value.</p>
+</li>
+</ol>
+<h3 id="trade-off-decision-questions"><a class="heading-anchor" href="#trade-off-decision-questions" aria-label="Link to this section">#</a>Trade-off decision questions</h3>
+<ol start="9">
+<li><p><strong>Time-to-market versus architectural sustainability?</strong><br>A short-term solution can be right if the risk is acceptable and the technical debt is consciously managed.</p>
+</li>
+<li><p><strong>Feature versus refactoring?</strong><br>Refactoring can be a business enabler if it reduces risk or enables faster future changes.</p>
+</li>
+</ol>
+<h2 id="model-exam-answer"><a class="heading-anchor" href="#model-exam-answer" aria-label="Link to this section">#</a>Model exam answer</h2>
+<p>The roles of Product Owner, Scrum Master and Technical Lead or Team Architect are best understood by how they contribute to creating customer value. Business Understanding matters for a Software Architect because architecture does not arise in isolation. Technical decisions always influence product goals, customer needs, the deadline, costs, risks, competition and the expected product life cycle.</p>
+<p>The Product Owner primarily represents the WHAT and the WHY. They understand customer needs, maintain the backlog, set priorities and define acceptance criteria. For the architect they are a key partner, because they provide the business context. It is not enough, for example, to know that the system must respond quickly. It is necessary to know in which scenario, for which stakeholder, with which limit, and what the business impact of missing it is.</p>
+<p>The Technical Lead or Team Architect primarily represents the HOW and the technical consequences. They translate the problem space into the solution space and analyse alternatives, quality attributes, technical risks and technical debt. Their job is not only to propose an implementation, but to explain what the individual options mean for cost, deadline, safety, testability, future development and operational risks. The architect should not centralize all decisions. They should enable the team to decide competently and record the significant decisions transparently.</p>
+<p>The Scrum Master focuses on HOW WE WORK. They support the team, the removal of impediments, transparency, retrospectives and continuous improvement. They do not decide about the architecture, but they significantly influence the environment in which technical decisions are made. They can, for example, facilitate a discussion between the PO and the architect, secure access to the needed stakeholders, or help remove an impediment for a prototype or a technical experiment.</p>
+<p>An example is a safety-related I/O module. The PO may request a diagnostic function in the nearest release because of a customer project. The architect finds out that the change affects not only the alarm, but also the conditions for transitioning into the safe state, the scope of fault-injection tests and the complexity of the safety state machine. A wrong reaction from the architect would be to simply say the change is not possible. The right approach is to prepare options: a fast local change with consciously accepted technical debt, a targeted refactoring, or a limited MVP without changing the safety transition.</p>
+<p>The trade-off is not that business or architecture always wins. What is assessed is customer value, the deadline, costs, safety and quality risks, the test scope and the long-term consequences. If the fast option is chosen, the technical debt must be recorded, evaluated, put into the backlog, and a realistic payback strategy must exist. Besides the acceptance test, the test strategy must cover integration, system, regression and fault-injection scenarios.</p>
+<p>The summary is therefore simple: the PO maximizes the understanding of value, the TL or architect maximizes the quality of the technical decision in the business context, and the SM creates the conditions for the team to deliver value effectively. The Software Architect connects these perspectives and translates the business problem into a technically sustainable and verifiable solution.</p>
+<h2 id="11-short-version-for-quick-revision"><a class="heading-anchor" href="#11-short-version-for-quick-revision" aria-label="Link to this section">#</a>11. Short version for quick revision</h2>
+<h3 id="5-main-points"><a class="heading-anchor" href="#5-main-points" aria-label="Link to this section">#</a>5 main points</h3>
+<ol>
+<li>PO = WHAT + WHY + customer value.</li>
+<li>TL/Architect = HOW + quality + technical risk.</li>
+<li>SM = HOW WE WORK + flow + improvement.</li>
+<li>The architect translates the business problem space into the technical solution space.</li>
+<li>A decision is a trade-off between value, cost, risk, quality and time.</li>
+</ol>
+<h3 id="5-key-terms"><a class="heading-anchor" href="#5-key-terms" aria-label="Link to this section">#</a>5 key terms</h3>
+<ol>
+<li>Customer value</li>
+<li>Product backlog</li>
+<li>Quality attributes</li>
+<li>Technical risk/debt</li>
+<li>Trade-off decision</li>
+</ol>
+<h3 id="3-most-common-mistakes"><a class="heading-anchor" href="#3-most-common-mistakes" aria-label="Link to this section">#</a>3 most common mistakes</h3>
+<ol>
+<li>The PO dictates the technical solution.</li>
+<li>The architect ignores business value or centralizes decision making.</li>
+<li>The SM is understood as a project manager or a technical decision maker.</li>
+</ol>
+<h3 id="1-concise-model-sentence"><a class="heading-anchor" href="#1-concise-model-sentence" aria-label="Link to this section">#</a>1 concise model sentence</h3>
+<blockquote>
+<p>The PO brings the WHAT and the WHY, the architect looks for a sustainable HOW and transparently manages the technical trade-offs, and the SM creates the conditions for a cross-functional team to deliver customer value effectively.</p>
+</blockquote>
+<h2 id="summary-in-one-table"><a class="heading-anchor" href="#summary-in-one-table" aria-label="Link to this section">#</a>Summary in one table</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What matters</th>
+<th>Relation to architecture</th>
+<th>Relation to testing</th>
+<th>Typical exam question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PO</td>
+<td>customer value, backlog, acceptance</td>
+<td>business context of the solution</td>
+<td>acceptance criteria</td>
+<td>How do the PO and the architect collaborate?</td>
+</tr>
+<tr>
+<td>SM</td>
+<td>team, process, impediments</td>
+<td>supports collaboration</td>
+<td>supports the feedback loop</td>
+<td>Does the SM decide about the architecture?</td>
+</tr>
+<tr>
+<td>TL/Architect</td>
+<td>solution, risks, trade-offs</td>
+<td>technical responsibility</td>
+<td>testability and quality attributes</td>
+<td>Who owns the technical HOW?</td>
+</tr>
+<tr>
+<td>Business Understanding</td>
+<td>customer, market, strategy</td>
+<td>context of architecture decisions</td>
+<td>meaning of quality criteria</td>
+<td>Why must the architect understand the business?</td>
+</tr>
+<tr>
+<td>Trade-off</td>
+<td>value, cost, risk, time, quality</td>
+<td>the basis of decision making</td>
+<td>determines what and how to verify</td>
+<td>What to do in a conflict between time-to-market and technical debt?</td>
+</tr>
+</tbody></table></div>
+<h1 id="a-concrete-siemens-scenario-a-conflict-between-the-po-and-the-software-architect">A concrete Siemens scenario: a conflict between the PO and the Software Architect</h1>
+<h2 id="scope-of-the-scenario"><a class="heading-anchor" href="#scope-of-the-scenario" aria-label="Link to this section">#</a>Scope of the scenario</h2>
+<p>This scenario is a <strong>didactically constructed example</strong> set in the environment of a safety-related industrial I/O module. It does not describe a real internal conflict, a concrete customer or an actual product decision.</p>
+<p>The goal is to show how a conflict is resolved between:</p>
+<ul>
+<li>customer value,</li>
+<li>time-to-market,</li>
+<li>functional safety,</li>
+<li>reliability,</li>
+<li>testability,</li>
+<li>long-term maintainability,</li>
+<li>technical debt.</li>
+</ul>
+<h2 id="initial-situation"><a class="heading-anchor" href="#initial-situation" aria-label="Link to this section">#</a>Initial situation</h2>
+<p>The team develops a safety-related industrial I/O module. The key architectural qualities are:</p>
+<ul>
+<li>functional safety,</li>
+<li>reliability,</li>
+<li>reaching and holding the defined safe state on failure,</li>
+<li>meeting the fault-response time,</li>
+<li>sufficient diagnostics,</li>
+<li>long-term maintainability,</li>
+<li>demonstrability of the correctness of the solution throughout the life cycle.</li>
+</ul>
+<p>The customer requests a new function:</p>
+<blockquote>
+<p>On loss of redundancy the module should not transition into the safe state immediately. It should first enter a time-limited degraded mode, display a warning and give the service technician room to react.</p>
+</blockquote>
+<p>The business benefit is reducing unplanned shutdowns of the plant. The change, however, touches the safety state machine and the decision about transitioning into the safe state.</p>
+<h2 id="the-product-owner-s-position"><a class="heading-anchor" href="#the-product-owner-s-position" aria-label="Link to this section">#</a>The Product Owner&#39;s position</h2>
+<p>The PO wants the function included in the nearest release:</p>
+<blockquote>
+<p>&quot;The customer needs this diagnostics for a planned project. Without this function we may lose the business opportunity. The system already contains similar signalling, so it should be possible to extend the existing diagnostic branch.&quot;</p>
+</blockquote>
+<p>The proposed minimal scope:</p>
+<ol>
+<li>add a new diagnostic state,</li>
+<li>use the existing timer,</li>
+<li>add an alarm,</li>
+<li>change the condition for transitioning into the safe state.</li>
+</ol>
+<h3 id="the-po-s-argumentation"><a class="heading-anchor" href="#the-po-s-argumentation" aria-label="Link to this section">#</a>The PO&#39;s argumentation</h3>
+<ul>
+<li>The function has concrete customer value.</li>
+<li>The release date has business significance.</li>
+<li>Part of the needed mechanisms already exists.</li>
+<li>An extensive refactoring may endanger the release.</li>
+<li>Technical quality must be assessed together with value and the deadline.</li>
+</ul>
+<h3 id="acceptance-criterion-proposed-by-the-po"><a class="heading-anchor" href="#acceptance-criterion-proposed-by-the-po" aria-label="Link to this section">#</a>Acceptance criterion proposed by the PO</h3>
+<blockquote>
+<p>After detecting the loss of redundancy, the module displays a maintenance warning and continues in permitted limited operation for a defined period.</p>
+</blockquote>
+<p>This criterion is, however, not yet sufficient for a safety-related architectural and testing decision.</p>
+<h2 id="the-software-architect-s-position"><a class="heading-anchor" href="#the-software-architect-s-position" aria-label="Link to this section">#</a>The Software Architect&#39;s position</h2>
+<p>The architect performs an impact analysis and finds that the requested change is not merely adding an alarm. It affects the safety state machine and the decision whether the system stays in operation or transitions into the safe state.</p>
+<p>The existing implementation has the diagnostic and safety logic tightly coupled. One more condition increases:</p>
+<ul>
+<li>the complexity of the state machine,</li>
+<li>the number of time-dependent transitions,</li>
+<li>the risk of inconsistent behaviour between the channels,</li>
+<li>the scope of fault-injection scenarios,</li>
+<li>the scope of regression testing,</li>
+<li>the effort of future changes,</li>
+<li>the amount of evidence needed for the safety assessment.</li>
+</ul>
+<p>The architect therefore objects:</p>
+<blockquote>
+<p>&quot;The function is not only diagnostic. It changes the conditions under which the system stays in operation or transitions into the safe state. If we put it directly into the current branch, we may make the release, but we create technical debt in a safety-critical part of the system.&quot;</p>
+</blockquote>
+<h2 id="the-essence-of-the-conflict"><a class="heading-anchor" href="#the-essence-of-the-conflict" aria-label="Link to this section">#</a>The essence of the conflict</h2>
+<p>This is neither a personal conflict nor a simple business-versus-technology dispute.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>The PO&#39;s perspective</th>
+<th>The Software Architect&#39;s perspective</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>deliver customer value on time</td>
+<td>prevent unacceptable technical and safety risk</td>
+</tr>
+<tr>
+<td>protect the business opportunity</td>
+<td>protect the integrity of the safety concept</td>
+</tr>
+<tr>
+<td>limit the scope of the change</td>
+<td>account for the systemic impacts</td>
+</tr>
+<tr>
+<td>minimize the risk of delay</td>
+<td>minimize the risk of regression and insufficient evidence</td>
+</tr>
+</tbody></table></div>
+<p>Both sides defend legitimate goals. The architect&#39;s task is to turn the dispute into measurable scenarios, options and a transparent trade-off.</p>
+<h2 id="the-right-approach"><a class="heading-anchor" href="#the-right-approach" aria-label="Link to this section">#</a>The right approach</h2>
+<h3 id="1-do-not-use-a-technical-veto-without-an-explanation"><a class="heading-anchor" href="#1-do-not-use-a-technical-veto-without-an-explanation" aria-label="Link to this section">#</a>1. Do not use a technical veto without an explanation</h3>
+<p>Inappropriate:</p>
+<blockquote>
+<p>&quot;That is not possible, the architecture is not ready for it.&quot;</p>
+</blockquote>
+<p>Appropriate:</p>
+<blockquote>
+<p>&quot;The function is feasible, but it changes the safety behaviour. We need to compare the options by deadline, risk, test scope and long-term cost.&quot;</p>
+</blockquote>
+<h3 id="2-make-the-quality-attribute-scenario-precise"><a class="heading-anchor" href="#2-make-the-quality-attribute-scenario-precise" aria-label="Link to this section">#</a>2. Make the quality-attribute scenario precise</h3>
+<p>The following must be clarified:</p>
+<ul>
+<li>which exact failure is the stimulus,</li>
+<li>in which operating mode it can occur,</li>
+<li>which functions may continue,</li>
+<li>which functions must be blocked,</li>
+<li>how the failure will be signalled,</li>
+<li>what the maximum duration of degraded operation is,</li>
+<li>on which further event the system must immediately transition into the safe state,</li>
+<li>how the consistency of both channels will be verified,</li>
+<li>how the event will be stored for later analysis,</li>
+<li>which measurable results the tests must demonstrate.</li>
+</ul>
+<h3 id="3-prepare-options"><a class="heading-anchor" href="#3-prepare-options" aria-label="Link to this section">#</a>3. Prepare options</h3>
+<h4 id="option-a-fast-local-implementation"><a class="heading-anchor" href="#option-a-fast-local-implementation" aria-label="Link to this section">#</a>Option A: Fast local implementation</h4>
+<p>The function is added into the existing diagnostic and safety logic.</p>
+<p><strong>Benefits</strong></p>
+<ul>
+<li>the smallest immediate implementation scope,</li>
+<li>the highest chance of keeping the release scope,</li>
+<li>fast delivery of customer value.</li>
+</ul>
+<p><strong>Costs and risks</strong></p>
+<ul>
+<li>higher complexity,</li>
+<li>stronger coupling of diagnostics and the safety state machine,</li>
+<li>harder regression analysis,</li>
+<li>creation of technical debt,</li>
+<li>higher cost of further similar changes.</li>
+</ul>
+<p><strong>Conditions of acceptability</strong></p>
+<ul>
+<li>the risk must be explicitly assessed,</li>
+<li>the corresponding tests must be added,</li>
+<li>the decision and the debt must be recorded,</li>
+<li>a payback strategy must exist.</li>
+</ul>
+<h4 id="option-b-targeted-refactoring-first"><a class="heading-anchor" href="#option-b-targeted-refactoring-first" aria-label="Link to this section">#</a>Option B: Targeted refactoring first</h4>
+<p>The following are separated:</p>
+<ul>
+<li>failure detection,</li>
+<li>the decision about the degraded mode,</li>
+<li>signalling,</li>
+<li>time monitoring,</li>
+<li>the decision about transitioning into the safe state.</li>
+</ul>
+<p><strong>Benefits</strong></p>
+<ul>
+<li>clearer component responsibilities,</li>
+<li>better testability,</li>
+<li>isolated tests of state transitions,</li>
+<li>easier future extension,</li>
+<li>lower long-term risk.</li>
+</ul>
+<p><strong>Costs and risks</strong></p>
+<ul>
+<li>larger immediate scope of change,</li>
+<li>more regression testing,</li>
+<li>higher risk of delaying the release.</li>
+</ul>
+<h4 id="option-c-a-limited-mvp"><a class="heading-anchor" href="#option-c-a-limited-mvp" aria-label="Link to this section">#</a>Option C: A limited MVP</h4>
+<p>Only a safely bounded part is included in the release:</p>
+<ul>
+<li>the diagnostic warning,</li>
+<li>storing the event,</li>
+<li>making the diagnostics available to the superordinate system,</li>
+</ul>
+<p>but without changing the current safety transition.</p>
+<p><strong>Benefits</strong></p>
+<ul>
+<li>part of the customer value can be delivered earlier,</li>
+<li>the safety state machine stays unchanged,</li>
+<li>the larger architectural change is prepared separately.</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<ul>
+<li>the customer does not get the whole requested function,</li>
+<li>the PO must verify whether the limited MVP has sufficient value.</li>
+</ul>
+<h2 id="example-of-a-decision"><a class="heading-anchor" href="#example-of-a-decision" aria-label="Link to this section">#</a>Example of a decision</h2>
+<p>After a joint assessment the team may choose option A if the deadline is business-critical and the analysis proves that the risk can be limited acceptably for that release.</p>
+<p>The decision must be conscious and managed:</p>
+<ol>
+<li>The options and the reasons for the decision are recorded in an ADR.</li>
+<li>The technical debt is explicitly identified.</li>
+<li>Its impact, probability and cost of removal are evaluated.</li>
+<li>A payback strategy is defined.</li>
+<li>The remediation item is put into the product backlog.</li>
+<li>An owner and a closing condition are set.</li>
+<li>After the fix it is verified that the measure is effective.</li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong> This is an example of a possible decision. In a safety-related domain the acceptability of an option depends on the concrete requirements, the hazard analysis, the evidence, the normative context and the decision authorities of the project.</p>
+</blockquote>
+<h2 id="test-strategy"><a class="heading-anchor" href="#test-strategy" aria-label="Link to this section">#</a>Test strategy</h2>
+<p>An acceptance test of the customer function is not enough. The test strategy must cover at least the following types of scenarios:</p>
+<ul>
+<li>detection of the loss of redundancy,</li>
+<li>activation of the maintenance warning,</li>
+<li>permitted behaviour in degraded mode,</li>
+<li>forbidden behaviour in degraded mode,</li>
+<li>failure of the second channel during degraded operation,</li>
+<li>expiry of the maximum permitted time,</li>
+<li>data inconsistency between the channels,</li>
+<li>loss of diagnostic communication,</li>
+<li>correct transition into the safe state,</li>
+<li>restart during degraded mode,</li>
+<li>storage and traceability of the diagnostic event,</li>
+<li>regression verification of the original safety functions.</li>
+</ul>
+<h3 id="test-levels"><a class="heading-anchor" href="#test-levels" aria-label="Link to this section">#</a>Test levels</h3>
+<ul>
+<li><strong>Unit tests:</strong> local rules, timers and state transitions.</li>
+<li><strong>Integration tests:</strong> interplay of diagnostics, safety logic, watchdogs and communication.</li>
+<li><strong>System tests:</strong> end-to-end reaction of the module in a defined environment.</li>
+<li><strong>Fault-injection tests:</strong> controlled failures, timeouts, inconsistencies and channel failures.</li>
+<li><strong>Regression tests:</strong> verification that the change did not break the existing safety behaviour.</li>
+</ul>
+<h2 id="the-scrum-master-s-role"><a class="heading-anchor" href="#the-scrum-master-s-role" aria-label="Link to this section">#</a>The Scrum Master&#39;s role</h2>
+<p>The SM does not decide the resulting architectural option. They can, however:</p>
+<ul>
+<li>facilitate the decision workshop,</li>
+<li>ensure room for the argumentation of the PO, the architect, the testers and the safety stakeholders,</li>
+<li>separate facts, assumptions and opinions,</li>
+<li>help remove an impediment for a prototype or an analysis,</li>
+<li>support the transparency of the decision,</li>
+<li>raise in the retrospective the question of why the requirement was identified late.</li>
+</ul>
+<h2 id="sample-dialogue"><a class="heading-anchor" href="#sample-dialogue" aria-label="Link to this section">#</a>Sample dialogue</h2>
+<p><strong>PO:</strong><br>&quot;I need the function in this release. It is tied to a customer project and postponing it has a business impact.&quot;</p>
+<p><strong>Architect:</strong><br>&quot;The business significance is clear. At the same time the change touches the decision about the safe state. It is not just a new alarm. It affects timing, fault scenarios and regression evidence.&quot;</p>
+<p><strong>PO:</strong><br>&quot;What options do we have besides postponing it completely?&quot;</p>
+<p><strong>Architect:</strong><br>&quot;I see three options: a local implementation with conscious debt, a refactoring before the implementation, or a limited MVP without changing the safety transition. For each one we will document the impact on the deadline, the risk and the required tests.&quot;</p>
+<p><strong>PO:</strong><br>&quot;If we choose the fast option, how do we prevent the temporary solution from becoming permanent?&quot;</p>
+<p><strong>Architect:</strong><br>&quot;We record the decision, evaluate the debt, put a concrete payback task into the backlog and define the condition for closing it. At the same time we extend the fault-injection and regression tests.&quot;</p>
+<h2 id="common-mistakes-in-this-scenario"><a class="heading-anchor" href="#common-mistakes-in-this-scenario" aria-label="Link to this section">#</a>Common mistakes in this scenario</h2>
+<h3 id="the-po-downplays-the-safety-impact"><a class="heading-anchor" href="#the-po-downplays-the-safety-impact" aria-label="Link to this section">#</a>The PO downplays the safety impact</h3>
+<ul>
+<li><strong>Problem:</strong> The function is understood as an alarm only.</li>
+<li><strong>Symptom:</strong> The acceptance criterion does not cover the change of the safe-state behaviour.</li>
+<li><strong>Prevention:</strong> A joint impact analysis and measurable quality scenarios.</li>
+</ul>
+<h3 id="the-architect-uses-a-technical-veto-only"><a class="heading-anchor" href="#the-architect-uses-a-technical-veto-only" aria-label="Link to this section">#</a>The architect uses a technical veto only</h3>
+<ul>
+<li><strong>Problem:</strong> The business goal is not addressed.</li>
+<li><strong>Symptom:</strong> The discussion turns into a fight about authority.</li>
+<li><strong>Prevention:</strong> Present options with impacts on value, deadline, risk and tests.</li>
+</ul>
+<h3 id="technical-debt-without-a-payback-strategy"><a class="heading-anchor" href="#technical-debt-without-a-payback-strategy" aria-label="Link to this section">#</a>Technical debt without a payback strategy</h3>
+<ul>
+<li><strong>Problem:</strong> The temporary solution becomes permanent.</li>
+<li><strong>Symptom:</strong> Complexity and regression risk grow gradually.</li>
+<li><strong>Prevention:</strong> Record the debt in the backlog, define the closing condition and verify the remediation.</li>
+</ul>
+<h3 id="testing-the-happy-path-only"><a class="heading-anchor" href="#testing-the-happy-path-only" aria-label="Link to this section">#</a>Testing the happy path only</h3>
+<ul>
+<li><strong>Problem:</strong> The reaction to combined and consecutive failures is not verified.</li>
+<li><strong>Symptom:</strong> The function passes the acceptance test, but safe system behaviour is not demonstrated.</li>
+<li><strong>Prevention:</strong> Integration, system, fault-injection and regression tests.</li>
+</ul>
+<h2 id="exam-usage"><a class="heading-anchor" href="#exam-usage" aria-label="Link to this section">#</a>Exam usage</h2>
+<ul>
+<li><strong>Must say:</strong> The conflict arises between customer value and time-to-market on one side and safety, testability, risk and maintainability on the other.</li>
+<li><strong>Good to add:</strong> The architect does not merely use a veto. They prepare a quality scenario, options, a trade-off analysis, an ADR and a way of verification.</li>
+<li><strong>Avoid:</strong> &quot;The architect always has the last word&quot; or &quot;the PO decides because they own the backlog&quot;.</li>
+<li><strong>Show architectural reasoning:</strong> Impact on the safety state machine, determinism, coupling, technical debt and modifiability.</li>
+<li><strong>Show testing reasoning:</strong> Complement the acceptance criterion with integration, system, fault-injection and regression tests.</li>
+<li><strong>Formulate the trade-off:</strong> A fast solution can be acceptable only with transparent risk, sufficient evidence and a realistic payback strategy.</li>
+</ul>
+<h2 id="model-exam-answer-2"><a class="heading-anchor" href="#model-exam-answer-2" aria-label="Link to this section">#</a>Model exam answer</h2>
+<p>In a safety-related I/O product the PO may request the fast delivery of a diagnostic function because of a customer project. The function should allow the system, after a loss of redundancy, to continue for a limited time in a defined degraded mode while issuing a maintenance warning. From the PO&#39;s perspective this is customer value and time-to-market.</p>
+<p>The architect, however, finds that the requirement does not change only the diagnostics. It affects the conditions for transitioning into the safe state, the timing behaviour, the number of state transitions and the scope of the safety verification. A fast local implementation may create coupling between the diagnostics and the safety state machine and increase technical debt.</p>
+<p>The right solution is neither an automatic technical veto nor a one-sided PO decision. The architect prepares options: a local implementation with conscious debt, a targeted refactoring, or a limited MVP without changing the safety transition. For each option they describe the customer value, the deadline, the technical and safety risk, the test scope and the long-term cost.</p>
+<p>If the fast option is chosen, the decision must be recorded, the technical debt evaluated, put into the backlog and tied to a payback strategy. Testing must not end with the acceptance test. It must cover integration, system, regression and fault-injection scenarios, above all the loss of the second channel, a timeout, channel inconsistency and the correct transition into the safe state.</p>
+<p>The trade-off is therefore not business against architecture. It is a transparent decision between value, deadline, cost, safety, risk and long-term maintainability. The Software Architect&#39;s task is to enable a competent decision and to ensure that its technical consequences are measurable and verifiable.</p>
+<h2 id="short-model-sentence"><a class="heading-anchor" href="#short-model-sentence" aria-label="Link to this section">#</a>Short model sentence</h2>
+<blockquote>
+<p>The PO requests the fast delivery of a customer function while the architect points out the impact on the safety state machine and the scope of verification; the right solution is comparing the options by value, deadline, risk, tests and long-term cost, not a one-sided veto.</p>
+</blockquote>
+
+    </article>
+<nav class="pager" aria-label="Topic navigation">
+      <a class="pager__prev" href="../../chapters/green-business-understanding/97-things.html"><span class="pager__label">← Previous</span><span>97 Things Every Software Architect Should Know: Business topics</span></a>
+      <a class="pager__next" href="../../chapters/red-test-and-quality/value-of-testing.html"><span class="pager__label">Next →</span><span>Value of Testing, Test exit criteria</span></a>
+    </nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
+    <ul><li class="lvl-2"><a href="#short-summary-of-the-topic">Short summary of the topic</a></li><li class="lvl-2"><a href="#definitions-and-basic-terms">Definitions and basic terms</a></li><li class="lvl-3"><a href="#product-owner">Product Owner</a></li><li class="lvl-3"><a href="#scrum-master">Scrum Master</a></li><li class="lvl-3"><a href="#technical-lead-team-architect">Technical Lead / Team Architect</a></li><li class="lvl-2"><a href="#collaboration-of-the-roles">Collaboration of the roles</a></li><li class="lvl-2"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-3"><a href="#1-the-po-dictates-the-technical-solution">1. The PO dictates the technical solution</a></li><li class="lvl-3"><a href="#2-the-architect-decides-about-the-product-instead-of-the-po">2. The architect decides about the product instead of the PO</a></li><li class="lvl-3"><a href="#3-the-architect-is-a-technical-bottleneck">3. The architect is a technical bottleneck</a></li><li class="lvl-3"><a href="#4-the-sm-steers-the-technical-content">4. The SM steers the technical content</a></li><li class="lvl-3"><a href="#5-quality-requirements-are-addressed-too-late">5. Quality requirements are addressed too late</a></li><li class="lvl-3"><a href="#6-technical-debt-stays-a-verbal-agreement-only">6. Technical debt stays a verbal agreement only</a></li><li class="lvl-2"><a href="#exam-questions">Exam questions</a></li><li class="lvl-3"><a href="#basic">Basic</a></li><li class="lvl-3"><a href="#intermediate">Intermediate</a></li><li class="lvl-3"><a href="#advanced">Advanced</a></li><li class="lvl-3"><a href="#questions-about-practical-experience">Questions about practical experience</a></li><li class="lvl-3"><a href="#trade-off-decision-questions">Trade-off decision questions</a></li><li class="lvl-2"><a href="#model-exam-answer">Model exam answer</a></li><li class="lvl-2"><a href="#11-short-version-for-quick-revision">11. Short version for quick revision</a></li><li class="lvl-3"><a href="#5-main-points">5 main points</a></li><li class="lvl-3"><a href="#5-key-terms">5 key terms</a></li><li class="lvl-3"><a href="#3-most-common-mistakes">3 most common mistakes</a></li><li class="lvl-3"><a href="#1-concise-model-sentence">1 concise model sentence</a></li><li class="lvl-2"><a href="#summary-in-one-table">Summary in one table</a></li><li class="lvl-2"><a href="#scope-of-the-scenario">Scope of the scenario</a></li><li class="lvl-2"><a href="#initial-situation">Initial situation</a></li><li class="lvl-2"><a href="#the-product-owner-s-position">The Product Owner s position</a></li><li class="lvl-3"><a href="#the-po-s-argumentation">The PO s argumentation</a></li><li class="lvl-3"><a href="#acceptance-criterion-proposed-by-the-po">Acceptance criterion proposed by the PO</a></li><li class="lvl-2"><a href="#the-software-architect-s-position">The Software Architect s position</a></li><li class="lvl-2"><a href="#the-essence-of-the-conflict">The essence of the conflict</a></li><li class="lvl-2"><a href="#the-right-approach">The right approach</a></li><li class="lvl-3"><a href="#1-do-not-use-a-technical-veto-without-an-explanation">1. Do not use a technical veto without an explanation</a></li><li class="lvl-3"><a href="#2-make-the-quality-attribute-scenario-precise">2. Make the quality-attribute scenario precise</a></li><li class="lvl-3"><a href="#3-prepare-options">3. Prepare options</a></li><li class="lvl-4"><a href="#option-a-fast-local-implementation">Option A: Fast local implementation</a></li><li class="lvl-4"><a href="#option-b-targeted-refactoring-first">Option B: Targeted refactoring first</a></li><li class="lvl-4"><a href="#option-c-a-limited-mvp">Option C: A limited MVP</a></li><li class="lvl-2"><a href="#example-of-a-decision">Example of a decision</a></li><li class="lvl-2"><a href="#test-strategy">Test strategy</a></li><li class="lvl-3"><a href="#test-levels">Test levels</a></li><li class="lvl-2"><a href="#the-scrum-master-s-role">The Scrum Master s role</a></li><li class="lvl-2"><a href="#sample-dialogue">Sample dialogue</a></li><li class="lvl-2"><a href="#common-mistakes-in-this-scenario">Common mistakes in this scenario</a></li><li class="lvl-3"><a href="#the-po-downplays-the-safety-impact">The PO downplays the safety impact</a></li><li class="lvl-3"><a href="#the-architect-uses-a-technical-veto-only">The architect uses a technical veto only</a></li><li class="lvl-3"><a href="#technical-debt-without-a-payback-strategy">Technical debt without a payback strategy</a></li><li class="lvl-3"><a href="#testing-the-happy-path-only">Testing the happy path only</a></li><li class="lvl-2"><a href="#exam-usage">Exam usage</a></li><li class="lvl-2"><a href="#model-exam-answer-2">Model exam answer</a></li><li class="lvl-2"><a href="#short-model-sentence">Short model sentence</a></li></ul></aside>
+</div>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="palette__panel">
+    <input class="palette__input" type="search" placeholder="Search every topic…" aria-label="Search query" autocomplete="off" spellcheck="false">
+    <ul class="palette__results" role="listbox"></ul>
+    <p class="palette__empty">Type to search all topics.</p>
+    <div class="palette__hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div class="lightbox"><img alt=""></div>
+
+<script src="../../assets/app.js" defer></script>
+</body>
+</html>
