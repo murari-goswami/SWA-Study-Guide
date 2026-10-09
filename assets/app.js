@@ -134,7 +134,9 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.05 });
+        // threshold 0: fires on first pixel visible, so tall elements (e.g. long
+        // articles) that never show 5% of their own height at once still reveal.
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0 });
       reveals.forEach(el => observer.observe(el));
     }
   }
