@@ -115,13 +115,13 @@
     <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
       <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
       <div class="topic-meta">
-        <span>1,005 words · about 5 min read</span>
+        <span>1,456 words · about 7 min read</span>
         <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/quality-attributes-flexibility-manager" aria-pressed="false">
           <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
         </button>
       </div>
     </div>
-    <article class="prose fade-in" style="--i:1">
+    <article class="prose">
 <h1 id="quality-attributes-flexibility-manager-iso-25010-nfr-catalog">🔵 Quality Attributes — Flexibility Manager (ISO 25010 NFR Catalog)</h1>
 <h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
 <p>Every project needs a short, defensible answer to <em>&quot;which quality attribute matters most, and why?&quot;</em>. For <strong>Flexibility Manager</strong>, the answer was produced with a repeatable process rather than a gut feeling: start from the <strong>ISO/IEC 25010</strong> product quality model (the standard catalog of quality characteristics and sub-characteristics), break each relevant characteristic down into concrete requirements for the project, then run them through <strong>Quality Attribute Scenario (QAS) prioritization</strong> (see <a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html">Quality scenarios and Design Tactics</a>). What survives that prioritization — the Architecture Significant Requirements — is collected here as the <strong>import NFR list</strong>: the non-functional requirements that get imported into the requirements backlog and drive architectural decisions.</p>
@@ -202,7 +202,94 @@
 <li><strong>Security vs. Maintainability</strong> is the second likely trade-off: access control and integrity checks (authentication, authorization, audit trails) add coupling and configuration surface that can work against the loose-coupling goals of modularity.</li>
 <li>Each row here is a <strong>summary</strong>, not a full Quality Scenario. The next step for any row is to write it out as a full six-element scenario (Source, Stimulus, Artifact, Environment, Response, Response Measure) following the structure in <a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html">Quality scenarios and Design Tactics</a>, and then select a Design Tactic for it.</li>
 </ul>
-<h3 id="4-next-steps-not-yet-done-flagged-for-follow-up"><a class="heading-anchor" href="#4-next-steps-not-yet-done-flagged-for-follow-up" aria-label="Link to this section">#</a>4. Next steps (not yet done, flagged for follow-up)</h3>
+<h3 id="4-quality-trade-offs-in-flexibility-manager"><a class="heading-anchor" href="#4-quality-trade-offs-in-flexibility-manager" aria-label="Link to this section">#</a>4. Quality trade-offs in Flexibility Manager</h3>
+<p>Beyond identifying the most important quality attributes, architecture requires making explicit <strong>trade-off decisions</strong> — situations where improving one quality attribute degrades another. The table below captures the twelve most important trade-offs for Flexibility Manager, mapped to the affected bounded contexts (CP = Congestion Prognosis, CPrev = Congestion Prevention, CRR = Congestion Remediation &amp; Resolution, M&amp;T = Measurement &amp; Topology).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trade-off</th>
+<th>Affected BCs</th>
+<th>Tension</th>
+<th>Guiding Question</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Accuracy ↔ Performance / Latency</strong></td>
+<td>CP, CPrev, CRR</td>
+<td>More load-flow/OPF iterations, more DERs, finer time granularity → better result but slower response.</td>
+<td>How accurate must the result be before the deadline?</td>
+</tr>
+<tr>
+<td><strong>Freshness ↔ Consistency</strong></td>
+<td>CP, CRR</td>
+<td>Using newest measurements/topology immediately may mean different inputs belong to different versions/snapshots.</td>
+<td>Do we prefer the freshest data or a coherent network snapshot?</td>
+</tr>
+<tr>
+<td><strong>Availability ↔ Correctness / Safety</strong></td>
+<td>CRR especially</td>
+<td>If M&amp;T, Circuit Core or Interlocking is unavailable, should CRR continue using cached/stale data?</td>
+<td>Is an approximate answer better than no action?</td>
+</tr>
+<tr>
+<td><strong>Automation ↔ Safety / Operator Control</strong></td>
+<td>CPrev, CRR</td>
+<td>Automatically executing curtailment/switching is faster, but operator confirmation/interlocking checks reduce risk.</td>
+<td>Which actions may execute automatically?</td>
+</tr>
+<tr>
+<td><strong>Optimization Quality ↔ Response Time</strong></td>
+<td>CPrev</td>
+<td>Searching more DER combinations can produce a cheaper/better proposal but increases optimization time.</td>
+<td>Do we need the mathematically best solution or a good solution within 5 s?</td>
+</tr>
+<tr>
+<td><strong>Scalability / Throughput ↔ Responsiveness</strong></td>
+<td>CP, CPrev</td>
+<td>Batch processing hundreds of DERs is efficient, but a large batch delays individual results.</td>
+<td>Batch efficiency or fast individual response?</td>
+</tr>
+<tr>
+<td><strong>Resilience ↔ Data Correctness</strong></td>
+<td>All</td>
+<td>Retry, caching and fallback improve availability but increase the chance of using stale/duplicate data.</td>
+<td>How stale is still acceptable?</td>
+</tr>
+<tr>
+<td><strong>Auditability ↔ Performance / Storage</strong></td>
+<td>CPrev, CRR</td>
+<td>Persisting every decision, input, constraint and optimization result gives traceability but costs I/O and storage.</td>
+<td>What must be persisted versus reconstructed?</td>
+</tr>
+<tr>
+<td><strong>Security ↔ Latency / Operability</strong></td>
+<td>All</td>
+<td>Authentication, authorization, TLS, certificate checks etc. add overhead and operational dependencies.</td>
+<td>Which security controls belong on synchronous critical paths?</td>
+</tr>
+<tr>
+<td><strong>Loose Coupling ↔ End-to-End Consistency</strong></td>
+<td>All BCs</td>
+<td>Event-driven independent BCs increase autonomy but make transactions across CP→CPrev→CRR eventually consistent.</td>
+<td>Where is eventual consistency acceptable?</td>
+</tr>
+<tr>
+<td><strong>Interoperability / Generic APIs ↔ Performance</strong></td>
+<td>M&amp;T / Circuit integration</td>
+<td>Flexible generic APIs support many consumers but may transfer/calculate more data than CP/CPrev actually need.</td>
+<td>Generic API or optimized use-case-specific endpoint?</td>
+</tr>
+<tr>
+<td><strong>Explainability ↔ Optimization Sophistication</strong></td>
+<td>CPrev</td>
+<td>Sophisticated optimization may produce better proposals but can be harder for an operator to understand.</td>
+<td>Must the operator understand why DER X was curtailed?</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p><strong>How to use this table:</strong> Each row is a design conversation, not a settled answer. For each trade-off, the team should (1) write a Quality Attribute Scenario for each side, (2) decide which side wins per subsystem/component, and (3) record the decision as an ADR.</p>
+</blockquote>
+<h3 id="5-next-steps-not-yet-done-flagged-for-follow-up"><a class="heading-anchor" href="#5-next-steps-not-yet-done-flagged-for-follow-up" aria-label="Link to this section">#</a>5. Next steps (not yet done, flagged for follow-up)</h3>
 <ul>
 <li>Expand each row into a full QAS (six elements) so each NFR has a measurable Response Measure, not just a qualitative rationale.</li>
 <li>Run a pairwise comparison between the six &quot;Very High&quot; attributes to break the tie and decide which one wins when trade-offs force a choice.</li>
@@ -216,7 +303,7 @@
     </nav>
   </main>
   <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
-    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#1-the-process-in-three-steps">1. The process in three steps</a></li><li class="lvl-3"><a href="#2-import-nfr-list-most-important-quality-attributes">2. Import NFR list — most important quality attributes</a></li><li class="lvl-3"><a href="#3-reading-the-table">3. Reading the table</a></li><li class="lvl-3"><a href="#4-next-steps-not-yet-done-flagged-for-follow-up">4. Next steps (not yet done, flagged for follow-up)</a></li></ul></aside>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#1-the-process-in-three-steps">1. The process in three steps</a></li><li class="lvl-3"><a href="#2-import-nfr-list-most-important-quality-attributes">2. Import NFR list — most important quality attributes</a></li><li class="lvl-3"><a href="#3-reading-the-table">3. Reading the table</a></li><li class="lvl-3"><a href="#4-quality-trade-offs-in-flexibility-manager">4. Quality trade-offs in Flexibility Manager</a></li><li class="lvl-3"><a href="#5-next-steps-not-yet-done-flagged-for-follow-up">5. Next steps (not yet done, flagged for follow-up)</a></li></ul></aside>
 </div>
 
 <div class="palette" role="dialog" aria-modal="true" aria-label="Search">
