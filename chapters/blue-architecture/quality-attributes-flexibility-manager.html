@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="5. Requirement Elicitation (Gathering and acquiring requirements) - GRAY - Requirements - SWA preparation study guide.">
-<title>5. Requirement Elicitation (Gathering and acquiring requirements) · SWA Study Guide</title>
+<meta name="description" content="Quality Attributes — Flexibility Manager (ISO 25010 NFR Catalog) - BLUE - Architecture - SWA preparation study guide.">
+<title>Quality Attributes — Flexibility Manager (ISO 25010 NFR Catalog) · SWA Study Guide</title>
 <link rel="stylesheet" href="../../assets/styles.css">
 </head>
 <body data-base="../../" data-sidebar="closed">
@@ -25,7 +25,7 @@
 <div class="layout">
   <nav class="sidebar" aria-label="Guide contents">
     <p class="sidebar__title">Chapters</p>
-    <details class="nav-chapter" data-chapter="blue-architecture">
+    <details class="nav-chapter" data-chapter="blue-architecture" open>
         <summary><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture<span class="nav-chapter__count">13</span></summary>
         <ul class="nav-list">
           <li><a href="../../chapters/blue-architecture/goals-principles-decisions.html" data-topic-id="blue-architecture/goals-principles-decisions">Goals-Principles-Decisions (GPD) Model</a></li>
@@ -39,18 +39,18 @@
           <li><a href="../../chapters/blue-architecture/architecture-refactoring.html" data-topic-id="blue-architecture/architecture-refactoring">Architecture refactoring (re-engineering, re-writing)</a></li>
           <li><a href="../../chapters/blue-architecture/architecture-review.html" data-topic-id="blue-architecture/architecture-review">Architecture Quality &amp; Architecture Review</a></li>
           <li><a href="../../chapters/blue-architecture/experience-architecture.html" data-topic-id="blue-architecture/experience-architecture">Experience — Architecture (all practical examples in one place)</a></li>
-          <li><a href="../../chapters/blue-architecture/quality-attributes-flexibility-manager.html" data-topic-id="blue-architecture/quality-attributes-flexibility-manager">Quality Attributes — Flexibility Manager (ISO 25010 NFR Catalog)</a></li>
+          <li><a href="../../chapters/blue-architecture/quality-attributes-flexibility-manager.html" data-topic-id="blue-architecture/quality-attributes-flexibility-manager" aria-current="page">Quality Attributes — Flexibility Manager (ISO 25010 NFR Catalog)</a></li>
           <li><a href="../../chapters/blue-architecture/role-of-the-siemens-swa.html" data-topic-id="blue-architecture/role-of-the-siemens-swa">Role of the Siemens SWA: the role of the software architect</a></li>
         </ul>
       </details>
-      <details class="nav-chapter" data-chapter="gray-requirements" open>
+      <details class="nav-chapter" data-chapter="gray-requirements">
         <summary><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements<span class="nav-chapter__count">11</span></summary>
         <ul class="nav-list">
           <li><a href="../../chapters/gray-requirements/1-requirements-generally.html" data-topic-id="gray-requirements/1-requirements-generally">1. Requirements Engineering (RE) — General Introduction</a></li>
           <li><a href="../../chapters/gray-requirements/2-problem-vs-solution.html" data-topic-id="gray-requirements/2-problem-vs-solution">Problem space vs. Solution space and the L-model</a></li>
           <li><a href="../../chapters/gray-requirements/3-requirements-classification.html" data-topic-id="gray-requirements/3-requirements-classification">Classification of requirements</a></li>
           <li><a href="../../chapters/gray-requirements/4-swa-role.html" data-topic-id="gray-requirements/4-swa-role">Goals and tasks for the SWA in the early phases of RE</a></li>
-          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation" aria-current="page">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
+          <li><a href="../../chapters/gray-requirements/5-requirement-elicitation.html" data-topic-id="gray-requirements/5-requirement-elicitation">5. Requirement Elicitation (Gathering and acquiring requirements)</a></li>
           <li><a href="../../chapters/gray-requirements/6-requirement-consolidation.html" data-topic-id="gray-requirements/6-requirement-consolidation">6. Requirement Consolidation (Consolidation and Prioritization)</a></li>
           <li><a href="../../chapters/gray-requirements/7-requirement-analysis.html" data-topic-id="gray-requirements/7-requirement-analysis">7. Requirement Analysis (Requirements analysis and ensuring feasibility)</a></li>
           <li><a href="../../chapters/gray-requirements/8-requirements-pyramid.html" data-topic-id="gray-requirements/8-requirements-pyramid">4. Requirements Pyramid and multi-level Traceability</a></li>
@@ -110,108 +110,113 @@
   </nav>
   <main class="main" id="content">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>GRAY - Requirements</span>
+      <a href="../../index.html">Home</a><span aria-hidden="true">/</span><span>BLUE - Architecture</span>
     </nav>
-    <div class="topic-head fade-in" style="--chapter-color:#78909C;--i:0">
-      <a class="chapter-chip" href="../../index.html#gray-requirements"><span class="nav-chapter__swatch" style="background:#78909C"></span>Requirements</a>
+    <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
+      <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
       <div class="topic-meta">
-        <span>788 words · about 4 min read</span>
-        <button class="read-toggle" data-action="mark-read" data-topic-id="gray-requirements/5-requirement-elicitation" aria-pressed="false">
+        <span>1,005 words · about 5 min read</span>
+        <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/quality-attributes-flexibility-manager" aria-pressed="false">
           <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
         </button>
       </div>
     </div>
     <article class="prose fade-in" style="--i:1">
-<h1 id="5-requirement-elicitation-gathering-and-acquiring-requirements">5. Requirement Elicitation (Gathering and acquiring requirements)</h1>
-<p>Eliciting requirements is a critical and often the most difficult phase of Requirements Engineering. It is not merely a matter of &quot;writing down&quot; what the customer dictates. Customers often do not know exactly what they want, or are unable to articulate technical and qualitative constraints (hidden requirements). The Architect (SWA) and Requirements Engineer (RE) must actively &quot;mine&quot; this information.</p>
-<h2 id="formal-requirement-notation-sophist-master-template-mustergueltige-anforderungen-die-sophist-templates-fuer-requirements"><a class="heading-anchor" href="#formal-requirement-notation-sophist-master-template-mustergueltige-anforderungen-die-sophist-templates-fuer-requirements" aria-label="Link to this section">#</a>Formal requirement notation (SOPHIST / MASTeR template - Mustergueltige Anforderungen – die SOPHIST Templates fuer Requirements)</h2>
-<p>(the name of the German consulting company SOPHIST GmbH)
-To eliminate ambiguity in technical specifications, standardized sentence templates are used. The best known approach is SOPHIST, which forces the analyst to define a requirement in a clear structure:</p>
-<p><strong>[Condition] – [Actor/System] – [Legal obligation] – [Action] – [Object] – [Qualifier/Constraint]</strong></p>
-<ul>
-<li><em>Condition:</em> When should it happen? (e.g., &quot;In the event of a power failure...&quot;)</li>
-<li><em>Actor/System:</em> Who does it? (&quot;...the backup system must...&quot;)</li>
-<li><em>Obligation:</em> Shall, should, or may? (&quot;...must...&quot;)</li>
-<li><em>Action:</em> What exactly happens? (&quot;...restore...&quot;)</li>
-<li><em>Object:</em> What does it concern? (&quot;...the last saved database state...&quot;)</li>
-<li><em>Qualifier/Constraint:</em> By when / how fast / how precisely? (&quot;...within 3 seconds of the failure.&quot;)</li>
-</ul>
-<p><img loading="lazy" src="../../assets/images/gray-requirements/req_sentence.png" alt="Requirement muster"></p>
-<p>This approach is key to ensuring that a requirement is testable and does not contain so-called &quot;weasel words&quot; (vague words such as <em>quickly, user-friendly, robustly</em>).</p>
+<h1 id="quality-attributes-flexibility-manager-iso-25010-nfr-catalog">🔵 Quality Attributes — Flexibility Manager (ISO 25010 NFR Catalog)</h1>
+<h3 id="summary-introduction"><a class="heading-anchor" href="#summary-introduction" aria-label="Link to this section">#</a>Summary / Introduction</h3>
+<p>Every project needs a short, defensible answer to <em>&quot;which quality attribute matters most, and why?&quot;</em>. For <strong>Flexibility Manager</strong>, the answer was produced with a repeatable process rather than a gut feeling: start from the <strong>ISO/IEC 25010</strong> product quality model (the standard catalog of quality characteristics and sub-characteristics), break each relevant characteristic down into concrete requirements for the project, then run them through <strong>Quality Attribute Scenario (QAS) prioritization</strong> (see <a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html">Quality scenarios and Design Tactics</a>). What survives that prioritization — the Architecture Significant Requirements — is collected here as the <strong>import NFR list</strong>: the non-functional requirements that get imported into the requirements backlog and drive architectural decisions.</p>
+<p>For <strong>architecture</strong>, this topic matters because it is the bridge between an abstract standard (ISO 25010) and concrete design decisions: every row below should be traceable to a design tactic or pattern chosen specifically to satisfy it.</p>
+<p>For <strong>requirements engineering</strong>, this topic matters because it shows how NFRs are not invented ad hoc — they are derived systematically from a quality model, scoped to the project&#39;s domain (critical infrastructure), and prioritized before they are imported as requirements.</p>
 <hr>
-<h2 id="approaches-to-requirements-agile"><a class="heading-anchor" href="#approaches-to-requirements-agile" aria-label="Link to this section">#</a>Approaches to requirements: Agile</h2>
-<p>Agile environments (Scrum, Kanban) approach requirements iteratively. The goal is not to create a perfect document at the outset, but to maximize value and adaptability.</p>
+<h3 id="1-the-process-in-three-steps"><a class="heading-anchor" href="#1-the-process-in-three-steps" aria-label="Link to this section">#</a>1. The process in three steps</h3>
 <ol>
-<li><p><strong>User Story:</strong>
-The most common format for expressing a functional requirement from the user&#39;s perspective.
-<em>Format:</em> <code>As a [ROLE], I want [FEATURE/ACTION] so that [BUSINESS VALUE/BENEFIT].</code></p>
-<p><img loading="lazy" src="../../assets/images/gray-requirements/user_story.png" alt="User story"></p>
-</li>
-<li><p><strong>I.N.V.E.S.T. rules for User Stories:</strong>
-The software architect helps the Product Owner ensure that stories meet these criteria:</p>
-<ul>
-<li><strong>I</strong>ndependent — The story can be developed and tested independently of others.</li>
-<li><strong>N</strong>egotiable — It is not a fixed contract; the team can propose a better technical solution.</li>
-<li><strong>V</strong>aluable — It provides clear benefit to the customer.</li>
-<li><strong>E</strong>stimable — The SWA must understand the complexity well enough for the team to estimate the effort (Story Points).</li>
-<li><strong>S</strong>mall — Can be completed within a single sprint. Here the SWA often helps with so-called &quot;slicing&quot; stories by architecture.</li>
-<li><strong>T</strong>estable — Has clear acceptance criteria.</li>
-</ul>
-<p><img loading="lazy" src="../../assets/images/gray-requirements/invest.png" alt="User story"></p>
-</li>
-<li><p><strong>Behavior-Driven Development (BDD) and Acceptance Criteria:</strong>
-BDD is an approach to software development that brings business requirements, communication, and testing together into a single shared language. Instead of the team starting with implementation or technical tests, BDD is based on describing the expected behavior of the system through concrete examples. These examples are formulated so that non-technical roles can also understand them, reducing the scope for misunderstandings between developers, testers, analysts, and the customer.
-To define when a User Story is done, the <em>Gherkin</em> format is used.
-<em>Format:</em> <code>GIVEN (Initial state/Precondition) - WHEN (Triggering action) - THEN (Expected result)</code>.</p>
-<p> <img loading="lazy" src="../../assets/images/gray-requirements/gwt.png" alt="User story"></p>
-<p>This format directly connects RE with automated testing.</p>
-</li>
-<li><p><strong>The 3 C&#39;s concept (Card, Conversation, Confirmation):</strong>
-The 3 C&#39;s concept is an agile principle for working with User Stories. It helps ensure that the team does not replace communication with extensive documentation but instead builds on a shared understanding through discussion. It consists of the following three parts:</p>
-<ul>
-<li><p><strong>Card:</strong> A physical card or ticket (for example, in Jira) that serves only as a brief reminder of the requirement, not as its complete specification.</p>
-</li>
-<li><p><strong>Conversation:</strong> The essential discussion between the requester (the business) and the technical team. In this phase, the software architect actively addresses technical feasibility and possible risks.</p>
-</li>
-<li><p><strong>Confirmation:</strong> The discussion results in clearly agreed acceptance criteria that determine how to objectively test and confirm that the requirement has been successfully completed.</p>
-</li>
-</ul>
-<p>This approach gives everyone involved confidence that they understand the task in the same way before development begins.</p>
-<p><img loading="lazy" src="../../assets/images/gray-requirements/ccc.png" alt="User story"></p>
-</li>
+<li><strong>Start from ISO 25010 quality domains.</strong> The standard defines eight top-level product quality characteristics (Functional Suitability, Performance Efficiency, Compatibility, Interaction Capability, Reliability, Security, Maintainability, Portability), each with several sub-characteristics.</li>
+<li><strong>Break each relevant characteristic into project-specific requirements.</strong> For Flexibility Manager, a subset of characteristics was identified as relevant to the domain (critical infrastructure / grid operation) and refined into one driving sub-characteristic and concrete rationale each.</li>
+<li><strong>Prioritize with QAS and import as NFRs.</strong> Each candidate requirement is run through the Utility Tree / QAS prioritization described in <a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html">Quality scenarios and Design Tactics</a>. Everything below reached <strong>Very High</strong> priority — i.e., High Business Value <strong>and</strong> High Architectural Impact — so all six are imported as top-priority NFRs.</li>
 </ol>
-<hr>
-<h2 id="approaches-to-requirements-waterfall-and-ieee-29148"><a class="heading-anchor" href="#approaches-to-requirements-waterfall-and-ieee-29148" aria-label="Link to this section">#</a>Approaches to requirements: Waterfall and IEEE 29148</h2>
-<p>In traditional (predictive) project management, extensive documents of the SRS (Software Requirements Specification) type are produced. They are governed by the <strong>IEEE 29148</strong> standard, which defines what a quality requirement should look like.
-A good requirement must be:</p>
-<ol>
-<li><p><strong>Necessary:</strong> If it is omitted, the system will not fulfil its purpose.</p>
-</li>
-<li><p><strong>Implementation-free:</strong> It states &quot;WHAT&quot; is to happen, not &quot;HOW&quot; the programmer will write it (unless it is an explicit Constraint).</p>
-</li>
-<li><p><strong>Unambiguous:</strong> It can be interpreted in only one way.</p>
-</li>
-<li><p><strong>Complete:</strong> No conditions are missing from it.</p>
-</li>
-<li><p><strong>Atomic/Singular:</strong> It contains only one idea. (Does not contain conjunctions &quot;and,&quot; &quot;or&quot;).</p>
-</li>
-<li><p><strong>Feasible:</strong> Within the given budget and technology (This is a primary SWA responsibility!).</p>
-</li>
-<li><p><strong>Traceable:</strong> Has a unique ID and can be traced back to a business goal.</p>
-</li>
-<li><p><strong>Verifiable:</strong> Can be objectively proven (by a test) to have been met.</p>
-</li>
-</ol>
-<p><img loading="lazy" src="../../assets/images/gray-requirements/req_checklist.png" alt="User story"></p>
+<h3 id="2-import-nfr-list-most-important-quality-attributes"><a class="heading-anchor" href="#2-import-nfr-list-most-important-quality-attributes" aria-label="Link to this section">#</a>2. Import NFR list — most important quality attributes</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>ISO 25010 Characteristic</th>
+<th>Sub-characteristic</th>
+<th>Definition</th>
+<th>Priority</th>
+<th>Rationale / Context</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>Functional Suitability</strong></td>
+<td>Functional correctness</td>
+<td>Degree to which a product or system provides the correct results with the needed degree of precision.</td>
+<td>Very High</td>
+<td>Consistency must be ensured (e.g., visualizing data from the field, network control actions). Calculations must adhere to domain standards — e.g., the short-circuit evaluation algorithm is a standard that has to be implemented.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Performance Efficiency</strong></td>
+<td>Time behaviour</td>
+<td>Degree to which the response and processing times and throughput rates of a product or system, when performing its functions, meet requirements.</td>
+<td>Very High</td>
+<td>Throughput rates must be able to handle all measurements. Data visualization must fulfill time-behaviour requirements. Customers additionally set requirements on average response times to user actions. Criticality depends on the component — essential for SCADA capabilities, less critical for network applications such as network state estimation. Detailed quality scenarios are required for individual subsystems.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Reliability</strong></td>
+<td>Availability</td>
+<td>Degree to which a system, product or component is operational and accessible when required for use.</td>
+<td>Very High</td>
+<td>The most important attribute for our customers: they expect <strong>&quot;100% availability&quot;</strong>, achieved through redundancy, because they operate in the field of critical infrastructure. Subsystems have different availability requirements, so detailed quality scenarios for individual subsystems are required.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Security</strong></td>
+<td>Integrity</td>
+<td>Degree to which a system, product or component prevents unauthorized access to, or modification of, computer programs or data.</td>
+<td>Very High</td>
+<td>The product is part of critical infrastructure. Unauthorized modification of the system must be prevented to avoid the worst-case scenario — i.e., causing a blackout.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Maintainability</strong></td>
+<td>Modularity</td>
+<td>Degree to which a system or computer program is composed of discrete components such that a change to one component has minimal impact on other components.</td>
+<td>Very High</td>
+<td>Well-documented interfaces are desired. Loose coupling between components supports easy replacement (e.g., due to obsolescence or wrong implementations). Modularity helps the system react to changed market needs, and is also an important aspect for productivity (e.g., fast feedback loops of CI/CD pipelines).</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Portability</strong></td>
+<td>Replaceability</td>
+<td>Degree to which a product can replace another specified software product for the same purpose in the same environment.</td>
+<td>Very High</td>
+<td>Customers usually already have a system which they want to replace with a new product — either a previous version of our product or a product from a different vendor. Use case: system migration and product upgrade.</td>
+</tr>
+</tbody></table></div>
+<h3 id="3-reading-the-table"><a class="heading-anchor" href="#3-reading-the-table" aria-label="Link to this section">#</a>3. Reading the table</h3>
+<ul>
+<li><strong>All six landed at &quot;Very High&quot;</strong> — this is expected for a first pass on critical-infrastructure software: correctness, timing, availability, integrity, modularity and replaceability are all genuinely business-critical here, not inflated. A real Utility Tree exercise would still rank them relative to each other (e.g., via pairwise comparison) before design work starts, since &quot;very high&quot; for six attributes at once does not yet tell the architect which trade-off wins when two of them conflict.</li>
+<li><strong>Availability vs. Performance</strong> is the most likely trade-off in practice: redundancy mechanisms that boost availability (active/passive failover, state resynchronization) add latency and complexity that can work against time-behaviour targets.</li>
+<li><strong>Security vs. Maintainability</strong> is the second likely trade-off: access control and integrity checks (authentication, authorization, audit trails) add coupling and configuration surface that can work against the loose-coupling goals of modularity.</li>
+<li>Each row here is a <strong>summary</strong>, not a full Quality Scenario. The next step for any row is to write it out as a full six-element scenario (Source, Stimulus, Artifact, Environment, Response, Response Measure) following the structure in <a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html">Quality scenarios and Design Tactics</a>, and then select a Design Tactic for it.</li>
+</ul>
+<h3 id="4-next-steps-not-yet-done-flagged-for-follow-up"><a class="heading-anchor" href="#4-next-steps-not-yet-done-flagged-for-follow-up" aria-label="Link to this section">#</a>4. Next steps (not yet done, flagged for follow-up)</h3>
+<ul>
+<li>Expand each row into a full QAS (six elements) so each NFR has a measurable Response Measure, not just a qualitative rationale.</li>
+<li>Run a pairwise comparison between the six &quot;Very High&quot; attributes to break the tie and decide which one wins when trade-offs force a choice.</li>
+<li>Select Design Tactics per attribute (see the tactic catalogs in <a href="../../chapters/blue-architecture/quality-scenarios-and-design-tactics.html">Quality scenarios and Design Tactics</a>) and document the chosen trade-offs as ADRs (see <a href="../../chapters/blue-architecture/adr-architecture-decision-records.html">Architecture Decision Records (ADR)</a>).</li>
+</ul>
 
     </article>
 <nav class="pager" aria-label="Topic navigation">
-      <a class="pager__prev" href="../../chapters/gray-requirements/4-swa-role.html"><span class="pager__label">← Previous</span><span>Goals and tasks for the SWA in the early phases of RE</span></a>
-      <a class="pager__next" href="../../chapters/gray-requirements/6-requirement-consolidation.html"><span class="pager__label">Next →</span><span>6. Requirement Consolidation (Consolidation and Prioritization)</span></a>
+      <a class="pager__prev" href="../../chapters/blue-architecture/experience-architecture.html"><span class="pager__label">← Previous</span><span>Experience — Architecture (all practical examples in one place)</span></a>
+      <a class="pager__next" href="../../chapters/blue-architecture/role-of-the-siemens-swa.html"><span class="pager__label">Next →</span><span>Role of the Siemens SWA: the role of the software architect</span></a>
     </nav>
   </main>
   <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
-    <ul><li class="lvl-2"><a href="#formal-requirement-notation-sophist-master-template-mustergueltige-anforderungen-die-sophist-templates-fuer-requirements">Formal requirement notation (SOPHIST / MASTeR template - Mustergueltige Anforderungen – die SOPHIST Templates fuer Requirements)</a></li><li class="lvl-2"><a href="#approaches-to-requirements-agile">Approaches to requirements: Agile</a></li><li class="lvl-2"><a href="#approaches-to-requirements-waterfall-and-ieee-29148">Approaches to requirements: Waterfall and IEEE 29148</a></li></ul></aside>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-3"><a href="#1-the-process-in-three-steps">1. The process in three steps</a></li><li class="lvl-3"><a href="#2-import-nfr-list-most-important-quality-attributes">2. Import NFR list — most important quality attributes</a></li><li class="lvl-3"><a href="#3-reading-the-table">3. Reading the table</a></li><li class="lvl-3"><a href="#4-next-steps-not-yet-done-flagged-for-follow-up">4. Next steps (not yet done, flagged for follow-up)</a></li></ul></aside>
 </div>
 
 <div class="palette" role="dialog" aria-modal="true" aria-label="Search">
