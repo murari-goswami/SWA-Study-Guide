@@ -115,7 +115,7 @@
     <div class="topic-head fade-in" style="--chapter-color:#2196F3;--i:0">
       <a class="chapter-chip" href="../../index.html#blue-architecture"><span class="nav-chapter__swatch" style="background:#2196F3"></span>Architecture</a>
       <div class="topic-meta">
-        <span>7,886 words · about 39 min read</span>
+        <span>8,442 words · about 42 min read</span>
         <button class="read-toggle" data-action="mark-read" data-topic-id="blue-architecture/architecture-review" aria-pressed="false">
           <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
         </button>
@@ -794,6 +794,70 @@ The subject of the evaluation was exclusively a static artifact — a document a
 <p><strong>Conclusion for the exam</strong>
 A review of static documentation or empty interfaces provides false confidence. Stakeholder agreement says something about the understandability of the design, not about its feasibility — at the moment of approval a stakeholder bears no cost and therefore has no motivation to look for flaws. A valuable review therefore requires either an <strong>active task</strong> for the participants (ADR) or a <strong>running artifact</strong>, however minimal (walking skeleton, prototype). Only then does the real integration barrier and the non-technical forces that decide the adoption of an architecture become visible.</p>
 <hr>
+<h2 id="12-example-from-practice-introducing-archunit-as-a-quantitative-architecture-review"><a class="heading-anchor" href="#12-example-from-practice-introducing-archunit-as-a-quantitative-architecture-review" aria-label="Link to this section">#</a>12. Example from practice: introducing ArchUnit as a quantitative architecture review</h2>
+<p><em>The following case is personal experience, not content of the source material. It serves as an illustration of the theses from chapters 4.2 and 1.3.</em></p>
+<p><strong>Situation</strong>
+In the Flexibility Manager project, the intended architecture followed a strict hexagonal / layered structure: domain logic must not depend on infrastructure, the application layer may call the domain but not the other way round, and no module may bypass the defined ports. The rules existed as a diagram and as verbal conventions in the team — but there was no automated mechanism to verify them. Conformance depended entirely on code review discipline.</p>
+<p><strong>What was introduced</strong>
+An <strong>ArchUnit</strong> test suite was added to the project&#39;s standard test run (executed in CI on every commit). The suite encoded the intended dependency rules as executable assertions:</p>
+<ul>
+<li>No class in <code>domain</code> may import from <code>infrastructure</code> or <code>application</code></li>
+<li>No class in <code>application</code> may import from <code>infrastructure</code> directly (only via ports)</li>
+<li>Naming conventions for ports, adapters and use-case classes were enforced as rules</li>
+</ul>
+<p><strong>What it delivered — quantitatively</strong>
+Within the first sprint after introduction, ArchUnit reported <strong>three violations</strong> that had crept in unnoticed:</p>
+<ol>
+<li>A use-case class had directly instantiated a JPA repository (bypassing the port interface) — a latent <strong>architectural erosion</strong>.</li>
+<li>A domain entity had imported a Jackson annotation for serialization — a domain-to-infrastructure dependency, i.e. <strong>architectural drift</strong>.</li>
+<li>An adapter class had been placed in the wrong package, making it invisible to the port resolution logic.</li>
+</ol>
+<p>None of the three had been caught by functional tests (the behaviour was correct), and none had been flagged in the preceding code review. The violation count dropped to zero after remediation and stayed at zero — the rule set acts as a <strong>regression test for the architecture</strong> from that point on.</p>
+<p><strong>Link back to theory</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Phenomenon in the case</th>
+<th>Concept from theory</th>
+<th>Chapter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dependency rules encoded as executable tests</td>
+<td><strong>Architecture conformance</strong> — comparing actual dependency graph against the intended one</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>JPA repository bypassing the port</td>
+<td><strong>Architectural erosion</strong> — a decision that directly violates the planned architecture</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>Jackson annotation in domain</td>
+<td><strong>Architectural drift</strong> — a decision the architecture does not contain</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>Zero findings in code review, zero findings in functional tests</td>
+<td>Architecture defects that only <strong>architecture conformance</strong> can detect</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>Suite runs on every commit</td>
+<td><strong>Continuous verifiability</strong> — the <em>Agile</em> characteristic; &quot;verifiable at any time&quot;</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Three objective findings with exact class names</td>
+<td><strong>Quantitative review</strong> — hard, measurable results, not opinion</td>
+<td>4.1</td>
+</tr>
+</tbody></table></div>
+<p><strong>Limitations — why ArchUnit alone is not enough</strong>
+ArchUnit verifies exactly the rules it has been given. It has no view of performance, security trade-offs, or whether the layering itself is the right choice. It is the quantitative review that guards the structure; the qualitative review (ADR, ATAM) is still needed to verify that the structure solves the right problem.</p>
+<p><strong>Conclusion for the exam</strong>
+Introducing ArchUnit converted an implicit architectural convention into an <strong>automated, objective, continuously executed conformance check</strong>. It is the practical embodiment of the code quality assessment method: it answers &quot;is the architecture implemented correctly?&quot; with a binary, reproducible result — not with a reviewer&#39;s judgement. The three violations it found in the first sprint demonstrate precisely the gap between &quot;the design says X&quot; and &quot;the code does X&quot; that the paper tiger smell describes.</p>
+<hr>
 <h2 id="definitions-and-basic-terms"><a class="heading-anchor" href="#definitions-and-basic-terms" aria-label="Link to this section">#</a>Definitions and basic terms</h2>
 <div class="table-wrap"><table>
 <thead>
@@ -1341,7 +1405,7 @@ A review of static documentation or empty interfaces provides false confidence. 
     </nav>
   </main>
   <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
-    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-2"><a href="#1-what-is-architecture-quality">1. What is architecture quality</a></li><li class="lvl-3"><a href="#1-1-intuitive-answer-vs-systematic-framework">1.1 Intuitive answer vs. systematic framework</a></li><li class="lvl-3"><a href="#1-2-five-characteristics-of-a-good-architecture">1.2 Five characteristics of a good architecture</a></li><li class="lvl-3"><a href="#1-3-forces-acting-on-the-architecture">1.3 Forces acting on the architecture</a></li><li class="lvl-3"><a href="#1-4-architecture-smells">1.4 Architecture smells</a></li><li class="lvl-2"><a href="#2-why-formal-process-reviews-are-not-enough">2. Why formal process reviews are not enough</a></li><li class="lvl-2"><a href="#3-taxonomy-of-reviews">3. Taxonomy of reviews</a></li><li class="lvl-2"><a href="#4-quantitative-reviews">4. Quantitative reviews</a></li><li class="lvl-3"><a href="#4-1-benefits-and-liabilities">4.1 Benefits and liabilities</a></li><li class="lvl-3"><a href="#4-2-three-quantitative-methods">4.2 Three quantitative methods</a></li><li class="lvl-3"><a href="#4-3-prototype-typology">4.3 Prototype typology</a></li><li class="lvl-2"><a href="#5-qualitative-reviews">5. Qualitative reviews</a></li><li class="lvl-3"><a href="#5-1-active-design-review-adr">5.1 Active Design Review (ADR)</a></li><li class="lvl-3"><a href="#5-2-industry-practice-reviews">5.2 Industry Practice Reviews</a></li><li class="lvl-3"><a href="#5-3-atam-architecture-tradeoff-analysis-method">5.3 ATAM (Architecture Tradeoff Analysis Method)</a></li><li class="lvl-4"><a href="#definitions-of-the-four-core-atam-terms">Definitions of the four core ATAM terms</a></li><li class="lvl-4"><a href="#the-atam-matrix-a-working-tool">The ATAM Matrix – a working tool</a></li><li class="lvl-2"><a href="#6-comparison-of-qualitative-reviews">6. Comparison of qualitative reviews</a></li><li class="lvl-2"><a href="#7-who-takes-part-in-a-review">7. Who takes part in a review</a></li><li class="lvl-2"><a href="#8-when-to-use-which-technique">8. When to use which technique</a></li><li class="lvl-2"><a href="#9-expectations-towards-the-architect">9. Expectations towards the architect</a></li><li class="lvl-2"><a href="#10-reviews-and-testing">10. Reviews and testing</a></li><li class="lvl-2"><a href="#11-example-from-practice-the-trap-of-paper-conformance">11. Example from practice: the trap of paper conformance</a></li><li class="lvl-2"><a href="#definitions-and-basic-terms">Definitions and basic terms</a></li><li class="lvl-2"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-2"><a href="#exam-questions">Exam questions</a></li><li class="lvl-2"><a href="#model-answer-4-6-minutes">Model answer (4–6 minutes)</a></li><li class="lvl-2"><a href="#short-version-for-quick-revision-cheat-sheet">Short version for quick revision (cheat sheet)</a></li><li class="lvl-2"><a href="#learning-outcome-lopo">Learning outcome (LOPO)</a></li><li class="lvl-2"><a href="#summary-table">Summary table</a></li></ul></aside>
+    <ul><li class="lvl-3"><a href="#summary-introduction">Summary / Introduction</a></li><li class="lvl-2"><a href="#1-what-is-architecture-quality">1. What is architecture quality</a></li><li class="lvl-3"><a href="#1-1-intuitive-answer-vs-systematic-framework">1.1 Intuitive answer vs. systematic framework</a></li><li class="lvl-3"><a href="#1-2-five-characteristics-of-a-good-architecture">1.2 Five characteristics of a good architecture</a></li><li class="lvl-3"><a href="#1-3-forces-acting-on-the-architecture">1.3 Forces acting on the architecture</a></li><li class="lvl-3"><a href="#1-4-architecture-smells">1.4 Architecture smells</a></li><li class="lvl-2"><a href="#2-why-formal-process-reviews-are-not-enough">2. Why formal process reviews are not enough</a></li><li class="lvl-2"><a href="#3-taxonomy-of-reviews">3. Taxonomy of reviews</a></li><li class="lvl-2"><a href="#4-quantitative-reviews">4. Quantitative reviews</a></li><li class="lvl-3"><a href="#4-1-benefits-and-liabilities">4.1 Benefits and liabilities</a></li><li class="lvl-3"><a href="#4-2-three-quantitative-methods">4.2 Three quantitative methods</a></li><li class="lvl-3"><a href="#4-3-prototype-typology">4.3 Prototype typology</a></li><li class="lvl-2"><a href="#5-qualitative-reviews">5. Qualitative reviews</a></li><li class="lvl-3"><a href="#5-1-active-design-review-adr">5.1 Active Design Review (ADR)</a></li><li class="lvl-3"><a href="#5-2-industry-practice-reviews">5.2 Industry Practice Reviews</a></li><li class="lvl-3"><a href="#5-3-atam-architecture-tradeoff-analysis-method">5.3 ATAM (Architecture Tradeoff Analysis Method)</a></li><li class="lvl-4"><a href="#definitions-of-the-four-core-atam-terms">Definitions of the four core ATAM terms</a></li><li class="lvl-4"><a href="#the-atam-matrix-a-working-tool">The ATAM Matrix – a working tool</a></li><li class="lvl-2"><a href="#6-comparison-of-qualitative-reviews">6. Comparison of qualitative reviews</a></li><li class="lvl-2"><a href="#7-who-takes-part-in-a-review">7. Who takes part in a review</a></li><li class="lvl-2"><a href="#8-when-to-use-which-technique">8. When to use which technique</a></li><li class="lvl-2"><a href="#9-expectations-towards-the-architect">9. Expectations towards the architect</a></li><li class="lvl-2"><a href="#10-reviews-and-testing">10. Reviews and testing</a></li><li class="lvl-2"><a href="#11-example-from-practice-the-trap-of-paper-conformance">11. Example from practice: the trap of paper conformance</a></li><li class="lvl-2"><a href="#12-example-from-practice-introducing-archunit-as-a-quantitative-architecture-review">12. Example from practice: introducing ArchUnit as a quantitative architecture review</a></li><li class="lvl-2"><a href="#definitions-and-basic-terms">Definitions and basic terms</a></li><li class="lvl-2"><a href="#common-mistakes-and-anti-patterns">Common mistakes and anti-patterns</a></li><li class="lvl-2"><a href="#exam-questions">Exam questions</a></li><li class="lvl-2"><a href="#model-answer-4-6-minutes">Model answer (4–6 minutes)</a></li><li class="lvl-2"><a href="#short-version-for-quick-revision-cheat-sheet">Short version for quick revision (cheat sheet)</a></li><li class="lvl-2"><a href="#learning-outcome-lopo">Learning outcome (LOPO)</a></li><li class="lvl-2"><a href="#summary-table">Summary table</a></li></ul></aside>
 </div>
 
 <div class="palette" role="dialog" aria-modal="true" aria-label="Search">

@@ -115,7 +115,7 @@
     <div class="topic-head fade-in" style="--chapter-color:#F9A825;--i:0">
       <a class="chapter-chip" href="../../index.html#yellow-social-skills"><span class="nav-chapter__swatch" style="background:#F9A825"></span>Social Skills</a>
       <div class="topic-meta">
-        <span>782 words · about 4 min read</span>
+        <span>1,133 words · about 6 min read</span>
         <button class="read-toggle" data-action="mark-read" data-topic-id="yellow-social-skills/responsibility-process-self-leadership" aria-pressed="false">
           <span aria-hidden="true">✓</span><span data-label>Mark as read</span>
         </button>
@@ -185,6 +185,33 @@
 </ul>
 <p><strong>How does your role in sparring fit into this?</strong>
 When the architect was going in circles with you, he was probably stuck in phases <em>Lay Blame</em> and <em>Justify</em>. You can get him out of this precisely with a confrontational question: <em>&quot;How do you yourself contribute to this frustrating situation continuing?&quot;</em> By this you force him to leave <em>Circle of Concern</em> and shift attention to <em>Circle of Control</em> – and realize that his staying in a non-functional setup is something he can change himself.</p>
+<hr>
+<h3 id="experience-3-race-condition-caused-by-asynchronous-dependencies"><a class="heading-anchor" href="#experience-3-race-condition-caused-by-asynchronous-dependencies" aria-label="Link to this section">#</a>Experience 3: Race condition caused by asynchronous dependencies</h3>
+<p><strong>Situation:</strong> A race condition involving asynchronous circular dependencies across measurement handling and cases/proposals. Each bounded context team understood their own implementation, but the complete asynchronous execution flow was unclear. The problem was addressed by creating an end-to-end activity diagram.</p>
+<p><strong>The trigger:</strong>
+Imagine developers from different bounded contexts each explaining their own implementation. One team understands the measurement lifecycle. Another understands cases and proposals. But the complete asynchronous execution flow is unclear.</p>
+<p>People may say:
+<em>&quot;Our service publishes the event correctly. The problem is probably in the other bounded context.&quot;</em></p>
+<p>As an architect, this can be frustrating because each component may behave correctly in isolation while the end-to-end scenario remains defective.</p>
+<p><strong>From frustration to responsibility:</strong></p>
+<ul>
+<li><strong>Lay Blame / Justify:</strong> &quot;The other teams should understand their dependencies. I cannot fix an interaction that crosses so many components.&quot;</li>
+<li><strong>Awareness:</strong> &quot;We are discussing individual components, but we do not have a shared understanding of the end-to-end process.&quot;</li>
+<li><strong>Responsibility:</strong> &quot;I can create an end-to-end activity diagram, clarify event ordering, and bring the teams together to review the interaction.&quot;</li>
+</ul>
+<p><strong>Concrete architectural contribution:</strong>
+An end-to-end activity diagram was created to make the interaction visible. This is a very effective self-leadership action because it changed the way the problem was understood instead of simply asking each team to investigate its own component again.</p>
+<p>The diagram can support questions about message ordering, race conditions, event ownership and the point at which a business operation can be considered complete.</p>
+<ul>
+<li><strong>Circle of Control:</strong> Creating the diagram, documenting uncertainties and facilitating a discussion.</li>
+<li><strong>Circle of Influence:</strong> Helping bounded-context owners agree on interaction behavior and changes.</li>
+<li><strong>Circle of Concern:</strong> Implementation priorities and all the external development teams cannot be independently controlled.</li>
+</ul>
+<p><strong>The strongest sentence for the exam:</strong>
+<em>&quot;Instead of blaming individual teams for the race condition, I realized that the missing element was shared understanding. I took responsibility for creating an end-to-end activity diagram so that we could discuss the actual interaction rather than each team&#39;s assumptions.&quot;</em></p>
+<blockquote>
+<p>This is an unusually good experience because it combines self-leadership with systems thinking, communication, and architecture ownership.</p>
+</blockquote>
 
     </article>
 <nav class="pager" aria-label="Topic navigation">
@@ -193,7 +220,7 @@ When the architect was going in circles with you, he was probably stuck in phase
     </nav>
   </main>
   <aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p>
-    <ul><li class="lvl-3"><a href="#why-deal-with-self-leadership-at-all">Why deal with self-leadership at all?</a></li><li class="lvl-3"><a href="#covey-s-circles-energy-focus">Covey s circles (Energy focus)</a></li><li class="lvl-3"><a href="#the-responsibility-process">The Responsibility Process</a></li><li class="lvl-4"><a href="#process-levels">Process levels</a></li><li class="lvl-3"><a href="#3-keys-to-responsibility-three-keys-to-responsibility">3 keys to responsibility (Three Keys to Responsibility)</a></li><li class="lvl-3"><a href="#catch-sooner-game-training">Catch Sooner Game (Training)</a></li><li class="lvl-3"><a href="#example-from-practice-self-analysis-through-responsibility-process">Example from practice: Self-analysis through Responsibility Process</a></li></ul></aside>
+    <ul><li class="lvl-3"><a href="#why-deal-with-self-leadership-at-all">Why deal with self-leadership at all?</a></li><li class="lvl-3"><a href="#covey-s-circles-energy-focus">Covey s circles (Energy focus)</a></li><li class="lvl-3"><a href="#the-responsibility-process">The Responsibility Process</a></li><li class="lvl-4"><a href="#process-levels">Process levels</a></li><li class="lvl-3"><a href="#3-keys-to-responsibility-three-keys-to-responsibility">3 keys to responsibility (Three Keys to Responsibility)</a></li><li class="lvl-3"><a href="#catch-sooner-game-training">Catch Sooner Game (Training)</a></li><li class="lvl-3"><a href="#example-from-practice-self-analysis-through-responsibility-process">Example from practice: Self-analysis through Responsibility Process</a></li><li class="lvl-3"><a href="#experience-3-race-condition-caused-by-asynchronous-dependencies">Experience 3: Race condition caused by asynchronous dependencies</a></li></ul></aside>
 </div>
 
 <div class="palette" role="dialog" aria-modal="true" aria-label="Search">
